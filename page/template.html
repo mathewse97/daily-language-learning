@@ -1,0 +1,360 @@
+<title>Morning Packet</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ground:#0C0E12; --surface:#13161C; --surface-2:#191D25; --surface-3:#222732;
+    --ink:#E8EBF0; --ink-soft:#9BA3B2; --ink-faint:#6B7484;
+    --rule:#1F242E; --rule-2:#2C3341;
+    --accent:#5B8DEF; --accent-ink:#8AAEF6; --accent-soft:rgba(91,141,239,.15);
+    --ok:#5FCB92; --ok-soft:rgba(95,203,146,.14);
+    --warn:#E3C567; --warn-soft:rgba(227,197,103,.14);
+    --flag:#E0A458; --flag-soft:rgba(224,164,88,.14);
+    --serif:"EB Garamond",Georgia,"Times New Roman",serif;
+    --sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
+    --r:14px; --r-sm:10px;
+    --shadow:0 1px 2px rgba(0,0,0,.30), 0 8px 24px rgba(0,0,0,.28);
+  }
+  :root[data-theme="light"]{
+    --ground:#F7F8FA; --surface:#FFFFFF; --surface-2:#F2F4F7; --surface-3:#E7EAF0;
+    --ink:#15181E; --ink-soft:#525A68; --ink-faint:#818A99;
+    --rule:#E6E9EF; --rule-2:#D2D7E0;
+    --accent:#2E5FC0; --accent-ink:#25509F; --accent-soft:rgba(46,95,192,.10);
+    --ok:#1F7A4C; --ok-soft:rgba(31,122,76,.10);
+    --warn:#8A6D12; --warn-soft:rgba(138,109,18,.10);
+    --flag:#B26B14; --flag-soft:rgba(178,107,20,.10);
+    --shadow:0 1px 2px rgba(16,24,40,.05), 0 8px 24px rgba(16,24,40,.06);
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--ground); color:var(--ink); font-family:var(--sans);
+    font-size:14px; line-height:1.55; -webkit-font-smoothing:antialiased;
+    margin:0; padding:0;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.028;
+    mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+  }
+  main{position:relative;z-index:1;max-width:44rem;margin:0 auto;padding:22px 16px 80px}
+
+  h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.015em;margin:0;text-wrap:balance}
+  h1{font-size:1.75rem;line-height:1.15;font-weight:800}
+  p{margin:0 0 .8em}
+  p:last-child{margin-bottom:0}
+  a{color:var(--accent-ink)}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+
+  .ph{margin-bottom:18px}
+  .ph .eyebrow{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--accent);margin:0 0 5px;
+  }
+  .ph .sub{color:var(--ink-soft);margin:6px 0 0;max-width:62ch;font-size:13.5px}
+
+  .stats{
+    display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+    border-radius:5px;overflow:hidden;
+    grid-template-columns:repeat(auto-fit,minmax(94px,1fr));margin:18px 0 20px;
+  }
+  .stats div{background:var(--surface);padding:10px 13px}
+  .stats dt{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint)}
+  .stats dd{margin:2px 0 0;font-size:1.35rem;font-family:var(--serif);font-weight:600;font-variant-numeric:tabular-nums}
+  .stats dd small{display:block;margin-top:1px;font-size:.7rem;font-family:var(--sans);font-weight:400;color:var(--ink-faint);line-height:1.3}
+
+  nav.days{
+    display:flex;flex-wrap:wrap;gap:4px;margin-bottom:20px;
+    position:sticky;top:0;z-index:3;background:var(--ground);
+    padding:8px 0;border-bottom:1px solid var(--rule);
+  }
+  nav.days button{
+    font:inherit;font-size:12.5px;font-family:var(--sans);
+    background:transparent;border:1px solid transparent;color:var(--ink-soft);
+    padding:5px 11px;border-radius:4px;cursor:pointer;transition:background .12s,color .12s;
+  }
+  nav.days button:hover{background:var(--surface-2);color:var(--ink)}
+  nav.days button[aria-current="true"]{
+    background:var(--accent-soft);color:var(--accent-ink);font-weight:500;
+    box-shadow:inset 2px 0 0 var(--accent);
+  }
+  nav.days button .n{font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:5px}
+
+  .day{display:flex;flex-direction:column;gap:14px}
+  .day[hidden]{display:none}
+
+  .card{
+    background:var(--surface);border:1px solid var(--rule);border-radius:6px;
+    padding:16px 18px;transition:border-color .12s,box-shadow .12s;
+    display:flex;flex-direction:column;gap:12px;
+  }
+  .card:hover{border-color:var(--rule-2);box-shadow:var(--shadow)}
+  .card > header{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .b{
+    font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    padding:2px 7px;border-radius:3px;
+  }
+  .b.gr{background:var(--accent-soft);color:var(--accent-ink)}
+  .b.it{background:var(--ok-soft);color:var(--ok)}
+  .b.en{background:var(--warn-soft);color:var(--warn)}
+  .b.tag{background:var(--surface-3);color:var(--ink-faint)}
+  .card > header .min{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);margin-left:auto}
+
+  .sect{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 3px}
+  .setting{color:var(--ink-soft);font-size:13px;margin:0}
+  .muted{color:var(--ink-soft)}
+  .small{font-size:12.5px;color:var(--ink-faint)}
+
+  .gi{font-family:var(--serif);font-size:1.1em}
+  .ita{font-family:var(--serif);font-size:1.12rem;line-height:1.8;margin:0}
+  .eng{font-size:14px;line-height:1.68;display:flex;flex-direction:column;gap:.75em}
+
+  .glosses{display:flex;flex-direction:column;gap:2px;font-size:12.5px;color:var(--ink-soft);margin:0}
+  .glosses b{font-family:var(--serif);font-size:1.15em;font-weight:500;color:var(--ink)}
+
+  .sound{
+    background:var(--surface-2);border-left:2px solid var(--flag);border-radius:0 4px 4px 0;
+    padding:9px 12px;font-size:13px;margin:0;
+  }
+  .sound b{color:var(--flag);font-weight:500}
+
+  .note{border-left:2px solid var(--rule-2);padding-left:12px;font-size:13.5px;margin:0;color:var(--ink-soft)}
+  .note b{color:var(--ink);font-weight:500}
+
+  ul,ol{margin:0;padding-left:1.15rem;display:flex;flex-direction:column;gap:.3em;font-size:13.5px}
+
+  details{border-top:1px solid var(--rule);padding-top:10px}
+  summary{
+    cursor:pointer;font-family:var(--mono);font-size:10px;letter-spacing:.11em;
+    text-transform:uppercase;color:var(--ink-faint);list-style:none;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"▸ ";color:var(--ink-faint)}
+  details[open] summary::before{content:"▾ "}
+  summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  details > .dz{padding-top:10px;display:flex;flex-direction:column;gap:8px}
+
+  .letters{
+    font-family:var(--serif);font-size:1.15rem;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(5rem,1fr));gap:5px 8px;
+  }
+  .letters span{display:flex;gap:5px;align-items:baseline}
+  .letters em{font-family:var(--mono);font-size:10px;font-style:normal;color:var(--ink-faint)}
+
+  .ans{display:flex;flex-direction:column;gap:5px;font-size:13.5px}
+  .ans > span{display:flex;gap:8px}
+  .ans i{font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);padding-top:3px}
+
+  .rec{
+    background:var(--surface-2);border:1px solid var(--rule);border-radius:5px;
+    padding:10px 14px;display:flex;flex-direction:column;gap:6px;font-size:13.5px;
+  }
+  .rec ol{display:flex;flex-direction:column;gap:6px}
+  .rec .gi{font-size:1.05em}
+
+  .il{display:flex;flex-wrap:wrap;column-gap:13px;row-gap:15px;align-items:start;
+    background:var(--surface-2);border:1px solid var(--rule);border-radius:5px;
+    padding:15px 14px;margin:0}
+  .w{display:grid;grid-template-rows:14px auto 13px;justify-items:center;row-gap:2px}
+  .w .pt{font-size:11px;line-height:14px;color:var(--accent-ink);
+    font-family:var(--sans);white-space:nowrap}
+  .w .gr{font-family:var(--serif);font-size:1.45rem;line-height:1.3;white-space:nowrap}
+  .w .tr{font-size:10px;line-height:13px;color:var(--ink-faint);
+    font-family:var(--mono);white-space:nowrap}
+  .w.known .pt,.w.known .tr{visibility:hidden}
+  .w.new .gr{color:var(--accent-ink)}
+  .br{flex-basis:100%;height:0;margin:0}
+
+  .foot{border-top:1px solid var(--rule);margin-top:26px;padding-top:14px;font-size:12.5px;color:var(--ink-faint);display:flex;flex-direction:column;gap:.5em}
+  .err{border:1px solid var(--flag);border-radius:6px;padding:14px 16px;color:var(--flag);font-family:var(--mono);font-size:12px;white-space:pre-wrap}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+  @media (max-width:420px){ h1{font-size:1.4rem} main{padding:16px 12px 60px} }
+</style>
+
+<main id="app"></main>
+
+<script id="week" type="application/json">
+__WEEK_JSON__
+</script>
+
+<script>
+(function () {
+  var CHECKIN = "https://claude.ai/code/artifact/91a7c102-1a4a-493d-b6fc-7b1a4111a101";
+  var ALPHABET = [["Α α","a"],["Β β","b"],["Γ γ","g"],["Δ δ","d"],["Ε ε","e"],["Ζ ζ","zd"],
+    ["Η η","ē"],["Θ θ","th"],["Ι ι","i"],["Κ κ","k"],["Λ λ","l"],["Μ μ","m"],["Ν ν","n"],
+    ["Ξ ξ","ks"],["Ο ο","o"],["Π π","p"],["Ρ ρ","r"],["Σ σ ς","s"],["Τ τ","t"],["Υ υ","u"],
+    ["Φ φ","ph"],["Χ χ","kh"],["Ψ ψ","ps"],["Ω ω","ō"]];
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+  // rich(): campos que o esquema autoriza a conter marcação inline.
+  function rich(s) { return s == null ? "" : String(s); }
+  function has(v) { return v != null && v !== "" && !(Array.isArray(v) && !v.length); }
+
+  function details(summary, inner, cls) {
+    return '<details><summary>' + esc(summary) + '</summary><div class="dz' +
+      (cls ? " " + cls : "") + '">' + inner + '</div></details>';
+  }
+  function answers(pairs) {
+    return pairs.map(function (p) {
+      return '<span><i>' + esc(p[0]) + '</i><span>' + rich(p[1]) + '</span></span>';
+    }).join("");
+  }
+  function list(tag, items, fn) {
+    return '<' + tag + '>' + items.map(function (i) {
+      return '<li>' + (fn ? fn(i) : rich(i)) + '</li>';
+    }).join("") + '</' + tag + '>';
+  }
+
+  function interlinear(sentences, upTo, from) {
+    var out = [];
+    for (var s = 0; s < upTo && s < sentences.length; s++) {
+      if (s) out.push('<span class="br"></span>');
+      var isNew = s >= from;
+      sentences[s].forEach(function (w) {
+        var cls = "w";
+        if (w[0] == null && w[2] == null) cls += " known";
+        if (isNew) cls += " new";
+        out.push('<span class="' + cls + '">' +
+          '<span class="pt">' + esc(w[0]) + '</span>' +
+          '<span class="gr">' + esc(w[1]) + '</span>' +
+          '<span class="tr">' + esc(w[2]) + '</span></span>');
+      });
+    }
+    return '<p class="il">' + out.join("") + '</p>';
+  }
+
+  function recall(r, title) {
+    if (!r || !has(r.prompts)) return "";
+    var keys = (r.key || []).map(function (k, i) { return [String(i + 1), '<span class="gi">' + esc(k) + '</span>']; });
+    return '<div class="rec"><p class="sect">' + esc(title) + '</p>' +
+      list("ol", r.prompts) +
+      (keys.length ? details("Conferir", answers(keys), "ans") : "") + '</div>';
+  }
+
+  function greekCard(c, week) {
+    var g = week.greek, h = [];
+    h.push('<header><span class="b gr">Grego</span>' +
+      (g.register ? '<span class="b tag">' + esc(g.register) + '</span>' : "") +
+      (c.min ? '<span class="min">' + esc(c.min) + '</span>' : "") + '</header>');
+    if (has(c.setting)) h.push('<p class="setting">' + rich(c.setting) + '</p>');
+    h.push(recall(c.recall, "Ἀνάμνησις"));
+    h.push(interlinear(g.sentences, c.upTo, c.__from));
+    if (has(c.pt)) h.push(details("Em português corrido", '<p class="muted">' + rich(c.pt) + '</p>'));
+    if (has(c.sound)) h.push('<p class="sound"><b>Som do dia.</b> ' + rich(c.sound) + '</p>');
+    h.push(details("Alfabeto", '<div class="letters">' + ALPHABET.map(function (l) {
+      return '<span>' + l[0] + ' <em>' + l[1] + '</em></span>';
+    }).join("") + '</div>'));
+    h.push('<p class="small">Algo não ficou claro? Anote no <a href="' + CHECKIN + '">check-in</a>.</p>');
+    return h.join("");
+  }
+
+  function italianCard(c) {
+    var h = ['<header><span class="b it">Italiano</span>' +
+      (c.tag ? '<span class="b tag">' + esc(c.tag) + '</span>' : "") +
+      (c.min ? '<span class="min">' + esc(c.min) + '</span>' : "") + '</header>'];
+    if (has(c.setting)) h.push('<p class="setting">' + rich(c.setting) + '</p>');
+    h.push(recall(c.recall, "Ripasso"));
+    if (has(c.text)) h.push('<p class="ita">' + rich(c.text) + '</p>');
+    if (has(c.glosses)) h.push('<p class="glosses">' + c.glosses.map(function (g) {
+      return '<span><b>' + esc(g[0]) + '</b> — ' + rich(g[1]) + '</span>';
+    }).join("") + '</p>');
+    if (has(c.questions)) h.push('<div><p class="sect">Domande</p>' + list("ol", c.questions) + '</div>');
+    if (has(c.note)) h.push('<p class="note"><b>Nota.</b> ' + rich(c.note) + '</p>');
+    if (has(c.produce)) h.push('<div><p class="sect">Prova a dire</p><p>' + rich(c.produce) + '</p></div>');
+    if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) +
+      (has(c.compare) ? '<span class="small">' + rich(c.compare) + '</span>' : "") + '</div>'));
+    return h.join("");
+  }
+
+  function englishCard(c) {
+    var h = ['<header><span class="b en">English</span>' +
+      (c.tag ? '<span class="b tag">' + esc(c.tag) + '</span>' : "") +
+      (c.min ? '<span class="min">' + esc(c.min) + '</span>' : "") + '</header>'];
+    if (has(c.title)) h.push('<p class="setting">' + rich(c.title) + '</p>');
+    if (has(c.body)) h.push('<div class="eng">' + c.body.map(function (p) {
+      return '<p>' + rich(p) + '</p>';
+    }).join("") + '</div>');
+    if (has(c.inContext)) h.push('<div><p class="sect">In context</p>' +
+      list("ul", c.inContext, function (i) { return '<b>' + esc(i[0]) + '</b> — ' + rich(i[1]); }) + '</div>');
+    if (has(c.check)) h.push('<div><p class="sect">Check</p>' + list("ol", c.check) + '</div>');
+    if (has(c.sayit)) h.push('<div><p class="sect">Say it</p><p>' + rich(c.sayit) + '</p></div>');
+    if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) +
+      (has(c.compare) ? '<span class="small">' + rich(c.compare) + '</span>' : "") + '</div>'));
+    if (has(c.expression)) h.push('<p class="small">' + rich(c.expression) + '</p>');
+    return h.join("");
+  }
+
+  function plainCard(c) {
+    return '<header><span class="b tag">' + esc(c.label || "Nota") + '</span>' +
+      (c.min ? '<span class="min">' + esc(c.min) + '</span>' : "") + '</header>' +
+      (c.body || []).map(function (p) { return '<p>' + rich(p) + '</p>'; }).join("");
+  }
+
+  function render(week) {
+    var out = [];
+    var hd = week.header || {};
+    out.push('<div class="ph">' +
+      (hd.eyebrow ? '<p class="eyebrow">' + esc(hd.eyebrow) + '</p>' : "") +
+      '<h1>' + esc(hd.title || "Morning Packet") + '</h1>' +
+      (hd.sub ? '<p class="sub">' + rich(hd.sub) + '</p>' : "") + '</div>');
+
+    if (has(week.stats)) out.push('<dl class="stats">' + week.stats.map(function (s) {
+      return '<div><dt>' + esc(s.dt) + '</dt><dd>' + esc(s.dd) +
+        (s.small ? '<small>' + esc(s.small) + '</small>' : "") + '</dd></div>';
+    }).join("") + '</dl>');
+
+    out.push('<nav class="days" aria-label="Dias da semana">' + week.days.map(function (d) {
+      return '<button type="button" data-d="' + esc(d.d) + '">' + esc(d.label) +
+        '<span class="n">' + esc(d.n) + '</span></button>';
+    }).join("") + '</nav>');
+
+    var prev = 0;
+    week.days.forEach(function (d) {
+      var cards = (d.cards || []).map(function (c) {
+        if (c.lang === "gr") { c.__from = prev; return '<article class="card">' + greekCard(c, week) + '</article>'; }
+        if (c.lang === "it") return '<article class="card">' + italianCard(c) + '</article>';
+        if (c.lang === "en") return '<article class="card">' + englishCard(c) + '</article>';
+        return '<article class="card">' + plainCard(c) + '</article>';
+      }).join("");
+      var gr = (d.cards || []).filter(function (c) { return c.lang === "gr"; })[0];
+      if (gr && typeof gr.upTo === "number") prev = gr.upTo;
+      out.push('<section class="day" data-d="' + esc(d.d) + '" hidden>' + cards + '</section>');
+    });
+
+    if (has(week.foot)) out.push('<div class="foot">' + week.foot.map(function (p) {
+      return '<p>' + rich(p) + '</p>';
+    }).join("") + '</div>');
+
+    document.getElementById("app").innerHTML = out.join("");
+  }
+
+  function wire() {
+    var btns = [].slice.call(document.querySelectorAll("nav.days button"));
+    var days = [].slice.call(document.querySelectorAll("section.day"));
+    function show(d) {
+      days.forEach(function (s) { s.hidden = s.dataset.d !== d; });
+      btns.forEach(function (b) { b.setAttribute("aria-current", b.dataset.d === d ? "true" : "false"); });
+    }
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        show(b.dataset.d);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+    var today = String(new Date().getDay());
+    show(days.some(function (s) { return s.dataset.d === today; }) ? today : days[0].dataset.d);
+  }
+
+  try {
+    var week = JSON.parse(document.getElementById("week").textContent);
+    render(week);
+    wire();
+  } catch (e) {
+    document.getElementById("app").innerHTML =
+      '<div class="err">O pacote da semana não pôde ser lido.\n' + esc(e.message) +
+      '\n\nA fonte é claude/state/WEEK_PACKET.md no projeto. Esta página é só a renderização dela.</div>';
+  }
+})();
+</script>

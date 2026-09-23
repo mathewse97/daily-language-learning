@@ -1,0 +1,1331 @@
+<title>Morning Packet</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ground:#0C0E12; --surface:#13161C; --surface-2:#191D25; --surface-3:#222732;
+    --ink:#E8EBF0; --ink-soft:#9BA3B2; --ink-faint:#6B7484;
+    --rule:#1F242E; --rule-2:#2C3341;
+    --accent:#5B8DEF; --accent-ink:#8AAEF6; --accent-soft:rgba(91,141,239,.15);
+    --ok:#5FCB92; --ok-soft:rgba(95,203,146,.14);
+    --warn:#E3C567; --warn-soft:rgba(227,197,103,.14);
+    --flag:#E0A458; --flag-soft:rgba(224,164,88,.14);
+    --serif:"EB Garamond",Georgia,"Times New Roman",serif;
+    --sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
+    --r:14px; --r-sm:10px;
+    --shadow:0 1px 2px rgba(0,0,0,.30), 0 8px 24px rgba(0,0,0,.28);
+  }
+  :root[data-theme="light"]{
+    --ground:#F7F8FA; --surface:#FFFFFF; --surface-2:#F2F4F7; --surface-3:#E7EAF0;
+    --ink:#15181E; --ink-soft:#525A68; --ink-faint:#818A99;
+    --rule:#E6E9EF; --rule-2:#D2D7E0;
+    --accent:#2E5FC0; --accent-ink:#25509F; --accent-soft:rgba(46,95,192,.10);
+    --ok:#1F7A4C; --ok-soft:rgba(31,122,76,.10);
+    --warn:#8A6D12; --warn-soft:rgba(138,109,18,.10);
+    --flag:#B26B14; --flag-soft:rgba(178,107,20,.10);
+    --shadow:0 1px 2px rgba(16,24,40,.05), 0 8px 24px rgba(16,24,40,.06);
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--ground); color:var(--ink); font-family:var(--sans);
+    font-size:14px; line-height:1.55; -webkit-font-smoothing:antialiased;
+    margin:0; padding:0;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.028;
+    mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+  }
+  main{position:relative;z-index:1;max-width:44rem;margin:0 auto;padding:22px 16px 80px}
+
+  h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.015em;margin:0;text-wrap:balance}
+  h1{font-size:1.75rem;line-height:1.15;font-weight:800}
+  p{margin:0 0 .8em}
+  p:last-child{margin-bottom:0}
+  a{color:var(--accent-ink)}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+
+  .ph{margin-bottom:18px}
+  .ph .eyebrow{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--accent);margin:0 0 5px;
+  }
+  .ph .sub{color:var(--ink-soft);margin:6px 0 0;max-width:62ch;font-size:13.5px}
+
+  .stats{
+    display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+    border-radius:5px;overflow:hidden;
+    grid-template-columns:repeat(auto-fit,minmax(94px,1fr));margin:18px 0 20px;
+  }
+  .stats div{background:var(--surface);padding:10px 13px}
+  .stats dt{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint)}
+  .stats dd{margin:2px 0 0;font-size:1.35rem;font-family:var(--serif);font-weight:600;font-variant-numeric:tabular-nums}
+  .stats dd small{display:block;margin-top:1px;font-size:.7rem;font-family:var(--sans);font-weight:400;color:var(--ink-faint);line-height:1.3}
+
+  nav.days{
+    display:flex;flex-wrap:wrap;gap:4px;margin-bottom:20px;
+    position:sticky;top:0;z-index:3;background:var(--ground);
+    padding:8px 0;border-bottom:1px solid var(--rule);
+  }
+  nav.days button{
+    font:inherit;font-size:12.5px;font-family:var(--sans);
+    background:transparent;border:1px solid transparent;color:var(--ink-soft);
+    padding:5px 11px;border-radius:4px;cursor:pointer;transition:background .12s,color .12s;
+  }
+  nav.days button:hover{background:var(--surface-2);color:var(--ink)}
+  nav.days button[aria-current="true"]{
+    background:var(--accent-soft);color:var(--accent-ink);font-weight:500;
+    box-shadow:inset 2px 0 0 var(--accent);
+  }
+  nav.days button .n{font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:5px}
+
+  .day{display:flex;flex-direction:column;gap:14px}
+  .day[hidden]{display:none}
+
+  .card{
+    background:var(--surface);border:1px solid var(--rule);border-radius:6px;
+    padding:16px 18px;transition:border-color .12s,box-shadow .12s;
+    display:flex;flex-direction:column;gap:12px;
+  }
+  .card:hover{border-color:var(--rule-2);box-shadow:var(--shadow)}
+  .card > header{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .b{
+    font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    padding:2px 7px;border-radius:3px;
+  }
+  .b.gr{background:var(--accent-soft);color:var(--accent-ink)}
+  .b.it{background:var(--ok-soft);color:var(--ok)}
+  .b.en{background:var(--warn-soft);color:var(--warn)}
+  .b.tag{background:var(--surface-3);color:var(--ink-faint)}
+  .card > header .min{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);margin-left:auto}
+
+  .sect{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 3px}
+  .setting{color:var(--ink-soft);font-size:13px;margin:0}
+  .muted{color:var(--ink-soft)}
+  .small{font-size:12.5px;color:var(--ink-faint)}
+
+  .gi{font-family:var(--serif);font-size:1.1em}
+  .ita{font-family:var(--serif);font-size:1.12rem;line-height:1.8;margin:0}
+  .eng{font-size:14px;line-height:1.68;display:flex;flex-direction:column;gap:.75em}
+
+  .glosses{display:flex;flex-direction:column;gap:2px;font-size:12.5px;color:var(--ink-soft);margin:0}
+  .glosses b{font-family:var(--serif);font-size:1.15em;font-weight:500;color:var(--ink)}
+
+  .sound{
+    background:var(--surface-2);border-left:2px solid var(--flag);border-radius:0 4px 4px 0;
+    padding:9px 12px;font-size:13px;margin:0;
+  }
+  .sound b{color:var(--flag);font-weight:500}
+
+  .note{border-left:2px solid var(--rule-2);padding-left:12px;font-size:13.5px;margin:0;color:var(--ink-soft)}
+  .note b{color:var(--ink);font-weight:500}
+
+  ul,ol{margin:0;padding-left:1.15rem;display:flex;flex-direction:column;gap:.3em;font-size:13.5px}
+
+  details{border-top:1px solid var(--rule);padding-top:10px}
+  summary{
+    cursor:pointer;font-family:var(--mono);font-size:10px;letter-spacing:.11em;
+    text-transform:uppercase;color:var(--ink-faint);list-style:none;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"▸ ";color:var(--ink-faint)}
+  details[open] summary::before{content:"▾ "}
+  summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  details > .dz{padding-top:10px;display:flex;flex-direction:column;gap:8px}
+
+  .letters{
+    font-family:var(--serif);font-size:1.15rem;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(5rem,1fr));gap:5px 8px;
+  }
+  .letters span{display:flex;gap:5px;align-items:baseline}
+  .letters em{font-family:var(--mono);font-size:10px;font-style:normal;color:var(--ink-faint)}
+
+  .ans{display:flex;flex-direction:column;gap:5px;font-size:13.5px}
+  .ans > span{display:flex;gap:8px}
+  .ans i{font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);padding-top:3px}
+
+  .rec{
+    background:var(--surface-2);border:1px solid var(--rule);border-radius:5px;
+    padding:10px 14px;display:flex;flex-direction:column;gap:6px;font-size:13.5px;
+  }
+  .rec ol{display:flex;flex-direction:column;gap:6px}
+  .rec .gi{font-size:1.05em}
+
+  .il{display:flex;flex-wrap:wrap;column-gap:13px;row-gap:15px;align-items:start;
+    background:var(--surface-2);border:1px solid var(--rule);border-radius:5px;
+    padding:15px 14px;margin:0}
+  .w{display:grid;grid-template-rows:14px auto 13px;justify-items:center;row-gap:2px}
+  .w .pt{font-size:11px;line-height:14px;color:var(--accent-ink);
+    font-family:var(--sans);white-space:nowrap}
+  .w .gr{font-family:var(--serif);font-size:1.45rem;line-height:1.3;white-space:nowrap}
+  .w .tr{font-size:10px;line-height:13px;color:var(--ink-faint);
+    font-family:var(--mono);white-space:nowrap}
+  .w.known .pt,.w.known .tr{visibility:hidden}
+  .w.new .gr{color:var(--accent-ink)}
+  .br{flex-basis:100%;height:0;margin:0}
+
+  .foot{border-top:1px solid var(--rule);margin-top:26px;padding-top:14px;font-size:12.5px;color:var(--ink-faint);display:flex;flex-direction:column;gap:.5em}
+  .err{border:1px solid var(--flag);border-radius:6px;padding:14px 16px;color:var(--flag);font-family:var(--mono);font-size:12px;white-space:pre-wrap}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+  @media (max-width:420px){ h1{font-size:1.4rem} main{padding:16px 12px 60px} }
+</style>
+
+<main id="app"></main>
+
+<script id="week" type="application/json">
+{
+  "schema": "acharnae-week/1",
+  "week": 3,
+  "phase": 1,
+  "range": "2026-09-21/2026-09-27",
+  "composed": "2026-09-20, à mão, em conversa",
+  "header": {
+    "eyebrow": "Semana 3 · o campo, a oferenda e o vinho",
+    "title": "Morning Packet",
+    "sub": "Esta semana repete a matéria da semana passada, agora como um texto único que cresce: segunda tem três frases, e cada dia repete tudo o que veio antes e acrescenta duas. Domingo relê as treze sem acrescentar nada. Nenhuma palavra nova em grego — a novidade é só a repetição."
+  },
+  "stats": [
+    {
+      "dt": "Semana",
+      "dd": "3",
+      "small": "texto único, 3 → 13 frases"
+    },
+    {
+      "dt": "Fase",
+      "dd": "1",
+      "small": "a casa e os deuses"
+    },
+    {
+      "dt": "Léxico",
+      "dd": "65",
+      "small": "nenhuma palavra nova"
+    },
+    {
+      "dt": "Apoio",
+      "dd": "cheio",
+      "small": "toda palavra glosada"
+    }
+  ],
+  "greek": {
+    "register": "composto",
+    "sentences": [
+      [
+        [
+          "o",
+          "Ὁ",
+          "Ho"
+        ],
+        [
+          "Clístenes",
+          "Κλεισθένης",
+          "Kleisthénēs"
+        ],
+        [
+          "em",
+          "ἐν",
+          "en"
+        ],
+        [
+          "Acarnas",
+          "Ἀχαρναῖς",
+          "Akharnaîs"
+        ],
+        [
+          "mora",
+          "οἰκεῖ.",
+          "oikeî"
+        ]
+      ],
+      [
+        [
+          "o",
+          "ὁ",
+          "ho"
+        ],
+        [
+          "campo",
+          "ἀγρὸς",
+          "agròs"
+        ],
+        [
+          "pequeno",
+          "μικρός",
+          "mikrós"
+        ],
+        [
+          "é",
+          "ἐστιν.",
+          "estin"
+        ]
+      ],
+      [
+        [
+          "o",
+          "ὁ",
+          "ho"
+        ],
+        [
+          "Daos",
+          "Δᾶος",
+          "Dâos"
+        ],
+        [
+          "em",
+          "ἐν",
+          "en"
+        ],
+        [
+          "o",
+          "τῷ",
+          "tôi"
+        ],
+        [
+          "campo",
+          "ἀγρῷ",
+          "agrôi"
+        ],
+        [
+          "trabalha",
+          "πονεῖ.",
+          "poneî"
+        ]
+      ],
+      [
+        [
+          "o",
+          "ὁ",
+          "ho"
+        ],
+        [
+          "fruto",
+          "καρπὸς",
+          "karpòs"
+        ],
+        [
+          "bom",
+          "ἀγαθός",
+          "agathós"
+        ],
+        [
+          "é",
+          "ἐστιν.",
+          "estin"
+        ]
+      ],
+      [
+        [
+          "o",
+          "ὁ",
+          "ho"
+        ],
+        [
+          "Daos",
+          "Δᾶος",
+          "Dâos"
+        ],
+        [
+          "o",
+          "τὸν",
+          "tòn"
+        ],
+        [
+          "fruto",
+          "καρπὸν",
+          "karpòn"
+        ],
+        [
+          "leva",
+          "φέρει.",
+          "phérei"
+        ]
+      ],
+      [
+        [
+          "a",
+          "ἡ",
+          "hē"
+        ],
+        [
+          "Melita",
+          "Μέλιττα",
+          "Mélitta"
+        ],
+        [
+          "o",
+          "τὸν",
+          "tòn"
+        ],
+        [
+          "fruto",
+          "καρπὸν",
+          "karpòn"
+        ],
+        [
+          "vê",
+          "ὁρᾷ.",
+          "horâi"
+        ]
+      ],
+      [
+        [
+          "a",
+          "ἡ",
+          "hē"
+        ],
+        [
+          "Melita",
+          "Μέλιττα",
+          "Mélitta"
+        ],
+        [
+          "alegra-se",
+          "χαίρει.",
+          "khaírei"
+        ]
+      ],
+      [
+        [
+          "a",
+          "ἡ",
+          "hē"
+        ],
+        [
+          "Melita",
+          "Μέλιττα",
+          "Mélitta"
+        ],
+        [
+          "a",
+          "τὸ",
+          "tò"
+        ],
+        [
+          "oferenda",
+          "δῶρον",
+          "dôron"
+        ],
+        [
+          "tem",
+          "ἔχει.",
+          "ékhei"
+        ]
+      ],
+      [
+        [
+          "a",
+          "τὸ",
+          "tò"
+        ],
+        [
+          "oferenda",
+          "δῶρον",
+          "dôron"
+        ],
+        [
+          "bela",
+          "καλόν",
+          "kalón"
+        ],
+        [
+          "é",
+          "ἐστιν.",
+          "estin"
+        ]
+      ],
+      [
+        [
+          "a",
+          "ἡ",
+          "hē"
+        ],
+        [
+          "Melita",
+          "Μέλιττα",
+          "Mélitta"
+        ],
+        [
+          "a",
+          "τὸ",
+          "tò"
+        ],
+        [
+          "oferenda",
+          "δῶρον",
+          "dôron"
+        ],
+        [
+          "para",
+          "πρὸς",
+          "pròs"
+        ],
+        [
+          "o",
+          "τὸν",
+          "tòn"
+        ],
+        [
+          "altar",
+          "βωμὸν",
+          "bōmòn"
+        ],
+        [
+          "leva",
+          "φέρει.",
+          "phérei"
+        ]
+      ],
+      [
+        [
+          "o",
+          "ὁ",
+          "ho"
+        ],
+        [
+          "altar",
+          "βωμὸς",
+          "bōmòs"
+        ],
+        [
+          "em",
+          "ἐν",
+          "en"
+        ],
+        [
+          "o",
+          "τῷ",
+          "tôi"
+        ],
+        [
+          "campo",
+          "ἀγρῷ",
+          "agrôi"
+        ],
+        [
+          "está",
+          "ἐστιν.",
+          "estin"
+        ]
+      ],
+      [
+        [
+          "o",
+          "ὁ",
+          "ho"
+        ],
+        [
+          "Simos",
+          "Σῖμος",
+          "Sîmos"
+        ],
+        [
+          "o",
+          "τὸν",
+          "tòn"
+        ],
+        [
+          "vinho",
+          "οἶνον",
+          "oînon"
+        ],
+        [
+          "leva",
+          "φέρει.",
+          "phérei"
+        ]
+      ],
+      [
+        [
+          "o",
+          "ὁ",
+          "ho"
+        ],
+        [
+          "Clístenes",
+          "Κλεισθένης",
+          "Kleisthénēs"
+        ],
+        [
+          "o",
+          "τὸν",
+          "tòn"
+        ],
+        [
+          "vinho",
+          "οἶνον",
+          "oînon"
+        ],
+        [
+          "tem",
+          "ἔχει",
+          "ékhei"
+        ],
+        [
+          "e",
+          "καὶ",
+          "kaì"
+        ],
+        [
+          "alegra-se",
+          "χαίρει.",
+          "khaírei"
+        ]
+      ]
+    ]
+  },
+  "days": [
+    {
+      "d": 1,
+      "label": "Segunda",
+      "n": "21",
+      "cards": [
+        {
+          "lang": "gr",
+          "min": "~8 min",
+          "upTo": 3,
+          "setting": "Uma casa em Ἀχαρναί, no começo da primavera. O campo fica adiante da casa.",
+          "recall": {
+            "prompts": [
+              "\"leva\" (ele/ela) → ?",
+              "\"vê\" (ele/ela) → ?",
+              "\"belo, bom\" → ?",
+              "\"o fruto\" → ?"
+            ],
+            "key": [
+              "φέρει",
+              "ὁρᾷ",
+              "καλός",
+              "ὁ καρπός"
+            ],
+            "probed": [
+              "φέρει",
+              "ὁρᾷ",
+              "καλός, -ή, -όν",
+              "ὁ καρπός"
+            ]
+          },
+          "pt": "Clístenes mora em Acarnas. O campo é pequeno. Daos trabalha no campo.",
+          "sound": "<span class=\"gi\">αι</span> em <span class=\"gi\">Ἀχαρναῖς</span> soa como o \"ai\" de \"pai\" — um único som, não duas vogais separadas."
+        },
+        {
+          "lang": "it",
+          "min": "~13 min",
+          "setting": "Sotto i portici di Bologna si cammina anche quando piove.",
+          "recall": {
+            "prompts": [
+              "\"o balcão\" → ?",
+              "\"o bairro\" → ?",
+              "Complete: <em>Il caffè è corto, forte e ___ (rápido).</em>"
+            ],
+            "key": [
+              "il banco",
+              "il quartiere",
+              "veloce"
+            ]
+          },
+          "text": "Bologna è famosa per i portici: più di quaranta chilometri di archi coperti, nel centro e fino alle colline. Sotto i portici si cammina anche quando piove, senza ombrello. Il portico più lungo arriva al santuario di San Luca, in cima al colle della Guardia. Nel centro c'è il mercato di Mezzo, con banchi di mortadella, parmigiano e tortellini freschi. La mortadella di Bologna è diversa da quella che si trova all'estero: più delicata, meno grassa. I bolognesi dicono che la vera mortadella si riconosce dal profumo, prima ancora di vederla.",
+          "glosses": [
+            [
+              "il portico",
+              "o pórtico, a arcada"
+            ],
+            [
+              "la collina",
+              "a colina"
+            ],
+            [
+              "il santuario",
+              "o santuário"
+            ],
+            [
+              "all'estero",
+              "no exterior"
+            ]
+          ],
+          "questions": [
+            "Dove arriva il portico più lungo?",
+            "Che cosa c'è nel mercato di Mezzo?",
+            "Come si riconosce la vera mortadella?"
+          ],
+          "note": "<em>nel</em>, <em>al</em>, <em>dal</em> — a preposição funde-se sempre com o artigo, mais do que o português costuma fazer. <em>A il</em> não existe.",
+          "produce": "Descreva mentalmente um bairro ou rua que você conhece bem, em três frases, usando pelo menos duas preposições articuladas diferentes.",
+          "answers": [
+            [
+              "1",
+              "Arriva al santuario di San Luca."
+            ],
+            [
+              "2",
+              "Banchi di mortadella, parmigiano e tortellini."
+            ],
+            [
+              "3",
+              "Dal profumo."
+            ],
+            [
+              "·",
+              "<em>Modelo:</em> Nel mio quartiere c'è una strada piena di negozi. Il panificio all'angolo apre alle sei del mattino. La gente del quartiere si conosce tutta."
+            ]
+          ],
+          "compare": "Compare: cada substantivo tem artigo? As preposições saíram fundidas (nel, del, dal)?"
+        }
+      ]
+    },
+    {
+      "d": 2,
+      "label": "Terça",
+      "n": "22",
+      "cards": [
+        {
+          "lang": "gr",
+          "min": "~8 min",
+          "upTo": 5,
+          "recall": {
+            "prompts": [
+              "\"vê\" (ele/ela) → ?",
+              "\"alegra-se\" → ?",
+              "\"a oferenda, o presente\" → ?",
+              "\"tem\" → ?"
+            ],
+            "key": [
+              "ὁρᾷ",
+              "χαίρει",
+              "τὸ δῶρον",
+              "ἔχει"
+            ],
+            "probed": [
+              "ὁρᾷ",
+              "χαίρει",
+              "τὸ δῶρον",
+              "ἔχει"
+            ]
+          },
+          "pt": "Clístenes mora em Acarnas. O campo é pequeno. Daos trabalha no campo. O fruto é bom. Daos leva o fruto.",
+          "sound": "O <span class=\"gi\">ρ</span> de <span class=\"gi\">καρπός</span> é um toque só da língua, como o \"r\" de \"caro\" — nunca o \"rr\" de \"carro\"."
+        },
+        {
+          "lang": "en",
+          "tag": "client-facing",
+          "min": "~13 min",
+          "title": "Scanability",
+          "body": [
+            "A client will often ask for every message on the page to be the most important one. That instinct comes from a real fear — that whatever gets buried won't be read — but it produces the opposite result. Eye-tracking studies going back to the early 2000s consistently show that users scan a page in an F-shaped pattern: a strong horizontal sweep near the top, a shorter one further down, then a vertical scan along the left edge. Content outside that path gets far less attention, no matter how important it is to the business.",
+            "The practical upshot is that hierarchy isn't about volume, it's about sequencing. If everything competes for the first horizontal sweep, nothing wins it. The stronger pitch to a client is to ask what a visitor should take away if they read only the first two lines, then design everything else to support that one message rather than repeat it. A proposal that leads with \"we'll prioritize your top message and let the rest earn its place by scrolling\" reads as more confident than one that promises to fit everything in.",
+            "Scanability, in other words, is what makes a page's real priorities legible at all."
+          ],
+          "inContext": [
+            [
+              "eye-tracking studies",
+              "research measuring where people actually look."
+            ],
+            [
+              "F-shaped pattern",
+              "the scanning path itself; worth naming directly to clients."
+            ],
+            [
+              "competes for",
+              "fights for the same limited attention."
+            ],
+            [
+              "the practical upshot",
+              "the concrete consequence; more direct than \"implication\"."
+            ],
+            [
+              "earn its place",
+              "has to justify being there, not assumed."
+            ],
+            [
+              "scanability",
+              "how easily a page's structure can be scanned at a glance."
+            ]
+          ],
+          "check": [
+            "According to the text, what do eye-tracking studies show about how users scan a page?",
+            "Why does asking for everything to be \"most important\" work against a client's goal?"
+          ],
+          "sayit": "A client insists the logo, the tagline, the CTA, and a testimonial all need equal top billing. Compose your reply in your head — two or three sentences. Use <b>scanability</b>, <b>competes for</b>, and <b>earn its place</b>.",
+          "answers": [
+            [
+              "1",
+              "An F-shaped pattern: a horizontal sweep near the top, a shorter one lower down, then a vertical scan down the left edge."
+            ],
+            [
+              "2",
+              "Because everything ends up competing for the same first glance, so nothing wins it clearly."
+            ],
+            [
+              "·",
+              "<em>Model:</em> Right now those four elements are competing for the same first glance, which means none of them wins it clearly. I'd rather pick the one thing a visitor needs to take away in the first two seconds, and let the testimonial earn its place a little further down. That protects scanability instead of working against it."
+            ]
+          ],
+          "compare": "Three decisions: did you hedge (\"I'd rather\") instead of flatly refusing? Did you name the tradeoff instead of just saying no? Did you offer a next step?",
+          "expression": "<b>One expression.</b> <em>make the case for X</em> — proposing a direction to a skeptical stakeholder. Wrong in a casual Slack message to a teammate — there, \"I think we should try X\" fits better."
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "label": "Quarta",
+      "n": "23",
+      "cards": [
+        {
+          "lang": "gr",
+          "min": "~9 min",
+          "upTo": 7,
+          "recall": {
+            "prompts": [
+              "\"diz, conta\" → ?",
+              "\"tem\" → ?",
+              "\"a oferenda, o presente\" → ?",
+              "\"o vinho\" → ?"
+            ],
+            "key": [
+              "λέγει",
+              "ἔχει",
+              "τὸ δῶρον",
+              "ὁ οἶνος"
+            ],
+            "probed": [
+              "λέγει",
+              "ἔχει",
+              "τὸ δῶρον",
+              "ὁ οἶνος"
+            ]
+          },
+          "pt": "Clístenes mora em Acarnas. O campo é pequeno. Daos trabalha no campo. O fruto é bom. Daos leva o fruto. Melita vê o fruto. Melita se alegra.",
+          "sound": "O iota subscrito de <span class=\"gi\">ὁρᾷ</span> não se pronuncia. Ele marca que o <span class=\"gi\">α</span> é longo: <em>horâi</em>, com o a sustentado."
+        },
+        {
+          "lang": "it",
+          "min": "~13 min",
+          "setting": "Na Fontana di Trevi, a moeda é jogada com a mão certa.",
+          "recall": {
+            "prompts": [
+              "\"a colina\" → ?",
+              "Complete: <em>Il mercato è ___ centro</em> (no)."
+            ],
+            "key": [
+              "la collina",
+              "nel"
+            ]
+          },
+          "text": "Ogni sera, davanti alla Fontana di Trevi, centinaia di turisti hanno lo stesso gesto: lanciano una moneta con la mano destra sopra la spalla sinistra. La leggenda dice che chi lancia una moneta ha la certezza di tornare a Roma. Il Comune raccoglie l'acqua e le monete ogni notte: quasi un milione di euro all'anno, destinato alla Caritas. In estate, con il caldo, chi aspetta il proprio turno ha spesso sete e fame, e i bar intorno alla piazza non hanno mai un tavolo libero.",
+          "glosses": [
+            [
+              "lanciare",
+              "lançar"
+            ],
+            [
+              "la spalla",
+              "o ombro"
+            ],
+            [
+              "raccogliere",
+              "recolher"
+            ],
+            [
+              "il turno",
+              "a vez"
+            ]
+          ],
+          "questions": [
+            "Con quale mano si lancia la moneta?",
+            "Dove va il denaro raccolto?",
+            "Perché i bar intorno alla piazza sono sempre pieni?"
+          ],
+          "note": "Em português dizemos \"estar com fome/sede/calor\"; em italiano é sempre <em>avere</em>: <em>avere fame, avere sete, avere caldo</em>. Nunca \"essere con fame\".",
+          "produce": "Descreva mentalmente como seria esperar na fila sob o sol, em duas frases, usando <b>avere caldo</b> e <b>avere sete</b>.",
+          "answers": [
+            [
+              "1",
+              "Con la mano destra."
+            ],
+            [
+              "2",
+              "Alla Caritas."
+            ],
+            [
+              "3",
+              "Perché chi aspetta ha sete e fame."
+            ],
+            [
+              "·",
+              "<em>Modelo:</em> Dopo mezz'ora in fila ho caldo e ho sete. Cerco subito un bar con un tavolo libero."
+            ]
+          ],
+          "compare": "Compare: usou <em>avere</em>, não <em>essere con</em>?"
+        }
+      ]
+    },
+    {
+      "d": 4,
+      "label": "Quinta",
+      "n": "24",
+      "cards": [
+        {
+          "lang": "gr",
+          "min": "~9 min",
+          "upTo": 9,
+          "recall": {
+            "prompts": [
+              "\"diz, conta\" → ?",
+              "\"o vinho\" → ?",
+              "\"e\" → ?"
+            ],
+            "key": [
+              "λέγει",
+              "ὁ οἶνος",
+              "καί"
+            ],
+            "probed": [
+              "λέγει",
+              "ὁ οἶνος",
+              "καί"
+            ]
+          },
+          "pt": "Clístenes mora em Acarnas. O campo é pequeno. Daos trabalha no campo. O fruto é bom. Daos leva o fruto. Melita vê o fruto. Melita se alegra. Melita tem a oferenda. A oferenda é bela.",
+          "sound": "<span class=\"gi\">ω</span> é um ó longo e aberto. Em <span class=\"gi\">δῶρον</span> a primeira sílaba dura mais que a segunda."
+        },
+        {
+          "lang": "en",
+          "tag": "async team",
+          "min": "~13 min",
+          "title": "Handoff note",
+          "body": [
+            "Quick note before you pick up the Button component: I ended up flattening the variant prop instead of keeping separate <code>size</code> and <code>style</code> booleans. It was getting hard to reason about which combinations were actually valid — <code>large</code> and <code>compact</code> together made no sense, but nothing stopped you from passing both.",
+            "Now it's a single <code>variant</code> prop: <code>primary</code>, <code>secondary</code>, <code>ghost</code>, <code>danger</code>, each one baking in its own size and color defaults. You can still override size with a separate prop if a screen genuinely needs it, but that should be the exception, not the default way of using it.",
+            "One thing I didn't get to: the <code>danger</code> variant doesn't have a confirmed state yet, so anything destructive still needs a confirmation modal wrapped around it for now. Flagging that so it doesn't slip through review."
+          ],
+          "inContext": [
+            [
+              "flattening the prop",
+              "collapsing several options into one simpler one."
+            ],
+            [
+              "reason about",
+              "think through clearly, predict behavior."
+            ],
+            [
+              "baking in",
+              "including as a built-in default."
+            ],
+            [
+              "the exception, not the default",
+              "should be rare, not the normal path."
+            ],
+            [
+              "slip through review",
+              "go unnoticed during review."
+            ],
+            [
+              "flagging that",
+              "calling it out explicitly, without demanding action."
+            ]
+          ],
+          "check": [
+            "Why did the author replace the size/style booleans with a single variant prop?",
+            "What still needs to happen before the danger variant is safe to use alone?"
+          ],
+          "sayit": "You're handing off a component where you removed a prop teammates were using. Compose a Slack message in your head — two or three sentences — using <b>flagging that</b> and <b>the exception, not the default</b>.",
+          "answers": [
+            [
+              "1",
+              "Because invalid combinations (like large + compact) were possible before; one variant prop makes only valid states reachable."
+            ],
+            [
+              "2",
+              "It needs a confirmed/confirmation state before it's safe to use without a wrapping modal."
+            ],
+            [
+              "·",
+              "<em>Model:</em> Heads up, I removed the standalone <code>outline</code> prop — it's folded into variant now, so <code>ghost</code> covers that case. Flagging that in case anyone's still passing it directly, since it'll silently no-op rather than error. Happy to help track down any remaining usages."
+            ]
+          ],
+          "compare": "Three decisions: did you lead with the change, not an apology? Did you say what happens if someone misses the note (silent failure)? Did you offer to help?",
+          "expression": "<b>One expression.</b> <em>flagging that</em> — calling out a risk in a handoff note, no urgency implied. Wrong in a formal client email — there, \"I wanted to note that…\" fits better."
+        }
+      ]
+    },
+    {
+      "d": 5,
+      "label": "Sexta",
+      "n": "25",
+      "cards": [
+        {
+          "lang": "gr",
+          "min": "~10 min",
+          "upTo": 11,
+          "recall": {
+            "prompts": [
+              "\"diz, conta\" → ?",
+              "\"o vinho\" → ?"
+            ],
+            "key": [
+              "λέγει",
+              "ὁ οἶνος"
+            ],
+            "probed": [
+              "λέγει",
+              "ὁ οἶνος"
+            ]
+          },
+          "pt": "Clístenes mora em Acarnas. O campo é pequeno. Daos trabalha no campo. O fruto é bom. Daos leva o fruto. Melita vê o fruto. Melita se alegra. Melita tem a oferenda. A oferenda é bela. Melita leva a oferenda até o altar. O altar fica no campo.",
+          "sound": "Compare <span class=\"gi\">πρός</span> e <span class=\"gi\">βωμός</span>: o <span class=\"gi\">ο</span> é curto, o <span class=\"gi\">ω</span> é o mesmo som sustentado."
+        },
+        {
+          "lang": "it",
+          "min": "~13 min",
+          "setting": "No Ponte Vecchio, só há ourives desde o século XVI.",
+          "recall": {
+            "prompts": [
+              "\"o ombro\" → ?",
+              "Complete: <em>Ho ___ e cerco un bar</em> (sede)."
+            ],
+            "key": [
+              "la spalla",
+              "sete"
+            ]
+          },
+          "text": "Il Ponte Vecchio, a Firenze, è l'unico ponte della città che i tedeschi non hanno distrutto nel 1944: hanno fatto saltare solo gli edifici alle due estremità, per bloccare il passaggio. Sul ponte ci sono soltanto botteghe di orafi, dal Cinquecento: prima c'erano macellai, ma il Granduca non sopportava l'odore e li ha sostituiti con i gioiellieri. Le botteghe si affacciano sull'Arno da entrambi i lati, sostenute da mensole di legno. Sopra il ponte passa il Corridoio Vasariano, un passaggio segreto che collegava Palazzo Vecchio agli Uffizi.",
+          "glosses": [
+            [
+              "la bottega",
+              "a loja, oficina"
+            ],
+            [
+              "l'orafo",
+              "o ourives"
+            ],
+            [
+              "il macellaio",
+              "o açougueiro"
+            ],
+            [
+              "sostenere",
+              "sustentar"
+            ]
+          ],
+          "questions": [
+            "Perché il ponte non è stato distrutto nel 1944?",
+            "Che negozi c'erano prima degli orafi?",
+            "Che cos'è il Corridoio Vasariano?"
+          ],
+          "note": "<em>sul</em>, <em>sull'</em> — é <em>su</em> (sobre) + artigo, a mesma fusão de <em>nel</em>/<em>dal</em>/<em>del</em>, agora com \"sobre\".",
+          "produce": "Descreva mentalmente uma ponte ou rua comercial que você conhece, em três frases, usando pelo menos um verbo no presente e uma preposição articulada com <em>su-</em>.",
+          "answers": [
+            [
+              "1",
+              "Perché hanno fatto saltare solo gli edifici alle estremità."
+            ],
+            [
+              "2",
+              "C'erano macellai."
+            ],
+            [
+              "3",
+              "Un passaggio segreto sopra il ponte."
+            ],
+            [
+              "·",
+              "<em>Modelo:</em> Sulla mia strada c'è un mercato ogni sabato. I venditori mettono la frutta sui banchi presto la mattina. La gente cammina lentamente e guarda tutto."
+            ]
+          ],
+          "compare": "Compare: usou <em>sulla</em> ou <em>sui</em> corretamente?"
+        }
+      ]
+    },
+    {
+      "d": 6,
+      "label": "Sábado",
+      "n": "26",
+      "cards": [
+        {
+          "lang": "gr",
+          "min": "~10 min",
+          "upTo": 13,
+          "pt": "Clístenes mora em Acarnas. O campo é pequeno. Daos trabalha no campo. O fruto é bom. Daos leva o fruto. Melita vê o fruto. Melita se alegra. Melita tem a oferenda. A oferenda é bela. Melita leva a oferenda até o altar. O altar fica no campo. Simos traz o vinho. Clístenes tem o vinho e se alegra.",
+          "sound": "<span class=\"gi\">οι</span> em <span class=\"gi\">οἶνος</span> soa como \"oi\" — e o sinal sobre o ι indica o h aspirado ausente, não um som novo."
+        },
+        {
+          "lang": "en",
+          "tag": "public writing",
+          "min": "~13 min",
+          "title": "Case study",
+          "body": [
+            "Support was closing about a dozen tickets a week from users who couldn't complete checkout with a screen reader. The form worked visually — labels sat right next to their fields — but nothing in the markup actually associated them, so the screen reader announced \"edit text\" with no context, four times in a row.",
+            "The fix wasn't a redesign. It was going through every form on the site and wiring up the <code>label</code> and <code>aria-describedby</code> attributes that should have been there from the start, plus fixing a focus order that jumped from the email field straight to the submit button, skipping password entirely.",
+            "None of this shows up in a screenshot, which is part of why it had gone unnoticed for two years. We measured it instead by task completion time with a screen reader running: eleven minutes before the fix, ninety seconds after.",
+            "The lesson that stuck with me: an accessibility bug can sit at the top of a support queue for years without ever showing up in a design review, because design reviews are built to catch what you can see."
+          ],
+          "inContext": [
+            [
+              "closing tickets",
+              "resolving support requests, used as a workload metric."
+            ],
+            [
+              "wiring up",
+              "connecting technically, not just visually."
+            ],
+            [
+              "focus order",
+              "the sequence assistive tech moves through a page."
+            ],
+            [
+              "task completion time",
+              "a concrete usability metric."
+            ],
+            [
+              "sit at the top of a queue",
+              "remain unresolved and prioritized without ever getting fixed."
+            ],
+            [
+              "built to catch what you can see",
+              "a limitation of visual-only review."
+            ]
+          ],
+          "check": [
+            "What was actually broken in the checkout form, given that it looked correct visually?",
+            "How did the team measure the improvement, and what were the before/after numbers?"
+          ],
+          "sayit": "Write the opening two sentences of a case study about a bug that was invisible in every design review. Compose it in your head, leading with a concrete number.",
+          "answers": [
+            [
+              "1",
+              "Labels weren't programmatically associated with their fields, so a screen reader announced \"edit text\" with no context."
+            ],
+            [
+              "2",
+              "By task completion time with a screen reader: eleven minutes before, ninety seconds after."
+            ],
+            [
+              "·",
+              "<em>Model:</em> Support closed roughly fifty tickets over two years for a checkout form that, on inspection, looked completely correct. The problem was never visible in a screenshot — it only showed up when you tried to complete the form without sight."
+            ]
+          ],
+          "compare": "Three decisions: did you open with a number rather than the abstract topic (accessibility)? Did you delay naming the actual fix? Did you avoid overstating the drama?",
+          "expression": "<b>One expression.</b> <em>built to catch what you can see</em> — naming a systemic blind spot without blame. Wrong when telling a client their own review process failed — reads as an accusation there; \"this kind of issue is easy for any visual review to miss\" lands better."
+        }
+      ]
+    },
+    {
+      "d": 0,
+      "label": "Domingo",
+      "n": "27",
+      "cards": [
+        {
+          "lang": "gr",
+          "min": "~10 min",
+          "upTo": 13,
+          "pt": "Clístenes mora em Acarnas. O campo é pequeno. Daos trabalha no campo. O fruto é bom. Daos leva o fruto. Melita vê o fruto. Melita se alegra. Melita tem a oferenda. A oferenda é bela. Melita leva a oferenda até o altar. O altar fica no campo. Simos traz o vinho. Clístenes tem o vinho e se alegra.",
+          "sound": "<span class=\"gi\">ει</span> em <span class=\"gi\">φέρει</span> e <span class=\"gi\">οἰκεῖ</span> é um ê fechado e longo, nunca \"ei\" como em \"lei\"."
+        },
+        {
+          "lang": "it",
+          "min": "~4 min",
+          "text": "Sotto i portici di Bologna non piove mai addosso. Alla Fontana di Trevi tutti hanno sete nelle giornate calde. Sul Ponte Vecchio ci sono solo gioiellieri."
+        },
+        {
+          "lang": "en",
+          "min": "~3 min",
+          "body": [
+            "In one sentence: which of the three registers this week — client-facing, async team, or public writing — would you reach for first if you had to explain today's biggest work problem to someone?"
+          ]
+        },
+        {
+          "lang": "tag",
+          "label": "Check-in",
+          "body": [
+            "Três notas de 1 a 5: <a href=\"https://claude.ai/code/artifact/91a7c102-1a4a-493d-b6fc-7b1a4111a101\">abrir o check-in</a>. O planejador lê hoje à noite."
+          ]
+        }
+      ]
+    }
+  ],
+  "foot": [
+    "A semana 2 não foi estudada, então a matéria dela volta aqui inteira: o campo, o fruto, a oferenda no altar e o vinho. A diferença é a forma — um texto só, que você relê todo dia e vê crescer.",
+    "O Ἀνάμνησις aparece de segunda a sexta. Sábado e domingo ficam sem ele porque, com o texto já completo, não sobram itens com cinco encontros que não estejam à vista no próprio texto."
+  ]
+}
+</script>
+
+<script>
+(function () {
+  var CHECKIN = "https://claude.ai/code/artifact/91a7c102-1a4a-493d-b6fc-7b1a4111a101";
+  var ALPHABET = [["Α α","a"],["Β β","b"],["Γ γ","g"],["Δ δ","d"],["Ε ε","e"],["Ζ ζ","zd"],
+    ["Η η","ē"],["Θ θ","th"],["Ι ι","i"],["Κ κ","k"],["Λ λ","l"],["Μ μ","m"],["Ν ν","n"],
+    ["Ξ ξ","ks"],["Ο ο","o"],["Π π","p"],["Ρ ρ","r"],["Σ σ ς","s"],["Τ τ","t"],["Υ υ","u"],
+    ["Φ φ","ph"],["Χ χ","kh"],["Ψ ψ","ps"],["Ω ω","ō"]];
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+  // rich(): campos que o esquema autoriza a conter marcação inline.
+  function rich(s) { return s == null ? "" : String(s); }
+  function has(v) { return v != null && v !== "" && !(Array.isArray(v) && !v.length); }
+
+  function details(summary, inner, cls) {
+    return '<details><summary>' + esc(summary) + '</summary><div class="dz' +
+      (cls ? " " + cls : "") + '">' + inner + '</div></details>';
+  }
+  function answers(pairs) {
+    return pairs.map(function (p) {
+      return '<span><i>' + esc(p[0]) + '</i><span>' + rich(p[1]) + '</span></span>';
+    }).join("");
+  }
+  function list(tag, items, fn) {
+    return '<' + tag + '>' + items.map(function (i) {
+      return '<li>' + (fn ? fn(i) : rich(i)) + '</li>';
+    }).join("") + '</' + tag + '>';
+  }
+
+  function interlinear(sentences, upTo, from) {
+    var out = [];
+    for (var s = 0; s < upTo && s < sentences.length; s++) {
+      if (s) out.push('<span class="br"></span>');
+      var isNew = s >= from;
+      sentences[s].forEach(function (w) {
+        var cls = "w";
+        if (w[0] == null && w[2] == null) cls += " known";
+        if (isNew) cls += " new";
+        out.push('<span class="' + cls + '">' +
+          '<span class="pt">' + esc(w[0]) + '</span>' +
+          '<span class="gr">' + esc(w[1]) + '</span>' +
+          '<span class="tr">' + esc(w[2]) + '</span></span>');
+      });
+    }
+    return '<p class="il">' + out.join("") + '</p>';
+  }
+
+  function recall(r, title) {
+    if (!r || !has(r.prompts)) return "";
+    var keys = (r.key || []).map(function (k, i) { return [String(i + 1), '<span class="gi">' + esc(k) + '</span>']; });
+    return '<div class="rec"><p class="sect">' + esc(title) + '</p>' +
+      list("ol", r.prompts) +
+      (keys.length ? details("Conferir", answers(keys), "ans") : "") + '</div>';
+  }
+
+  function greekCard(c, week) {
+    var g = week.greek, h = [];
+    h.push('<header><span class="b gr">Grego</span>' +
+      (g.register ? '<span class="b tag">' + esc(g.register) + '</span>' : "") +
+      (c.min ? '<span class="min">' + esc(c.min) + '</span>' : "") + '</header>');
+    if (has(c.setting)) h.push('<p class="setting">' + rich(c.setting) + '</p>');
+    h.push(recall(c.recall, "Ἀνάμνησις"));
+    h.push(interlinear(g.sentences, c.upTo, c.__from));
+    if (has(c.pt)) h.push(details("Em português corrido", '<p class="muted">' + rich(c.pt) + '</p>'));
+    if (has(c.sound)) h.push('<p class="sound"><b>Som do dia.</b> ' + rich(c.sound) + '</p>');
+    h.push(details("Alfabeto", '<div class="letters">' + ALPHABET.map(function (l) {
+      return '<span>' + l[0] + ' <em>' + l[1] + '</em></span>';
+    }).join("") + '</div>'));
+    h.push('<p class="small">Algo não ficou claro? Anote no <a href="' + CHECKIN + '">check-in</a>.</p>');
+    return h.join("");
+  }
+
+  function italianCard(c) {
+    var h = ['<header><span class="b it">Italiano</span>' +
+      (c.tag ? '<span class="b tag">' + esc(c.tag) + '</span>' : "") +
+      (c.min ? '<span class="min">' + esc(c.min) + '</span>' : "") + '</header>'];
+    if (has(c.setting)) h.push('<p class="setting">' + rich(c.setting) + '</p>');
+    h.push(recall(c.recall, "Ripasso"));
+    if (has(c.text)) h.push('<p class="ita">' + rich(c.text) + '</p>');
+    if (has(c.glosses)) h.push('<p class="glosses">' + c.glosses.map(function (g) {
+      return '<span><b>' + esc(g[0]) + '</b> — ' + rich(g[1]) + '</span>';
+    }).join("") + '</p>');
+    if (has(c.questions)) h.push('<div><p class="sect">Domande</p>' + list("ol", c.questions) + '</div>');
+    if (has(c.note)) h.push('<p class="note"><b>Nota.</b> ' + rich(c.note) + '</p>');
+    if (has(c.produce)) h.push('<div><p class="sect">Prova a dire</p><p>' + rich(c.produce) + '</p></div>');
+    if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) +
+      (has(c.compare) ? '<span class="small">' + rich(c.compare) + '</span>' : "") + '</div>'));
+    return h.join("");
+  }
+
+  function englishCard(c) {
+    var h = ['<header><span class="b en">English</span>' +
+      (c.tag ? '<span class="b tag">' + esc(c.tag) + '</span>' : "") +
+      (c.min ? '<span class="min">' + esc(c.min) + '</span>' : "") + '</header>'];
+    if (has(c.title)) h.push('<p class="setting">' + rich(c.title) + '</p>');
+    if (has(c.body)) h.push('<div class="eng">' + c.body.map(function (p) {
+      return '<p>' + rich(p) + '</p>';
+    }).join("") + '</div>');
+    if (has(c.inContext)) h.push('<div><p class="sect">In context</p>' +
+      list("ul", c.inContext, function (i) { return '<b>' + esc(i[0]) + '</b> — ' + rich(i[1]); }) + '</div>');
+    if (has(c.check)) h.push('<div><p class="sect">Check</p>' + list("ol", c.check) + '</div>');
+    if (has(c.sayit)) h.push('<div><p class="sect">Say it</p><p>' + rich(c.sayit) + '</p></div>');
+    if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) +
+      (has(c.compare) ? '<span class="small">' + rich(c.compare) + '</span>' : "") + '</div>'));
+    if (has(c.expression)) h.push('<p class="small">' + rich(c.expression) + '</p>');
+    return h.join("");
+  }
+
+  function plainCard(c) {
+    return '<header><span class="b tag">' + esc(c.label || "Nota") + '</span>' +
+      (c.min ? '<span class="min">' + esc(c.min) + '</span>' : "") + '</header>' +
+      (c.body || []).map(function (p) { return '<p>' + rich(p) + '</p>'; }).join("");
+  }
+
+  function render(week) {
+    var out = [];
+    var hd = week.header || {};
+    out.push('<div class="ph">' +
+      (hd.eyebrow ? '<p class="eyebrow">' + esc(hd.eyebrow) + '</p>' : "") +
+      '<h1>' + esc(hd.title || "Morning Packet") + '</h1>' +
+      (hd.sub ? '<p class="sub">' + rich(hd.sub) + '</p>' : "") + '</div>');
+
+    if (has(week.stats)) out.push('<dl class="stats">' + week.stats.map(function (s) {
+      return '<div><dt>' + esc(s.dt) + '</dt><dd>' + esc(s.dd) +
+        (s.small ? '<small>' + esc(s.small) + '</small>' : "") + '</dd></div>';
+    }).join("") + '</dl>');
+
+    out.push('<nav class="days" aria-label="Dias da semana">' + week.days.map(function (d) {
+      return '<button type="button" data-d="' + esc(d.d) + '">' + esc(d.label) +
+        '<span class="n">' + esc(d.n) + '</span></button>';
+    }).join("") + '</nav>');
+
+    var prev = 0;
+    week.days.forEach(function (d) {
+      var cards = (d.cards || []).map(function (c) {
+        if (c.lang === "gr") { c.__from = prev; return '<article class="card">' + greekCard(c, week) + '</article>'; }
+        if (c.lang === "it") return '<article class="card">' + italianCard(c) + '</article>';
+        if (c.lang === "en") return '<article class="card">' + englishCard(c) + '</article>';
+        return '<article class="card">' + plainCard(c) + '</article>';
+      }).join("");
+      var gr = (d.cards || []).filter(function (c) { return c.lang === "gr"; })[0];
+      if (gr && typeof gr.upTo === "number") prev = gr.upTo;
+      out.push('<section class="day" data-d="' + esc(d.d) + '" hidden>' + cards + '</section>');
+    });
+
+    if (has(week.foot)) out.push('<div class="foot">' + week.foot.map(function (p) {
+      return '<p>' + rich(p) + '</p>';
+    }).join("") + '</div>');
+
+    document.getElementById("app").innerHTML = out.join("");
+  }
+
+  function wire() {
+    var btns = [].slice.call(document.querySelectorAll("nav.days button"));
+    var days = [].slice.call(document.querySelectorAll("section.day"));
+    function show(d) {
+      days.forEach(function (s) { s.hidden = s.dataset.d !== d; });
+      btns.forEach(function (b) { b.setAttribute("aria-current", b.dataset.d === d ? "true" : "false"); });
+    }
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        show(b.dataset.d);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+    var today = String(new Date().getDay());
+    show(days.some(function (s) { return s.dataset.d === today; }) ? today : days[0].dataset.d);
+  }
+
+  try {
+    var week = JSON.parse(document.getElementById("week").textContent);
+    render(week);
+    wire();
+  } catch (e) {
+    document.getElementById("app").innerHTML =
+      '<div class="err">O pacote da semana não pôde ser lido.\n' + esc(e.message) +
+      '\n\nA fonte é claude/state/WEEK_PACKET.md no projeto. Esta página é só a renderização dela.</div>';
+  }
+})();
+</script>
