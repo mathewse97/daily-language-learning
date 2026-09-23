@@ -12,15 +12,15 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-09-23
+UPDATED: 2026-09-22
 DAY: 16
 STREAK: 0
 LAST_REPORT: 2026-09-13 GR4 IT5 EN5
-probed: λέγει, ἔχει, τὸ δῶρον, ὁ οἶνος
+probed: ὁρᾷ, χαίρει, τὸ δῶρον, ἔχει
 
 [GREEK]
 phase: 1
-lesson: 15 — semana 3, dia 3/7 (texto cresce 3 → 13 frases)
+lesson: 15 — semana 3, dia 2/7 (texto cresce 3 → 13 frases)
 apoio: interlinear cheio — toda palavra com glosa e transliteração até exp 5
 setting: Ἀχαρναί, primavera de 432 a.C.
 words: 65 — nenhuma palavra nova na semana 3
