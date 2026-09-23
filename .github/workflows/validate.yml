@@ -1,0 +1,30 @@
+# Roda em todo commit e em toda proposta de mudança. É o que transforma as
+# invariantes de disciplina em verificação.
+name: Validar
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 validate.py
+      - name: A página no repositório corresponde aos dados?
+        run: |
+          python3 build.py
+          if ! git diff --quiet docs/; then
+            echo "::error::docs/index.html está fora de sincronia com state/week.json."
+            echo "Rode 'python3 build.py' e commite o resultado."
+            git diff --stat docs/
+            exit 1
+          fi
