@@ -10,6 +10,8 @@ Tudo o que exige julgamento — compor o grego, promover vocabulário, decidir
 fase — é do planejador semanal, que é conversa com um agente e não roda aqui.
 Ver TASK_PROMPTS.md.
 
+A data é sempre a de Brasília, não a do servidor.
+
 Uso:  python3 daily.py [AAAA-MM-DD]
 """
 import datetime as dt
@@ -18,6 +20,12 @@ import pathlib
 import re
 import subprocess
 import sys
+
+try:
+    from zoneinfo import ZoneInfo
+    FUSO = ZoneInfo("America/Sao_Paulo")
+except Exception:                       # runner sem base de fusos instalada
+    FUSO = dt.timezone(dt.timedelta(hours=-3))
 
 ROOT = pathlib.Path(__file__).resolve().parent
 LOGBOOK = ROOT / "state" / "logbook.md"
@@ -28,8 +36,12 @@ ORDEM = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 0: 7}
 
 
 def main() -> int:
+    # O fuso é explícito de propósito. O runner do GitHub roda em UTC, e uma
+    # execução manual depois das 21h em Brasília já é "amanhã" lá — foi assim
+    # que a entrega de 22/09 gravou a data 23/09 e sobrescreveu o `probed` do
+    # dia. A lição é lida no horário de Brasília; a data é a de Brasília.
     hoje = (dt.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1
-            else dt.date.today())
+            else dt.datetime.now(FUSO).date())
     dow = (hoje.weekday() + 1) % 7  # segunda=1 … domingo=0
 
     semana = json.loads(WEEK.read_text(encoding="utf-8"))
@@ -46,7 +58,13 @@ def main() -> int:
 
     texto = LOGBOOK.read_text(encoding="utf-8")
     anterior = re.search(r"^UPDATED: (\S+)", texto, re.M)
-    ja_rodou_hoje = bool(anterior) and anterior.group(1) == hoje.isoformat()
+    try:
+        data_anterior = dt.date.fromisoformat(anterior.group(1)) if anterior else None
+    except ValueError:
+        data_anterior = None
+    # DAY só anda para a frente. Rodar de novo no mesmo dia, ou corrigir uma
+    # data que ficou adiantada, não conta como um dia de curso a mais.
+    avancar_dia = data_anterior is None or data_anterior < hoje
 
     def campo(nome: str, valor: str, s: str) -> str:
         novo, n = re.subn(rf"^{nome}: .*$", f"{nome}: {valor}", s, count=1,
@@ -58,7 +76,7 @@ def main() -> int:
     texto = campo("UPDATED", hoje.isoformat(), texto)
     texto = campo("probed", probed_txt, texto)
 
-    if not ja_rodou_hoje:
+    if avancar_dia:
         m = re.search(r"^DAY: (\d+)", texto, re.M)
         if m:
             texto = campo("DAY", str(int(m.group(1)) + 1), texto)
