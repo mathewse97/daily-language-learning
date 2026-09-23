@@ -36,7 +36,7 @@ nenhum dado deste sistema que viva só numa tela.
 
 | | Quando | O que é | Precisa de modelo |
 |---|---|---|---|
-| **Entrega diária** | todo dia, ~05:20 | `daily.py`, rodado pelo GitHub Actions | não |
+| **Entrega diária** | todo dia, ~04:40 | `daily.py`, rodado pelo GitHub Actions | não |
 | **Planejamento semanal** | domingo | conversa com um agente, seguindo `TASK_PROMPTS.md` | sim, sempre |
 
 A entrega diária é determinística: escolhe o dia de hoje no pacote, atualiza o estado,
