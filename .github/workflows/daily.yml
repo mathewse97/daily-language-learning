@@ -1,0 +1,47 @@
+# A entrega diária. Roda um script — não há modelo de linguagem envolvido.
+name: Morning Packet
+
+on:
+  schedule:
+    # 08:20 UTC = 05:20 em Brasília. O minuto :20 é deliberado: às :00 a fila
+    # do GitHub é a maior do dia e os agendamentos atrasam.
+    - cron: "20 8 * * *"
+  workflow_dispatch:        # botão "Run workflow" na aba Actions
+
+permissions:
+  contents: write           # commitar o estado e a página; nada além disso
+
+concurrency:
+  group: morning-packet
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validar antes de mexer em qualquer coisa
+        run: python3 validate.py
+
+      - name: Atualizar o estado e gerar a página
+        run: python3 daily.py
+
+      - name: Validar de novo, depois de mexer
+        run: python3 validate.py
+
+      - name: Commitar, se algo mudou
+        run: |
+          git config user.name  "morning-packet[bot]"
+          git config user.email "actions@github.com"
+          if git diff --quiet; then
+            echo "nada mudou hoje"
+            exit 0
+          fi
+          git add state/ docs/
+          git commit -m "Pacote de $(date -u +%Y-%m-%d)"
+          git push
