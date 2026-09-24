@@ -59,6 +59,9 @@ promoção de caixa exigem julgamento. É um ritual de domingo, com um agente, n
 8. `STATE_SCHEMA.md` · `LEXICON_SCHEMA.md` · `PAGE_TEMPLATE.md`
 9. `AUDIT.md` — defeitos conhecidos, ainda abertos
 10. `SETUP.md` · `MIGRATION.md` — como isto foi ligado, e como se desliga
+<!-- MÓDULO:FALA início -->
+11. `speaking/SPEAKING.md` — o módulo de fala, opcional e removível
+<!-- MÓDULO:FALA fim -->
 
 ## Manifesto
 
@@ -92,9 +95,21 @@ coisa e pode ser apagado sem perda.
 | `daily.py` | a entrega diária | fonte | sim |
 | `docs/index.html` | a página publicada | **derivado** de `state/week.json` | não · regerar |
 | `.github/workflows/` | agendamento e CI | fonte, mas específico do GitHub | sim, como referência |
+<!-- MÓDULO:FALA início -->
+| `speaking/SPEAKING.md` | o módulo de fala: razão, evidência, dose, remoção | fonte · **módulo removível** | sim |
+| `speaking/conversa.md` | o prompt das sessões de conversa | fonte · **módulo removível** | sim |
+| `speaking/entrevista.md` | o simulador de entrevista e seu rodízio | fonte · **módulo removível** | sim |
+| `speaking/log.md` | registro das sessões de fala | fonte · **módulo removível** | sim |
+<!-- MÓDULO:FALA fim -->
 
 `docs/` e `.github/` ficam fora da conferência automática do manifesto: o primeiro é
 gerado, o segundo é o andaime da plataforma.
+
+<!-- MÓDULO:FALA início -->
+As quatro últimas linhas pertencem a um **módulo opcional**. O sistema de leitura roda
+inteiro sem elas. `speaking/SPEAKING.md` explica o que é e traz o procedimento exato de
+remoção; apagar a pasta não quebra a validação.
+<!-- MÓDULO:FALA fim -->
 
 ## Estado atual
 
@@ -113,7 +128,7 @@ Enterprise Cloud. O repositório pode ser privado — e então o léxico, o esta
 currículos são só seus — mas a página publicada é aberta a quem tiver o endereço.
 
 **Workflows agendados atrasam e são desativados após 60 dias sem atividade no
-repositório.** O horário de 05:20 é aproximado. E se o curso parar por dois meses, a
+repositório.** O horário de 04:40 é aproximado. E se o curso parar por dois meses, a
 automação não volta sozinha: é preciso reativá-la na aba Actions.
 
 **Não existe caminho de volta definido.** `MIGRATION.md` diz como sair do GitHub; sair é
