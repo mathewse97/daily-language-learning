@@ -16,10 +16,13 @@ Referência para o Mathews. Um agente que vai escrever aqui deve ler `AGENTS.md`
 | Currículos | `courses/` | em conversa |
 | Renderizador | `page/template.html` | em conversa, com commit próprio |
 | A página publicada | `docs/index.html` | **ninguém** — é gerada |
+<!-- MÓDULO:FALA início -->
+| Registro das sessões de fala | `speaking/log.md` | Mathews, aos domingos |
+<!-- MÓDULO:FALA fim -->
 
 ## A semana, na prática
 
-**Segunda a sábado** você não faz nada. Por volta das 05:20 o GitHub roda `daily.py`,
+**Segunda a sábado** você não faz nada. Por volta das 04:40 o GitHub roda `daily.py`,
 que atualiza o estado, regera a página e commita. O Pages republica sozinho. Você abre a
 mesma URL de sempre e a lição de hoje está lá.
 
@@ -80,10 +83,21 @@ tem permissão para isso.
 semanal. Se o planejador ficar mais de uma semana parado, os testes daquele período se
 perdem. Continua aberto — item E4 do `AUDIT.md`.
 
+<!-- MÓDULO:FALA início -->
+## Se a trilha de fala parar
+
+Não quebra nada: o módulo de fala não é lido por nenhum script e não entra na entrega
+diária. Semana sem linha em `speaking/log.md` é só semana sem prática.
+
+O que **não** se faz é deixá-lo apodrecendo. Se forem menos de doze sessões em seis
+semanas, o critério de abandono foi atingido — `speaking/SPEAKING.md` tem o procedimento
+de remoção, e ele leva dois minutos.
+<!-- MÓDULO:FALA fim -->
+
 ## Os dois detalhes chatos do GitHub
 
 **O horário é aproximado.** Workflows agendados entram numa fila e atrasam, às vezes
-bastante. Por isso o agendamento é 05:20 e não 05:00.
+bastante. Por isso o agendamento é 04:40: com folga antes das 5h, e fora do minuto cheio.
 
 **Workflows agendados são desativados após 60 dias sem atividade no repositório.** Com o
 commit diário isso não dispara, mas se o curso parar por dois meses a automação não volta
