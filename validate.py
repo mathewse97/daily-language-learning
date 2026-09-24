@@ -6,6 +6,7 @@ Roda em todo commit, pelo GitHub Actions, e localmente com:  python3 validate.py
 O que ele NÃO confere está dito no fim deste arquivo, de propósito: um
 validador que finge cobrir o que não cobre é pior que nenhum.
 """
+import datetime as dt
 import json
 import pathlib
 import re
@@ -214,11 +215,53 @@ def validar_logbook() -> None:
             erro(f"state/logbook.md · falta o campo {campo}")
 
 
+# MÓDULO:FALA início
+def validar_fala() -> None:
+    """Confere o módulo de fala, SE ele existir.
+
+    O módulo é opcional. Apagar a pasta speaking/ não pode reprovar o build —
+    por isso a função devolve em silêncio quando ela não está lá. Ver
+    speaking/SPEAKING.md, seção "Como remover".
+    """
+    pasta = ROOT / "speaking"
+    if not pasta.is_dir():
+        return
+
+    for nome in ("SPEAKING.md", "conversa.md", "entrevista.md", "log.md"):
+        if not (pasta / nome).exists():
+            erro(f"módulo fala · falta speaking/{nome} — o módulo está pela metade. "
+                 f"Remova a pasta inteira ou restaure o arquivo.")
+
+    log = pasta / "log.md"
+    if not log.exists():
+        return
+    bloco = re.search(r"```\n(.*?)```", log.read_text(encoding="utf-8"), re.S)
+    if not bloco:
+        erro("speaking/log.md não tem bloco de dados cercado por ```")
+        return
+    for linha in bloco.group(1).splitlines():
+        linha = linha.strip()
+        if not linha or linha.startswith("FORMAT:"):
+            continue
+        campos = [c.strip() for c in linha.split("|")]
+        if len(campos) != 5:
+            erro(f"speaking/log.md · linha com {len(campos)} campos, esperados 5: {linha}")
+            continue
+        try:
+            dt.date.fromisoformat(campos[0])
+        except ValueError:
+            erro(f"speaking/log.md · data inválida: {campos[0]!r}")
+        if campos[1] not in ("en", "it"):
+            erro(f"speaking/log.md · trilha {campos[1]!r} — só en e it têm sessão de fala")
+# MÓDULO:FALA fim
+
+
 def main() -> int:
     exp = ler_lexico()
     validar_semana(exp)
     validar_logbook()
     validar_manifesto()
+    validar_fala()   # MÓDULO:FALA
 
     for a in avisos:
         print(f"aviso  · {a}")
