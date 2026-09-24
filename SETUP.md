@@ -40,8 +40,8 @@ Quatro palavras, e você não precisa de mais nenhuma:
 
 - **Repositório** — uma pasta de arquivos com histórico. É o projeto inteiro.
 - **Commit** — salvar uma mudança, com uma frase dizendo o que mudou.
-- **Push** — mandar seus commits para a cópia na nuvem.
 - **Actions** — as automações que rodam sozinhas na nuvem.
+- **Workflow** — uma dessas automações. Você tem duas: a entrega diária e o validador.
 
 ---
 
@@ -55,63 +55,72 @@ depois.
 
 ---
 
-## Passo 2 · Instale o GitHub Desktop
+## Passo 2 · Crie o repositório
 
-**desktop.github.com** → baixe → instale → abra → **Sign in to GitHub.com** e entre com a
-conta do passo 1.
+Em **github.com**, clique no **+** no canto superior direito → **New repository**.
 
-O GitHub Desktop é um programa com botões. Ele faz tudo o que você vai precisar sem uma
-única linha de comando. Não instale mais nada.
+- **Repository name:** `daily-language-learning`
+- Deixe **Public** marcado (ver a decisão lá em cima)
+- **Não** marque "Add a README file" — já existe um
+- O resto, em branco
 
-> Existe um jeito de fazer tudo pelo site, arrastando arquivos. Não recomendo: a pasta
-> `.github`, que guarda as automações, começa com ponto, e o Finder e o Explorer escondem
-> pastas assim — você arrastaria o projeto sem as automações e não entenderia por quê.
-
----
-
-## Passo 3 · Crie o repositório
-
-No GitHub Desktop: **File → New repository**.
-
-- **Name:** `daily-language-learning`
-- **Local path:** onde você quiser no seu computador. Anote o caminho.
-- **Initialize with a README:** deixe **desmarcado** — já existe um.
-- O resto, em branco.
-
-Clique **Create repository**. Agora existe uma pasta vazia no seu computador, com
-histórico ligado.
+Clique **Create repository**.
 
 ---
 
-## Passo 4 · Ponha os arquivos na pasta
+## Passo 3 · Prepare a pasta no seu computador
 
-Descompacte o `.zip` que eu te mandei. Dentro dele há uma pasta com todo o projeto.
+Descompacte o `.zip`. Dentro dele há uma pasta com o projeto inteiro: cinco pastas
+(`.github`, `courses`, `docs`, `page`, `state`) e dezesseis arquivos soltos.
 
-**Copie o *conteúdo* dessa pasta para dentro da pasta que o GitHub Desktop criou** — não
-a pasta inteira, o conteúdo dela. No fim, dentro de `daily-language-learning` você deve
-ver `README.md`, `build.py`, `courses`, `state`, `page`, `docs` e as outras.
+**Mostre os arquivos ocultos**, senão a pasta `.github` não aparece para ser arrastada —
+e sem ela nada roda sozinho:
 
-**Confira que a pasta `.github` veio junto.** Ela é invisível por padrão:
-- no Mac, aperte `Cmd + Shift + .` no Finder para mostrar arquivos ocultos;
-- no Windows, aba **Exibir** → marque **Itens ocultos**.
-
-Se `.github` não estiver lá, as automações não existem e nada vai rodar sozinho.
+- **Mac:** `Cmd + Shift + .` no Finder
+- **Windows:** aba **Exibir** → marque **Itens ocultos**
 
 ---
 
-## Passo 5 · Primeiro commit
+## Passo 4 · Envie tudo pelo navegador
 
-Volte ao GitHub Desktop. Ele agora lista dezenas de arquivos novos.
+Na tela que apareceu depois de criar o repositório, clique no link
+**uploading an existing file**, no meio do texto.
 
-- No campo **Summary**, embaixo à esquerda, escreva: `Sistema completo, vindo do Claude Project`
-- Clique **Commit to main**
-- Clique **Publish repository** no topo
+Abra a pasta descompactada, selecione **tudo** (`Cmd+A` ou `Ctrl+A`) e arraste para a
+área de upload.
 
-Uma caixa aparece com **Keep this code private** marcado. **Desmarque**, se você escolheu
-público no começo. Clique **Publish repository**.
+> **O detalhe que estraga isto:** arraste as **pastas**, não o conteúdo delas. Se você
+> entrar em `state/`, selecionar os quatro arquivos e arrastar, eles vão parar na raiz do
+> repositório e o sistema não funciona. Selecione no nível de cima, onde as pastas
+> aparecem como pastas.
 
-Pronto — seus arquivos estão na nuvem. Dá para ver em
-`github.com/SEU-USUARIO/daily-language-learning`.
+A tela lista **arquivos, não pastas** — isso é normal. O que importa é o caminho: os
+arquivos de dentro de pastas devem aparecer como `state/week.json`,
+`.github/workflows/daily.yml`, com as barras. Se aparecerem só como `week.json` e
+`daily.yml`, o upload achatou e você vai precisar refazer.
+
+---
+
+## Passo 5 · Commit
+
+Embaixo, no campo de mensagem, escreva qualquer coisa que descreva o que você fez —
+`primeiro commit` serve. É um bilhete para você mesmo daqui a um ano, não um comando.
+
+Clique **Commit changes**.
+
+**Confira agora**, antes de seguir. A página inicial do repositório tem de mostrar cinco
+pastas — `.github`, `courses`, `docs`, `page`, `state` — e os arquivos soltos ao lado. Se
+mostrar trinta e três arquivos soltos e nenhuma pasta, o upload achatou: apague o
+repositório em **Settings → Danger Zone → Delete this repository** e refaça o passo 4,
+arrastando as pastas inteiras.
+
+---
+
+> **Alternativa: GitHub Desktop.** Se preferir um programa a arrastar arquivos no
+> navegador, **desktop.github.com** faz os passos 2 a 5 com botões: *File → New
+> repository*, copie o conteúdo do ZIP para a pasta criada, escreva a mensagem, *Commit
+> to main*, *Publish repository*. Ele resolve a pasta oculta sozinho. Daí em diante os
+> passos são os mesmos.
 
 ---
 
@@ -179,7 +188,7 @@ que o conteúdo mude todo dia.
 
 ## Pronto. O que acontece a partir de agora
 
-**Segunda a sábado, sozinho.** Por volta das 05:20 o GitHub roda a entrega, regera a
+**Segunda a sábado, sozinho.** Por volta das 04:40 o GitHub roda a entrega, regera a
 página e commita. Você abre o ícone e a lição está lá. Não há nada a fazer.
 
 **Domingo, com você.** Abra uma conversa com um agente que tenha acesso ao repositório,
