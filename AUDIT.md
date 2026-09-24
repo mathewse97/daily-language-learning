@@ -91,9 +91,36 @@ execução agendada. Num repositório, `AGENTS.md` cumpre esse papel por conven�
 entrega diária não lê regra nenhuma, porque não julga nada. Uma fonte a menos para
 divergir.
 
+<!-- MÓDULO:FALA início -->
+**F1 · A trilha de inglês não treinava produção em tempo real** — MÓDULO ACRESCENTADO 24/09
+O curso entregava leitura e composição mental com modelo para comparar, o que treina
+reconhecimento e planejamento, não fala sob pressão. Com busca ativa de vagas
+internacionais, a lacuna tinha prazo. Acrescentado o módulo `speaking/`, opcional e
+removível, com três sessões semanais e laço de volta para o planejador de domingo.
+
+**É aposta, não conclusão.** A evidência é de efeito médio (ES ~0,58; g ~0,61), o achado
+mais sólido é redução de ansiedade de fala, e **não há evidência de transferência para
+conversa com humanos** — o construto mais próximo disso aparece em 3 de 24 estudos.
+Fundamentação completa e critério de abandono em `speaking/SPEAKING.md`.
+Revisão de continuidade marcada para 05/11/2026.
+<!-- MÓDULO:FALA fim -->
+
 ---
 
 ## Abertos
+
+**E8 · A data vinha do servidor, não de Brasília** — **FECHADO 22/09**
+O runner do GitHub roda em UTC. A entrega agendada das 05:20 não era afetada — àquela
+hora as duas datas coincidem — mas a primeira execução manual, disparada às 21h de
+Brasília, já era 23/09 em UTC: gravou a data errada no logbook, pulou a quarta e
+sobrescreveu o `probed` da terça com o da quarta. A página não foi afetada, porque ela
+carrega os sete dias e o navegador escolhe o de hoje no fuso do leitor.
+`daily.py` passou a usar explicitamente `America/Sao_Paulo`, com recuo para UTC-3 fixo se
+a base de fusos não existir no runner. E `DAY` passou a só andar para a frente: rodar de
+novo no mesmo dia, ou corrigir uma data adiantada, não conta como um dia de curso a mais.
+
+É uma instância de E4 com outra causa, e a segunda vez que `probed` se perde. Reforça a
+prioridade daquele item.
 
 **E4 · `probed` pode ser perdido antes de ser consumido** — ABERTO
 Aconteceu: os cinco itens testados em 13/09 foram sobrescritos antes de o planejador os
