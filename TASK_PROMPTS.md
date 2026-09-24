@@ -5,7 +5,7 @@ O sistema tem dois procedimentos, e eles são de naturezas diferentes. Tratar os
 
 | | Quando | O que é | Precisa de modelo |
 |---|---|---|---|
-| **Entrega diária** | todo dia, ~05:20 | `daily.py`, rodado pelo Actions | não |
+| **Entrega diária** | todo dia, ~04:40 | `daily.py`, rodado pelo Actions | não |
 | **Planejamento semanal** | domingo | conversa com um agente | sim, sempre |
 
 ---
@@ -110,6 +110,24 @@ fazem, relate e não conserte.
    página do aluno amanhã de manhã.
 
 9. Commite state/ e docs/ juntos, com uma mensagem que diga a semana e o arco.
+
+<!-- MÓDULO:FALA início -->
+9a. SE a pasta speaking/ existir — ela é um módulo opcional e pode ter sido
+    removida; se não existir, pule este passo inteiro sem comentar:
+
+    Leia speaking/log.md. Trate a coluna `não produzi` das linhas da semana que
+    acabou como entrada adicional de `misses` no passo 4: o que ele tentou dizer
+    e não conseguiu é evidência de item não recordado, tão boa quanto o check-in.
+    Vale para as colocações inglesas; não mexa no grego por causa disso.
+
+    Depois componha o BRIEFING DA SEMANA e entregue a Mathews no fim, em bloco
+    separado, pronto para ele colar no assistente de voz na segunda. No máximo
+    dez linhas:
+      - as colocações de inglês da semana, com o registro de cada uma;
+      - o que ficou pendente do log da semana anterior;
+      - o número do rodízio de entrevista desta semana (1 a 6, ciclando).
+    Nada de grego e nada de italiano nesse bloco — ele é só para a fala em inglês.
+<!-- MÓDULO:FALA fim -->
 
 10. Diga a Mathews, explicitamente, o que você escreveu, arquivo por arquivo, e o
     arco da semana em uma linha. Um passo que você pulou tem de aparecer aqui.
