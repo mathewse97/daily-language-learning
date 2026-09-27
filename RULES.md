@@ -175,8 +175,10 @@ no repositório que não esteja na tabela reprova o build.
 ## Contrato de saída
 
 Grego todo dia; italiano seg/qua/sex; inglês ter/qui/sáb; domingo é revisão, sem material
-novo. Cada trilha tem no máximo 400 palavras de material, fora o gabarito. Se uma trilha
-passar do limite, corte explicação antes de cortar texto — o input é o ponto.
+novo. Cada trilha tem um teto semanal de palavras de material, fora o gabarito: grego
+~150 (o inventário fechado já o restringe por natureza — ver `GREEK_COURSE.md`), italiano
+~800, inglês ~1.200. Se uma trilha passar do teto, corte explicação antes de cortar
+texto — o input é o ponto.
 
 Cada língua tem seu próprio cartão, todo dia, na mesma ordem: grego primeiro, depois
 italiano ou inglês. Nunca duas línguas correndo juntas num mesmo bloco.
@@ -187,6 +189,26 @@ Prefira a construção atestada mais simples à mais engenhosa de que você não
 No grego em especial: se não souber acentuar uma forma com segurança, escolha outra
 palavra já no Léxico. **Um texto mais curto e certo vence um texto mais rico e duvidoso.**
 O mesmo vale para fatos: cena mais pobre e correta vence cena mais rica e duvidosa.
+
+---
+
+## Reconciliação — 27/09/2026
+
+O teto de "400 palavras de material" no Contrato de saída estava errado, não impreciso.
+Contando texto + glosas + notas + perguntas + "diga isso"/"produce" + expressão (tudo
+fora o gabarito, exatamente o que a regra pedia), a semana 3 já publicada estava em 612
+palavras de italiano e 1.101 de inglês — e isso não é exagero da semana composta em
+27/09, é o que já estava no ar antes de qualquer mudança. `ENGLISH_COURSE.md` pede
+180–250 palavras de texto por dia, três dias por semana: 540–750 só de texto, impossível
+caber em 400 mesmo sem nenhuma explicação ao redor.
+
+A regra provavelmente nunca foi atualizada depois que `ENGLISH_COURSE.md` e
+`ITALIAN_COURSE.md` ganharam suas extensões de texto próprias. Em vez de cortar os
+currículos para caber num número que nunca refletiu a prática, o teto virou três
+números por trilha, ajustados à realidade já publicada com alguma folga: grego ~150
+(o inventário fechado já o restringe, esse número nunca foi o problema), italiano ~800,
+inglês ~1.200. Decisão de Mathews, tomada em conversa, depois de eu apontar a
+divergência sem consertar sozinho (invariante 6).
 
 ---
 
