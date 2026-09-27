@@ -9,9 +9,9 @@
 > O significado dos campos está em `LEXICON_SCHEMA.md`. Sem ele estas linhas não
 > são interpretáveis.
 
-**Atualizado em:** 2026-09-22 · **Conteúdo:** semente + semanas 1–2 · 88 termos gregos ·
-12 itens de interferência italiana · 15 colocações inglesas · tudo em `seen`, caixa 1,
-nada testado ainda
+**Atualizado em:** 2026-09-27 · **Conteúdo:** semente + semanas 1–4 · 91 termos gregos ·
+12 itens de interferência italiana · 30 colocações inglesas · 10 itens promovidos a
+`recalled`/caixa 2 nesta rodada (ver nota abaixo)
 
 ```
 FORMAT: term | gloss | phase | status | box | due | exp
@@ -26,21 +26,21 @@ EXPOS:  exp = quantas vezes a palavra apareceu num texto publicado.
 
 [GR] semente + semana 1 — 60 itens, todos seen/box 1
 ἐστί(ν) / εἰσί(ν) | ser | 1 | seen | 1 | — | 11
-λέγει | dizer, contar | 1 | seen | 1 | — | 5
+λέγει | dizer, contar | 1 | recalled | 2 | 2026-09-30 | 5
 ἀκούει | ouvir | 1 | seen | 1 | — | 0
-ἔχει | ter | 1 | seen | 1 | — | 5
-ὁρᾷ | ver | 1 | seen | 1 | — | 5
-φέρει | levar | 1 | seen | 1 | — | 9
-οἰκεῖ | morar | 1 | seen | 1 | — | 0
+ἔχει | ter | 1 | recalled | 2 | 2026-09-30 | 11
+ὁρᾷ | ver | 1 | recalled | 2 | 2026-09-30 | 10
+φέρει | levar | 1 | recalled | 2 | 2026-09-30 | 20
+οἰκεῖ | morar | 1 | seen | 1 | — | 7
 βαδίζει | caminhar | 1 | seen | 1 | — | 1
 διώκει | perseguir | 1 | seen | 1 | — | 0
 ἀποκτείνει | matar | 1 | seen | 1 | — | 0
-χαίρει | alegrar-se | 1 | seen | 1 | — | 5
+χαίρει | alegrar-se | 1 | recalled | 2 | 2026-09-30 | 12
 καθεύδει | dormir | 1 | seen | 1 | — | 0
 τελευτᾷ | terminar | 1 | seen | 1 | — | 0
 φιλεῖ | amar | 1 | seen | 1 | — | 0
 θαυμάζει | admirar | 1 | seen | 1 | — | 1
-πονεῖ | trabalhar | 1 | seen | 1 | — | 5
+πονεῖ | trabalhar | 1 | seen | 1 | — | 12
 καλεῖ | chamar | 1 | seen | 1 | — | 0
 μένει | permanecer | 1 | seen | 1 | — | 0
 ὁ θεός | deus | 1 | seen | 1 | — | 0
@@ -51,7 +51,7 @@ EXPOS:  exp = quantas vezes a palavra apareceu num texto publicado.
 ὁ ναός | templo | 1 | seen | 1 | — | 0
 ὁ πόλεμος | guerra | 1 | seen | 1 | — | 0
 ὁ οἶκος | casa | 1 | seen | 1 | — | 0
-ὁ ἀγρός | campo | 1 | seen | 1 | — | 6
+ὁ ἀγρός | campo | 1 | seen | 1 | — | 13
 ὁ ἥλιος | sol | 1 | seen | 1 | — | 0
 ὁ δοῦλος | escravo | 1 | seen | 1 | — | 0
 ὁ υἱός | filho | 1 | seen | 1 | — | 0
@@ -68,30 +68,35 @@ EXPOS:  exp = quantas vezes a palavra apareceu num texto publicado.
 ἡ κόρη | moça | 1 | seen | 1 | — | 0
 ἡ ἡμέρα | dia | 1 | seen | 1 | — | 0
 ἡ γῆ | terra | 1 | seen | 1 | — | 0
-καλός, -ή, -όν | belo, bom | 1 | seen | 1 | — | 9
-ἀγαθός, -ή, -όν | bom | 1 | seen | 1 | — | 1
-μικρός, -ά, -όν | pequeno | 1 | seen | 1 | — | 0
+καλός, -ή, -όν | belo, bom | 1 | recalled | 2 | 2026-09-30 | 13
+ἀγαθός, -ή, -όν | bom | 1 | seen | 1 | — | 7
+μικρός, -ά, -όν | pequeno | 1 | seen | 1 | — | 7
 μακρός, -ά, -όν | longo | 1 | seen | 1 | — | 0
 ἰσχυρός, -ά, -όν | forte | 1 | seen | 1 | — | 0
 δεινός, -ή, -όν | terrível | 1 | seen | 1 | — | 0
 σοφός, -ή, -όν | sábio | 1 | seen | 1 | — | 0
-καί | e | 1 | seen | 1 | — | 5
+καί | e | 1 | recalled | 2 | 2026-09-30 | 7
 δέ | e, mas (pospositivo) | 1 | seen | 1 | — | 0
 γάρ | pois (pospositivo) | 1 | seen | 1 | — | 0
 ἀλλά | mas | 1 | seen | 1 | — | 0
 οὐ / οὐκ / οὐχ / οὔ | não / não (resposta) | 1 | seen | 1 | — | 0
 εἰς (+ac) | para dentro de | 1 | seen | 1 | — | 0
-πρός (+ac) | em direção a | 1 | seen | 1 | — | 3
+πρός (+ac) | em direção a | 1 | seen | 1 | — | 6
 νῦν | agora | 1 | seen | 1 | — | 0
 ἀεί | sempre | 1 | seen | 1 | — | 0
 ὦ | ó (vocativo) | 1 | seen | 1 | — | 0
 
 [GR] semana 2 — 5 itens novos, seen/box 1
-ὁ βωμός | altar | 1 | seen | 1 | — | 2
-τὸ δῶρον | presente, oferenda | 1 | seen | 1 | — | 6
+ὁ βωμός | altar | 1 | seen | 1 | — | 8
+τὸ δῶρον | presente, oferenda | 1 | recalled | 2 | 2026-09-30 | 17
 ναί | sim | 1 | seen | 1 | — | 2
-ὁ καρπός | fruto, colheita | 1 | seen | 1 | — | 16
-ὁ οἶνος | vinho | 1 | seen | 1 | — | 6
+ὁ καρπός | fruto, colheita | 1 | recalled | 2 | 2026-09-30 | 33
+ὁ οἶνος | vinho | 1 | recalled | 2 | 2026-09-30 | 10
+
+[GR] semana 4 — 3 itens novos, seen/box 1
+παίζει | brincar | 1 | seen | 1 | — | 0
+ὁ ἄρτος | pão | 1 | seen | 1 | — | 0
+ἐσθίει | comer | 1 | seen | 1 | — | 0
 
 [GR-INTERROG] semeadas; uso a partir da semana 3
 τίς; | quem? | 1 | seen | 1 | — | 0
@@ -99,10 +104,10 @@ EXPOS:  exp = quantas vezes a palavra apareceu num texto publicado.
 ποῦ; | onde? | 1 | seen | 1 | — | 0
 
 [GR-BLOCO] memorizados inteiros, não analisados na fase 1
-ἐν τῷ ἀγρῷ | no campo | 1 | seen | 1 | — | 6
+ἐν τῷ ἀγρῷ | no campo | 1 | seen | 1 | — | 16
 ἐν τῇ οἰκίᾳ | em casa | 1 | seen | 1 | — | 1
 ἐν ταῖς Ἀθήναις | em Atenas | 1 | seen | 1 | — | 1
-ἐν Ἀχαρναῖς | em Acarnas | 1 | seen | 1 | — | 0
+ἐν Ἀχαρναῖς | em Acarnas | 1 | seen | 1 | — | 7
 ἐν τῇ Νεμέᾳ | na Nemeia | 1 | seen | 1 | — | 0
 ταῖς χερσίν | com as mãos | 1 | seen | 1 | — | 0
 ὁ λέων / τὸν λέοντα | o leão | 1 | seen | 1 | — | 0
@@ -114,12 +119,12 @@ EXPOS:  exp = quantas vezes a palavra apareceu num texto publicado.
 Νεμέα | a Nemeia, no norte do Peloponeso | 1 | seen | 1 | — | 0
 Ἀθῆναι | Atenas | 1 | seen | 1 | — | 1
 Ἀχαρναί | o demo, ao norte de Atenas | 1 | seen | 1 | — | 0
-Κλεισθένης | o pai — só nom./voc. até a fase 2 | 1 | seen | 1 | — | 3
-Μέλιττα | a mãe | 1 | seen | 1 | — | 11
+Κλεισθένης | o pai — só nom./voc. até a fase 2 | 1 | seen | 1 | — | 12
+Μέλιττα | a mãe | 1 | seen | 1 | — | 28
 Νικίας | o filho | 1 | seen | 1 | — | 4
 Χλόη | a filha | 1 | seen | 1 | — | 1
-Δᾶος | o escravo da casa | 1 | seen | 1 | — | 10
-Σῖμος | o vizinho mercador | 1 | seen | 1 | — | 2
+Δᾶος | o escravo da casa | 1 | seen | 1 | — | 23
+Σῖμος | o vizinho mercador | 1 | seen | 1 | — | 4
 Ἄργος | o cão | 1 | seen | 1 | — | 0
 
 [IT-CORE]
@@ -157,6 +162,21 @@ wiring up | public writing | 2026-09-19
 focus order | public writing | 2026-09-19
 task completion time | public writing | 2026-09-19
 built to catch what you can see | public writing | 2026-09-19
+a moving target | client-facing | 2026-09-29
+anchors the conversation | client-facing | 2026-09-29
+scope creep | client-facing | 2026-09-29
+change order | client-facing | 2026-09-29
+time-and-materials | client-facing | 2026-09-29
+hardcoded | async team | 2026-10-01
+token layer | async team | 2026-10-01
+primitive tokens | async team | 2026-10-01
+semantic tokens | async team | 2026-10-01
+more indirection | async team | 2026-10-01
+usability sessions | public writing | 2026-10-03
+got stuck at the same step | public writing | 2026-10-03
+silent rejection | public writing | 2026-10-03
+the error state | public writing | 2026-10-03
+surfaced it | public writing | 2026-10-03
 ```
 
 As duas ambiguidades de formato que este arquivo carregava desde 14/09 foram resolvidas
