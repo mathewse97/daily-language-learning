@@ -11,6 +11,7 @@
 ```
 FORMAT: data | gr | it | en | misses
 2026-09-13 | 4 | 5 | 5 | —
+2026-09-27 | 3 | 3 | 3 | —
 ```
 
 Semanas sem linha são semanas sem check-in. O planejador aplica a regra conservadora
