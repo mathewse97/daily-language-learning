@@ -64,9 +64,18 @@ Se em seis semanas nada tiver mudado, a primeira hipótese a testar é **dose**,
 O italiano fica **fora por enquanto**, deliberadamente: fase 1, e a literatura diz que
 iniciante ganha menos. Entra na fase 2, se entrar.
 
-O grego fica fora **permanentemente**. O objetivo dele é ler Xenofonte no original;
-conversar em ático é custo de oportunidade puro. A única coisa que vale ali é ler o texto
-do dia em voz alta, dois minutos, e isso não precisa de módulo nenhum.
+O grego fica fora **por enquanto, não permanentemente**. A meta de Mathews é ler grego
+antigo em geral — qualquer obra, não só Xenofonte: a lista da fase 5 do currículo
+(Xenofonte → Platão → Lísias) é um caminho de exemplo, nunca o objetivo em si. Ele também
+quer aprender a falar ático, só que não é prioridade agora, e conversar hoje seria custo
+de oportunidade frente à leitura. Se um assistente de voz um dia sustentar conversa em
+grego antigo com qualidade aceitável, o módulo pode ser estendido para o grego — decisão
+a tomar em conversa, quando isso acontecer. Até lá, a única prática oral é ler o texto do
+dia em voz alta, dois minutos, e isso não precisa de módulo nenhum.
+
+> Corrigido em 27/09/2026: a redação anterior ("permanentemente", "o objetivo é ler
+> Xenofonte") era uma leitura estreita demais de quem compôs este arquivo, nunca algo que
+> Mathews tivesse dito. Ele apontou o erro na mesma conversa.
 
 ## Como opera
 
