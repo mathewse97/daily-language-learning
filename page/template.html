@@ -168,7 +168,8 @@
 
   .il{display:flex;flex-wrap:wrap;column-gap:13px;row-gap:15px;align-items:start;
     background:var(--surface-2);border:1px solid var(--rule);border-radius:5px;
-    padding:15px 14px;margin:0}
+    padding:15px 14px;margin:0;cursor:pointer;transition:border-color .12s}
+  .il:hover,.il:focus-visible{border-color:var(--rule-2)}
   .w{display:grid;grid-template-rows:14px auto 13px;justify-items:center;row-gap:2px}
   .w .pt{font-size:11px;line-height:14px;color:var(--accent-ink);
     font-family:var(--sans);white-space:nowrap}
@@ -177,6 +178,13 @@
     font-family:var(--mono);white-space:nowrap}
   .w.known .pt,.w.known .tr{visibility:hidden}
   .w.new .gr{color:var(--accent-ink)}
+  /* Toque no texto interlinear esconde o apoio, palavra por palavra, sem mudar
+     nenhuma altura: .w já reserva as três linhas (14px/auto/13px) sempre, então
+     visibility:hidden nunca move nada — o mesmo truque de .w.known acima. Nunca
+     esconde .gr (o grego) nem as palavras que .w.known já esconde por si. */
+  .il.step-tr .w:not(.known) .tr{visibility:hidden}
+  .il.step-none .w:not(.known) .tr,
+  .il.step-none .w:not(.known) .pt{visibility:hidden}
   .br{flex-basis:100%;height:0;margin:0}
 
   .foot{border-top:1px solid var(--rule);margin-top:26px;padding-top:14px;font-size:12.5px;color:var(--ink-faint);display:flex;flex-direction:column;gap:.5em}
@@ -347,7 +355,30 @@ __WEEK_JSON__
     document.getElementById("app").innerHTML = out.join("");
   }
 
+  // Clique (ou Enter/Espaço) no texto interlinear cicla o apoio de leitura:
+  // cheio -> sem transliteração -> sem transliteração nem tradução -> cheio.
+  // Cada bloco .il guarda seu próprio estado; um dia não afeta o outro.
+  function wireInterlinear() {
+    var STATES = ["", "step-tr", "step-none"];
+    [].slice.call(document.querySelectorAll(".il")).forEach(function (il) {
+      il.setAttribute("tabindex", "0");
+      il.setAttribute("role", "button");
+      il.setAttribute("aria-label", "Mostrar ou esconder o apoio de leitura");
+      var i = 0;
+      function step() {
+        i = (i + 1) % STATES.length;
+        STATES.forEach(function (s) { if (s) il.classList.remove(s); });
+        if (STATES[i]) il.classList.add(STATES[i]);
+      }
+      il.addEventListener("click", step);
+      il.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); step(); }
+      });
+    });
+  }
+
   function wire() {
+    wireInterlinear();
     var btns = [].slice.call(document.querySelectorAll("nav.days button"));
     var days = [].slice.call(document.querySelectorAll("section.day"));
     function show(d) {
