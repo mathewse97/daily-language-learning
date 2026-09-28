@@ -12,11 +12,11 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-09-27
-DAY: 21
+UPDATED: 2026-09-28
+DAY: 22
 STREAK: 0
 LAST_REPORT: 2026-09-27 GR3 IT3 EN3
-probed: —
+probed: ἔχει, φέρει, καί, τὸ δῶρον
 
 [GREEK]
 phase: 1
