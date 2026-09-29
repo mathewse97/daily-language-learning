@@ -12,15 +12,15 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-09-28
-DAY: 22
+UPDATED: 2026-09-29
+DAY: 23
 STREAK: 0
 LAST_REPORT: 2026-09-27 GR3 IT3 EN3
-probed: ἔχει, φέρει, καί, τὸ δῶρον
+probed: πονεῖ, μικρός, -ά, -όν, ὁ καρπός, λέγει
 
 [GREEK]
 phase: 1
-lesson: 16 — semana 4, dia 1/7 (texto novo, cresce 3 → 13 frases)
+lesson: 16 — semana 4, dia 2/7 (texto novo, cresce 3 → 13 frases)
 apoio: decaindo por palavra — vários itens já sem glosa (exp ≥5: ἔχει, φέρει, ὁρᾷ,
   χαίρει, λέγει, καλός, ὁ οἶνος, τὸ δῶρον, ὁ καρπός, ὁ βωμός, ὁ ἀγρός, πρός, μικρός,
   ἀγαθός, καί, ἐν τῷ ἀγρῷ, ἐν Ἀχαρναῖς, Κλεισθένης, Μέλιττα, Δᾶος); as 3 palavras novas
