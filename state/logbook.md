@@ -12,15 +12,15 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-10-01
-DAY: 25
+UPDATED: 2026-10-02
+DAY: 26
 STREAK: 0
 LAST_REPORT: 2026-09-27 GR3 IT3 EN3
-probed: ἐστί(ν) / εἰσί(ν), ὁ ἀγρός, ἐν Ἀχαρναῖς
+probed: πονεῖ, ὁ ἀγρός
 
 [GREEK]
 phase: 1
-lesson: 16 — semana 4, dia 4/7 (texto novo, cresce 3 → 13 frases)
+lesson: 16 — semana 4, dia 5/7 (texto novo, cresce 3 → 13 frases)
 apoio: decaindo por palavra — vários itens já sem glosa (exp ≥5: ἔχει, φέρει, ὁρᾷ,
   χαίρει, λέγει, καλός, ὁ οἶνος, τὸ δῶρον, ὁ καρπός, ὁ βωμός, ὁ ἀγρός, πρός, μικρός,
   ἀγαθός, καί, ἐν τῷ ἀγρῷ, ἐν Ἀχαρναῖς, Κλεισθένης, Μέλιττα, Δᾶος); as 3 palavras novas
