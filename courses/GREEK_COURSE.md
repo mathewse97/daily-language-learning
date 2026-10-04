@@ -78,7 +78,9 @@ definido. 1ª e 2ª declinações. Nominativo, acusativo, vocativo. `εἰμί`.
 `δέ`, `γάρ`, `ἀλλά`.
 **`ἐν` + dativo entra como bloco fixo, não como sistema.** `ἐν τῷ ἀγρῷ`, `ἐν τῇ οἰκίᾳ`
 são memorizadas inteiras, como se fossem advérbios. Sem isso não existe frase natural na
-lição 1. O dativo como caso só é analisado na fase 2 — até lá, nunca explique a forma.
+lição 1. O dativo como caso só é analisado na fase 2 — até lá, nunca explique a forma
+desses blocos. As demais formas novas podem ganhar a nota de forma de uma linha (ver
+"Forma da lição").
 Texto: 40–70 palavras, frases de 4–8 palavras, sem subordinação.
 Cultura: casa, família, campo, animais, trabalho agrícola, refeições, o dia do agricultor.
 **Portão:** 3 leituras seguidas com ≥3/4 de compreensão.
@@ -88,10 +90,11 @@ primeiras lições apresenta 6–12 letras dentro de palavras reais do inventár
 termina com uma frase grega inteira lida em voz alta. A lição 1 já contém grego de
 verdade — `ὁ οἶκος καλός ἐστιν` — e não uma lista de correspondências.
 
-**Conhecer o alfabeto não é ler.** O apoio de leitura é interlinear e some **por palavra,
-nunca por data ou por número de lição**: enquanto o `exp` de uma palavra no Léxico for
+**Conhecer o alfabeto não é ler.** O apoio de leitura é interlinear e some **por forma,
+nunca por data ou por número de lição**: enquanto o `exp` da forma que está no texto for
 menor que 5, ela leva glosa e transliteração; ao chegar a 5, perde as duas e não as
-recupera. A tabela do alfabeto é permanente, recolhida, em todo cartão. Ver a invariante
+recupera. Forma nova de palavra conhecida recomeça com apoio — `χαίρουσιν` não herda o
+`exp` de `χαίρει` (decidido em 04/10/2026; contagem em `LEXICON_SCHEMA.md`). A tabela do alfabeto é permanente, recolhida, em todo cartão. Ver a invariante
 16 em `RULES.md`.
 
 > A escada por lição que este arquivo descrevia até 17/09/2026 foi substituída pelo
@@ -198,19 +201,36 @@ Vocativo em `-ε` para a 2ª declinação masculina: `ὦ δοῦλε`.
 
 ## Forma da lição
 
-**Quatro partes, nesta ordem, e nada mais** — invariante 13 em `RULES.md`:
+**Quatro partes, nesta ordem** — invariante 14 em `RULES.md`:
 
 1. **Ἀνάμνησις**, com a chave recolhida logo abaixo.
 2. **O texto interlinear.**
 3. **Em português corrido**, recolhido, logo abaixo do texto.
 4. **A nota de som.**
 
-Depois disso o cartão termina, com a tabela do alfabeto recolhida e a linha do check-in.
-Sem Ἐρωτήσεις, sem Σκόπει, sem observação gramatical, sem Θησαυρός, sem etimologia, sem
-gabarito. A leitura é a lição.
+E três acréscimos opcionais, nenhum deles exercício:
+
+- **Nota de forma**, logo antes da nota de som. Uma linha, no máximo uma por dia, só no
+  dia em que uma forma nova de palavra conhecida aparece pela primeira vez. O significado
+  ali, depois o padrão, e a terminologia por último e curta:
+  `ἔχουσιν — "(eles) têm": -ουσι(ν) marca "eles/elas" no presente (3ª pessoa do plural).`
+  Se houver duas formas novas no dia, escolha a mais frequente nas semanas seguintes; a
+  outra tem glosa e espera.
+- **Curiosidade**, logo depois da nota de som. Duas a três linhas em português, só em dia
+  com gancho no texto — uma pessoa, um lugar, um nome, um culto, um objeto que está ali —,
+  terminando sempre com a fonte entre parênteses (`Hesíodo, Teogonia 535–557`). Ver
+  "Ganchos e curiosidades" abaixo.
+- **Correções da auditoria mensal**, no topo do cartão de segunda do primeiro domingo do
+  mês.
+
+Recolhidos em todo cartão: o elenco ("Quem é quem") e a tabela do alfabeto. Depois, a
+linha do check-in. Sem Ἐρωτήσεις, sem Σκόπει, sem Θησαυρός, sem etimologia, sem gabarito.
+A leitura é a lição.
 
 > Decidido em 17/09/2026, depois de duas semanas de uso: o único exercício que ajudava
-> era o Ἀνάμνησις. As seções que este arquivo descrevia antes — Ἐρωτήσεις, "Repare que",
+> era o Ἀνάμνησις. Os três acréscimos opcionais vieram em 04/10/2026, a pedido de Mathews:
+> formas novas sem explicação o deixavam sem saber o que lia, e o mundo grego estava
+> entrando pouco. As seções que este arquivo descrevia antes — Ἐρωτήσεις, "Repare que",
 > Σκόπει, Θησαυρός e a etimologia — foram retiradas. Se alguma voltar, volta por decisão
 > em conversa, e `RULES.md` muda junto.
 
@@ -276,6 +296,26 @@ tema, ele ainda não deve entrar.
 | lugares famosos | o Pireu visto do alto da estrada; o Partenon ainda com andaimes |
 | Esparta | primeiro como boato de mercado, muito antes de ser exército |
 | guerra | como preço do trigo e conversa de vizinhos, um ano antes de chegar |
+
+## Ganchos e curiosidades
+
+Mathews quer o mundo grego ligado ao que ele já conhece: filósofos, mitos, figuras e
+episódios famosos, e como o mito explicava o culto e o cotidiano — por exemplo, Prometeu
+em Mecone explicando por que os homens ficam com a carne do sacrifício e os deuses com os
+ossos e a gordura.
+
+**Toda semana tem pelo menos um gancho conhecido**, e ele entra pela família, nunca como
+lição: Μέλιττα conta um mito à noite, Σῖμος volta da ágora com notícia de Sócrates, a
+família vê o Partenon recém-terminado. Os nomes do elenco também são ganchos — Κλεισθένης
+tem o nome do reformador de 508/7, Ἄργος o do cão de Odisseu.
+
+**Mito no nível da fase.** O grego narra mito no presente histórico, que a fase 1 já
+tem. A frase grega fica simples; a riqueza vem da curiosidade, em português.
+
+**A curiosidade obedece à exatidão histórica abaixo, sem exceção.** Fonte antiga ou
+moderna sempre nomeada; onde a bibliografia diverge, uma linha dizendo que diverge;
+onde a única fonte é muito posterior, isso é dito (`Pausânias, séc. II d.C.`). Se a
+curiosidade não puder ser verificada antes de compor, o dia fica sem ela.
 
 ## Exatidão histórica
 

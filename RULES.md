@@ -92,18 +92,30 @@ conhece é o que torna a língua desconhecida compreensível.
 
 ## Forma da lição
 
-**14 · A forma do cartão de grego é fixa e curta.** Quatro partes, nesta ordem, e nada
-mais: o Ἀνάμνησις com a chave recolhida; o texto interlinear; o português corrido,
-recolhido, logo abaixo do texto; a nota de som. Depois disso o cartão termina, com a
-tabela do alfabeto recolhida e a linha do check-in. **Nenhum exercício depois do texto** —
-sem Ἐρωτήσεις, sem Σκόπει, sem observação gramatical, sem etimologia, sem Θησαυρός. A
-leitura é a lição. Isto foi decidido em 17/09 depois de duas semanas de uso: o único
-exercício que ajudava era o Ἀνάμνησις.
+**14 · A forma do cartão de grego é fixa e curta.** Quatro partes, nesta ordem: o
+Ἀνάμνησις com a chave recolhida; o texto interlinear; o português corrido, recolhido,
+logo abaixo do texto; a nota de som. Admitem-se só três acréscimos, todos opcionais e
+nenhum deles exercício:
+
+- **a nota de forma**, logo antes da nota de som: **uma linha**, no máximo uma por dia,
+  só no dia em que uma forma nova de palavra conhecida aparece pela primeira vez — o que
+  ela significa ali e o padrão que a produz (`χαίρουσιν — "(eles) se alegram": -ουσι(ν)
+  marca "eles/elas" no presente`). Dia sem forma nova não tem nota;
+- **a curiosidade**, logo depois da nota de som: 2 a 3 linhas em português, só em dia com
+  gancho no texto, sempre terminando com a fonte (invariante 23);
+- **as correções da auditoria mensal**, no topo do cartão de segunda (passo 11 do
+  planejador).
+
+O elenco ("Quem é quem") e a tabela do alfabeto ficam recolhidos em todo cartão; depois
+vem a linha do check-in e o cartão termina. **Nenhum exercício depois do texto** — sem
+Ἐρωτήσεις, sem Σκόπει, sem etimologia, sem Θησαυρός. A leitura é a lição. A forma de
+quatro partes foi decidida em 17/09, depois de duas semanas de uso; os três acréscimos,
+em 04/10 (ver a reconciliação no fim deste arquivo).
 
 **15 · Recuperação, não reconhecimento.** O Ἀνάμνησις são 2 a 5 prompts respondíveis de
 memória sem olhar para trás, metade deles português → grego, no máximo um de múltipla
-escolha, nenhum respondível pelo texto do próprio dia. Testa **apenas itens com `exp` ≥ 5**
-— essa é a única janela; não há semana de estreia. Os itens testados são exatamente o que
+escolha, nenhum respondível pelo texto do próprio dia. Testa **apenas itens com `exp` ≥ 5**,
+contado por lema — essa é a única janela; não há semana de estreia. Os itens testados são exatamente o que
 vai para `probed` no Logbook.
 
 **16 · A chave do Ἀνάμνησις fica logo abaixo dele, recolhida.** Recuperação sem
@@ -116,8 +128,11 @@ não tem exercício além do Ἀνάμνησις.
 texto grego é montado palavra a palavra: a glosa portuguesa acima, o grego no meio, a
 transliteração abaixo. A glosa é palavra por palavra, não tradução corrida — `ἐν τῷ ἀγρῷ`
 lê-se "em / o / campo", e é isso que se quer. O apoio some **por palavra, nunca por data**:
-uma palavra carrega glosa e transliteração enquanto seu `exp` no Léxico for menor que 5;
-ao chegar a 5 perde as duas e não as recupera. Enquanto o planejador não tiver contado ao
+uma palavra carrega glosa e transliteração enquanto o `exp` **da forma em que ela aparece**
+for menor que 5; ao chegar a 5 perde as duas e não as recupera. Forma nova de palavra
+conhecida — `χαίρουσιν` depois de `χαίρει`, `καλή` depois de `καλός` — recomeça com apoio
+completo: reconhecer uma forma não é reconhecer a outra. A revisão espaçada e o
+Ἀνάμνησις continuam por lema (invariante 15). Como contar está em `LEXICON_SCHEMA.md`. Enquanto o planejador não tiver contado ao
 menos uma semana inteira, **toda palavra leva apoio completo**. Logo abaixo do texto vem
 sempre um controle recolhido "Em português corrido" com a tradução natural do texto
 daquele dia. A tabela do alfabeto é permanente em todo cartão de grego, recolhida. Nunca
@@ -125,8 +140,10 @@ uma linha romanizada em paralelo. Uma nota de som por lição, sobre som present
 daquele dia.
 
 **17b · O planejador mantém o `exp`.** Todo domingo ele conta as aparições de cada palavra
-nos textos publicados da semana e soma ao `exp` daquele item no Léxico. A contagem começou
-na semana 2 (17/09/2026); a semana 1 não tem registro e não é reconstruída.
+nos textos publicados da semana e soma ao `exp` daquele item no Léxico — ao lema sempre, e
+também à forma em `[GR-FORMA]` quando não for a forma de citação. A contagem por lema
+começou na semana 2 (17/09/2026); a por forma, na semana 4 (reconstruída em 04/10). A
+semana 1 não tem registro e não é reconstruída.
 
 **18 · Nada é escrito.** Ele lê no telefone. Nenhum exercício pode exigir escrever,
 digitar, copiar ou transcrever. Toda produção é mental, seguida imediatamente de um
@@ -137,7 +154,7 @@ modelo para comparação.
 **19 · Português mínimo.** Fora da linha interlinear, glose apenas o que impede a
 compreensão daquele texto, na forma `οἶκος — casa`: uma ou duas palavras, nunca uma
 oração. Linha de contexto acima do texto: no máximo uma frase, e só quando o cenário não
-for dedutível. Sem ensaios, sem comentário histórico.
+for dedutível. Sem ensaios. Comentário histórico só na curiosidade (14), e só ali.
 
 **20 · Português neutro.** Registro instrucional claro e natural. Sem diminutivos,
 coloquialismos ou idiomatismos. Escreva como um bom livro-texto.
@@ -189,6 +206,26 @@ Prefira a construção atestada mais simples à mais engenhosa de que você não
 No grego em especial: se não souber acentuar uma forma com segurança, escolha outra
 palavra já no Léxico. **Um texto mais curto e certo vence um texto mais rico e duvidoso.**
 O mesmo vale para fatos: cena mais pobre e correta vence cena mais rica e duvidosa.
+
+---
+
+## Reconciliação — 04/10/2026
+
+Três mudanças pedidas por Mathews no check-in da semana 4, discutidas em conversa antes de
+aplicadas.
+
+| Antes | Agora | Por quê |
+|---|---|---|
+| 17 · apoio some quando o `exp` do **lema** chega a 5 | some quando o `exp` da **forma** chega a 5; revisão continua por lema | `χαίρουσιν` e `καλή` vieram sem apoio porque herdaram o `exp` de `χαίρει` e `καλός`, e ele não conhecia aquelas formas |
+| 14 · quatro partes e nada mais | quatro partes, mais nota de forma (uma linha), curiosidade (com fonte) e correções da auditoria — todos opcionais | atenção breve à forma *dentro* do texto lido ajuda adultos; o que foi retirado em 17/09 eram exercícios, e isto não é exercício |
+| 19 · sem comentário histórico | comentário histórico só na curiosidade | ele quer o mundo grego ligado ao que já conhece — mitos, figuras, cultos —, e o lugar disso é fora do texto, em português, com fonte |
+
+O cartão ganhou também o elenco recolhido ("Quem é quem"): depois de quatro semanas ele
+ainda não sabia quem era quem na família.
+
+O que **não** mudou: o grego continua com inventário fechado, a curiosidade nunca vira
+lição sobre um tema (o mundo continua entrando pela família, `GREEK_COURSE.md`), e a nota
+de forma nunca vira seção fixa.
 
 ---
 

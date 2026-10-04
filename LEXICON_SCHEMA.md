@@ -47,6 +47,31 @@ A contagem começou na semana 2 (17/09/2026). A semana 1 não tem registro e nã
 reconstruída; itens que só apareceram nela ficam em 0. Quem mantém o campo é o
 planejador, no passo 4a, somando as aparições da semana que acabou.
 
+### `exp` por lema e por forma — desde 04/10/2026
+
+O `exp` da linha do lema soma **todas** as formas em que a palavra apareceu. Ele governa
+a elegibilidade para o Ἀνάμνησις, que testa o lema.
+
+O **apoio de leitura** é decidido pela forma que está no texto:
+
+- Uma forma que não é a de citação (`χαίρουσιν`, `καλή`, `τὸν ἄρτον`) tem linha própria
+  em `[GR-FORMA]`, com o seu `exp`. Forma sem linha ali tem `exp` 0.
+- A forma de citação — a que encabeça a linha do lema — tem
+  `exp = exp do lema − soma das formas dele em [GR-FORMA]`.
+- Abaixo de 5, a palavra leva glosa e transliteração naquele lugar do texto; a partir
+  de 5, não.
+
+O que conta como a mesma forma: a mesma grafia, ignorando acento grave/agudo
+(`καρπὸν` = `καρπόν`), o acento que um enclítico acrescenta ou tira (`ἐστιν` = `ἐστίν`,
+`δοῦλός` = `δοῦλος`), o ν móvel (`χαίρουσι` = `χαίρουσιν`) e a pontuação. O artigo não
+é item de léxico; o substantivo é registrado com ele (`τὸν ἄρτον`) porque é assim que
+aparece. Um substantivo neutro cujo nominativo e acusativo coincidem é uma forma só.
+
+A contagem por forma foi reconstruída a partir da semana 4, a única com o texto inteiro
+no repositório em formato de dados. Antes dela não há registro por forma — por isso a
+subtração acima: o que não se sabe fica com o lema, e uma forma nunca registrada começa
+com apoio. Errar para o lado do apoio não custa nada (invariante 17).
+
 ## Regras de movimentação
 
 - **Aparecer num texto nunca promove.** Só um teste promove. Esta é a regra central: é
@@ -71,6 +96,7 @@ O arquivo não tem uma forma única. Cada seção tem a sua, e é preciso declar
 | `[GR-INTERROG]` | idem | interrogativas, semeadas antes do uso |
 | `[GR-BLOCO]` | idem | expressões memorizadas inteiras, não analisadas na fase 1 |
 | `[GR-NOM]` | idem | nomes próprios; a glosa carrega restrições de caso |
+| `[GR-FORMA]` | `forma \| lema \| exp` | formas que não são a de citação, com `exp` próprio |
 | `[IT-CORE]` | idem | vocabulário italiano (vazio até agora) |
 | `[IT-FALSI]` | idem, sem `exp` | falsos amigos com o português |
 | `[IT-INTERF]` | idem, sem `exp`; a glosa é `—` | interferências estruturais |

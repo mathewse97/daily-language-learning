@@ -44,6 +44,13 @@ experiência, não de diagnóstico — você não precisa saber qual regra falho
 | **4** | compreendi sem esforço |
 | **5** | fácil demais — pode acelerar |
 
+**"Palavras que não vieram"** são as respostas do Ἀνάμνησις (grego) e do Ripasso
+(italiano) que você não conseguiu lembrar antes de abrir "Conferir". É o único jeito de o
+sistema saber o que falhou: o que você testou e não nomeou é tratado como lembrado e sobe
+de caixa. Basta guardar de cabeça, ou numa nota do telefone, e dizer no domingo — por
+exemplo, "não veio ὁ οἶνος na terça". Se não anotou, diga isso: o planejador então só
+avança o que está na caixa 1, em vez de promover tudo.
+
 Elas entram pela conversa de domingo e o agente grava a linha em
 `state/checkin_log.md`. Não há formulário: o site é estático e não tem para onde salvar,
 e uma máquina para isso só serviria nos domingos em que a semana também não seria

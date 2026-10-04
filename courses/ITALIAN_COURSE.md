@@ -105,9 +105,29 @@ invertido; consoantes duplas na escrita (`anno` vs `ano` — vale corrigir sempr
 Os campos correspondentes nos dados estão em `WEEK_PACKET_SCHEMA.md`, cartão
 `lang: "it"`.
 
+## O que prende o interesse
+
+Na semana 4 a nota foi 2, por vocabulário e por falta de interesse. Os textos eram sobre
+costumes (um mercado, o caffè sospeso, o vaporetto) e não contavam uma história. O que
+ele pediu: **monumentos e lugares conhecidos — o Coliseu, a Torre de Pisa, os
+aquedutos — ligados a uma história de verdade**: quem construiu, o que deu errado, a
+lenda e o que a desmente.
+
+- O texto conta **uma história com começo e fim**, não uma descrição. O presente
+  histórico (`Nel 1173 iniziano i lavori`) resolve o passado sem sair da fase 1.
+- **Exatidão vale aqui como no grego:** fato verificado, lenda chamada de lenda,
+  divergência dita em uma linha. A curiosidade (`curio`), em português e com fonte, é o
+  lugar da ressalva.
+- **Ponte com o grego, quando couber:** Nápoles foi Neápolis, Paestum foi Poseidônia,
+  Siracusa foi a maior cidade grega do Ocidente.
+- **Vocabulário com nota baixa:** texto no piso da faixa da fase (~80 palavras), glosa
+  generosa para tudo que não for transparente, e nenhuma estrutura além da fase — nem no
+  modelo do gabarito.
+
 ## Reservatório temático
 
-Comida e cozinha regional · mercados · Roma, Nápoles, Florença, Veneza, Bolonha,
+Monumentos e o que aconteceu neles (Coliseu, Torre de Pisa, aquedutos, Fontana di
+Trevi, Pompeia, Paestum, Ravenna) · comida e cozinha regional · mercados · Roma, Nápoles, Florença, Veneza, Bolonha,
 Palermo · café e ritual urbano · o Sul e o Norte · arte e arquitetura · Caravaggio,
 Michelangelo, Bernini · ópera e canção · cinema (Fellini, De Sica, Sorrentino) ·
 literatura (Calvino, Ferrante, Dante em prosa) · design e moda · futebol · política e

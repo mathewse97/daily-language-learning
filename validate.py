@@ -38,6 +38,7 @@ def ler_lexico() -> dict[str, int]:
         erro("state/lexicon.md não tem bloco de dados cercado por ```")
         return {}
     itens: dict[str, int] = {}
+    formas: list[tuple[str, str, int]] = []
     secao = ""
     for linha in bloco.group(1).splitlines():
         linha = linha.strip()
@@ -50,7 +51,16 @@ def ler_lexico() -> dict[str, int]:
         if "|" not in linha:
             continue
         campos = [c.strip() for c in linha.split("|")]
-        if secao.startswith("[GR"):
+        if secao == "[GR-FORMA]":
+            if len(campos) != 3:
+                erro(f"léxico · [GR-FORMA] · linha com {len(campos)} campos, "
+                     f"esperados 3 (forma | lema | exp): {linha}")
+                continue
+            try:
+                formas.append((campos[0], campos[1], int(campos[2])))
+            except ValueError:
+                erro(f"léxico · exp não é número: {linha}")
+        elif secao.startswith("[GR"):
             if len(campos) != 7:
                 erro(f"léxico · {secao} · linha com {len(campos)} campos, "
                      f"esperados 7: {linha}")
@@ -67,6 +77,19 @@ def ler_lexico() -> dict[str, int]:
             if len(campos) != 3:
                 erro(f"léxico · {secao} · linha com {len(campos)} campos, "
                      f"esperados 3: {linha}")
+    # Forma sem lema não tem como herdar nada; e a soma das formas de um lema
+    # não pode passar do exp dele, que conta todas as aparições.
+    soma: dict[str, int] = {}
+    for forma, lema, n in formas:
+        if lema not in itens:
+            erro(f"léxico · [GR-FORMA] · {forma!r} aponta para o lema {lema!r}, "
+                 f"que não está no léxico")
+            continue
+        soma[lema] = soma.get(lema, 0) + n
+    for lema, n in soma.items():
+        if n > itens[lema]:
+            erro(f"léxico · as formas de {lema!r} somam exp {n}, acima do exp do "
+                 f"lema ({itens[lema]}) — o lema conta todas as aparições")
     return itens
 
 
@@ -136,6 +159,19 @@ def validar_semana(exp: dict[str, int]) -> None:
             erro(f"week.json · {rotulo}: falta a nota de som — invariante 14")
         if not c.get("pt"):
             erro(f"week.json · {rotulo}: falta o português corrido — invariante 14")
+
+        forma = c.get("form")
+        if forma is not None and (not isinstance(forma, str) or "\n" in forma
+                                  or len(re.sub(r"<[^>]+>", "", forma)) > 240):
+            erro(f"week.json · {rotulo}: a nota de forma é uma linha só — invariante 14")
+        for cc in cartoes:
+            curio = cc.get("curio")
+            if curio is not None and not re.search(r"\)\.?$", str(curio).strip()):
+                erro(f"week.json · {rotulo}: a curiosidade ({cc.get('lang')}) tem de "
+                     f"terminar com a fonte entre parênteses — invariante 23")
+        if c.get("fix") and dia.get("d") != 1:
+            erro(f"week.json · {rotulo}: correções da auditoria só no cartão de "
+                 f"segunda — invariante 14")
 
         rec = c.get("recall")
         if rec:

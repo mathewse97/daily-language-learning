@@ -10,7 +10,7 @@ inline, e só esta: `<b> <i> <em> <code> <a> <span class="gi">`.
 
 | Campo | O que é |
 |---|---|
-| `schema` | `acharnae-week/1`. Mudou a forma, sobe o número e este arquivo muda junto |
+| `schema` | `acharnae-week/1`. Mudou a forma, sobe o número e este arquivo muda junto (ver o fim do arquivo) |
 | `week`, `phase`, `range` | número da semana, fase do grego, intervalo ISO `início/fim` |
 | `composed` | quando e como o pacote foi composto — útil quando não foi o planejador |
 | `header` | `eyebrow`, `title`, `sub` — o cabeçalho da página |
@@ -24,13 +24,15 @@ inline, e só esta: `<b> <i> <em> <code> <a> <span class="gi">`.
 | `register` | `composto`, `adaptado` ou `autêntico` — invariante 9, obrigatório |
 | `setting` | a linha de contexto da semana, se houver |
 | `sentences` | **as frases da semana, na ordem, uma vez só** |
+| `cast` | o elenco: pares `[nome, quem é]`, recolhido como "Quem é quem" em todo cartão |
 
 Cada frase é uma lista de palavras; cada palavra é `[glosa, grego, transliteração]`.
 A pontuação pertence ao grego da palavra que ela segue — `"οἰκεῖ."` — nunca a um
 elemento próprio.
 
-**Apoio de leitura.** Quando o `exp` da palavra no Léxico chegar a 5, quem compõe escreve
-`null` em glosa e transliteração: `[null, "φέρει.", null]`. O renderizador esconde as
+**Apoio de leitura.** Quando o `exp` **da forma** da palavra chegar a 5 (regra em
+`LEXICON_SCHEMA.md`), quem compõe escreve `null` em glosa e transliteração:
+`[null, "φέρει.", null]`. O renderizador esconde as
 duas. A decisão é de quem compõe, que tem o Léxico à mão; o renderizador não decide nada.
 
 **Por que as frases ficam num lugar só.** Cada dia declara apenas `upTo`: quantas das
@@ -47,16 +49,20 @@ Sete objetos, segunda primeiro: `d` (1–6 = segunda a sábado, 0 = domingo), `l
 
 ### Cartão de grego — `lang: "gr"`
 
-Quatro partes e nada mais (invariante 13). Campos, nesta ordem de renderização:
+Quatro partes, mais três acréscimos opcionais (invariante 14). Campos, nesta ordem de
+renderização:
 
 | Campo | Obrigatório | O que é |
 |---|---|---|
 | `min` | sim | duração estimada |
+| `fix` | não | lista de correções da auditoria mensal — só no cartão de segunda |
 | `setting` | não | uma frase, só quando o cenário não for dedutível |
 | `recall` | não | `{prompts, key, probed}` — o Ἀνάμνησις |
 | `upTo` | sim | quantas frases de `greek.sentences` este dia lê |
 | `pt` | sim | o português corrido do texto **daquele dia** |
+| `form` | não | a nota de forma: uma linha, só no dia em que uma forma nova aparece |
 | `sound` | sim | a nota de som, sobre som presente no texto do dia |
+| `curio` | não | a curiosidade: 2–3 linhas, só em dia com gancho, terminando com a fonte |
 
 `recall.probed` nomeia os itens do Léxico que os prompts testam, exatamente como estão
 escritos lá. É o que o entregador copia para `probed` no Logbook. Sem Ἀνάμνησις naquele
@@ -69,7 +75,8 @@ em todo cartão de grego sem que ninguém as escreva.
 
 `min`, `setting`, `recall` (`{prompts, key}`), `text`, `glosses` (pares
 `[termo, glosa]`), `questions`, `note`, `produce`, `answers` (pares `[rótulo, texto]`),
-`compare`. Todos opcionais menos `min`; o domingo usa só `min` e `text`.
+`compare`, `curio` (a curiosidade, em português, com fonte). Todos opcionais menos `min`;
+o domingo usa só `min` e `text`.
 
 ### Cartão de inglês — `lang: "en"`
 
@@ -87,3 +94,7 @@ em todo cartão de grego sem que ninguém as escreva.
 3. `upTo` nunca diminui de segunda a sábado.
 4. Todo `pt` corresponde às frases até o `upTo` daquele dia.
 5. Todo cartão de grego tem `sound`; todo `register` está preenchido.
+6. `form` tem uma linha; `curio` termina com a fonte; `fix` só na segunda.
+
+Campos novos e opcionais não mudam o número do `schema`: um pacote antigo continua
+válido. O número sobe quando um campo muda de sentido ou passa a ser obrigatório.

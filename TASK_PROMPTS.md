@@ -48,7 +48,9 @@ fazem, relate e não conserte.
    semana que acabou) e state/checkin_log.md.
 
 2. Pergunte a Mathews as três notas da semana, de 1 a 5, uma por trilha, e quais
-   palavras não vieram. Acrescente uma linha a state/checkin_log.md no formato
+   palavras não vieram — as respostas do Ἀνάμνησις (e do Ripasso) que ele não conseguiu
+   lembrar antes de abrir "Conferir". Se ele não anotou, não adivinhe: trate como
+   check-in sem misses utilizáveis (regra conservadora do passo 4). Acrescente uma linha a state/checkin_log.md no formato
    `data | gr | it | en | misses`. Se ele não quiser dar as notas, siga sem elas
    e use a regra conservadora do passo 4.
 
@@ -71,8 +73,10 @@ fazem, relate e não conserte.
 
 4a. Atualize a coluna `exp`. Para cada palavra grega da semana que acabou, conte as
    aparições nos dias que de fato a leram — uma frase dentro do `upTo` de cinco dias
-   conta cinco vezes — somando sob o lema; o artigo não é item de léxico. `exp`
-   governa apoio de leitura e elegibilidade para teste, nunca promoção de caixa.
+   conta cinco vezes — somando sob o lema; o artigo não é item de léxico. Some também
+   à forma, em [GR-FORMA], toda aparição que não for a forma de citação (regra em
+   LEXICON_SCHEMA.md). `exp` governa apoio de leitura e elegibilidade para teste,
+   nunca promoção de caixa.
 
 5. Componha a semana como DADOS e escreva em state/week.json, seguindo
    WEEK_PACKET_SCHEMA.md. Você escreve JSON, nunca HTML.
@@ -81,13 +85,22 @@ fazem, relate e não conserte.
 
    As frases gregas da semana vão UMA VEZ SÓ em greek.sentences, e cada dia declara
    só `upTo`: 3, 5, 7, 9, 11, 13, 13. Não existe outro lugar onde escrever texto
-   grego, e é isso que torna a invariante 12 impossível de violar. Palavra com
-   exp ≥ 5 leva null no lugar da glosa e da transliteração.
+   grego, e é isso que torna a invariante 12 impossível de violar. Palavra cuja
+   FORMA tem exp ≥ 5 leva null no lugar da glosa e da transliteração; forma nova de
+   palavra conhecida leva apoio completo (LEXICON_SCHEMA.md).
+   Preencha greek.cast com o elenco, nome e quem é.
 
-   O CARTÃO DE GREGO TEM QUATRO PARTES E NADA MAIS: Ἀνάμνησις, texto interlinear,
-   português corrido recolhido, nota de som. Sem Ἐρωτήσεις, sem Σκόπει, sem
-   observação, sem Θησαυρός, sem etimologia, sem gabarito. Não reintroduza nada
-   disso: foi retirado de propósito, depois de duas semanas de uso.
+   O CARTÃO DE GREGO TEM QUATRO PARTES: Ἀνάμνησις, texto interlinear, português
+   corrido recolhido, nota de som. Admite só três acréscimos, todos opcionais:
+   `form` — uma linha, só no dia em que uma forma nova aparece pela primeira vez;
+   `curio` — 2 a 3 linhas, só em dia com gancho, sempre terminando com a fonte;
+   `fix` — as correções do passo 11, só na segunda. Sem Ἐρωτήσεις, sem Σκόπει, sem
+   Θησαυρός, sem etimologia, sem gabarito: foram retirados de propósito.
+
+   Toda semana tem pelo menos um gancho conhecido — mito, figura, lugar, culto —
+   entrando pela família (GREEK_COURSE.md, "Ganchos e curiosidades"). No italiano,
+   a mesma ideia: uma história de verdade, de preferência ligada a um monumento ou
+   lugar conhecido (ITALIAN_COURSE.md, "O que prende o interesse").
 
    O Ἀνάμνησις testa SÓ itens com exp ≥ 5. Se nenhum qualificar, omita `recall`
    naquele dia. Nomeie os itens testados em `recall.probed`, escritos exatamente
@@ -98,7 +111,8 @@ fazem, relate e não conserte.
    completa; aumento correto inclusive em compostos; aspecto deliberado; nada além
    da fase atual; Κλεισθένης, Ἡρακλῆς e Ζεύς só em nominativo ou vocativo até a
    fase 2. Na dúvida sobre uma forma, troque a palavra.
-   Depois confira os fatos ANTES de compor, não depois. Nada posterior a 432 a.C.
+   Depois confira os fatos ANTES de compor, não depois — inclusive os de cada
+   curiosidade, que termina com a fonte. Nada posterior a 432 a.C. no enredo.
    Onde a bibliografia diverge, diga em uma linha ou omita.
 
 7. Atualize state/logbook.md: avance de fase só se o portão do currículo tiver sido
