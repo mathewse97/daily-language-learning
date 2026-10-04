@@ -15,46 +15,48 @@ Campos e contrato em `STATE_SCHEMA.md`.
 UPDATED: 2026-10-03
 DAY: 27
 STREAK: 0
-LAST_REPORT: 2026-09-27 GR3 IT3 EN3
+LAST_REPORT: 2026-10-04 GR3 IT2 EN3
 probed: —
 
 [GREEK]
 phase: 1
-lesson: 16 — semana 4, dia 6/7 (texto novo, cresce 3 → 13 frases)
-apoio: decaindo por palavra — vários itens já sem glosa (exp ≥5: ἔχει, φέρει, ὁρᾷ,
-  χαίρει, λέγει, καλός, ὁ οἶνος, τὸ δῶρον, ὁ καρπός, ὁ βωμός, ὁ ἀγρός, πρός, μικρός,
-  ἀγαθός, καί, ἐν τῷ ἀγρῷ, ἐν Ἀχαρναῖς, Κλεισθένης, Μέλιττα, Δᾶος); as 3 palavras novas
-  da semana 4 (παίζει, ὁ ἄρτος, ἐσθίει) levam apoio completo
+lesson: 17 — semana 5, dia 1/7 (texto novo, cresce 3 → 13 frases)
+apoio: por FORMA desde 04/10 — forma nova de palavra conhecida volta a ter glosa
+  ([GR-FORMA] no léxico); exp do lema governa só o teste. Nota de forma, curiosidade
+  e "Quem é quem" no cartão (RULES 14)
 setting: Ἀχαρναί, primavera de 432 a.C.
-words: 68 — 3 palavras novas na semana 4 (παίζει, ὁ ἄρτος, ἐσθίει)
-unlocked: presente ativo 3sg/3pl (3pl usado pela primeira vez na semana 4, χαίρουσιν);
-  artigo; 1ª/2ª decl. nom./ac.; ἐν+dat. como bloco
+words: 72 — 4 palavras novas na semana 5 (ὁ πατήρ, ἡ μήτηρ, τὸ τέκνον, δύο)
+unlocked: presente ativo 3sg/3pl (-ουσι(ν) explicado em nota de forma na semana 5);
+  artigo; 1ª/2ª decl. nom./ac.; ἐν+dat. como bloco; πατήρ/μήτηρ só nom., como bloco
 cast: Κλεισθένης, Μέλιττα, Νικίας, Χλόη, Δᾶος, Σῖμος, Ἄργος
-recent: a família celebrou a oferenda e o vinho (semana 3); Argos brinca no campo com
-  Nícias e Cloé (semana 4); a casa come pão e vinho e Daos permanece em casa (semana 4)
-weak: portão de fase ainda não confirmado — sem registro de 3 leituras seguidas ≥3/4
+recent: Argos brinca no campo com Nícias e Cloé (semana 4); a casa come pão e vinho
+  (semana 4); a família apresentada por inteiro, e Cloé leva a oferenda ao altar (sem. 5)
+weak: formas novas de palavras conhecidas (χαίρουσιν, καλή) — agora com apoio e nota;
+  portão de fase ainda não confirmado — sem registro de 3 leituras seguidas ≥3/4
 gate: 3 leituras seguidas com ≥3/4 de compreensão
-next: semana 5 continua o texto da semana 4, tecendo os itens vencidos (due 2026-09-30)
-  e mantendo o ritmo (nota 3)
+next: semana 6 — o sacrifício e o mito de Prometeu em Mecone (anunciado na curiosidade
+  de sábado), ritmo mantido (nota 3); tecer ὁ οἶνος, ἀγαθός e λέγει, que ficaram de fora
 
 [ITALIAN]
 phase: 1
-lesson: 8 — semana 4: mercato di Testaccio, Roma (seg) / caffè sospeso, Napoli (qua) /
-  vaporetto, Venezia (sex)
+lesson: 9 — semana 5, mais lenta (nota 2): Colosseo (seg) / Torre di Pisa (qua) /
+  Fontana di Trevi e Acqua Vergine (sex)
 unlocked: artigos; preposições articuladas (nel/dal/sul/del/al); avere (fame/sete/calor);
   di vs da começando a aparecer nos textos
 recent: mercado de Testaccio em Roma; o caffè sospeso napolitano; o vaporetto veneziano.
-weak: —
+weak: vocabulário e interesse (nota 2 na semana 4) — textos ~85 palavras, glosa generosa,
+  monumentos com história; nenhuma estrutura nova
 gate: artigos + preposições articuladas sem erro em 2 produções
-next: essere/avere completo; presente dos 3 grupos
+next: com nota ≥3, essere/avere completo e presente dos 3 grupos (adiados pela nota 2)
 
 [ENGLISH]
 register_last: public writing
-lesson: 9 — semana 4: pricing e scoping (ter) / design tokens (qui) / teste de
-  usabilidade (sáb)
+lesson: 10 — semana 5: decisão explicada ao cliente (ter) / crítica no Slack (qui) /
+  problema no estudo de caso (sáb)
 topics_done: hierarquia visual; API de componente; acessibilidade; escaneabilidade;
-  handoff; estudo de caso; pricing e scoping; design tokens; teste de usabilidade
-collocations: 30
+  handoff; estudo de caso; pricing e scoping; design tokens; teste de usabilidade;
+  rationale ao cliente; crítica assíncrona; problema no estudo de caso
+collocations: 46
 weak: —
 next: novo tópico async ou client-facing; seguir rotação client/async/public
 
@@ -64,6 +66,22 @@ agendada anterior e não se aplicam mais; ver "Pendências registradas")
 ```
 
 ## Pendências registradas
+
+**04/10 · check-in da semana 4 consumido.** Notas GR 3 · IT 2 · EN 3. Misses não
+anotados — Mathews não sabia o que eram; a explicação entrou em `OPERATIONS.md` e no
+cartão de domingo. Regra conservadora aplicada às promoções (ver `state/lexicon.md`).
+Italiano desacelerado pela nota 2. `UPDATED` e `DAY` não foram tocados: são do entregador,
+e a entrega de domingo, 04/10, ainda não tinha rodado quando esta rodada foi escrita.
+
+**04/10 · divergência relatada, não corrigida: `daily.py` não confere a data da semana.**
+`OPERATIONS.md` e `TASK_PROMPTS.md` dizem que, sem semana nova, o script falha. Ele procura
+o dia só pelo dia da semana (`d`), não pelo intervalo `range`; com um pacote velho, a
+segunda-feira republicaria a segunda da semana anterior em silêncio. Corrigir é decisão
+de Mathews, em conversa (invariante 6).
+
+**04/10 · auditoria mensal (primeiro domingo de outubro).** Só as semanas 3 e 4 estão no
+repositório em formato de dados; as semanas 1 e 2 não foram auditadas. Dois erros, nas
+notas de som, publicados como correção no cartão de segunda da semana 5.
 
 **27/09 · campos obsoletos de `[SISTEMA]` removidos.** `planner_enabled: NÃO` e
 `planner_must_return_by: 2026-09-27` vinham do arranjo em que o planejamento era tarefa
