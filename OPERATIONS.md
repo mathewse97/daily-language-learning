@@ -90,7 +90,7 @@ Não quebra nada: o módulo de fala não é lido por nenhum script e não entra 
 diária. Semana sem linha em `speaking/log.md` é só semana sem prática.
 
 O que **não** se faz é deixá-lo apodrecendo. Se forem menos de doze sessões em seis
-semanas, o critério de abandono foi atingido — `speaking/SPEAKING.md` tem o procedimento
+semanas **de módulo ativo**, o critério de abandono foi atingido — `speaking/SPEAKING.md` tem o procedimento
 de remoção, e ele leva dois minutos.
 <!-- MÓDULO:FALA fim -->
 

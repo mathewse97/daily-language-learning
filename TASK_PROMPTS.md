@@ -113,9 +113,12 @@ fazem, relate e não conserte.
 
 <!-- MÓDULO:FALA início -->
 9a. SE a pasta speaking/ existir — ela é um módulo opcional e pode ter sido
-    removida; se não existir, pule este passo inteiro sem comentar:
+    removida; se não existir, pule este passo inteiro sem comentar.
+    Se existir, leia o bloco "Estado" de speaking/SPEAKING.md. Se disser
+    `ESTADO: dormente`, pule o resto deste passo e diga só, no passo 10:
+    "módulo de fala dormente — para ativar, peça 'ative o módulo de fala'".
 
-    Leia speaking/log.md. Trate a coluna `não produzi` das linhas da semana que
+    Se estiver ativo: leia speaking/log.md. Trate a coluna `não produzi` das linhas da semana que
     acabou como entrada adicional de `misses` no passo 4: o que ele tentou dizer
     e não conseguiu é evidência de item não recordado, tão boa quanto o check-in.
     Vale para as colocações inglesas; não mexa no grego por causa disso.
@@ -125,7 +128,8 @@ fazem, relate e não conserte.
     dez linhas:
       - as colocações de inglês da semana, com o registro de cada uma;
       - o que ficou pendente do log da semana anterior;
-      - o número do rodízio de entrevista desta semana (1 a 6, ciclando).
+      - o número do rodízio de entrevista desta semana (1 a 6, ciclando),
+        calculado da data como diz speaking/SPEAKING.md, seção "Como ativar".
     Nada de grego e nada de italiano nesse bloco — ele é só para a fala em inglês.
 <!-- MÓDULO:FALA fim -->
 

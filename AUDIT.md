@@ -103,6 +103,12 @@ mais sólido é redução de ansiedade de fala, e **não há evidência de trans
 conversa com humanos** — o construto mais próximo disso aparece em 3 de 24 estudos.
 Fundamentação completa e critério de abandono em `speaking/SPEAKING.md`.
 Revisão de continuidade marcada para 05/11/2026.
+
+**04/10 · módulo posto em dormência antes do primeiro uso.** Nenhuma sessão aconteceu na
+primeira semana, e Mathews decidiu deixá-lo pronto para ativar depois, em conversa. A
+revisão de 05/11 deixa de valer: ela passa a ser seis semanas após a ativação, e a data
+entra aqui quando o módulo for ativado. Estado e procedimento de ativação em
+`speaking/SPEAKING.md`.
 <!-- MÓDULO:FALA fim -->
 
 ---

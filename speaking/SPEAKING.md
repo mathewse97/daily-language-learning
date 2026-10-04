@@ -6,7 +6,63 @@
 > `MÓDULO:FALA início` … `MÓDULO:FALA fim` em cinco arquivos do núcleo. A seção
 > "Como remover" no fim deste documento lista os cinco, com precisão.
 >
-> **Acrescentado em 24/09/2026.** Primeira revisão de continuidade prevista para 05/11/2026.
+> **Acrescentado em 24/09/2026.** A revisão de continuidade é seis semanas depois da
+> **ativação**, não do acréscimo — ver "Estado" logo abaixo.
+
+## Estado
+
+```
+ESTADO: dormente
+desde: 2026-10-04
+ativado_em: —
+rodizio_semana_1: —
+revisao: —
+```
+
+**Dormente** quer dizer: pronto, documentado, e desligado por decisão de Mathews
+(04/10/2026: "quero deixar pronto, mas não farei por agora"). Enquanto dormente:
+
+- o planejador de domingo **pula o passo 9a inteiro** — não lê `log.md`, não gera
+  briefing — e diz numa linha só, no relatório final, que o módulo está dormente;
+- `log.md` vazio não é falha nem conta para o critério de abandono: o relógio das seis
+  semanas só começa na ativação;
+- nada mais muda. Nenhum script lê este bloco; ele é para o agente e para você.
+
+## Como ativar
+
+Para ativar, basta Mathews dizer numa conversa com um agente que tenha acesso ao
+repositório — esta ou qualquer outra — algo como **"ative o módulo de fala"**. Não
+precisa repetir nada desta seção; o agente que receber o pedido faz, nesta ordem:
+
+1. Lê este arquivo inteiro, `conversa.md`, `entrevista.md` e `log.md`.
+2. Define a **segunda-feira de início**: a próxima segunda, ou a desta semana se
+   Mathews disser que quer começar já. Reescreve o bloco "Estado" acima:
+   `ESTADO: ativo`, `ativado_em:` a data de hoje, `rodizio_semana_1:` a segunda de
+   início, `revisao:` a segunda de início + 42 dias. Atualiza a linha de revisão em
+   `AUDIT.md` (item F1) para a mesma data.
+3. Compõe o **briefing da semana** a partir de `state/week.json` — o da semana que
+   começa na segunda de início; se ela ainda não foi composta, compõe o planejamento
+   primeiro. Mesmo formato do passo 9a de `TASK_PROMPTS.md`: no máximo dez linhas, só
+   inglês, com as colocações da semana e o registro de cada uma, `rodízio: 1`, e
+   "pendências: nenhuma (primeira semana)".
+4. Entrega a Mathews **três blocos prontos para colar**, um depois do outro: o prompt de
+   `conversa.md`, o prompt de `entrevista.md` e o briefing. E a agenda em quatro
+   linhas: segunda abre a conversa e cola; terça e quinta "sessão de hoje"; sábado
+   "entrevista de hoje"; domingo "me dá as linhas do log da semana".
+5. Roda `python3 validate.py`, commita `speaking/` e `AUDIT.md` com a mensagem
+   "Ativa o módulo de fala" e diz o que escreveu.
+
+A partir daí, o passo 9a do planejador de domingo roda normalmente.
+
+O número do rodízio de entrevista é **derivado da data**, não guardado: semanas
+inteiras desde `rodizio_semana_1`, módulo 6, mais 1. Isso evita mais um contador que
+precise ser lembrado — e se uma semana for pulada, o rodízio segue andando, o que é
+aceitável: os seis tipos voltam a cada seis semanas de qualquer jeito.
+
+**Para pôr de volta em dormência**, o mesmo: Mathews diz, o agente reescreve
+`ESTADO: dormente` com a data, e anota em `log.md` uma linha de texto fora do bloco de
+dados. As linhas já registradas ficam. Ao reativar, o relógio das seis semanas
+recomeça.
 
 ## O problema que ele resolve
 

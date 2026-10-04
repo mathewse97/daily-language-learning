@@ -13,7 +13,9 @@
 FORMAT: data | trilha | minutos | cenário | não produzi
 ```
 
-Ainda sem sessões. A primeira linha entra no domingo seguinte à primeira semana de uso.
+Ainda sem sessões. O módulo está **dormente** desde 04/10/2026 (ver "Estado" em
+`SPEAKING.md`); a primeira linha entra no domingo seguinte à primeira semana depois da
+ativação.
 
 Semana sem linha nenhuma é semana sem prática — e seis semanas com menos de doze linhas
 é o critério de abandono do módulo, não um motivo para insistir.
