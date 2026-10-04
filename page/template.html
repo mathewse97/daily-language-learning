@@ -135,6 +135,16 @@
 
   .note{border-left:2px solid var(--rule-2);padding-left:12px;font-size:13.5px;margin:0;color:var(--ink-soft)}
   .note b{color:var(--ink);font-weight:500}
+  /* Nota de forma: uma linha sobre uma forma nova que está no texto do dia. */
+  .form{border-left:2px solid var(--accent-ink);padding-left:12px;font-size:13px;margin:0;color:var(--ink-soft)}
+  .form b{color:var(--accent-ink);font-weight:500}
+  /* Curiosidade: só em dia com gancho, sempre com a fonte. */
+  .curio{border-left:2px solid var(--rule-2);padding-left:12px;font-size:13px;margin:0;color:var(--ink-soft)}
+  .curio b{color:var(--ink);font-weight:500}
+  /* Correções da auditoria mensal, no topo do cartão de segunda. */
+  .fix{border:1px solid var(--flag);border-radius:5px;padding:10px 14px;font-size:13px}
+  .cast{display:flex;flex-direction:column;gap:3px;font-size:13px}
+  .cast b{font-family:var(--serif);font-size:1.1em;font-weight:500}
 
   ul,ol{margin:0;padding-left:1.15rem;display:flex;flex-direction:column;gap:.3em;font-size:13.5px}
 
@@ -264,11 +274,17 @@ __WEEK_JSON__
     h.push('<header><span class="b gr">Grego</span>' +
       (g.register ? '<span class="b tag">' + esc(g.register) + '</span>' : "") +
       (c.min ? '<span class="min">' + esc(c.min) + '</span>' : "") + '</header>');
+    if (has(c.fix)) h.push('<div class="fix"><p class="sect">Correções do mês</p>' + list("ul", c.fix) + '</div>');
     if (has(c.setting)) h.push('<p class="setting">' + rich(c.setting) + '</p>');
     h.push(recall(c.recall, "Ἀνάμνησις"));
     h.push(interlinear(g.sentences, c.upTo, c.__from));
     if (has(c.pt)) h.push(details("Em português corrido", '<p class="muted">' + rich(c.pt) + '</p>'));
+    if (has(c.form)) h.push('<p class="form"><b>Forma.</b> ' + rich(c.form) + '</p>');
     if (has(c.sound)) h.push('<p class="sound"><b>Som do dia.</b> ' + rich(c.sound) + '</p>');
+    if (has(c.curio)) h.push('<p class="curio"><b>Curiosidade.</b> ' + rich(c.curio) + '</p>');
+    if (has(g.cast)) h.push(details("Quem é quem", '<div class="cast">' + g.cast.map(function (p) {
+      return '<span><b>' + esc(p[0]) + '</b> — ' + rich(p[1]) + '</span>';
+    }).join("") + '</div>'));
     h.push(details("Alfabeto", '<div class="letters">' + ALPHABET.map(function (l) {
       return '<span>' + l[0] + ' <em>' + l[1] + '</em></span>';
     }).join("") + '</div>'));
@@ -288,6 +304,7 @@ __WEEK_JSON__
     }).join("") + '</p>');
     if (has(c.questions)) h.push('<div><p class="sect">Domande</p>' + list("ol", c.questions) + '</div>');
     if (has(c.note)) h.push('<p class="note"><b>Nota.</b> ' + rich(c.note) + '</p>');
+    if (has(c.curio)) h.push('<p class="curio"><b>Curiosità.</b> ' + rich(c.curio) + '</p>');
     if (has(c.produce)) h.push('<div><p class="sect">Prova a dire</p><p>' + rich(c.produce) + '</p></div>');
     if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) +
       (has(c.compare) ? '<span class="small">' + rich(c.compare) + '</span>' : "") + '</div>'));

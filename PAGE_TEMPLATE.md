@@ -61,6 +61,10 @@ Para quem for mexer no renderizador — não para quem compõe.
 | `.glosses` | glosas: `<b>` termo — texto |
 | `.sound` | a nota de pronúncia |
 | `.note` | a observação (italiano) |
+| `.form` | a nota de forma do grego: uma linha, só em dia com forma nova |
+| `.curio` | a curiosidade, grego e italiano: só em dia com gancho, com fonte |
+| `.fix` | as correções da auditoria mensal, no topo do cartão de segunda |
+| `.cast` | "Quem é quem": o elenco, recolhido, em todo cartão de grego |
 | `.sect` | rótulo de subseção |
 | `details` + `.dz` | chave, português corrido, alfabeto, gabarito — recolhidos |
 | `.ans` | respostas: `<i>` rótulo · conteúdo |
