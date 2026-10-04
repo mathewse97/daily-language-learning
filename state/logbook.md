@@ -12,15 +12,15 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-10-03
-DAY: 27
+UPDATED: 2026-10-04
+DAY: 28
 STREAK: 0
 LAST_REPORT: 2026-10-04 GR3 IT2 EN3
 probed: —
 
 [GREEK]
 phase: 1
-lesson: 17 — semana 5, dia 1/7 (texto novo, cresce 3 → 13 frases)
+lesson: 17 — semana 5, dia 7/7 (texto novo, cresce 3 → 13 frases)
 apoio: por FORMA desde 04/10 — forma nova de palavra conhecida volta a ter glosa
   ([GR-FORMA] no léxico); exp do lema governa só o teste. Nota de forma, curiosidade
   e "Quem é quem" no cartão (RULES 14)
