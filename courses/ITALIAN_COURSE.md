@@ -120,6 +120,9 @@ lenda e o que a desmente.
   lugar da ressalva.
 - **Ponte com o grego, quando couber:** Nápoles foi Neápolis, Paestum foi Poseidônia,
   Siracusa foi a maior cidade grega do Ocidente.
+- **Números por extenso:** todo número em algarismos no texto italiano — e nas
+  perguntas, respostas e modelo — vem seguido do extenso entre parênteses:
+  `nel 1990 (millenovecentonovanta)`. Ele ainda não lê números em italiano.
 - **Vocabulário com nota baixa:** texto no piso da faixa da fase (~80 palavras), glosa
   generosa para tudo que não for transparente, e nenhuma estrutura além da fase — nem no
   modelo do gabarito.

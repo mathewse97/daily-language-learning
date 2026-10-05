@@ -162,13 +162,29 @@ def validar_semana(exp: dict[str, int]) -> None:
 
         forma = c.get("form")
         if forma is not None and (not isinstance(forma, str) or "\n" in forma
-                                  or len(re.sub(r"<[^>]+>", "", forma)) > 240):
-            erro(f"week.json · {rotulo}: a nota de forma é uma linha só — invariante 14")
+                                  or len(re.sub(r"<[^>]+>", "", forma)) > 360):
+            erro(f"week.json · {rotulo}: a nota de forma é curta, até três linhas "
+                 f"— invariante 14")
         for cc in cartoes:
             curio = cc.get("curio")
             if curio is not None and not re.search(r"\)\.?$", str(curio).strip()):
                 erro(f"week.json · {rotulo}: a curiosidade ({cc.get('lang')}) tem de "
                      f"terminar com a fonte entre parênteses — invariante 23")
+        # Números no italiano: algarismo sem o extenso logo depois, entre
+        # parênteses, ele não sabe ler (invariante 19). O português da curiosidade
+        # e da nota fica de fora: ali o número é lido em português.
+        for cc in cartoes:
+            if cc.get("lang") != "it":
+                continue
+            textos = [cc.get("text"), cc.get("setting"), cc.get("produce")]
+            textos += cc.get("questions") or []
+            textos += [p[1] for p in cc.get("answers") or []]
+            textos += (cc.get("recall") or {}).get("prompts", [])
+            textos += (cc.get("recall") or {}).get("key", [])
+            for s in textos:
+                for m in re.finditer(r"\d+(?!\d)(?! \()", str(s or "")):
+                    erro(f"week.json · {rotulo}: o número {m.group()} no italiano "
+                         f"não tem o extenso entre parênteses — invariante 19")
         if c.get("fix") and dia.get("d") != 1:
             erro(f"week.json · {rotulo}: correções da auditoria só no cartão de "
                  f"segunda — invariante 14")

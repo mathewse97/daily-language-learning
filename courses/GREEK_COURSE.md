@@ -210,9 +210,11 @@ Vocativo em `-ε` para a 2ª declinação masculina: `ὦ δοῦλε`.
 
 E três acréscimos opcionais, nenhum deles exercício:
 
-- **Nota de forma**, logo antes da nota de som. Uma linha, no máximo uma por dia, só no
-  dia em que uma forma nova de palavra conhecida aparece pela primeira vez. O significado
-  ali, depois o padrão, e a terminologia por último e curta:
+- **Nota de forma**, logo antes da nota de som. Até três linhas, no máximo uma por dia,
+  só no dia em que uma forma nova aparece pela primeira vez. O significado ali, depois
+  **a causa** — o padrão ou a regra que produz a forma —, e a terminologia por último e
+  curta. Nunca só o que está à vista: "ἐστιν às vezes tem acento" é óbvio; o que ele
+  precisa é o porquê (enclítica + o acento não recua além da antepenúltima). Exemplo:
   `ἔχουσιν — "(eles) têm": -ουσι(ν) marca "eles/elas" no presente (3ª pessoa do plural).`
   Se houver duas formas novas no dia, escolha a mais frequente nas semanas seguintes; a
   outra tem glosa e espera.

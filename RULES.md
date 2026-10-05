@@ -97,10 +97,11 @@ conhece é o que torna a língua desconhecida compreensível.
 logo abaixo do texto; a nota de som. Admitem-se só três acréscimos, todos opcionais e
 nenhum deles exercício:
 
-- **a nota de forma**, logo antes da nota de som: **uma linha**, no máximo uma por dia,
-  só no dia em que uma forma nova de palavra conhecida aparece pela primeira vez — o que
-  ela significa ali e o padrão que a produz (`χαίρουσιν — "(eles) se alegram": -ουσι(ν)
-  marca "eles/elas" no presente`). Dia sem forma nova não tem nota;
+- **a nota de forma**, logo antes da nota de som: **curta, até três linhas**, no máximo
+  uma por dia, só no dia em que uma forma nova aparece pela primeira vez — o que ela
+  significa ali e **por que** tem aquela forma (`χαίρουσιν — "(eles) se alegram": -ουσι(ν)
+  marca "eles/elas" no presente`). Nunca descreva só o que se vê ("esta tem acento,
+  aquela não"): a nota existe para dar a causa. Dia sem forma nova não tem nota;
 - **a curiosidade**, logo depois da nota de som: 2 a 3 linhas em português, só em dia com
   gancho no texto, sempre terminando com a fonte (invariante 23);
 - **as correções da auditoria mensal**, no topo do cartão de segunda (passo 11 do
@@ -155,6 +156,9 @@ modelo para comparação.
 compreensão daquele texto, na forma `οἶκος — casa`: uma ou duas palavras, nunca uma
 oração. Linha de contexto acima do texto: no máximo uma frase, e só quando o cenário não
 for dedutível. Sem ensaios. Comentário histórico só na curiosidade (14), e só ali.
+**Números:** em texto grego ou italiano, todo número escrito em algarismos vem seguido
+do número por extenso, entre parênteses, na mesma língua — `nel 1173
+(millecentosettantatré)`. Ele ainda não lê números nessas línguas; o validador confere.
 
 **20 · Português neutro.** Registro instrucional claro e natural. Sem diminutivos,
 coloquialismos ou idiomatismos. Escreva como um bom livro-texto.

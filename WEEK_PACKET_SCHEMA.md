@@ -60,7 +60,7 @@ renderização:
 | `recall` | não | `{prompts, key, probed}` — o Ἀνάμνησις |
 | `upTo` | sim | quantas frases de `greek.sentences` este dia lê |
 | `pt` | sim | o português corrido do texto **daquele dia** |
-| `form` | não | a nota de forma: uma linha, só no dia em que uma forma nova aparece |
+| `form` | não | a nota de forma: até três linhas, com a causa, só no dia em que uma forma nova aparece |
 | `sound` | sim | a nota de som, sobre som presente no texto do dia |
 | `curio` | não | a curiosidade: 2–3 linhas, só em dia com gancho, terminando com a fonte |
 
@@ -94,7 +94,8 @@ o domingo usa só `min` e `text`.
 3. `upTo` nunca diminui de segunda a sábado.
 4. Todo `pt` corresponde às frases até o `upTo` daquele dia.
 5. Todo cartão de grego tem `sound`; todo `register` está preenchido.
-6. `form` tem uma linha; `curio` termina com a fonte; `fix` só na segunda.
+6. `form` é curta; `curio` termina com a fonte; `fix` só na segunda.
+7. No italiano, todo número em algarismos é seguido do extenso entre parênteses.
 
 Campos novos e opcionais não mudam o número do `schema`: um pacote antigo continua
 válido. O número sobe quando um campo muda de sentido ou passa a ser obrigatório.

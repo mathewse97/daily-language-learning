@@ -92,7 +92,8 @@ fazem, relate e não conserte.
 
    O CARTÃO DE GREGO TEM QUATRO PARTES: Ἀνάμνησις, texto interlinear, português
    corrido recolhido, nota de som. Admite só três acréscimos, todos opcionais:
-   `form` — uma linha, só no dia em que uma forma nova aparece pela primeira vez;
+   `form` — até três linhas, com o PORQUÊ da forma, nunca só o que se vê; só no dia
+   em que uma forma nova aparece pela primeira vez;
    `curio` — 2 a 3 linhas, só em dia com gancho, sempre terminando com a fonte;
    `fix` — as correções do passo 11, só na segunda. Sem Ἐρωτήσεις, sem Σκόπει, sem
    Θησαυρός, sem etimologia, sem gabarito: foram retirados de propósito.
@@ -101,6 +102,8 @@ fazem, relate e não conserte.
    entrando pela família (GREEK_COURSE.md, "Ganchos e curiosidades"). No italiano,
    a mesma ideia: uma história de verdade, de preferência ligada a um monumento ou
    lugar conhecido (ITALIAN_COURSE.md, "O que prende o interesse").
+   Número em algarismos no grego ou no italiano vem sempre seguido do extenso entre
+   parênteses, na mesma língua: `nel 1173 (millecentosettantatré)`.
 
    O Ἀνάμνησις testa SÓ itens com exp ≥ 5. Se nenhum qualificar, omita `recall`
    naquele dia. Nomeie os itens testados em `recall.probed`, escritos exatamente
