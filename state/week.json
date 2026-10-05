@@ -523,7 +523,7 @@
           },
           "upTo": 3,
           "pt": "Clístenes mora em Acarnas. Clístenes é o pai. Melita é a mãe.",
-          "form": "<span class=\"gi\">ἐστιν</span> e <span class=\"gi\">ἐστίν</span> são a mesma palavra. Ela se apoia na palavra anterior, e o acento aparece ou não por causa dela: depois de <span class=\"gi\">πατήρ</span>, nenhum; depois de <span class=\"gi\">μήτηρ</span>, um. O sentido não muda.",
+          "form": "Por que <span class=\"gi\">ἐστιν</span> às vezes tem acento? Ela não tem acento próprio: se pronuncia colada à palavra anterior, como uma palavra só. E o acento grego não pode recuar além da antepenúltima sílaba. <span class=\"gi\">πατήρ ἐστιν</span> = pa-TÉR-es-tin: cabe. <span class=\"gi\">μήτηρ ἐστίν</span> = MÉ-ter-es-tin: o acento ficaria na 4ª sílaba de trás para frente — então <span class=\"gi\">ἐστίν</span> ganha um acento seu.",
           "sound": "O <span class=\"gi\">η</span> de <span class=\"gi\">μήτηρ</span> é um e longo e aberto, como o “é” de “pé” sustentado — e aparece duas vezes na palavra.",
           "curio": "O pai tem o nome de um ateniense famoso: Clístenes, que em 508/7 a.C. reorganizou a Ática em demos — Acarnas entre eles — e montou a base da democracia. Os historiadores contam 139 ou 140 demos, conforme a reconstrução. (Heródoto 5.66–69; <i>Constituição dos atenienses</i> 21)"
         },
@@ -543,7 +543,7 @@
               "ci sono"
             ]
           },
-          "text": "Il Colosseo è il simbolo di Roma, ma il suo vero nome è Anfiteatro Flavio. L'imperatore Vespasiano inizia i lavori verso il 70 dopo Cristo, nel posto del lago privato di Nerone. Suo figlio Tito inaugura l'anfiteatro nell'80, con cento giorni di giochi. Dentro ci sono posti per decine di migliaia di persone. Nell'arena combattono i gladiatori e gli animali feroci. Sotto l'arena c'è un labirinto di corridoi e di gabbie. Il nome “Colosseo” arriva più tardi, forse da una statua colossale di Nerone lì vicino.",
+          "text": "Il Colosseo è il simbolo di Roma, ma il suo vero nome è Anfiteatro Flavio. L'imperatore Vespasiano inizia i lavori verso il 70 (settanta) dopo Cristo, nel posto del lago privato di Nerone. Suo figlio Tito inaugura l'anfiteatro nell'80 (ottanta), con cento giorni di giochi. Dentro ci sono posti per decine di migliaia di persone. Nell'arena combattono i gladiatori e gli animali feroci. Sotto l'arena c'è un labirinto di corridoi e di gabbie. Il nome “Colosseo” arriva più tardi, forse da una statua colossale di Nerone lì vicino.",
           "glosses": [
             [
               "i lavori",
@@ -575,12 +575,12 @@
             "Quanti giorni durano i giochi dell'inaugurazione?",
             "Che cosa c'è sotto l'arena?"
           ],
-          "note": "<em>nell'80</em>, <em>nell'arena</em> — a preposição se funde com o artigo também antes de vogal e de número: <em>in + l'</em> = <em>nell'</em>, <em>di + l'</em> = <em>dell'</em>. Nunca <em>in l'arena</em>.",
+          "note": "<em>nell'80 (ottanta)</em>, <em>nell'arena</em> — a preposição se funde com o artigo também antes de vogal e de número: <em>in + l'</em> = <em>nell'</em>, <em>di + l'</em> = <em>dell'</em>. Nunca <em>in l'arena</em>.",
           "produce": "Descreva mentalmente um monumento ou praça da sua cidade em três frases, no presente, usando <b>c'è</b> ou <b>ci sono</b> e uma preposição articulada (<em>nel, del, sul…</em>).",
           "answers": [
             [
               "1",
-              "L'imperatore Vespasiano, verso il 70 dopo Cristo."
+              "L'imperatore Vespasiano, verso il 70 (settanta) dopo Cristo."
             ],
             [
               "2",
@@ -743,7 +743,7 @@
               "nel"
             ]
           },
-          "text": "La Torre di Pisa è il campanile della cattedrale. I lavori iniziano nel 1173. Dopo il terzo piano, la torre comincia a pendere: il terreno sotto è morbido, fatto di sabbia e di argilla. I lavori si fermano per quasi cento anni, e la torre è finita solo verso il 1370. Nel 1990 la torre chiude ai turisti, perché il rischio di crollo è serio. Gli ingegneri tolgono un po' di terra dal lato nord, e la torre si raddrizza di circa quaranta centimetri. Nel 2001 riapre. Pende ancora, ma è stabile.",
+          "text": "La Torre di Pisa è il campanile della cattedrale. I lavori iniziano nel 1173 (millecentosettantatré). Dopo il terzo piano, la torre comincia a pendere: il terreno sotto è morbido, fatto di sabbia e di argilla. I lavori si fermano per quasi cento anni, e la torre è finita solo verso il 1370 (milletrecentosettanta). Nel 1990 (millenovecentonovanta) la torre chiude ai turisti, perché il rischio di crollo è serio. Gli ingegneri tolgono un po' di terra dal lato nord, e la torre si raddrizza di circa quaranta centimetri. Nel 2001 (duemilauno) riapre. Pende ancora, ma è stabile.",
           "glosses": [
             [
               "il campanile",
@@ -777,7 +777,7 @@
           "questions": [
             "Che cos'è la Torre di Pisa?",
             "Perché la torre comincia a pendere?",
-            "Che cosa fanno gli ingegneri dopo il 1990?"
+            "Che cosa fanno gli ingegneri dopo il 1990 (millenovecentonovanta)?"
           ],
           "note": "<em>il terreno</em>, <em>la torre</em>, <em>i lavori</em>, <em>gli ingegneri</em> — o plural masculino tem duas formas: <em>i</em> antes de consoante, <em>gli</em> antes de vogal (e de <em>s</em> + consoante, <em>z</em>, <em>gn</em>).",
           "produce": "Descreva mentalmente, em duas ou três frases no presente, um prédio ou lugar com um problema: o que é, qual é o problema, o que fazem para resolver. Use <b>il, la, i, gli</b> antes de cada substantivo.",
@@ -948,7 +948,7 @@
               "gli"
             ]
           },
-          "text": "Ogni giorno migliaia di turisti lanciano una moneta nella Fontana di Trevi, ma pochi sanno da dove arriva l'acqua. Arriva dall'Acqua Vergine, un acquedotto romano del 19 avanti Cristo, opera di Agrippa, il genero dell'imperatore Augusto. L'acquedotto corre quasi tutto sotto terra, per circa venti chilometri. Il nome ha una leggenda: una ragazza, una “vergine”, mostra la sorgente ad alcuni soldati che hanno sete. La fontana di oggi è molto più recente: è del Settecento, opera di Nicola Salvi. Le monete raccolte vanno in beneficenza.",
+          "text": "Ogni giorno migliaia di turisti lanciano una moneta nella Fontana di Trevi, ma pochi sanno da dove arriva l'acqua. Arriva dall'Acqua Vergine, un acquedotto romano del 19 (diciannove) avanti Cristo, opera di Agrippa, il genero dell'imperatore Augusto. L'acquedotto corre quasi tutto sotto terra, per circa venti chilometri. Il nome ha una leggenda: una ragazza, una “vergine”, mostra la sorgente ad alcuni soldati che hanno sete. La fontana di oggi è molto più recente: è del Settecento, opera di Nicola Salvi. Le monete raccolte vanno in beneficenza.",
           "glosses": [
             [
               "lanciare",
@@ -997,7 +997,7 @@
             ],
             [
               "2",
-              "Agrippa, il genero di Augusto, nel 19 avanti Cristo."
+              "Agrippa, il genero di Augusto, nel 19 (diciannove) avanti Cristo."
             ],
             [
               "3",
@@ -1102,7 +1102,7 @@
         {
           "lang": "it",
           "min": "~3 min",
-          "text": "Il Colosseo apre nell'80 con cento giorni di giochi. La Torre di Pisa pende da più di ottocento anni, ma oggi è stabile. L'acqua della Fontana di Trevi arriva da un acquedotto romano."
+          "text": "Il Colosseo apre nell'80 (ottanta) con cento giorni di giochi. La Torre di Pisa pende da più di ottocento anni, ma oggi è stabile. L'acqua della Fontana di Trevi arriva da un acquedotto romano."
         },
         {
           "lang": "en",
