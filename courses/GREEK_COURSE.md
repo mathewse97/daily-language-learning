@@ -105,6 +105,10 @@ exigência de exatidão — descreve-se a reconstrução acadêmica, não uma le
 nem a erasmiana escolar. Uma nota por lição, no máximo duas linhas, um som de cada vez.
 Sem áudio, o acento tonal é descrito e não cobrado.
 
+**Como descrever um som:** pelo que a boca faz ou por um som do português que ele já
+conhece. Nunca por negação (“não é o rr, não é o j espanhol”) nem por som de outra
+língua que ele não domina: isso é ruído, não explicação.
+
 Rotação sugerida: `ου` = u · `ει` = e longo fechado · `αι` = ai · `οι` = oi ·
 `ευ` = e+u num sopro · `υ` = u francês · `η` = e longo aberto · `ω` = o longo aberto ·
 `φ θ χ` = p, t, k aspirados, **não** f, th, kh · `ζ` = zd · `ξ` = ks · `ψ` = ps ·
