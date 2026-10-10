@@ -12,15 +12,15 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-10-09
-DAY: 33
+UPDATED: 2026-10-10
+DAY: 34
 STREAK: 0
 LAST_REPORT: 2026-10-04 GR3 IT2 EN3
-probed: ὁ οἶνος, ἀγαθός, -ή, -όν, χαίρει, ἐν τῷ ἀγρῷ
+probed: —
 
 [GREEK]
 phase: 1
-lesson: 17 — semana 5, dia 5/7 (texto novo, cresce 3 → 13 frases)
+lesson: 17 — semana 5, dia 6/7 (texto novo, cresce 3 → 13 frases)
 apoio: por FORMA desde 04/10 — forma nova de palavra conhecida volta a ter glosa
   ([GR-FORMA] no léxico); exp do lema governa só o teste. Nota de forma, curiosidade
   e "Quem é quem" no cartão (RULES 14)
