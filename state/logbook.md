@@ -12,11 +12,11 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-10-11
-DAY: 35
+UPDATED: 2026-10-12
+DAY: 36
 STREAK: 0
 LAST_REPORT: 2026-10-11 GR3 IT3 EN2
-probed: —
+probed: πονεῖ, μικρός, -ά, -όν, ἀγαθός, -ή, -όν, παίζει
 
 [GREEK]
 phase: 1
