@@ -218,14 +218,14 @@
           "Ho"
         ],
         [
-          "Sócrates",
-          "Σωκράτης",
-          "Sōkrátēs"
+          "Simo",
+          "Σῖμος",
+          "Sîmos"
         ],
         [
-          "pergunta",
-          "ἐρωτᾷ·",
-          "erōtâi"
+          null,
+          "λέγει·",
+          null
         ],
         [
           null,
@@ -239,8 +239,55 @@
         ],
         [
           "pão",
-          "ἄρτος;",
+          "ἄρτος",
           "ártos"
+        ],
+        [
+          null,
+          "ἀγαθός",
+          null
+        ],
+        [
+          null,
+          "ἐστιν.",
+          null
+        ]
+      ],
+      [
+        [
+          "o",
+          "Ὁ",
+          "Ho"
+        ],
+        [
+          "Sócrates",
+          "Σωκράτης",
+          "Sōkrátēs"
+        ],
+        [
+          "pergunta",
+          "ἐρωτᾷ·",
+          "erōtâi"
+        ],
+        [
+          "o quê",
+          "τί",
+          "tí"
+        ],
+        [
+          null,
+          "ἐστιν",
+          null
+        ],
+        [
+          "o",
+          "τὸ",
+          "tò"
+        ],
+        [
+          "bem",
+          "ἀγαθόν;",
+          "agathón"
         ]
       ],
       [
@@ -277,41 +324,19 @@
       ],
       [
         [
-          "o",
-          "Ὁ",
-          "Ho"
-        ],
-        [
-          "Simo",
-          "Σῖμος",
-          "Sîmos"
-        ],
-        [
           null,
-          "πρὸς",
+          "Ἐν",
           null
         ],
         [
-          "a",
-          "τὴν",
-          "tḕn"
+          null,
+          "Ἀχαρναῖς",
+          null
         ],
-        [
-          "casa",
-          "οἰκίαν",
-          "oikían"
-        ],
-        [
-          "anda",
-          "βαδίζει.",
-          "badízei"
-        ]
-      ],
-      [
         [
           "o",
-          "Ὁ",
-          "Ho"
+          "ὁ",
+          "ho"
         ],
         [
           null,
@@ -327,11 +352,6 @@
           "o",
           "ὁ",
           "ho"
-        ],
-        [
-          "e",
-          "δὲ",
-          "dè"
         ],
         [
           null,
@@ -436,16 +456,6 @@
         ],
         [
           null,
-          "ἐν",
-          null
-        ],
-        [
-          null,
-          "Ἀχαρναῖς",
-          null
-        ],
-        [
-          null,
           "ἐσθίει",
           null
         ],
@@ -538,7 +548,7 @@
           "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo.",
           "form": "<span class=\"gi\">τὸν Σῖμον</span>: quando Simo é o objeto — aqui, quem Sócrates vê —, o nome ganha <span class=\"gi\">-ν</span>: <span class=\"gi\">Σῖμος → Σῖμον</span>, como <span class=\"gi\">Ἄργος → τὸν Ἄργον</span>. <span class=\"gi\">ἐν τῇ ἀγορᾷ</span> = “na ágora”, um bloco para decorar inteiro.",
           "sound": "O iota debaixo de <span class=\"gi\">ἀγορᾷ</span> ainda se pronunciava: <span class=\"gi\">ᾳ</span> soa como um a longo seguido de i — <em>agorâi</em>.",
-          "curio": "Sócrates nasceu por volta de 470 a.C., então tinha uns 37 anos em 432. Xenofonte conta que ele ia à ágora quando ela enchia de gente e conversava com quem estivesse ali. (Xenofonte, <i>Memoráveis</i> 1.1.10)"
+          "curio": "Sócrates nasceu por volta de 470 a.C., então tinha uns 37 anos em 432. Xenofonte conta que ele passava a manhã nos passeios e ginásios e ia à ágora na hora em que ela se enchia; falava ali, onde quem quisesse podia ouvir. (Xenofonte, <i>Memoráveis</i> 1.1.10)"
         },
         {
           "lang": "it",
@@ -556,11 +566,15 @@
               "è"
             ]
           },
-          "text": "La Via Appia nasce nel 312 (trecentododici) avanti Cristo. Un censore, Appio Claudio, la fa costruire: all'inizio va da Roma a Capua, e più tardi arriva fino a Brindisi. I Romani la chiamano «la regina delle strade». Lungo la via ci sono tombe, ville e piccoli templi, perché la legge non permette di seppellire i morti dentro la città. Oggi la Via Appia Antica è un parco, e si cammina ancora su pietre che hanno più di 2000 (duemila) anni.",
+          "text": "La Via Appia nasce nel 312 (trecentododici) avanti Cristo. Un censore, Appio Claudio, la fa costruire: all'inizio va da Roma a Capua, e più tardi arriva fino a Brindisi. Il poeta Stazio la chiama «la regina delle strade lunghe». Lungo la via ci sono tombe, ville e piccoli templi, perché la legge non permette di seppellire i morti dentro la città. Oggi la Via Appia Antica è un parco, e si cammina ancora su pietre che hanno più di 2000 (duemila) anni.",
           "glosses": [
             [
               "nascere (nasce)",
               "nascer"
+            ],
+            [
+              "il poeta",
+              "o poeta"
             ],
             [
               "il censore",
@@ -638,7 +652,7 @@
               "“diz, conta” → ?"
             ],
             "key": [
-              "πρός — o que vem depois fica no acusativo, a forma do objeto: πρὸς τὸν βωμόν",
+              "πρός — a palavra que vem depois ganha o -ν de objeto: ὁ βωμός (o altar) → πρὸς τὸν βωμόν (em direção ao altar)",
               "ὁ βωμός",
               "ἔχει",
               "καλός, -ή, -όν",
@@ -656,7 +670,7 @@
           "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem?",
           "form": "<span class=\"gi\">τὸ ἀγαθόν</span> = “o bem”: o adjetivo <span class=\"gi\">ἀγαθός</span> (bom), no neutro (<span class=\"gi\">-όν</span>) e com <span class=\"gi\">τὸ</span>, vira um substantivo — “a coisa boa”. O português faz o mesmo: “o bom”, “o belo”.",
           "sound": "O <span class=\"gi\">ω</span> de <span class=\"gi\">ἐρωτᾷ</span> e de <span class=\"gi\">Σωκράτης</span> é um o longo e aberto; o <span class=\"gi\">ο</span> de <span class=\"gi\">ἀγαθόν</span> é breve.",
-          "curio": "Aristóteles diz que Sócrates buscava definições gerais: perguntava “o que é isto?” — a justiça, a coragem, o bem. Ele não deixou nada escrito; o que sabemos vem de Platão, Xenofonte e outros, com versões que nem sempre coincidem. (Aristóteles, <i>Metafísica</i> 1078b17–32)"
+          "curio": "Aristóteles diz que Sócrates buscava definições gerais. Nos diálogos de Platão o padrão é este: ele pergunta “o que é a coragem?”, o outro responde com exemplos, e Sócrates diz que quer o que todos os exemplos têm em comum — como as abelhas, que são todas abelhas. Ele não deixou nada escrito; o que sabemos vem de Platão, Xenofonte e outros, com versões que nem sempre coincidem. (Aristóteles, <i>Metafísica</i> 1078b17–32; Platão, <i>Mênon</i>, a analogia das abelhas)"
         },
         {
           "lang": "en",
@@ -740,7 +754,7 @@
             ]
           },
           "upTo": 7,
-          "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem? Simo diz: o vinho é bom. Sócrates pergunta: e o pão?",
+          "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem? Simo diz: o vinho é bom. Simo diz: o pão também é bom.",
           "sound": "O <span class=\"gi\">ῖ</span> de <span class=\"gi\">Σῖμος</span> é um i longo: dure o dobro de um i breve. O circunflexo marca que o tom sobe e desce nessa mesma vogal.",
           "curio": "Platão faz Sócrates dizer, na <i>Apologia</i>, que falava na ágora “junto às mesas dos cambistas”: um lugar de comércio, não uma escola. É a fala de um personagem de Platão, não uma gravação. (Platão, <i>Apologia</i> 17c)"
         },
@@ -821,7 +835,7 @@
             ]
           ],
           "compare": "Compare: usou <em>fa</em> para um sujeito e <em>fanno</em> para vários? Usou <em>faccio</em> para “eu faço”?",
-          "curio": "A ponte atual é de 1345, depois da cheia de 1333. Vasari atribui o projeto a Taddeo Gaddi; estudiosos modernos preferem Neri di Fioravante, e a atribuição é discutida. (G. Villani, <i>Nuova Cronica</i> 12.1; Vasari, <i>Vite</i>, Vida de Taddeo Gaddi)"
+          "curio": "A ponte atual é de 1345, depois da cheia de 1333. Vasari atribui o projeto a Taddeo Gaddi; estudiosos modernos citam Neri di Fioravanti, e a atribuição é discutida. (G. Villani, <i>Nuova Cronica</i>, livro 12; Vasari, <i>Vite</i>, Vida de Taddeo Gaddi)"
         }
       ]
     },
@@ -854,7 +868,7 @@
             ]
           },
           "upTo": 9,
-          "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem? Simo diz: o vinho é bom. Sócrates pergunta: e o pão? Simo não diz nada, mas se admira. Simo anda em direção à casa.",
+          "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem? Simo diz: o vinho é bom. Simo diz: o pão também é bom. Sócrates pergunta: o que é o bem? Simo não diz nada, mas se admira.",
           "sound": "O <span class=\"gi\">αυ</span> de <span class=\"gi\">θαυμάζει</span> soa como o “au” de “mau”, numa sílaba só.",
           "curio": "No <i>Mênon</i>, Platão faz Mênon dizer que Sócrates é como uma raia-elétrica: quem se aproxima fica entorpecido, sem saber o que responder. Esse beco sem saída tem nome em grego: <i>aporia</i>. (Platão, <i>Mênon</i> 80a–b)"
         },
@@ -943,9 +957,9 @@
             ]
           },
           "upTo": 11,
-          "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem? Simo diz: o vinho é bom. Sócrates pergunta: e o pão? Simo não diz nada, mas se admira. Simo anda em direção à casa. Argos brinca, e Daos trabalha. Simo leva a oferenda ao altar.",
+          "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem? Simo diz: o vinho é bom. Simo diz: o pão também é bom. Sócrates pergunta: o que é o bem? Simo não diz nada, mas se admira. Em Acarnas, Argos brinca e Daos trabalha. Simo leva a oferenda ao altar.",
           "sound": "O <span class=\"gi\">ου</span> de <span class=\"gi\">οὐ</span> soa como um u longo, o “u” de “tu” sustentado.",
-          "curio": "Em casa, o culto de todo dia era feito de coisas pequenas: um bolo, frutos, um pouco de vinho derramado. O sacrifício de um animal grande era raro e festivo. (R. Parker, <i>Polytheism and Society at Athens</i>, 2005)"
+          "curio": "As casas atenienses tinham altares onde a família honrava os deuses, mas os atenienses não pensavam numa “religião da casa” separada: os deuses domésticos faziam parte dos deuses ancestrais, ligados também à fratria e ao <i>génos</i>. (R. Parker, <i>Polytheism and Society at Athens</i>, 2005, cap. 1)"
         },
         {
           "lang": "it",
@@ -1016,7 +1030,7 @@
             ]
           ],
           "compare": "Compare: o segundo verbo ficou no infinitivo (<em>visitare</em>, <em>vedere</em>)? <em>Può</em> concorda com um sujeito e <em>possono</em> com vários?",
-          "curio": "Vasari conta que, para provar que tinha um método, Brunelleschi propôs aos rivais fazer um ovo ficar de pé: ele bateu o ovo na mesa. A história é provavelmente lenda. (Vasari, <i>Vite</i>, Vida de Brunelleschi)"
+          "curio": "Vasari conta que, para provar que tinha um método, Brunelleschi propôs aos rivais fazer um ovo ficar de pé: ele bateu o ovo na mesa. A história é provavelmente lenda: Vasari, do século XVI, é o primeiro registro conhecido. (Vasari, <i>Vite</i>, Vida de Brunelleschi)"
         }
       ]
     },
@@ -1029,9 +1043,9 @@
           "lang": "gr",
           "min": "~10 min",
           "upTo": 13,
-          "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem? Simo diz: o vinho é bom. Sócrates pergunta: e o pão? Simo não diz nada, mas se admira. Simo anda em direção à casa. Argos brinca, e Daos trabalha. Simo leva a oferenda ao altar. Melita tem o pão; é bom. Simo, em Acarnas, come e se alegra.",
+          "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem? Simo diz: o vinho é bom. Simo diz: o pão também é bom. Sócrates pergunta: o que é o bem? Simo não diz nada, mas se admira. Em Acarnas, Argos brinca e Daos trabalha. Simo leva a oferenda ao altar. Melita tem o pão; é bom. Simo come e se alegra.",
           "sound": "O circunflexo de <span class=\"gi\">Ἀχαρναῖς</span> marca que o tom sobe e desce em <span class=\"gi\">αῖ</span>, o “ai” de “pai”.",
-          "curio": "A palavra <span class=\"gi\">ἄρτος</span> designa, em geral, o pão de trigo. A base da dieta da maioria dos atenienses era a <span class=\"gi\">μᾶζα</span>, uma massa de cevada, mais barata. (A. Dalby, <i>Food in the Ancient World from A to Z</i>, 2003)"
+          "curio": "A palavra <span class=\"gi\">ἄρτος</span> designa, em geral, o pão de trigo, o grão mais desejado. A cevada era o grão mais comum, e uma massa de cevada, a <span class=\"gi\">μᾶζα</span>, era um prato muito frequente. Quanto de cada um cada família comia varia nas estimativas. (P. Garnsey, <i>Food and Society in Classical Antiquity</i>, 1999, cap. “Diet”)"
         },
         {
           "lang": "en",
@@ -1098,7 +1112,7 @@
           "lang": "gr",
           "min": "~10 min",
           "upTo": 13,
-          "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem? Simo diz: o vinho é bom. Sócrates pergunta: e o pão? Simo não diz nada, mas se admira. Simo anda em direção à casa. Argos brinca, e Daos trabalha. Simo leva a oferenda ao altar. Melita tem o pão; é bom. Simo, em Acarnas, come e se alegra.",
+          "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem? Simo diz: o vinho é bom. Simo diz: o pão também é bom. Sócrates pergunta: o que é o bem? Simo não diz nada, mas se admira. Em Acarnas, Argos brinca e Daos trabalha. Simo leva a oferenda ao altar. Melita tem o pão; é bom. Simo come e se alegra.",
           "sound": "O <span class=\"gi\">λλ</span> de <span class=\"gi\">ἀλλά</span> é um l dobrado: segure o l um pouco mais antes da vogal."
         },
         {
