@@ -4,12 +4,14 @@
 > notas para cá ao consumi-las (passo 8), e a partir daí este arquivo é o registro.
 > A artifact é efêmera e se sobrescreve a cada semana; este arquivo não.
 >
-> Formato de uma linha: `data | GR | IT | EN | misses` — notas de 1 a 5, `misses` é a
-> lista de itens não recordados, separada por vírgula, ou `—`.
+> Formato de uma linha: `data | GR | IT | EN | misses | frases` — notas de 1 a 5, `misses` é a
+> lista de itens não recordados, separada por vírgula, ou `—`; `frases` (desde 18/10/2026) é
+> quantas das 13 frases do sábado ele entendeu com o apoio escondido, 0 a 13, ou `—`. As
+> linhas antigas não têm a coluna.
 > Escala em `OPERATIONS.md`.
 
 ```
-FORMAT: data | gr | it | en | misses
+FORMAT: data | gr | it | en | misses | frases
 2026-09-13 | 4 | 5 | 5 | —
 2026-09-27 | 3 | 3 | 3 | —
 2026-10-04 | 3 | 2 | 3 | —

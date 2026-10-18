@@ -1042,6 +1042,7 @@
         {
           "lang": "gr",
           "min": "~10 min",
+          "setting": "Teste do portão: toque no texto até sumirem a glosa e a transliteração, leia as 13 frases e conte quantas você entendeu.",
           "upTo": 13,
           "pt": "Simo anda na ágora. Sócrates está na ágora. Sócrates vê Simo. Sócrates pergunta a Simo. O que é o bem? Simo diz: o vinho é bom. Simo diz: o pão também é bom. Sócrates pergunta: o que é o bem? Simo não diz nada, mas se admira. Em Acarnas, Argos brinca e Daos trabalha. Simo leva a oferenda ao altar. Melita tem o pão; é bom. Simo come e se alegra.",
           "sound": "O circunflexo de <span class=\"gi\">Ἀχαρναῖς</span> marca que o tom sobe e desce em <span class=\"gi\">αῖ</span>, o “ai” de “pai”.",
@@ -1131,7 +1132,7 @@
           "lang": "tag",
           "label": "Check-in",
           "body": [
-            "Três notas de 1 a 5, uma por trilha, e as palavras que não vieram — as respostas do Ἀνάμνησις e do Ripasso que você não lembrou antes de abrir “Conferir”. Diga ao agente que planeja a semana, aos domingos."
+            "Três notas de 1 a 5, uma por trilha; as palavras que não vieram — as respostas do Ἀνάμνησις e do Ripasso que você não lembrou antes de abrir “Conferir”; e quantas das 13 frases você entendeu no sábado, com o apoio escondido. Diga ao agente que planeja a semana, aos domingos."
           ]
         }
       ]

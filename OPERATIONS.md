@@ -33,7 +33,8 @@ notas do check-in e deixar ele compor a semana seguinte. O procedimento está em
 
 ## O check-in
 
-Três notas de 1 a 5, uma por trilha, mais as palavras que não vieram. A escala é de
+Três notas de 1 a 5, uma por trilha, mais as palavras que não vieram e, enquanto a fase 1
+durar, o teste do sábado: com o apoio escondido, quantas das 13 frases você entendeu. A escala é de
 experiência, não de diagnóstico — você não precisa saber qual regra falhou:
 
 | | |

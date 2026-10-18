@@ -181,6 +181,11 @@ bibliografia atual e nunca são inventados para melhorar uma cena. Mitos têm ve
 atestadas — nunca invente variante. Nada posterior a 432 a.C. Onde a bibliografia
 diverge, diga em uma linha ou omita o dado; nunca escolha um lado em silêncio.
 **Verifique antes de compor, não depois.**
+**Fonte consultada.** Toda curiosidade termina com uma fonte que o planejador **consultou
+nesta sessão** — busca na web ou o texto da fonte. Número de linha, capítulo ou página só
+entra se estiver no que foi consultado. O que ficou de memória não entra: a curiosidade sai,
+ou o dia fica sem ela. Vale também para as datas e fatos dos textos de italiano. Se o
+agente não tem como consultar, a semana não leva curiosidade.
 
 **24 · Sem etimologia.** Retirada em 17/09 junto com os demais acréscimos abaixo do texto
 (ver 14). Se um dia voltar, volta como nota de uma linha, só de palavra do texto do dia,
@@ -217,6 +222,12 @@ O mesmo vale para fatos: cena mais pobre e correta vence cena mais rica e duvido
 ---
 
 ## Reconciliação — 18/10/2026
+
+**Fonte consultada e portão da fase 1** — duas decisões de Mathews, tomadas em conversa no
+mesmo dia. (1) Ele perguntou se o planejador tinha pesquisado as fontes e a resposta era não:
+tudo vinha da memória, com número de linha e autor. A invariante 23 passou a exigir fonte
+consultada. (2) O portão da fase 1 ("3 leituras com ≥3/4 de compreensão") não tinha como ser
+medido pela nota de 1 a 5; ver `courses/GREEK_COURSE.md`.
 
 Uma regra, pedida indiretamente por Mathews: ele anotou `πρός (+ac)` entre as palavras
 difíceis e escreveu "não entendi esse +ac". A sigla vinha do Léxico, onde ela distingue

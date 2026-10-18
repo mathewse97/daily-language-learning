@@ -83,7 +83,12 @@ desses blocos. As demais formas novas podem ganhar a nota de forma de uma linha 
 "Forma da lição").
 Texto: 40–70 palavras, frases de 4–8 palavras, sem subordinação.
 Cultura: casa, família, campo, animais, trabalho agrícola, refeições, o dia do agricultor.
-**Portão:** 3 leituras seguidas com ≥3/4 de compreensão.
+**Portão:** 3 leituras seguidas com ≥3/4 de compreensão. Como se mede, desde 18/10/2026:
+no sábado, com o apoio escondido (toque no texto até sumirem a glosa e a transliteração),
+ele lê as 13 frases e conta quantas entendeu. **10 ou mais** (≈3/4) é uma leitura que passa;
+**três sábados seguidos** cumprem o portão. A nota de 1 a 5 do check-in não entra: mede a
+experiência da semana, não a compreensão do texto. O número vai na coluna `frases` do
+`state/checkin_log.md`.
 
 **Apresentação do alfabeto (lições 1–3).** Não há tabela decorativa. Cada uma das três
 primeiras lições apresenta 6–12 letras dentro de palavras reais do inventário-semente, e
@@ -339,4 +344,5 @@ Personagens e diálogos são inventados. **O mundo não é.**
 - **Anacronismo.** Nada posterior a 432 a.C.
 - **Divergência.** Onde a bibliografia diverge, diga em uma linha que diverge, ou omita
   o dado. Nunca escolha um lado em silêncio.
-- **Verifique antes de compor, não depois.**
+- **Verifique antes de compor, não depois.** E cite só o que consultou (invariante 23):
+  fonte de memória não entra.

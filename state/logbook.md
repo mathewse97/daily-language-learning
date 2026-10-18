@@ -35,9 +35,9 @@ recent: a família apresentada por inteiro (semana 5); Melita conta o mito de Pr
   Mecone (semana 6); Simo encontra Sócrates na ágora e não sabe dizer o que é o bem
   (semana 7)
 weak: πονεῖ, παίζει, ὁ ἄρτος, πρός, τὸ δῶρον, ὁ βωμός (misses de 18/10, no texto e no
-  Ἀνάμνησις da semana 7); portão de fase ainda não confirmado — sem registro de 3 leituras
-  seguidas ≥3/4
-gate: 3 leituras seguidas com ≥3/4 de compreensão
+  Ἀνάμνησις da semana 7); portão da fase 1 sem medição ainda (primeira: sábado 24/10)
+gate: 3 sábados seguidos com ≥10 das 13 frases entendidas, com o apoio escondido (coluna
+  `frases` do checkin_log; sem registro até 18/10)
 next: semana 8 — ritmo mantido (nota 3); último texto da fase 1 pelo currículo, mas o
   portão ainda não foi confirmado; perguntar como foi a leitura, não só a nota
 
@@ -79,6 +79,10 @@ voltam no texto da semana 7 e no Ἀνάμνησις de segunda. Mathews pergunt
 dizer: a sigla estava visível na chave do Ἀνάμνησις. Corrigido, e regra nova na invariante 19.
 
 **18/10 · módulo de fala segue dormente.** Mathews não disse o contrário; passo 9a pulado.
+
+**18/10 · portão da fase 1, combinado com Mathews.** Teste no sábado: lê as 13 frases com o
+apoio escondido e diz quantas entendeu; 10 ou mais passa; três sábados seguidos cumprem.
+A primeira medição é o sábado 24/10. A nota abaixo, sobre o problema, fica como histórico.
 
 **18/10 · sobre o portão de fase.** Três semanas seguidas de nota 3 em grego, mas o portão
 da fase 1 pede 3 leituras com ≥3/4 de compreensão, e a nota mede experiência, não isso.

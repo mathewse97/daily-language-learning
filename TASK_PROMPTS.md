@@ -50,8 +50,11 @@ fazem, relate e não conserte.
 2. Pergunte a Mathews as três notas da semana, de 1 a 5, uma por trilha, e quais
    palavras não vieram — as respostas do Ἀνάμνησις (e do Ripasso) que ele não conseguiu
    lembrar antes de abrir "Conferir". Se ele não anotou, não adivinhe: trate como
-   check-in sem misses utilizáveis (regra conservadora do passo 4). Acrescente uma linha a state/checkin_log.md no formato
-   `data | gr | it | en | misses`. Se ele não quiser dar as notas, siga sem elas
+   check-in sem misses utilizáveis (regra conservadora do passo 4). Pergunte também,
+   enquanto a fase 1 durar, **quantas das 13 frases ele entendeu no sábado, com o apoio
+   escondido** (o teste do portão, em `courses/GREEK_COURSE.md`). Acrescente uma linha a
+   state/checkin_log.md no formato `data | gr | it | en | misses | frases` (`frases` é um
+   número de 0 a 13, ou `—`). Se ele não quiser dar as notas, siga sem elas
    e use a regra conservadora do passo 4.
 
    1-2  desacelere — sem avanço de fase, metade dos itens novos, repita estruturas
@@ -114,12 +117,14 @@ fazem, relate e não conserte.
    completa; aumento correto inclusive em compostos; aspecto deliberado; nada além
    da fase atual; Κλεισθένης, Ἡρακλῆς e Ζεύς só em nominativo ou vocativo até a
    fase 2. Na dúvida sobre uma forma, troque a palavra.
-   Depois confira os fatos ANTES de compor, não depois — inclusive os de cada
-   curiosidade, que termina com a fonte. Nada posterior a 432 a.C. no enredo.
+   Depois confira os fatos ANTES de compor, não depois: consulte a fonte de cada
+   fato e de cada curiosidade (busca na web) e cite só o que consultou — o que ficou
+   de memória não entra (invariante 23). Nada posterior a 432 a.C. no enredo.
    Onde a bibliografia diverge, diga em uma linha ou omita.
 
 7. Atualize state/logbook.md: avance de fase só se o portão do currículo tiver sido
-   cumprido — diga qual portão e por quê. Limpe `probed`. Escreva LAST_REPORT com a
+   cumprido — diga qual portão e por quê. Na fase 1, olhe a coluna `frases` do
+   checkin_log: 10 ou mais, três semanas seguidas, cumpre o portão. Limpe `probed`. Escreva LAST_REPORT com a
    data e as três notas que você consumiu.
 
 8. Rode `python3 validate.py` e `python3 build.py`. Se o validador reprovar,
