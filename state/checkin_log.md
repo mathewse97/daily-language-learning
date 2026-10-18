@@ -14,6 +14,7 @@ FORMAT: data | gr | it | en | misses
 2026-09-27 | 3 | 3 | 3 | —
 2026-10-04 | 3 | 2 | 3 | —
 2026-10-11 | 3 | 3 | 2 | —
+2026-10-18 | 3 | 3 | 3 | πονεῖ, παίζει, ὁ ἄρτος, πρός (+ac), τὸ δῶρον, ὁ βωμός
 ```
 
 A linha de 04/10 tem `—` em misses porque eles não foram anotados, não porque não houve:

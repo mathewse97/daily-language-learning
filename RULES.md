@@ -156,6 +156,9 @@ modelo para comparação.
 compreensão daquele texto, na forma `οἶκος — casa`: uma ou duas palavras, nunca uma
 oração. Linha de contexto acima do texto: no máximo uma frase, e só quando o cenário não
 for dedutível. Sem ensaios. Comentário histórico só na curiosidade (14), e só ali.
+**Siglas:** nada de sigla gramatical no que o aluno lê (`+ac`, `nom.`, `3pl`) sem dizer o
+que é. Na chave do Ἀνάμνησις escreva por extenso — `πρός — o que vem depois fica no
+acusativo, a forma do objeto: πρὸς τὸν βωμόν`. As siglas ficam nos arquivos de estado.
 **Números:** em texto grego ou italiano, todo número escrito em algarismos vem seguido
 do número por extenso, entre parênteses, na mesma língua — `nel 1173
 (millecentosettantatré)`. Ele ainda não lê números nessas línguas; o validador confere.
@@ -210,6 +213,16 @@ Prefira a construção atestada mais simples à mais engenhosa de que você não
 No grego em especial: se não souber acentuar uma forma com segurança, escolha outra
 palavra já no Léxico. **Um texto mais curto e certo vence um texto mais rico e duvidoso.**
 O mesmo vale para fatos: cena mais pobre e correta vence cena mais rica e duvidosa.
+
+---
+
+## Reconciliação — 18/10/2026
+
+Uma regra, pedida indiretamente por Mathews: ele anotou `πρός (+ac)` entre as palavras
+difíceis e escreveu "não entendi esse +ac". A sigla vinha do Léxico, onde ela distingue
+`πρός` de outras preposições, e tinha ido parar na chave do Ἀνάμνησις, que ele lê. Agora a
+chave diz por extenso o que `+ac` quer dizer (invariante 19, "Siglas"). O Léxico não mudou:
+nele a sigla continua sendo o nome do item.
 
 ---
 

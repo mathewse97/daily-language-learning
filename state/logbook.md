@@ -15,55 +15,56 @@ Campos e contrato em `STATE_SCHEMA.md`.
 UPDATED: 2026-10-18
 DAY: 42
 STREAK: 0
-LAST_REPORT: 2026-10-11 GR3 IT3 EN2
+LAST_REPORT: 2026-10-18 GR3 IT3 EN3
 probed: —
 
 [GREEK]
 phase: 1
-lesson: 18 — semana 6, dia 7/7 (texto novo, cresce 3 → 13 frases)
+lesson: 19 — semana 7, dia 1/7 (texto novo, cresce 3 → 13 frases)
 apoio: por FORMA desde 04/10 — forma nova de palavra conhecida volta a ter glosa
   ([GR-FORMA] no léxico); exp do lema governa só o teste. Nota de forma, curiosidade
   e "Quem é quem" no cartão (RULES 14)
 setting: Ἀχαρναί, primavera de 432 a.C.
-words: 76 — 4 palavras novas na semana 6 (θύει, τὸ κρέας, τὸ ὀστοῦν, ὁ δημός)
+words: 78 — 2 palavras novas na semana 7 (ἐρωτᾷ e o bloco ἐν τῇ ἀγορᾷ)
 unlocked: presente ativo 3sg/3pl (-ουσι(ν) explicado na semana 5 e retomado na 6);
   artigo; 1ª/2ª decl. nom./ac.; plural nom. masc. (οἱ θεοί) e neutro em -α (τὰ ὀστᾶ),
   explicados em nota de forma; ἐν+dat. como bloco; πατήρ/μήτηρ só nom., como bloco
-cast: Κλεισθένης, Μέλιττα, Νικίας, Χλόη, Δᾶος, Σῖμος, Ἄργος; no mito: Προμηθεύς, Ζεύς
-recent: a casa come pão e vinho (semana 4); a família apresentada por inteiro (semana 5);
-  Melita conta o mito de Prometeu em Mecone, e a família leva vinho e oferenda ao altar
-  (semana 6)
-weak: portão de fase ainda não confirmado — sem registro de 3 leituras seguidas ≥3/4
+cast: Κλεισθένης, Μέλιττα, Νικίας, Χλόη, Δᾶος, Σῖμος, Ἄργος; reais ou míticos, só em cena
+  pontual: Σωκράτης (semana 7), Προμηθεύς e Ζεύς (semana 6)
+recent: a família apresentada por inteiro (semana 5); Melita conta o mito de Prometeu em
+  Mecone (semana 6); Simo encontra Sócrates na ágora e não sabe dizer o que é o bem
+  (semana 7)
+weak: πονεῖ, παίζει, ὁ ἄρτος, πρός, τὸ δῶρον, ὁ βωμός (misses de 18/10, no texto e no
+  Ἀνάμνησις da semana 7); portão de fase ainda não confirmado — sem registro de 3 leituras
+  seguidas ≥3/4
 gate: 3 leituras seguidas com ≥3/4 de compreensão
-next: semana 7 — ritmo mantido (nota 3); tecer πονεῖ, μικρός, ἀγαθός e παίζει, vencidos
-  e fora do texto da semana 6 (só testados no Ἀνάμνησις); o currículo vai até a
-  semana 8 na fase 1, mas o portão ainda não foi confirmado
+next: semana 8 — ritmo mantido (nota 3); último texto da fase 1 pelo currículo, mas o
+  portão ainda não foi confirmado; perguntar como foi a leitura, não só a nota
 
 [ITALIAN]
 phase: 1
-lesson: 10 — semana 6: Pompei (seg) / Pantheon (qua) / Paestum (sex)
+lesson: 11 — semana 7: Via Appia (seg) / Ponte Vecchio (qua) / cúpula de Brunelleschi (sex)
 unlocked: artigos; preposições articuladas (nel/dal/sul/del/al); essere e avere completos;
-  presente dos verbos em -are (qua) e -ere/-ire (sex)
-recent: Coliseu, Torre de Pisa e Fontana di Trevi (semana 5); Pompeia, Panteão e Paestum
-  (semana 6)
+  presente regular (-are, -ere, -ire); andare, venire, fare, potere, volere
+recent: Pompeia, Panteão e Paestum (semana 6); Via Ápia, Ponte Vecchio e a cúpula de
+  Brunelleschi (semana 7)
 weak: vocabulário e interesse (nota 2 na semana 4, recuperada para 3 na 5) — textos
   de ~90 palavras, glosa generosa, monumentos com história
 gate: artigos + preposições articuladas sem erro em 2 produções
-next: com nota ≥3, passato prossimo é fase 2; antes, presente irregular (andare, fare,
-  venire) e c'è / ci sono em texto contínuo
+next: fechar a fase 1 com o gate (artigos + preposições articuladas sem erro em 2
+  produções); passato prossimo é fase 2
 
 [ENGLISH]
 register_last: public writing
-lesson: 11 — semana 6, mais leve (nota 2): rodada de revisões (ter) / pedir feedback
-  (qui) / bio de portfólio (sáb)
+lesson: 12 — semana 7, ritmo normal (nota 3): dizer não sem perder o cliente (ter) /
+  propor um componente (qui) / resultados do estudo de caso (sáb)
 topics_done: hierarquia visual; API de componente; acessibilidade; escaneabilidade;
   handoff; estudo de caso; pricing e scoping; design tokens; teste de usabilidade;
   rationale ao cliente; crítica assíncrona; problema no estudo de caso; rodada de revisões;
-  pedir feedback; bio de portfólio
-collocations: 55
-weak: nota 2 na semana 5 — motivo não informado; semana 6 com 3 colocações novas por
-  texto, em vez de 6, e as anteriores (walk through, tie back to, up front) de volta
-next: com nota ≥3, volta a 5–6 colocações; seguir rotação client/async/public
+  pedir feedback; bio de portfólio; dizer não ao cliente; propor componente; resultados
+collocations: 70
+weak: —
+next: novo tópico; seguir rotação client/async/public; 5 colocações por texto
 
 [SISTEMA]
 (sem campos — planner_enabled e planner_must_return_by eram do arranjo de tarefa
@@ -71,6 +72,18 @@ agendada anterior e não se aplicam mais; ver "Pendências registradas")
 ```
 
 ## Pendências registradas
+
+**18/10 · check-in da semana 6 consumido.** Notas GR 3 · IT 3 · EN 3. Seis palavras
+nomeadas "com um pouco de dificuldade", tratadas como misses (ver `state/lexicon.md`); todas
+voltam no texto da semana 7 e no Ἀνάμνησις de segunda. Mathews perguntou o que `+ac` quer
+dizer: a sigla estava visível na chave do Ἀνάμνησις. Corrigido, e regra nova na invariante 19.
+
+**18/10 · módulo de fala segue dormente.** Mathews não disse o contrário; passo 9a pulado.
+
+**18/10 · sobre o portão de fase.** Três semanas seguidas de nota 3 em grego, mas o portão
+da fase 1 pede 3 leituras com ≥3/4 de compreensão, e a nota mede experiência, não isso.
+Para fechar a fase 1 na semana 8 é preciso perguntar a ele, em conversa, quanto do texto
+entendeu em cada leitura.
 
 **11/10 · check-in da semana 5 consumido.** Notas GR 3 · IT 3 · EN 2, **sem misses**
 (Mathews disse explicitamente). Promoções normais, uma caixa por item testado (ver
