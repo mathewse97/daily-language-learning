@@ -73,6 +73,18 @@ agendada anterior e não se aplicam mais; ver "Pendências registradas")
 
 ## Pendências registradas
 
+**23/10 · semana 7 não lida; será repetida de 26/10 a 01/11 (decisão de Mathews).** Ele não
+leu nenhum dia. No domingo 25/10, em vez de compor a semana 8: (1) **não** consumir nenhum
+`probed` da semana 7 e **não** somar `exp` — nada foi lido nem testado, então não há promoção
+nem miss novo; (2) reemitir o mesmo `state/week.json` com `range` 2026-10-26/2026-11-01, os
+dias `n` 26 a 1, o cabeçalho avisando que a semana repete a anterior, e a `composed`
+atualizada; (3) mover as datas de entrega das 15 colocações inglesas da semana 7 em
+`state/lexicon.md` para 27/10, 29/10 e 31/10 (ainda não foram encontradas); (4) a primeira
+medição do portão passa de 24/10 para o sábado **31/10**; (5) o número da lição continua 19.
+Pedir as notas só se ele quiser dá-las; não há leitura para avaliar. Até lá, nada mudou:
+mesmo sem a reedição, a entrega de segunda mostraria o mesmo conteúdo, só com os números dos
+dias errados.
+
 **18/10 · check-in da semana 6 consumido.** Notas GR 3 · IT 3 · EN 3. Seis palavras
 nomeadas "com um pouco de dificuldade", tratadas como misses (ver `state/lexicon.md`); todas
 voltam no texto da semana 7 e no Ἀνάμνησις de segunda. Mathews perguntou o que `+ac` quer
