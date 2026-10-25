@@ -2,12 +2,12 @@
   "schema": "acharnae-week/1",
   "week": 7,
   "phase": 1,
-  "range": "2026-10-19/2026-10-25",
-  "composed": "2026-10-18, em conversa, planejamento semanal no repositório",
+  "range": "2026-10-26/2026-11-01",
+  "composed": "2026-10-18, em conversa; reemitida em 2026-10-25 para 26/10–01/11 porque a semana 7 não foi lida",
   "header": {
-    "eyebrow": "Semana 7 · Sócrates na ágora",
+    "eyebrow": "Semana 7, de novo · Sócrates na ágora",
     "title": "Morning Packet",
-    "sub": "Um texto novo: Simo, o vizinho mercador, está na ágora de Atenas quando Sócrates lhe faz uma pergunta que ele não sabe responder. Segunda tem três frases; cada dia repete tudo o que veio antes e acrescenta duas. Domingo relê as treze sem acrescentar nada."
+    "sub": "Esta semana repete a anterior, que não foi lida. Um texto novo: Simo, o vizinho mercador, está na ágora de Atenas quando Sócrates lhe faz uma pergunta que ele não sabe responder. Segunda tem três frases; cada dia repete tudo o que veio antes e acrescenta duas. Domingo relê as treze sem acrescentar nada."
   },
   "stats": [
     {
@@ -518,7 +518,7 @@
     {
       "d": 1,
       "label": "Segunda",
-      "n": "19",
+      "n": "26",
       "cards": [
         {
           "lang": "gr",
@@ -638,7 +638,7 @@
     {
       "d": 2,
       "label": "Terça",
-      "n": "20",
+      "n": "27",
       "cards": [
         {
           "lang": "gr",
@@ -731,7 +731,7 @@
     {
       "d": 3,
       "label": "Quarta",
-      "n": "21",
+      "n": "28",
       "cards": [
         {
           "lang": "gr",
@@ -842,7 +842,7 @@
     {
       "d": 4,
       "label": "Quinta",
-      "n": "22",
+      "n": "29",
       "cards": [
         {
           "lang": "gr",
@@ -931,7 +931,7 @@
     {
       "d": 5,
       "label": "Sexta",
-      "n": "23",
+      "n": "30",
       "cards": [
         {
           "lang": "gr",
@@ -1037,7 +1037,7 @@
     {
       "d": 6,
       "label": "Sábado",
-      "n": "24",
+      "n": "31",
       "cards": [
         {
           "lang": "gr",
@@ -1107,7 +1107,7 @@
     {
       "d": 0,
       "label": "Domingo",
-      "n": "25",
+      "n": "1",
       "cards": [
         {
           "lang": "gr",
@@ -1139,6 +1139,7 @@
     }
   ],
   "foot": [
+    "Esta semana repete a anterior: o texto, os testes e as curiosidades são os mesmos. Nada da semana passada contou como lido, então as palavras que você anotou como difíceis continuam no Ἀνάμνησις. O teste das 13 frases começa neste sábado, dia 31.",
     "Esta semana, Sócrates é uma pessoa real; a conversa com Simo é inventada. As curiosidades dizem o que as fontes antigas contam e quando elas são de Platão ou de Xenofonte, que o conheceram ou o imaginaram de formas diferentes.",
     "O Ἀνάμνησις aparece de segunda a sexta. As seis palavras que você anotou na semana passada voltam logo na segunda, e de novo durante a semana.",
     "Italiano: Via Ápia, Ponte Vecchio e a cúpula de Brunelleschi, com os verbos irregulares andare, venire, fare, potere e volere. Inglês volta ao ritmo normal."

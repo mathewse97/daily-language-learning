@@ -244,21 +244,21 @@ by end of day | async team | 2026-10-15
 a track record of | public writing | 2026-10-17
 hands-on | public writing | 2026-10-17
 work closely with | public writing | 2026-10-17
-out of scope | client-facing | 2026-10-20
-name the trade-off | client-facing | 2026-10-20
-park something | client-facing | 2026-10-20
-a way forward | client-facing | 2026-10-20
-the date holds | client-facing | 2026-10-20
-backward compatible | async team | 2026-10-22
-migrate | async team | 2026-10-22
-drift | async team | 2026-10-22
-an owner | async team | 2026-10-22
-be adopted | async team | 2026-10-22
-a measurable lift | public writing | 2026-10-24
-move the needle | public writing | 2026-10-24
-your share of the work | public writing | 2026-10-24
-in hindsight | public writing | 2026-10-24
-what I'd do differently | public writing | 2026-10-24
+out of scope | client-facing | 2026-10-27
+name the trade-off | client-facing | 2026-10-27
+park something | client-facing | 2026-10-27
+a way forward | client-facing | 2026-10-27
+the date holds | client-facing | 2026-10-27
+backward compatible | async team | 2026-10-29
+migrate | async team | 2026-10-29
+drift | async team | 2026-10-29
+an owner | async team | 2026-10-29
+be adopted | async team | 2026-10-29
+a measurable lift | public writing | 2026-10-31
+move the needle | public writing | 2026-10-31
+your share of the work | public writing | 2026-10-31
+in hindsight | public writing | 2026-10-31
+what I'd do differently | public writing | 2026-10-31
 ```
 
 As duas ambiguidades de formato que este arquivo carregava desde 14/09 foram resolvidas
@@ -293,3 +293,11 @@ sinal e o custo de errar para esse lado é revisar uma vez a mais. Os outros oit
 sete deles chegaram à caixa 4, com dois `recalled` anteriores cada. `due` contado de
 2026-10-18. `exp` somado da semana 6 por lema e por forma, supondo os sete dias lidos.
 Novos: ἐρωτᾷ, o bloco ἐν τῇ ἀγορᾷ e Σωκράτης.
+
+**25/10 · semana 7 repetida.** Mathews não leu nenhum dia da semana de 19/10 (decisão dele, em
+conversa). Nada foi consumido: nenhum `probed` virou promoção ou miss, nenhum `exp` foi
+somado, nenhum item mudou de caixa. As seis palavras `missed` de 18/10 continuam em caixa 1,
+vencidas, e voltam no texto e no Ἀνάμνησις da mesma semana 7, reemitida para 26/10–01/11. As 15
+colocações inglesas da semana 7 não foram encontradas, e por isso a `entrega` delas passou
+para 27/10, 29/10 e 31/10.
+

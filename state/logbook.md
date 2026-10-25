@@ -35,11 +35,11 @@ recent: a família apresentada por inteiro (semana 5); Melita conta o mito de Pr
   Mecone (semana 6); Simo encontra Sócrates na ágora e não sabe dizer o que é o bem
   (semana 7)
 weak: πονεῖ, παίζει, ὁ ἄρτος, πρός, τὸ δῶρον, ὁ βωμός (misses de 18/10, no texto e no
-  Ἀνάμνησις da semana 7); portão da fase 1 sem medição ainda (primeira: sábado 24/10)
+  Ἀνάμνησις da semana 7); portão da fase 1 sem medição ainda (primeira: sábado 31/10)
 gate: 3 sábados seguidos com ≥10 das 13 frases entendidas, com o apoio escondido (coluna
   `frases` do checkin_log; sem registro até 18/10)
-next: semana 8 — ritmo mantido (nota 3); último texto da fase 1 pelo currículo, mas o
-  portão ainda não foi confirmado; perguntar como foi a leitura, não só a nota
+next: semana 8 só depois de a semana 7 ser lida (repetida de 26/10 a 01/11); ritmo mantido;
+  pedir o número de frases do sábado 31/10, não só a nota
 
 [ITALIAN]
 phase: 1
@@ -73,6 +73,9 @@ agendada anterior e não se aplicam mais; ver "Pendências registradas")
 
 ## Pendências registradas
 
+**25/10 · FEITO:** a semana 7 foi reemitida para 26/10–01/11, sem consumir nada (ver
+`state/lexicon.md`). A pendência abaixo fica como registro.
+
 **23/10 · semana 7 não lida; será repetida de 26/10 a 01/11 (decisão de Mathews).** Ele não
 leu nenhum dia. No domingo 25/10, em vez de compor a semana 8: (1) **não** consumir nenhum
 `probed` da semana 7 e **não** somar `exp` — nada foi lido nem testado, então não há promoção
@@ -94,7 +97,7 @@ dizer: a sigla estava visível na chave do Ἀνάμνησις. Corrigido, e reg
 
 **18/10 · portão da fase 1, combinado com Mathews.** Teste no sábado: lê as 13 frases com o
 apoio escondido e diz quantas entendeu; 10 ou mais passa; três sábados seguidos cumprem.
-A primeira medição é o sábado 24/10. A nota abaixo, sobre o problema, fica como histórico.
+A primeira medição é o sábado 31/10 (era 24/10; a semana 7 foi repetida). A nota abaixo, sobre o problema, fica como histórico.
 
 **18/10 · sobre o portão de fase.** Três semanas seguidas de nota 3 em grego, mas o portão
 da fase 1 pede 3 leituras com ≥3/4 de compreensão, e a nota mede experiência, não isso.
