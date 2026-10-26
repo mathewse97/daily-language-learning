@@ -12,15 +12,15 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-10-25
-DAY: 49
+UPDATED: 2026-10-26
+DAY: 50
 STREAK: 0
 LAST_REPORT: 2026-10-18 GR3 IT3 EN3
-probed: —
+probed: πονεῖ, παίζει, ὁ ἄρτος, τὸ δῶρον
 
 [GREEK]
 phase: 1
-lesson: 19 — semana 7, dia 7/7 (texto novo, cresce 3 → 13 frases)
+lesson: 19 — semana 7, dia 1/7 (texto novo, cresce 3 → 13 frases)
 apoio: por FORMA desde 04/10 — forma nova de palavra conhecida volta a ter glosa
   ([GR-FORMA] no léxico); exp do lema governa só o teste. Nota de forma, curiosidade
   e "Quem é quem" no cartão (RULES 14)
