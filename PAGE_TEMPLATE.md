@@ -71,6 +71,29 @@ Para quem for mexer no renderizador — não para quem compõe.
 | `.letters` | a tabela do alfabeto |
 | `.err` | a mensagem de pacote ilegível |
 
+## O que a página faz além de desenhar os cartões
+
+Tudo isso mora em `page/template.html`, é código e não conteúdo, e **degrada sozinho**: sem
+o dado correspondente, o recurso simplesmente não aparece.
+
+- **Abas por idioma** dentro de cada dia (grego, italiano ou inglês, e o teste de sábado e o
+  resumo de domingo). As abas ficam fixas no topo; tocar numa leva ao começo da página.
+- **Card ao toque** em toda palavra do grego, do italiano e do inglês, e em expressões e
+  nomes inteiros: tradução, uma dica curta, "ver mais", foto quando houver, e "▶ daqui".
+- **Áudio**: um player único (pausar, ±5 s, velocidade, arrastar); a palavra lida ganha cor
+  no instante em que é falada. Botões flutuantes "Ouvir o texto" e "Apoio" aparecem
+  enquanto o texto está na tela e os botões de baixo não estão.
+- **Fotos** com tela cheia e zoom de pinça; o crédito e a explicação ficam nessa tela.
+- **Mapas e linhas do tempo**, desenhados por `viz.py` na hora do build.
+- **Marcas do aluno, só no aparelho** (`localStorage`): "não lembrei" em cada item do
+  Ἀνάμνησις e do Ripasso, "esqueci" no card, "li hoje", a contagem das 13 frases do sábado
+  e, no domingo, o resumo pronto para colar na conversa. Nada disso sai do aparelho e nada
+  disso é dado do curso: quem decide promoção é o planejador, a partir do que Mathews diz.
+- **Opções** (dentro de "Sobre esta semana"): cores nas terminações, tema claro, zerar marcas.
+
+Ordem das partes de um cartão de italiano ou de inglês: texto · perguntas · conferir ·
+nota · curiosidade · produção · modelo.
+
 ## Marcação inline nos dados
 
 Os campos de texto aceitam, e só, `<b> <i> <em> <code> <a> <span class="gi">`. Tudo o

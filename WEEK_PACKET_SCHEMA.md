@@ -87,6 +87,46 @@ o domingo usa só `min` e `text`.
 
 `label` e `body`. Serve para o check-in de domingo e para qualquer aviso.
 
+## Card ao toque, áudio, fotos e mapas — campos opcionais (desde 01/11/2026)
+
+Tudo abaixo é opcional: um pacote sem eles continua válido e a página só não oferece o
+recurso. As mídias são **arquivos** em `docs/audio/` e `docs/media/`, citados por nome.
+
+**`media.photos`** — as fotos da semana, uma vez cada: `{chave: {file, alt, expl, cred,
+page?}}`. `file` está em `docs/media/`; `alt` descreve a imagem; `expl` diz **o que é o
+objeto e por que está ali** (se for de outra época ou lugar, diz isso); `cred` é o crédito
+com autor e licença; `page` é o link da página da foto. Foto sem `cred` e sem `expl` não
+entra (invariante 23): o validador reprova.
+
+**`greek.glossary`** — `{forma: [glosa, transliteração]}` de **toda** palavra do texto, até
+as que já perderam o apoio (`null` nas frases). É o que o card ao toque mostra. O validador
+reprova palavra sem apoio que falte aqui.
+**`greek.notes`** — `{forma: [dica, ver mais]}`: a dica é uma linha em português simples;
+"ver mais" abre só se o aluno pedir. Nunca repita a glosa na dica.
+**`greek.family`** — `{forma: [palavra, explicação]}`: uma palavra que o aluno já conhece
+ou do português que vem da mesma raiz, **com a fonte consultada** (invariante 23).
+**`greek.photos`** — `{forma: chave}`: a foto que aparece no card daquela palavra.
+**`greek.cast`** aceita um terceiro item por par — `fam`, `casa`, `fora` ou `mito` — que
+agrupa o "Quem é quem".
+**`audio.greek`** — `{file, sent, t, words}`: a faixa com as frases do texto, `sent` os
+tempos `[início, fim]` de cada frase, `t` o início de cada palavra (uma lista por frase) e
+`words` os arquivos das palavras soltas. Gerado por `tools/audio.py`.
+
+**No cartão de italiano e de inglês:**
+`audio` — `{file, t}`: a faixa do texto e o início de cada palavra (o texto separado por
+espaços, na ordem). Com áudio ou `tap`, o texto é **puro, sem HTML**.
+`tap` — o que abre ao tocar: `w` `{palavra: [português, nota]}` (a nota pode ser `""`),
+`p` `{"expressão ou nome inteiro": [português, nota, chave de foto?]}` — tocar em qualquer
+palavra dela abre o mesmo card — e `f` `{palavra: chave de foto}`. Com `tap`, a lista de
+glosas do cartão (italiano) e o "In context" (inglês) saem da página: o card os substitui.
+Como no resto do pacote, número em algarismos vem seguido do extenso.
+
+**No cartão de grego e no de italiano — `viz`**: lista de mapas e linhas do tempo, **dados,
+não desenho** (`viz.py` desenha). Mapa: `{kind: "map", base: "atica"|"italia", title, cap,
+points: [{n, lat, lon, hl?, dx?, dy?, a?}], route?, hills?, labels?}`. Linha do tempo:
+`{kind: "timeline", title, cap, scale?: [de, até], items: [{yr|x, y, t, lvl?, hl?}]}`.
+Sem `scale` a linha só mostra a ordem e cada item traz `x` de 0 a 1.
+
 ## Verificação antes de publicar
 
 1. O JSON abre (`json.load`) — um pacote que não abre deixa a página em branco.
@@ -96,6 +136,8 @@ o domingo usa só `min` e `text`.
 5. Todo cartão de grego tem `sound`; todo `register` está preenchido.
 6. `form` é curta; `curio` termina com a fonte; `fix` só na segunda.
 7. No italiano, todo número em algarismos é seguido do extenso entre parênteses.
+8. Toda mídia citada existe em `docs/` e toda foto tem `cred` e `expl`.
+9. Toda palavra sem apoio tem entrada em `greek.glossary` (se ele existir).
 
 Campos novos e opcionais não mudam o número do `schema`: um pacote antigo continua
 válido. O número sobe quando um campo muda de sentido ou passa a ser obrigatório.

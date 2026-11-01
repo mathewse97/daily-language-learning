@@ -210,6 +210,111 @@ def validar_semana(exp: dict[str, int]) -> None:
                 erro(f"week.json · {rotulo}: o Ἀνάμνησις tem "
                      f"{len(rec.get('prompts', []))} prompts — o limite é 2 a 5")
 
+    validar_midia(d)
+
+
+# ---------------------------------------------------------------- mídia e dados de toque
+def _norm_forma(s: str) -> str:
+    import unicodedata
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c)).lower().replace("ς", "σ")
+    return re.sub(r"[.,·;:]", "", s)
+
+
+def validar_midia(d: dict) -> None:
+    """Confere o que a página precisa para o card ao toque, o áudio, as fotos e os mapas."""
+    fotos = (d.get("media") or {}).get("photos") or {}
+    for chave, f in fotos.items():
+        for campo in ("file", "alt", "expl", "cred"):
+            if not f.get(campo):
+                erro(f"week.json · media.photos.{chave}: falta {campo!r} — foto sem "
+                     f"crédito e sem explicação não entra (invariante 23)")
+        if f.get("file") and not (ROOT / "docs" / "media" / f["file"]).exists():
+            erro(f"week.json · media.photos.{chave}: docs/media/{f['file']} não existe")
+
+    def exige_foto(chave: str, onde: str) -> None:
+        if chave not in fotos:
+            erro(f"week.json · {onde}: cita a foto {chave!r}, que não está em media.photos")
+
+    def exige_audio(arq: str, onde: str) -> None:
+        if not (ROOT / "docs" / "audio" / arq).exists():
+            erro(f"week.json · {onde}: docs/audio/{arq} não existe")
+
+    g = d.get("greek", {})
+    frases = g.get("sentences", [])
+    glos = {_norm_forma(k) for k in (g.get("glossary") or {})}
+    for k, v in (g.get("glossary") or {}).items():
+        if not (isinstance(v, list) and len(v) == 2 and all(isinstance(x, str) and x for x in v)):
+            erro(f"week.json · greek.glossary[{k!r}]: esperado [glosa, transliteração]")
+    for k in (g.get("notes") or {}):
+        v = g["notes"][k]
+        if not (isinstance(v, list) and len(v) == 2 and isinstance(v[0], str)):
+            erro(f"week.json · greek.notes[{k!r}]: esperado [dica, ver mais]")
+    for k, ch in (g.get("photos") or {}).items():
+        exige_foto(ch, f"greek.photos[{k!r}]")
+    if g.get("glossary") is not None:
+        for i, fr in enumerate(frases, 1):
+            for glosa, grego, tr in fr:
+                if glosa is None and _norm_forma(grego) not in glos:
+                    erro(f"week.json · frase {i}: {grego!r} está sem apoio e não tem "
+                         f"entrada em greek.glossary — o card ao toque ficaria vazio")
+    au = (d.get("audio") or {}).get("greek")
+    if au:
+        exige_audio(au.get("file", ""), "audio.greek")
+        if len(au.get("sent", [])) != len(frases) or len(au.get("t", [])) != len(frases):
+            erro("week.json · audio.greek: sent e t precisam ter uma entrada por frase")
+        else:
+            for i, fr in enumerate(frases, 1):
+                if len(au["t"][i - 1]) != len(fr):
+                    erro(f"week.json · audio.greek.t: a frase {i} tem {len(fr)} palavras "
+                         f"e {len(au['t'][i - 1])} tempos")
+        for k, arq in (au.get("words") or {}).items():
+            exige_audio(arq, f"audio.greek.words[{k!r}]")
+
+    for dia in d.get("days", []):
+        rot = dia.get("label", dia.get("d"))
+        for c in dia.get("cards", []):
+            for v in c.get("viz") or []:
+                if v.get("kind") == "map":
+                    if v.get("base") not in ("atica", "italia"):
+                        erro(f"week.json · {rot}: mapa com base {v.get('base')!r}; "
+                             f"as bases são atica e italia (page/geo.json)")
+                    for pt in v.get("points", []):
+                        if not all(k in pt for k in ("n", "lat", "lon")):
+                            erro(f"week.json · {rot}: ponto do mapa sem n/lat/lon: {pt}")
+                elif v.get("kind") == "timeline":
+                    esc_ = v.get("scale")
+                    for it in v.get("items", []):
+                        if not (it.get("y") and it.get("t")) or (
+                                ("yr" not in it) if esc_ else ("x" not in it)):
+                            erro(f"week.json · {rot}: item da linha do tempo incompleto: {it}")
+                else:
+                    erro(f"week.json · {rot}: viz de tipo {v.get('kind')!r}; "
+                         f"aceitos: map e timeline")
+                if not v.get("title"):
+                    erro(f"week.json · {rot}: viz sem título")
+            if c.get("lang") not in ("it", "en") or not (c.get("audio") or c.get("tap")):
+                continue
+            if c["lang"] == "it":
+                textos = [c.get("text", "")]
+            else:
+                textos = c.get("body", [])
+            if any("<" in str(t) for t in textos):
+                erro(f"week.json · {rot}: texto com marcação ({c['lang']}) — com áudio ou "
+                     f"card ao toque o texto é puro, sem HTML")
+            n = sum(len(str(t).split()) for t in textos)
+            if c.get("audio"):
+                exige_audio(c["audio"].get("file", ""), f"{rot} · audio ({c['lang']})")
+                if len(c["audio"].get("t", [])) != n:
+                    erro(f"week.json · {rot}: audio.t tem {len(c['audio'].get('t', []))} "
+                         f"tempos para {n} palavras")
+            tap = c.get("tap") or {}
+            for p, v in (tap.get("p") or {}).items():
+                if len(v) > 2:
+                    exige_foto(v[2], f"{rot} · tap.p[{p!r}]")
+            for p, ch in (tap.get("f") or {}).items():
+                exige_foto(ch, f"{rot} · tap.f[{p!r}]")
+
 
 # ---------------------------------------------------------------- manifesto
 IGNORAR = {".git", ".github", "docs", "__pycache__", ".DS_Store"}

@@ -202,6 +202,505 @@
   .err{border:1px solid var(--flag);border-radius:6px;padding:14px 16px;color:var(--flag);font-family:var(--mono);font-size:12px;white-space:pre-wrap}
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
   @media (max-width:420px){ h1{font-size:1.4rem} main{padding:16px 12px 60px} }
+
+/* ===== recursos de leitura: card ao toque, áudio, abas por idioma, mapas, fotos ===== */
+  backdrop-filter:blur(6px);padding:8px 12px;font-size:12px;color:var(--ink)}
+  color:var(--ink);border-radius:999px;padding:3px 10px;cursor:pointer}
+  color:var(--flag);border:1px solid var(--flag);border-radius:4px;padding:0 5px;margin-left:6px;vertical-align:middle}
+
+/* mapas, linhas do tempo, sons */
+details.viz{border:1px solid var(--rule);border-radius:var(--r-sm);background:var(--surface-2);padding:0 12px}
+details.viz > summary{padding:9px 0}
+details.viz .dz{padding:2px 0 12px;display:block}
+.viz svg{width:100%;height:auto;display:block;max-height:340px}
+.viz .cap{font-size:11.5px;color:var(--ink-faint);margin:6px 0 0}
+.viz .land{fill:var(--surface-3);stroke:var(--rule-2);stroke-width:1}
+.viz .hill{fill:none;stroke:var(--ink-faint);stroke-width:1;stroke-linejoin:round}
+.viz .sea{fill:var(--surface)}
+.viz .pt{fill:var(--accent)}
+.viz .pt2{fill:var(--flag)}
+.viz .ptd{fill:var(--ink-faint)}
+.viz .lbl{fill:var(--ink);font:11px var(--sans)}
+.viz .lbl2{fill:var(--ink-soft);font:9.5px var(--sans)}
+.viz .lblb{fill:var(--accent-ink);font:600 11px var(--sans)}
+.viz .route{stroke:var(--flag);stroke-width:1.8;stroke-dasharray:5 4;fill:none}
+.viz .axis{stroke:var(--rule-2);stroke-width:2}
+.viz .tick{stroke:var(--ink-faint);stroke-width:1}
+.viz .bar-l{fill:var(--accent)}
+.viz .bar-b{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1}
+.viz .bar-d{fill:var(--flag)}
+.viz .glyph{fill:var(--ink);font:600 22px var(--serif)}
+.viz .curve{stroke:var(--accent-ink);stroke-width:2.4;fill:none;stroke-linecap:round}
+
+/* imagens do dia (ao tocar nas palavras concretas) */
+.pics{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0}
+.pic{width:78px;border:1px solid var(--rule);border-radius:var(--r-sm);background:var(--surface-2);padding:6px 4px 5px;
+  text-align:center}
+.pic svg{width:44px;height:44px;stroke:var(--accent-ink);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.pic .g{font:500 1.05rem var(--serif);color:var(--ink);line-height:1.15}
+.pic .p{font-size:10.5px;color:var(--ink-faint)}
+
+/* cores nas terminações */
+.cores-on .e-obj{color:var(--flag);font-weight:600}
+.cores-on .e-pl{color:var(--ok);font-weight:600}
+.legenda{font-size:11.5px;color:var(--ink-faint);display:none}
+.cores-on .legenda{display:block}
+.legenda .e-obj{color:var(--flag)}.legenda .e-pl{color:var(--ok)}
+
+/* "não lembrei", "li hoje", resumo do domingo */
+.rec li{display:flex;gap:8px;align-items:baseline;justify-content:space-between}
+.rec li .t{flex:1}
+button.nl{font:inherit;font-size:11px;border:1px solid var(--rule-2);background:transparent;color:var(--ink-faint);
+  border-radius:999px;padding:1px 9px;cursor:pointer;white-space:nowrap}
+button.nl[aria-pressed="true"]{background:var(--flag-soft);border-color:var(--flag);color:var(--flag)}
+.readbar{display:flex;align-items:center;gap:10px;margin-top:14px;padding:10px 12px;border:1px dashed var(--rule-2);
+  border-radius:var(--r-sm);font-size:12.5px;color:var(--ink-soft)}
+.readbar button{font:inherit;font-size:12.5px;border:1px solid var(--ok);background:transparent;color:var(--ok);
+  border-radius:999px;padding:3px 12px;cursor:pointer}
+.readbar button[aria-pressed="true"]{background:var(--ok-soft)}
+.stepper{display:inline-flex;align-items:center;gap:8px}
+.stepper button{width:28px;height:28px;border-radius:50%;border:1px solid var(--rule-2);background:var(--surface-2);
+  color:var(--ink);font-size:16px;cursor:pointer}
+.stepper output{font:500 1.2rem var(--serif);min-width:3.2rem;text-align:center}
+.seg{display:inline-flex;gap:4px}
+.seg button{width:28px;height:28px;border-radius:8px;border:1px solid var(--rule-2);background:var(--surface-2);
+  color:var(--ink);cursor:pointer;font:inherit}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+.sum .rowx{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:5px 0;
+  border-bottom:1px solid var(--rule)}
+.sum textarea{width:100%;min-height:150px;background:var(--surface-2);color:var(--ink);border:1px solid var(--rule-2);
+  border-radius:var(--r-sm);padding:10px;font:12.5px/1.5 var(--mono)}
+.sum .copy{margin-top:8px;font:inherit;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent-ink);
+  border-radius:999px;padding:5px 16px;cursor:pointer}
+.audio{font:inherit;font-size:12px;border:1px solid var(--rule-2);background:var(--surface-2);color:var(--ink);
+  border-radius:999px;padding:3px 12px;cursor:pointer;margin-bottom:8px}
+.audio small{color:var(--ink-faint)}
+
+/* card ao toque na palavra */
+.il{cursor:default}
+.w{cursor:pointer;border-radius:6px}
+button.sp{align-self:center;width:26px;height:26px;border-radius:50%;border:1px solid var(--rule-2);
+  background:var(--surface-3);color:var(--accent-ink);font-size:11px;cursor:pointer;padding:0;flex:none}
+.pop{position:absolute;z-index:60;width:230px;background:var(--surface);border:1px solid var(--rule-2);
+  border-radius:12px;box-shadow:var(--shadow);padding:10px 12px 11px}
+.pop .top{display:flex;gap:10px;align-items:center}
+.pop svg{width:46px;height:46px;flex:none;stroke:var(--accent-ink);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.pop .gw{font:500 1.7rem/1.1 var(--serif)}
+.pop .tr{font:11px var(--mono);color:var(--ink-faint)}
+.pop .pt{font-size:15px;color:var(--accent-ink);margin-top:6px}
+.pop .ph{font-size:10.5px;color:var(--ink-faint);margin-top:6px}
+.pop .row{display:flex;gap:8px;align-items:center;margin-top:8px}
+.pop button{font:inherit;font-size:12px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent-ink);
+  border-radius:999px;padding:3px 12px;cursor:pointer}
+.pop::before{content:"";position:absolute;top:-6px;left:var(--ax,24px);width:10px;height:10px;background:var(--surface);
+  border-left:1px solid var(--rule-2);border-top:1px solid var(--rule-2);transform:rotate(45deg)}
+.pop.up::before{top:auto;bottom:-6px;transform:rotate(225deg)}
+.sup{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 2px}
+.sup button{font:inherit;font-size:12px;border:1px solid var(--rule-2);background:var(--surface-2);color:var(--ink);
+  border-radius:999px;padding:3px 12px;cursor:pointer}
+.sup button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink)}
+.aviso{font-size:11.5px;color:var(--flag);margin:4px 0 0}
+
+.pop .nota{font-size:12.5px;color:var(--ink-soft);margin-top:6px;line-height:1.4}
+.pop .b-esq{border-color:var(--rule-2);background:transparent;color:var(--ink-faint)}
+.pop .b-esq[aria-pressed="true"]{border-color:var(--flag);background:var(--flag-soft);color:var(--flag)}
+.pop .row{flex-wrap:wrap}
+
+.pop{width:210px}
+.pop .pt{font-size:16px;margin-top:4px}
+.pop .nota{font-size:12.5px;color:var(--ink-soft);margin-top:2px;line-height:1.35}
+.pop details.gram{margin-top:8px;font-size:12px;color:var(--ink-soft)}
+.pop details.gram summary{cursor:pointer;color:var(--ink-faint);font-size:11.5px}
+.pop details.gram div{margin-top:4px;line-height:1.4}
+
+/* organização da interface */
+nav.days button.lido::after{content:" ✓";color:var(--ok);font-size:10px}
+.tabs2{display:flex;flex-direction:column;gap:8px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chips button{font:inherit;font-size:12.5px;border:1px solid var(--rule-2);background:var(--surface-2);color:var(--ink-soft);
+  border-radius:999px;padding:5px 12px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+.tpanel{border:1px solid var(--rule);border-radius:var(--r-sm);background:var(--surface-2);padding:12px;display:flex;flex-direction:column;gap:12px}
+.tpanel .sound,.tpanel .form,.tpanel .curio{background:none;border:0;padding:0;margin:0}
+.tpanel .vz svg{max-height:300px}
+header.acc{cursor:pointer;align-items:center}
+.chev{color:var(--ink-faint);margin-right:6px;font-size:12px}
+.preview{font-size:12.5px;color:var(--ink-faint);margin:2px 0 0}
+.preview:empty{display:none}
+.readbar{position:sticky;bottom:10px;background:var(--surface);box-shadow:var(--shadow);z-index:20}
+
+.readbar button{white-space:nowrap}
+.readbar{font-size:12px}
+
+/* v5: player, palavras tocáveis, modo foco, abas */
+.player{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--surface);border-top:1px solid var(--rule-2);
+  box-shadow:0 -4px 16px rgba(0,0,0,.25);padding:8px 12px calc(8px + env(safe-area-inset-bottom));max-width:760px;margin:0 auto}
+.player[hidden]{display:none}
+.pl-title{font-size:12px;color:var(--ink-faint);margin-bottom:2px}
+.pl-bar{display:flex;align-items:center;gap:8px;font:11px var(--mono);color:var(--ink-faint)}
+.pl-bar input{flex:1;accent-color:var(--accent)}
+.pl-row{display:flex;gap:6px;justify-content:center;margin-top:4px;flex-wrap:wrap}
+.pl-row button{font:inherit;font-size:12.5px;border:1px solid var(--rule-2);background:var(--surface-2);color:var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer}
+.pl-row .main{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink);min-width:48px}
+body.com-player{padding-bottom:120px}
+.tk{cursor:pointer;border-radius:4px}
+.tpanel[hidden]{display:none}
+.viz{width:100%}
+.sobre{margin-top:6px;font-size:12.5px}
+.sobre summary{cursor:pointer;color:var(--ink-faint)}
+
+/* v6: preenchimento, fotos, notas nas palavras */
+.pop .foto{width:100%;height:96px;object-fit:cover;border-radius:8px;margin-bottom:8px;display:block}
+.pop .fam{font-size:12.5px;color:var(--ink-soft);margin-top:6px;line-height:1.4;border-left:2px solid var(--accent);padding-left:8px}
+.pop .fam b{color:var(--accent-ink);font-weight:600}
+.gw.it{font:500 1.35rem/1.15 var(--serif)}
+
+/* v6: correções de UI (escala única, contraste, blocos com função) */
+:root{--ink-faint:#8E97A8}
+:root[data-theme="light"]{--ink-faint:#5F6877}
+nav.days{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:2px}
+nav.days button{flex:none;min-height:40px}
+.readbar,body.foco .readbar{position:static;box-shadow:none;margin-top:16px}
+.il{row-gap:12px}
+.br{border-top:1px solid var(--rule);margin:2px 0 0}
+.card{--g:14px}
+.card > *+*{margin-top:var(--g)}
+.card details > summary{padding:9px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--surface-2);min-height:38px;display:flex;align-items:center;color:var(--ink-soft)}
+.card details > summary:hover{border-color:var(--rule-2);color:var(--ink)}
+.card details[open] > summary{border-color:var(--accent);color:var(--accent-ink)}
+.note,.curio,.form{border:1px solid var(--rule);border-left-width:4px;border-radius:8px;padding:10px 12px;background:var(--surface-2);font-size:13.5px;line-height:1.5}
+.note{border-left-color:var(--accent)}
+.curio{border-left-color:var(--flag)}
+.form{border-left-color:var(--ok)}
+.note>b:first-child,.curio>b:first-child,.form>b:first-child{display:block;font:600 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.note>b:first-child{color:var(--accent-ink)}.curio>b:first-child{color:var(--flag)}.form>b:first-child{color:var(--ok)}
+.note>b:first-child::before{content:"✎ "}.curio>b:first-child::before{content:"✦ "}.form>b:first-child::before{content:"◇ "}
+.fonte{display:block;margin-top:6px;padding-top:6px;border-top:1px dashed var(--rule-2);font-size:12px;color:var(--ink-faint)}
+.fonte::before{content:"Fonte · ";font:600 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.audio{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:6px 16px;font-size:13.5px;border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink)}
+.audio small{font-size:11.5px;color:var(--ink-soft)}
+.sup button{min-height:40px;padding:6px 16px;font-size:13px}
+.sup button:first-child{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink)}
+p.small:has(> a){display:flex;align-items:center;gap:6px;padding:10px 12px;border:1px dashed var(--rule-2);border-radius:8px;color:var(--ink-soft)}
+p.small a{font-weight:600;color:var(--accent-ink);text-decoration:underline;text-underline-offset:3px}
+.chips button{min-height:38px}
+.sect{margin-bottom:6px}
+.card > header .b{font-size:10.5px}
+nav.days{top:34px}
+
+/* v7: preenchimento suave por letra (sem retângulo, sem sublinhado) */
+:root{--hl:#A99BF0}
+:root[data-theme="light"]{--hl:#5B4BC4}
+.w .gr,.tk{--p:0%}
+.w.now .gr,.tk.now{background:linear-gradient(90deg,var(--hl) var(--p),currentColor var(--p));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.w.lido-w .gr,.tk.lido-w{color:var(--hl)}
+.w.lido-w .gr .e-obj,.w.lido-w .gr .e-pl{color:inherit}
+.tk{cursor:pointer;transition:color .15s}
+.tk:hover{color:var(--accent-ink)}
+
+
+/* v7: respiro */
+.cbody{display:flex;flex-direction:column;gap:22px;padding-top:6px}
+.cbody > *{margin:0}
+.cbody .sect{margin:0 0 10px}
+.cbody ol,.cbody ul{padding-left:22px;display:flex;flex-direction:column;gap:10px;line-height:1.55;margin:0}
+.cbody p.ita{font-size:1.1rem;line-height:1.75}
+.cbody .eng p{line-height:1.7;margin:0 0 14px;font-size:1.02rem}
+.cbody .eng p:last-child{margin-bottom:0}
+.cbody .rec{gap:12px;padding:14px 16px}
+.cbody .rec ol{gap:10px}
+.cbody .note,.cbody .curio,.cbody .form{padding:14px 16px;line-height:1.6}
+.cbody details.ans-d > .dz,.cbody details > .dz{padding:12px 4px 4px}
+.cbody .ans{gap:10px}
+.cbody .produce p,.cbody .produce{line-height:1.6}
+.ver-modelo{margin-top:12px}
+.audio{margin:0}
+.card{gap:20px}
+.tpanel{padding:16px;gap:16px}
+
+/* v7: Quem é quem em cartões */
+.elenco{display:flex;flex-direction:column;gap:16px}
+.elenco h4{margin:0 0 8px;font:600 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+.grupo{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.pers{display:flex;gap:10px;align-items:center;padding:10px;border:1px solid var(--rule);border-radius:12px;background:var(--surface)}
+.pers .av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:500 1.3rem var(--serif);
+  background:var(--accent-soft);color:var(--accent-ink)}
+.pers.casa .av{background:var(--ok-soft);color:var(--ok)}
+.pers.fora .av{background:var(--flag-soft);color:var(--flag)}
+.pers.mito .av{background:var(--surface-3);color:var(--hl)}
+.pers .nm{font:500 1.05rem/1.15 var(--serif)}
+.pers .pt2{font-size:12px;color:var(--ink-soft);line-height:1.3}
+.pers .tg{display:inline-block;margin-top:3px;font:10px var(--mono);color:var(--ink-faint);border:1px solid var(--rule-2);border-radius:999px;padding:0 6px}
+.pop .exp{font-size:12px;color:var(--ink-soft);line-height:1.4;margin-top:6px}
+
+.cbody p.small:not(:has(> a)){border:1px solid var(--rule);border-left:4px solid var(--hl);border-radius:8px;background:var(--surface-2);
+  padding:14px 16px;font-size:13.5px;line-height:1.6;color:var(--ink-soft);display:block}
+.cbody p.small:not(:has(> a)) > b:first-child{display:block;font:600 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--hl);margin-bottom:6px}
+.cbody p.small:not(:has(> a)) em{display:block;color:var(--ink);font-size:15px;margin-bottom:6px;font-style:italic}
+
+/* v8: estilo híbrido (estrutura do Job System + serifa do Bibliotheca) */
+:root{--ground:#0A0C10;--shadow-j:0 18px 28px rgba(0,0,0,.28)}
+:root[data-theme="light"]{--ground:#F4F4F5;--surface-2:#F4F4F5;--rule:#EAEAED;--shadow-j:0 16px 24px rgba(0,0,0,.05)}
+main{padding-top:14px}
+.card{border:0;border-radius:18px;box-shadow:var(--shadow-j);padding:22px 20px;gap:20px}
+.card:hover{box-shadow:var(--shadow-j)}
+.card > header{padding-bottom:2px}
+.b{font:600 11px var(--sans);letter-spacing:.02em;text-transform:none;border-radius:999px;padding:3px 11px 3px 9px;display:inline-flex;align-items:center;gap:6px}
+.b::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.card > header .min{font:12px var(--sans)}
+.sect{font:600 11px var(--sans);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px}
+.setting{font-family:var(--serif);font-size:1.15rem;line-height:1.45;color:var(--ink)}
+.rec,.cbody .rec{background:var(--surface-2);border:0;border-radius:14px;padding:16px 18px}
+.il{background:var(--surface-2);border:0;border-radius:14px;padding:18px 16px}
+.il:hover,.il:focus-visible{border:0;outline:0}
+.note,.curio,.form{border:0;border-left:0;border-radius:14px;background:var(--surface-2);padding:16px 18px 16px 18px;position:relative}
+.note::before,.curio::before,.form::before{content:"";position:absolute;left:0;top:16px;bottom:16px;width:3px;border-radius:0 3px 3px 0}
+.note::before{background:var(--accent)}.curio::before{background:var(--flag)}.form::before{background:var(--ok)}
+.cbody p.small:not(:has(> a)){border:0;border-radius:14px;background:var(--surface-2);position:relative}
+.cbody p.small:not(:has(> a))::before{content:"";position:absolute;left:0;top:16px;bottom:16px;width:3px;border-radius:0 3px 3px 0;background:var(--hl)}
+.card details > summary{border:0;background:var(--surface-2);border-radius:12px;font:600 12.5px var(--sans);letter-spacing:.01em;text-transform:none;color:var(--ink-2,var(--ink))}
+.card details[open] > summary{background:var(--accent-soft);color:var(--accent-ink)}
+nav.days{background:var(--ground);border-bottom:0;gap:6px;padding:10px 0;margin-bottom:12px}
+nav.days button{border-radius:12px;padding:8px 14px;font-weight:600}
+nav.days button[aria-current="true"]{background:var(--surface);box-shadow:var(--shadow-j);border-color:transparent;color:var(--ink)}
+.chips button,.sup button,.audio{border-radius:12px}
+.pers,.pop{border-radius:14px}
+.nota-w{color:color-mix(in srgb,var(--ink) 62%,var(--accent-ink))}
+.p.il .gr{}
+/* abas por idioma */
+.langtabs{display:flex;gap:6px;background:var(--surface-2);border-radius:14px;padding:5px;box-shadow:inset 0 0 0 1px var(--rule)}
+.langtabs button{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;border:0;background:transparent;color:var(--ink-soft);
+  font:600 13px var(--sans);padding:9px 6px 8px;border-radius:10px;cursor:pointer;position:relative}
+.langtabs button small{font:400 11px var(--sans);color:var(--ink-faint)}
+.langtabs button[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow-j)}
+.langtabs .ld{position:absolute;top:8px;right:10px;width:6px;height:6px;border-radius:50%;background:var(--ink-faint)}
+.langtabs .ld.gr{background:var(--accent)}.langtabs .ld.it{background:var(--ok)}.langtabs .ld.en{background:var(--warn)}
+section.day > article.card[hidden]{display:none}
+.readbar{border-radius:14px;border:0;background:var(--surface);box-shadow:var(--shadow-j)}
+:root{--surface:#171B24;--surface-2:#1E232D}
+:root[data-theme="light"]{--surface:#FFFFFF;--surface-2:#F4F4F5}
+.card > *+*{margin-top:0}
+.card details > summary::before{margin-right:8px}
+p.small:has(> a){display:block}
+p.small a{margin-left:2px}
+.card{gap:18px}
+
+/* v9 */
+.tpanel .curio,.tpanel .note,.tpanel .form{padding:0 0 0 16px;background:none}
+.tpanel .curio::before,.tpanel .note::before,.tpanel .form::before{top:2px;bottom:2px}
+.fotoW{display:block;position:relative;width:100%;padding:0;border:0;background:var(--surface-3);border-radius:10px;overflow:hidden;cursor:zoom-in;margin-bottom:8px}
+.fotoW .foto{width:100%;height:auto;max-height:190px;object-fit:contain;margin:0;border-radius:0;display:block}
+.fotoW span,.fth span{position:absolute;right:6px;bottom:6px;font:600 11px var(--sans);color:#fff;background:rgba(0,0,0,.55);border-radius:999px;padding:2px 9px}
+.fotos{display:flex;gap:10px;overflow-x:auto;padding-bottom:2px}
+.fth{position:relative;flex:none;border:0;padding:0;background:var(--surface-3);border-radius:12px;overflow:hidden;cursor:zoom-in}
+.fth img{display:block;height:150px;width:auto;max-width:78vw}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.92);display:flex;flex-direction:column}
+.lb[hidden]{display:none}
+.lb-top{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;color:#cfd3dc;font-size:12px}
+.lb-top button{font:inherit;color:#fff;background:rgba(255,255,255,.14);border:0;border-radius:999px;padding:7px 16px;cursor:pointer}
+.lb-scroll{flex:1;overflow:auto;display:flex;align-items:center;justify-content:center;min-height:0}
+.lb-scroll img{max-width:100%;max-height:100%;object-fit:contain;cursor:zoom-in}
+.lb.zoom .lb-scroll{display:block}
+.lb.zoom .lb-scroll img{max-width:none;max-height:none;width:230%;cursor:zoom-out}
+.lb-cap{padding:12px 16px calc(14px + env(safe-area-inset-bottom));color:#e6e8ee;font-size:13px;line-height:1.45;max-height:30vh;overflow:auto}
+.lb-cap p{margin:0 0 6px}.lb-cap small{color:#9aa1b0;font-size:11.5px}.lb-cap a{color:#8aaef6}
+/* respostas na frente de cada item */
+.rec .resp{display:none;font-weight:600;color:var(--ok);margin-left:2px}
+.rec.mostra .resp{display:inline}
+.rec.mostra .q{display:none}
+.resp-b{display:none;margin-top:6px;padding:8px 12px;border-radius:10px;background:var(--ok-soft);color:var(--ink);font-size:13.5px;line-height:1.5}
+.mostra .resp-b{display:block}
+button.conf{align-self:flex-start;font:600 12.5px var(--sans);border:0;background:var(--surface);color:var(--accent-ink);border-radius:12px;padding:9px 16px;cursor:pointer;box-shadow:var(--shadow-j)}
+.rec button.conf{margin-top:2px}
+/* linha do tempo vertical */
+.vt{list-style:none;margin:6px 0 0;padding:0 0 0 18px;position:relative}
+.vt::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--rule-2);border-radius:2px}
+.vt li{position:relative;display:flex;gap:14px;align-items:baseline;padding:7px 0}
+.vt li::before{content:"";position:absolute;left:-18px;top:14px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--accent)}
+.vt li.dest::before{background:var(--flag);border-color:var(--flag)}
+.vt li b{flex:none;min-width:92px;font:600 14px var(--sans);color:var(--accent-ink)}
+.vt li.dest b{color:var(--flag)}
+.vt li span{color:var(--ink);font-size:14px}
+.vt li.gap{padding:0 0 0 0}
+.vt li.gap::before{display:none}
+.vt li.gap span{font-size:11.5px;color:var(--ink-faint);padding:2px 0 2px 106px}
+.vt{padding-left:30px}
+.vt li::before{left:-30px;top:13px;margin-left:0}
+.vt::before{left:5px}
+.vt li.gap span{padding-left:0}
+.vt li b{min-width:96px}
+.lb{background:#05070a;z-index:200}
+
+/* v10 */
+.pop button.fotoW{display:block;width:100%;border:0;border-radius:10px;background:var(--surface-3);padding:0;margin:0 0 8px;overflow:hidden}
+.pop .fotoW .foto{width:100%;height:auto;max-height:180px;object-fit:contain;border-radius:0}
+.lb.zoom .lb-scroll img{width:170%}
+.ht{overflow-x:auto;padding:4px 0 8px;scrollbar-width:thin}
+.ht ol{display:flex;list-style:none;margin:0;padding:0;min-width:max-content}
+.ht li{position:relative;text-align:center}
+.ht li.ev{width:118px;display:flex;flex-direction:column;align-items:center;gap:8px;padding:0 4px}
+.ht li.ev b{font:600 13.5px var(--sans);color:var(--accent-ink);white-space:nowrap}
+.ht li.ev.dest b{color:var(--flag)}
+.ht li.ev i{position:relative;width:14px;height:14px;border-radius:50%;background:var(--surface);border:3px solid var(--accent);z-index:1}
+.ht li.ev.dest i{background:var(--flag);border-color:var(--flag)}
+.ht li.ev span{font-size:13px;line-height:1.3;color:var(--ink)}
+.ht li.gap{width:58px;flex:none;display:flex;justify-content:center;align-items:flex-start;padding-top:24px}
+.ht li.gap em{font:normal 10.5px var(--sans);color:var(--ink-faint);background:var(--surface-2);padding:0 4px;position:relative;z-index:1;margin-top:-9px;white-space:nowrap}
+.ht ol::before{content:"";position:absolute;left:59px;right:59px;top:0;height:0}
+.ht li.ev::before,.ht li.gap::before{content:"";position:absolute;top:30px;height:2px;background:var(--rule-2)}
+.ht li.ev::before{left:0;right:0}
+.ht li.gap::before{left:0;right:0;top:30px}
+.ht li.ev:first-child::before{left:50%}
+.ht li.ev:last-child::before{right:50%}
+.hint{font-size:11px;color:var(--ink-faint);margin:0}
+.ht ol{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;gap:0!important;padding:0!important}
+.ht li{flex:none}
+
+/* v11 */
+.ht{display:grid;grid-template-columns:repeat(var(--n),1fr);grid-template-rows:auto 26px auto;position:relative;overflow:visible;padding:0;row-gap:4px}
+.ht .axis{grid-column:1/-1;grid-row:2;align-self:center;height:2px;background:var(--rule-2);border-radius:2px;margin:0 calc(50% / var(--n))}
+.ht .dot{grid-row:2;justify-self:center;align-self:center;width:14px;height:14px;border-radius:50%;background:var(--surface-2);border:3px solid var(--accent);position:relative;z-index:1}
+.ht .dot.dest{background:var(--flag);border-color:var(--flag)}
+.ht .gp{grid-row:2;justify-self:start;align-self:center;transform:translateX(-50%);font:normal 9.5px var(--sans);color:var(--ink-faint);background:var(--surface-2);padding:0 3px;position:relative;z-index:2;white-space:nowrap}
+.ht .lab{display:flex;flex-direction:column;gap:2px;width:calc(200% - 14px);line-height:1.25;font-size:12.5px}
+.ht .lab b{font:600 12.5px var(--sans);color:var(--accent-ink)}
+.ht .lab.dest b{color:var(--flag)}
+.ht .lab span{color:var(--ink)}
+.ht .lab{justify-self:center;text-align:center;align-items:center}
+.ht .lab.start{justify-self:start;text-align:left;align-items:flex-start;width:calc(150% - 8px)}
+.ht .lab.end{justify-self:end;text-align:right;align-items:flex-end;width:calc(150% - 8px)}
+.ht .lab[style*="grid-row:1"]{align-self:end}
+.ht .lab[style*="grid-row:3"]{align-self:start}
+.hint{display:none}
+.lb-scroll{overflow:hidden;touch-action:none}
+.lb-scroll img{max-width:100%;max-height:100%;transform-origin:center;cursor:grab;user-select:none;-webkit-user-drag:none}
+.w.lido-w .gr,.tk.lido-w{color:var(--hl);transition:color .1s}
+.ht .axis{background:var(--ink-faint);opacity:.45;justify-self:stretch}
+
+/* v12: linha do tempo em SVG como antes, fontes menores e mais respiro */
+.viz .lblb{font:600 10.5px var(--sans)}
+.viz .lbl2{font:9px var(--sans);fill:var(--ink-soft)}
+.viz .lblb{font:600 11px var(--sans)}.viz .lbl2{font:9.6px var(--sans)}
+
+/* v13: cards sem vazamento; expressões como uma unidade */
+.pop{width:240px;max-width:calc(100vw - 16px)}
+.pop .gw,.pop .pt,.pop .nota,.pop .exp,.pop .fam{overflow-wrap:anywhere;word-break:break-word}
+.pop .gw.it{font-size:1.25rem}
+.pop .gw.it.longo{font-size:1.02rem}
+.fr{border-radius:6px;cursor:pointer}
+.fr .tk:hover{color:inherit}
+.fr:hover .tk:not(.lido-w){color:var(--accent-ink)}
+
+/* v14: player compacto; rodapé em cartão */
+.player{padding:6px 12px calc(6px + env(safe-area-inset-bottom))}
+.pl-title{font-size:11px;margin:0 0 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pl-row{display:flex;align-items:center;gap:6px;margin:0;flex-wrap:nowrap}
+.pl-row input{flex:1;min-width:40px;accent-color:var(--accent)}
+.pl-row .pl-t,.pl-row .pl-d{font:11px var(--mono);color:var(--ink-faint);min-width:30px;text-align:center}
+.pl-row button{padding:4px 9px;font-size:13px;flex:none}
+.pl-row .main{min-width:40px}
+body.com-player{padding-bottom:78px}
+.footcard{background:var(--surface);border-radius:18px;box-shadow:var(--shadow-j);padding:6px}
+.footcard > summary{padding:12px 14px;font:600 13px var(--sans);color:var(--ink-soft);cursor:pointer}
+.footcard .dz{padding:4px 14px 14px;color:var(--ink-soft);line-height:1.6}
+.footcard .foot{border:0;margin:0;padding:0}
+.footcard .foot p{margin:0 0 12px}
+
+/* v15: player flutuante, linhas que preenchem a largura */
+.player{left:12px;right:12px;bottom:calc(16px + env(safe-area-inset-bottom));max-width:396px;margin:0 auto;
+  border:1px solid var(--rule-2);border-radius:18px;padding:8px 10px 8px;box-shadow:0 12px 32px rgba(0,0,0,.4);background:var(--surface)}
+.pl-title{font-size:10.5px;padding:0 4px;margin-bottom:3px}
+.pl-row{gap:4px}
+.pl-row button{padding:3px 8px;font-size:12.5px;border-radius:999px}
+.pl-row .main{min-width:36px}
+.pl-row .pl-t,.pl-row .pl-d{min-width:26px;font-size:10.5px}
+body.com-player{padding-bottom:96px}
+nav.days{flex-wrap:wrap;overflow:visible;gap:4px}
+nav.days button{flex:1 1 auto;text-align:center;min-height:36px;padding:6px 10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{flex:1 1 auto;text-align:center}
+.sup{display:flex;flex-wrap:wrap}
+.sup button{flex:1 1 auto}
+
+/* v16: player em pílula */
+.player{display:flex;align-items:center;gap:8px;left:14px;right:14px;max-width:380px;bottom:calc(30px + env(safe-area-inset-bottom));
+  border-radius:999px;padding:7px 10px;border:1px solid var(--rule-2);background:var(--surface);box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.pl-side{display:flex;align-items:center;gap:2px;flex:none}
+.pl-mid{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+.pl-title{font:600 10.5px var(--sans);color:var(--ink-faint);padding:0 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pl-bar2{display:flex;align-items:center;gap:5px}
+.pl-bar2 input{flex:1;min-width:30px;height:16px;accent-color:var(--accent)}
+.pl-bar2 .pl-t,.pl-bar2 .pl-d{font:10px var(--mono);color:var(--ink-faint)}
+.player button{border:0;background:transparent;color:var(--ink-soft);cursor:pointer;border-radius:50%;display:grid;place-items:center;padding:0}
+.player button.ic{width:30px;height:30px}
+.player button.ic svg{width:22px;height:22px}
+.player button.main{width:40px;height:40px;background:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.player button.main svg{width:20px;height:20px}
+.player button.sp2{height:26px;min-width:36px;border-radius:999px;font:600 11.5px var(--sans);background:var(--surface-2);color:var(--ink-soft);padding:0 8px}
+.player button:active{transform:scale(.94)}
+body.com-player{padding-bottom:110px}
+
+/* v17: abas de idioma fixas no topo; dias rolam com a página */
+nav.days{position:static;top:auto}
+.langtabs{position:sticky;top:8px;z-index:30;box-shadow:0 0 0 8px var(--ground),inset 0 0 0 1px var(--rule)}
+
+/* v18: ▶ em coluna própria; segunda linha da frase alinhada com a primeira */
+.il{display:flex;flex-direction:column;flex-wrap:nowrap;gap:0;row-gap:0;padding:6px 14px}
+.il .sent{display:grid;grid-template-columns:30px minmax(0,1fr);column-gap:12px;align-items:start;padding:12px 0}
+.il .sent + .sent{border-top:1px solid var(--rule)}
+.il .words{display:flex;flex-wrap:wrap;column-gap:13px;row-gap:14px;align-items:start}
+.il .sent > button.sp{margin-top:18px;width:30px;height:30px}
+.il .sent > button.sp{align-self:start!important;margin-top:20px}
+
+/* v19: ▶ na borda direita; texto sem recuo */
+.il .sent{grid-template-columns:minmax(0,1fr) 30px;column-gap:10px}
+.il .sent > button.sp{margin-top:20px;justify-self:end}
+.il{padding:6px 16px}
+.il{align-items:stretch}.il .sent{width:100%}
+
+/* v20: botões flutuantes do texto grego (mesmo lugar do player; o player assume ao tocar) */
+.dock{position:fixed;z-index:65;left:50%;transform:translateX(-50%);bottom:calc(30px + env(safe-area-inset-bottom));display:flex;gap:4px;
+  padding:5px;border-radius:999px;background:var(--surface);border:1px solid var(--rule-2);box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.dock[hidden]{display:none}
+.dock button{display:flex;align-items:center;gap:7px;border:0;background:transparent;color:var(--ink);font:600 13px var(--sans);
+  padding:10px 16px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.dock button svg{width:18px;height:18px}
+.dock button[data-k="ouvir"]{background:var(--accent);color:#fff}
+.dock button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent-ink)}
+.dock button:active{transform:scale(.96)}
+
+/* v21: só ícones */
+.dock{gap:6px;padding:5px}
+.dock button{width:46px;height:46px;padding:0;justify-content:center;border-radius:50%}
+.dock button svg{width:22px;height:22px}
+
+/* v22: ícone + palavra, cores neutras */
+.dock{gap:4px;padding:4px;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(8px)}
+.dock button{width:auto;height:auto;padding:9px 15px;gap:7px;border-radius:999px;font:500 12.5px var(--sans);color:var(--ink-soft);background:transparent}
+.dock button svg{width:17px;height:17px}
+.dock button[data-k="ouvir"]{background:var(--surface-2);color:var(--ink)}
+.dock button[aria-pressed="true"]{background:var(--surface-2);color:var(--ink)}
+
+/* v23: botões fixos (sob o texto) idênticos aos flutuantes */
+.sup{display:flex;flex-wrap:nowrap;gap:4px;padding:4px;margin:10px auto 2px;width:fit-content;max-width:100%;border-radius:999px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);border:1px solid var(--rule-2);box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.sup button,.sup button:first-child{flex:0 0 auto;display:flex;align-items:center;gap:7px;width:auto;min-height:0;height:auto;padding:9px 15px;border:0;border-radius:999px;
+  font:500 12.5px var(--sans);color:var(--ink-soft);background:transparent;white-space:nowrap;cursor:pointer}
+.sup button svg{width:17px;height:17px}
+.sup button[data-k="ouvir"],.sup button:first-child[data-k="ouvir"]{background:var(--surface-2);color:var(--ink)}
+.sup button[aria-pressed="true"]{background:var(--surface-2);color:var(--ink)}
+
+/* v24 */
+.dock button[hidden]{display:none}
+.sup.solo{margin:2px auto 0}
+.dica{font-size:11.5px;color:var(--ink-faint);text-align:center;margin:-2px 0 6px}
+
+.il.sem-audio .sent{grid-template-columns:minmax(0,1fr)}
+.opts{margin-top:12px}.opts .row{display:flex;flex-wrap:wrap;gap:6px}
+.opts button{font:inherit;font-size:12px;border:1px solid var(--rule-2);background:var(--surface-2);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+.opts button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+
 </style>
 </head>
 
@@ -1393,18 +1892,19 @@
     var out = [];
     for (var s = 0; s < upTo && s < sentences.length; s++) {
       if (s) out.push('<span class="br"></span>');
+      out.push('<button class="sp" type="button" data-s="' + s + '" aria-label="Ouvir a frase">▶</button>');
       var isNew = s >= from;
-      sentences[s].forEach(function (w) {
+      sentences[s].forEach(function (w, wi) {
         var cls = "w";
         if (w[0] == null && w[2] == null) cls += " known";
         if (isNew) cls += " new";
-        out.push('<span class="' + cls + '">' +
+        out.push('<span class="' + cls + '" data-s="' + s + '" data-w="' + wi + '">' +
           '<span class="pt">' + esc(w[0]) + '</span>' +
-          '<span class="gr">' + esc(w[1]) + '</span>' +
+          '<span class="gr">' + endColor(w[1], sentences[s][wi - 1]) + '</span>' +
           '<span class="tr">' + esc(w[2]) + '</span></span>');
       });
     }
-    return '<p class="il">' + out.join("") + '</p>';
+    return '<p class="il" data-n="' + Math.min(upTo, sentences.length) + '">' + out.join("") + '</p>';
   }
 
   function recall(r, title) {
@@ -1415,6 +1915,102 @@
       (keys.length ? details("Conferir", answers(keys), "ans") : "") + '</div>';
   }
 
+    /* ===== funções do renderizador: cores nas terminações, ícones, mapas e a adaptação dos dados ===== */
+  function norm(s) {
+    return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .toLowerCase().replace(/ς/g, "σ").replace(/[.,·;:]/g, "");
+  }
+  // cor nas terminações: -ν de objeto depois de τὸν/τὴν, e -ουσιν (plural do verbo)
+  function endColor(g, prev) {
+    var m = /^(.*?)(ουσιν|ουσι)([.,·;]*)$/.exec(g.normalize("NFC"));
+    var raw = g;
+    var base = norm(g);
+    if (/ουσιν?$/.test(base)) {
+      var i = raw.search(/ου|οῦ|ού|οὺ/);
+      var idx = raw.lastIndexOf("σ") > -1 ? raw.length : raw.length;
+      var mm = /(.*?)(ο[υὐύὺῦ]σι?ν?)([.,·;]*)$/.exec(raw);
+      if (mm) return esc(mm[1]) + '<span class="e-pl">' + esc(mm[2]) + '</span>' + esc(mm[3]);
+    }
+    if (prev) {
+      var pn = norm(prev[1]);
+      if ((pn === "τον" || pn === "την") && /ν[.,·;]*$/.test(raw)) {
+        var m2 = /^(.*?)(ν)([.,·;]*)$/.exec(raw);
+        if (m2) return esc(m2[1]) + '<span class="e-obj">' + esc(m2[2]) + '</span>' + esc(m2[3]);
+      }
+    }
+    return esc(g);
+  }
+
+  var PICS = {
+    pao:  { g: "ἄρτος", p: "pão", keys: ["αρτος", "αρτον"],
+      s: '<svg viewBox="0 0 48 48"><path d="M7 27c0-8 8-13 17-13s17 5 17 13c0 4-2 7-5 7H12c-3 0-5-3-5-7z"/><path d="M16 20l3 6M24 18l3 7M32 20l2 6"/></svg>' },
+    vinho:{ g: "οἶνος", p: "vinho", keys: ["οινος", "οινον"],
+      s: '<svg viewBox="0 0 48 48"><path d="M19 6h10M20 6v6c-6 3-9 8-9 15 0 8 5 14 13 14s13-6 13-14c0-7-3-12-9-15V6"/><path d="M14 24c6 2 14 2 20 0"/><path d="M16 14c-4 0-6 4-4 8M32 14c4 0 6 4 4 8"/></svg>' },
+    altar:{ g: "βωμός", p: "altar", keys: ["βωμος", "βωμον"],
+      s: '<svg viewBox="0 0 48 48"><path d="M10 40h28M13 40V26h22v14M10 26h28"/><path d="M24 22c-5-4-3-9 0-13 3 4 5 9 0 13z"/></svg>' },
+    cao:  { g: "Ἄργος", p: "Argos, o cão", keys: ["αργος", "αργον"],
+      s: '<svg viewBox="0 0 48 48"><path d="M10 28c0-5 4-8 10-8h10c5 0 7 3 7 7v4"/><path d="M10 28v10M17 29v9M30 28v10M37 31v7"/><circle cx="38" cy="19" r="5"/><path d="M36 14l-3-5 6 2M43 20l4 2-5 2"/><path d="M10 28c-3-2-4-5-2-8"/></svg>' },
+    casa: { g: "οἰκία", p: "casa", keys: ["οικια", "οικιαν"],
+      s: '<svg viewBox="0 0 48 48"><path d="M7 24L24 9l17 15"/><path d="M12 21v19h24V21"/><path d="M20 40V29h8v11"/></svg>' },
+    dom:  { g: "δῶρον", p: "oferenda", keys: ["δωρον"],
+      s: '<svg viewBox="0 0 48 48"><rect x="9" y="20" width="30" height="20" rx="2"/><path d="M7 20h34M24 20v20"/><path d="M24 20c-6-1-9-9-4-10 4 0 4 6 4 10zM24 20c6-1 9-9 4-10-4 0-4 6-4 10z"/></svg>' },
+    agora:{ g: "ἀγορά", p: "ágora", keys: ["αγορα"],
+      s: '<svg viewBox="0 0 48 48"><path d="M6 17L24 8l18 9z"/><path d="M10 20v18M19 20v18M29 20v18M38 20v18M6 40h36"/></svg>' },
+    osso: { g: "ὀστᾶ", p: "ossos", keys: ["οστα"],
+      s: '<svg viewBox="0 0 48 48"><path d="M13 14a5 5 0 1 1 6 6l12 12a5 5 0 1 1 6 6 5 5 0 1 1-6-6L19 20a5 5 0 0 1-6-6z" transform="translate(0 -2)"/></svg>' }
+  };
+  function vizBlocks(c) {
+    if (!has(c.viz)) return "";
+    return c.viz.map(function (v) {
+      return '<details class="viz k-' + esc(v.kind) + '"><summary>' + esc(v.title) + '</summary><div class="dz">' +
+        v.svg + (v.cap ? '<p class="cap">' + rich(v.cap) + '</p>' : "") + '</div></details>';
+    }).join("");
+  }
+
+  var GA = false; // há áudio do texto grego nesta semana?
+
+  // Traduz o que o pacote guarda para o que o código da página usa. O pacote não repete
+  // nada: a glosa de toda palavra fica num glossário só, e as mídias são arquivos.
+  function adaptaSemana(week) {
+    var g = week.greek || {};
+    var mapN = function (o) { var r = {}; Object.keys(o || {}).forEach(function (k) { r[norm(k)] = o[k]; }); return r; };
+    var gl = mapN(g.glossary);
+    week.full = (g.sentences || []).map(function (fr) {
+      return fr.map(function (w) {
+        var x = gl[norm(w[1])];
+        return [w[0] != null ? w[0] : (x ? x[0] : null), w[1], w[2] != null ? w[2] : (x ? x[1] : null)];
+      });
+    });
+    var media = (week.media || {}).photos || {};
+    week.fotos = {};
+    Object.keys(media).forEach(function (k) {
+      var m = media[k];
+      week.fotos[k] = { uri: "media/" + m.file, alt: m.alt, expl: m.expl, cred: m.cred, page: m.page };
+    });
+    week.notas = mapN(g.notes); week.familia = mapN(g.family); week.gph = mapN(g.photos);
+    var au = week.audio && week.audio.greek;
+    GA = !!au;
+    week._G = au ? { uri: "audio/" + au.file, sent: au.sent, t: au.t, palavras: (function () {
+      var r = {}; Object.keys(au.words || {}).forEach(function (k) { r[norm(k)] = "audio/" + au.words[k]; }); return r;
+    })() } : null;
+    // italiano e inglês: texto, tempos e glossário de toque, por dia
+    var nk = function (w) { return String(w).toLowerCase().replace(/[’]/g, "'").replace(/[^\p{L}\p{N}'-]/gu, ""); };
+    week._D = { it: {}, en: {} };
+    week.tokgl = { it: {}, en: {}, itph: {}, enph: {} }; week.tokfoto = { it: {}, en: {} };
+    (week.days || []).forEach(function (d) {
+      (d.cards || []).forEach(function (c) {
+        if ((c.lang !== "it" && c.lang !== "en") || !(c.audio || c.tap)) return;
+        var T = { uri: c.audio ? "audio/" + c.audio.file : null, t: c.audio ? c.audio.t : null, tap: !!c.tap };
+        if (c.lang === "it") T.tok = String(c.text || "").split(/\s+/).filter(Boolean);
+        else T.paras = (c.body || []).map(function (p) { return String(p).split(/\s+/).filter(Boolean); });
+        week._D[c.lang][d.d] = T;
+        var tp = c.tap || {};
+        Object.keys(tp.w || {}).forEach(function (k) { week.tokgl[c.lang][nk(k)] = tp.w[k]; });
+        Object.keys(tp.p || {}).forEach(function (k) { week.tokgl[c.lang + "ph"][k.toLowerCase().split(/\s+/).map(nk).join(" ")] = tp.p[k]; });
+        Object.keys(tp.f || {}).forEach(function (k) { week.tokfoto[c.lang][nk(k)] = tp.f[k]; });
+      });
+    });
+  }
   function greekCard(c, week) {
     var g = week.greek, h = [];
     h.push('<header><span class="b gr">Grego</span>' +
@@ -1424,6 +2020,7 @@
     if (has(c.setting)) h.push('<p class="setting">' + rich(c.setting) + '</p>');
     h.push(recall(c.recall, "Ἀνάμνησις"));
     h.push(interlinear(g.sentences, c.upTo, c.__from));
+    h.push(vizBlocks(c));
     if (has(c.pt)) h.push(details("Em português corrido", '<p class="muted">' + rich(c.pt) + '</p>'));
     if (has(c.form)) h.push('<p class="form"><b>Forma.</b> ' + rich(c.form) + '</p>');
     if (has(c.sound)) h.push('<p class="sound"><b>Som do dia.</b> ' + rich(c.sound) + '</p>');
@@ -1443,6 +2040,7 @@
       (c.tag ? '<span class="b tag">' + esc(c.tag) + '</span>' : "") +
       (c.min ? '<span class="min">' + esc(c.min) + '</span>' : "") + '</header>'];
     if (has(c.setting)) h.push('<p class="setting">' + rich(c.setting) + '</p>');
+    h.push(vizBlocks(c));
     h.push(recall(c.recall, "Ripasso"));
     if (has(c.text)) h.push('<p class="ita">' + rich(c.text) + '</p>');
     if (has(c.glosses)) h.push('<p class="glosses">' + c.glosses.map(function (g) {
@@ -1526,7 +2124,7 @@
     var STATES = ["", "step-tr", "step-none"];
     [].slice.call(document.querySelectorAll(".il")).forEach(function (il) {
       il.setAttribute("tabindex", "0");
-      il.setAttribute("role", "button");
+      
       il.setAttribute("aria-label", "Mostrar ou esconder o apoio de leitura");
       var i = 0;
       function step() {
@@ -1534,7 +2132,7 @@
         STATES.forEach(function (s) { if (s) il.classList.remove(s); });
         if (STATES[i]) il.classList.add(STATES[i]);
       }
-      il.addEventListener("click", step);
+      il._step = step;
       il.addEventListener("keydown", function (e) {
         if (e.key === "Enter" || e.key === " ") { e.preventDefault(); step(); }
       });
@@ -1559,10 +2157,684 @@
     show(days.some(function (s) { return s.dataset.d === today; }) ? today : days[0].dataset.d);
   }
 
+  /* ===== comportamento: card ao toque, áudio, abas por idioma, marcas do dia (estado só neste aparelho) ===== */
+  function wireExtras(week) {
+    var app = document.getElementById("app");
+    // cada frase vira uma linha: o ▶ numa coluna própria e as palavras quebram dentro da segunda coluna
+    [].forEach.call(document.querySelectorAll(".il"), function (il) {
+      var kids = [].slice.call(il.children), cur = null;
+      kids.forEach(function (n) {
+        if (n.classList.contains("sp")) {
+          cur = document.createElement("div"); cur.className = "sent";
+          var wd = document.createElement("div"); wd.className = "words";
+          cur.appendChild(wd); il.appendChild(cur);
+          if (GA) cur.appendChild(n); else n.remove();
+        } else if (n.classList.contains("br")) { n.remove(); }
+        else if (cur) cur.querySelector(".words").appendChild(n);
+      });
+      if (!GA) il.classList.add("sem-audio");
+    });
+    var KEY = "acharnae:" + week.range;
+    var store = (function () {
+      try { localStorage.setItem("__t", "1"); localStorage.removeItem("__t"); return localStorage; } catch (e) { return null; }
+    })();
+    var st = (function () {
+      try { return JSON.parse((store && store.getItem(KEY)) || "{}"); } catch (e) { return {}; }
+    })();
+    st.fail = st.fail || {}; st.miss = st.miss || {}; st.read = st.read || {}; st.notes = st.notes || {};
+    if (st.frases === undefined) st.frases = null;
+    function save() { try { store && store.setItem(KEY, JSON.stringify(st)); } catch (e) {} }
+    var NOMES = { 1: "seg", 2: "ter", 3: "qua", 4: "qui", 5: "sex", 6: "sáb", 0: "dom" };
+    var D = week._D || { it: {}, en: {} };
+    var G = week._G || null;
+
+    // =================================================== player
+    var A = new Audio(); A.preload = "auto";
+    var W1 = new Audio();
+    var cur = { id: null, stop: null, marks: [], last: -1 };
+    var pl = document.createElement("div");
+    pl.className = "player"; pl.hidden = true;
+    var IC = {
+      back: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5V2L7.5 5.5 12 9V6.5a6.5 6.5 0 1 1-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="16.2" text-anchor="middle" font-size="7.5" font-weight="700" fill="currentColor">5</text></svg>',
+      fwd: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5V2l4.5 3.5L12 9V6.5a6.5 6.5 0 1 0 6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="16.2" text-anchor="middle" font-size="7.5" font-weight="700" fill="currentColor">5</text></svg>',
+      play: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L10 4.64a1 1 0 0 0-1.5.86z" fill="currentColor"/></svg>',
+      pause: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="5" width="3.8" height="14" rx="1.4" fill="currentColor"/><rect x="13.7" y="5" width="3.8" height="14" rx="1.4" fill="currentColor"/></svg>',
+      close: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+    };
+    pl.innerHTML = '<div class="pl-side"><button type="button" data-p="back" class="ic" aria-label="Voltar 5 segundos">' + IC.back + '</button>' +
+      '<button type="button" data-p="toggle" class="main" aria-label="Pausar ou tocar">' + IC.pause + '</button>' +
+      '<button type="button" data-p="fwd" class="ic" aria-label="Avançar 5 segundos">' + IC.fwd + '</button></div>' +
+      '<div class="pl-mid"><div class="pl-title"></div><div class="pl-bar2"><span class="pl-t">0:00</span><input type="range" min="0" max="1000" value="0" aria-label="Progresso"><span class="pl-d">0:00</span></div></div>' +
+      '<div class="pl-side"><button type="button" data-p="speed" class="sp2" aria-label="Velocidade">1×</button><button type="button" data-p="close" class="ic" aria-label="Fechar">' + IC.close + '</button></div>';
+    document.body.appendChild(pl);
+    var rng = pl.querySelector("input"), btnT = pl.querySelector('[data-p="toggle"]');
+    function fmt(s) { s = Math.max(0, Math.round(s)); return Math.floor(s / 60) + ":" + ("0" + (s % 60)).slice(-2); }
+    function clearNow() { [].forEach.call(document.querySelectorAll(".now,.lido-w"), function (x) { x.classList.remove("now", "lido-w"); x.style.removeProperty("--p"); }); }
+    function setCur(t) {
+      if (A.readyState >= 1) A.currentTime = t;
+      else { var f = function () { A.removeEventListener("loadedmetadata", f); A.currentTime = t; }; A.addEventListener("loadedmetadata", f); }
+    }
+    function toca(id, uri, t, stop, marks, title) {
+      try { W1.pause(); } catch (e) {}
+      if (cur.id !== id) { A.src = uri; cur.id = id; }
+      cur.stop = stop; cur.marks = marks || []; cur.last = -1;
+      setCur(t);
+      var pr = A.play(); if (pr && pr.catch) pr.catch(function () {});
+      pl.hidden = false; document.body.classList.add("com-player");
+      pl.querySelector(".pl-title").textContent = title || "";
+    }
+    var LEAD = 0.12;
+    function sync() {
+      var t = A.currentTime;
+      if (cur.stop != null && t >= cur.stop && !A.paused) A.pause();
+      var m = cur.marks, lo = 0, hi = m.length - 1, k = -1, tt = t + LEAD;
+      while (lo <= hi) { var mid = (lo + hi) >> 1; if (m[mid].t <= tt) { k = mid; lo = mid + 1; } else hi = mid - 1; }
+      if (k !== cur.last) {
+        if (k < cur.last || cur.last < 0 || k - cur.last > 1) {
+          clearNow();
+          for (var q = 0; q <= k; q++) if (m[q].el) m[q].el.classList.add("lido-w");
+        } else if (m[k].el) m[k].el.classList.add("lido-w");
+        cur.last = k;
+      }
+      rng.value = String(Math.round(1000 * t / (A.duration || 1)));
+      pl.querySelector(".pl-t").textContent = fmt(t); pl.querySelector(".pl-d").textContent = fmt(A.duration || 0);
+    }
+    A.addEventListener("timeupdate", sync);
+    A.addEventListener("seeked", sync);
+    var raf = 0;
+    function fillLoop() { sync(); raf = A.paused ? 0 : requestAnimationFrame(fillLoop); }
+    A.addEventListener("play", function () { btnT.innerHTML = IC.pause; if (!raf) raf = requestAnimationFrame(fillLoop); });
+    A.addEventListener("pause", function () { btnT.innerHTML = IC.play; });
+    A.addEventListener("ended", function () { btnT.innerHTML = IC.play; clearNow(); });
+    pl.addEventListener("click", function (e) {
+      var b = e.target.closest("button"); if (!b) return; var a = b.dataset.p;
+      if (a === "toggle") {
+        if (A.paused) { if (cur.stop != null && A.currentTime >= cur.stop - 0.05) cur.stop = null; var pr = A.play(); if (pr && pr.catch) pr.catch(function () {}); }
+        else A.pause();
+      }
+      if (a === "back") A.currentTime = Math.max(0, A.currentTime - 5);
+      if (a === "fwd") A.currentTime = Math.min(A.duration || 1e9, A.currentTime + 5);
+      if (a === "speed") {
+        var r = A.playbackRate === 1 ? 0.8 : (A.playbackRate === 0.8 ? 1.25 : 1);
+        A.defaultPlaybackRate = r; A.playbackRate = r; b.textContent = String(r).replace(".", ",") + "×";
+      }
+      if (a === "close") { A.pause(); clearNow(); pl.hidden = true; document.body.classList.remove("com-player"); }
+    });
+    rng.addEventListener("input", function () { A.currentTime = (A.duration || 0) * rng.value / 1000; });
+
+    // =================================================== ampliar foto
+    var lb = document.createElement("div");
+    lb.className = "lb"; lb.hidden = true;
+    lb.innerHTML = '<div class="lb-top"><span>Use dois dedos (ou a roda do mouse) para aproximar</span><button type="button">✕ Fechar</button></div><div class="lb-scroll"><img alt=""></div><div class="lb-cap"></div>';
+    document.body.appendChild(lb);
+    var lbImg = lb.querySelector("img");
+    function abreFoto(f) {
+      lbImg.src = f.uri; lbImg.alt = f.alt; Z.s = 1; Z.x = 0; Z.y = 0; lbImg.style.transform = "";
+      lb.querySelector(".lb-cap").innerHTML = '<p>' + esc(f.expl) + '</p><small>' + esc(f.cred) + (f.page ? ' <a href="' + esc(f.page) + '" target="_blank" rel="noopener">Página da foto</a>' : "") + '</small>';
+      lb.hidden = false;
+    }
+    var Z = { s: 1, x: 0, y: 0 }, ptr = {}, d0 = 0, s0 = 1;
+    function aplicaZ() {
+      var w = lbImg.clientWidth, h = lbImg.clientHeight, mx = Math.max(0, (w * Z.s - lb.clientWidth) / 2 + 40), my = Math.max(0, (h * Z.s - lb.querySelector(".lb-scroll").clientHeight) / 2 + 40);
+      Z.x = Math.max(-mx, Math.min(mx, Z.x)); Z.y = Math.max(-my, Math.min(my, Z.y));
+      lbImg.style.transform = "translate(" + Z.x + "px," + Z.y + "px) scale(" + Z.s + ")";
+    }
+    function zoomPara(ns) { Z.s = Math.max(1, Math.min(6, ns)); if (Z.s === 1) { Z.x = 0; Z.y = 0; } aplicaZ(); }
+    var sc = lb.querySelector(".lb-scroll"); sc.style.touchAction = "none";
+    sc.addEventListener("pointerdown", function (e) { ptr[e.pointerId] = { x: e.clientX, y: e.clientY }; try { sc.setPointerCapture(e.pointerId); } catch (er) {} var ks = Object.keys(ptr); if (ks.length === 2) { d0 = Math.hypot(ptr[ks[0]].x - ptr[ks[1]].x, ptr[ks[0]].y - ptr[ks[1]].y); s0 = Z.s; } });
+    sc.addEventListener("pointermove", function (e) {
+      var p = ptr[e.pointerId]; if (!p) return; var ks = Object.keys(ptr);
+      if (ks.length === 2) { ptr[e.pointerId] = { x: e.clientX, y: e.clientY }; var d = Math.hypot(ptr[ks[0]].x - ptr[ks[1]].x, ptr[ks[0]].y - ptr[ks[1]].y); zoomPara(s0 * d / (d0 || 1)); }
+      else if (Z.s > 1) { Z.x += e.clientX - p.x; Z.y += e.clientY - p.y; ptr[e.pointerId] = { x: e.clientX, y: e.clientY }; aplicaZ(); }
+    });
+    function fimPtr(e) { delete ptr[e.pointerId]; }
+    sc.addEventListener("pointerup", fimPtr); sc.addEventListener("pointercancel", fimPtr);
+    sc.addEventListener("wheel", function (e) { e.preventDefault(); zoomPara(Z.s * (e.deltaY < 0 ? 1.15 : 1 / 1.15)); }, { passive: false });
+    sc.addEventListener("dblclick", function () { zoomPara(Z.s > 1 ? 1 : 2.5); });
+    lb.querySelector("button").addEventListener("click", function () { lb.hidden = true; });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") lb.hidden = true; });
+
+    // =================================================== opções (dentro de "Sobre esta semana")
+    app.classList.add("cores-on");
+    function opcoes() {
+      var box = document.createElement("div"); box.className = "opts";
+      var tema = (function () { try { return localStorage.getItem("acharnae:tema") === "light"; } catch (e) { return false; } })();
+      if (tema) document.documentElement.setAttribute("data-theme", "light");
+      box.innerHTML = '<p class="sect">Opções</p><div class="row">' +
+        '<button type="button" data-a="cores" aria-pressed="true">Cores nas terminações</button>' +
+        '<button type="button" data-a="tema" aria-pressed="' + tema + '">' + (tema ? "Tema escuro" : "Tema claro") + '</button>' +
+        '<button type="button" data-a="zerar">Zerar o que marquei</button></div>';
+      box.addEventListener("click", function (e) {
+        var b = e.target.closest("button"); if (!b) return;
+        var a = b.dataset.a, on = b.getAttribute("aria-pressed") !== "true";
+        if (a === "cores") { b.setAttribute("aria-pressed", String(on)); app.classList.toggle("cores-on", on); }
+        if (a === "tema") {
+          b.setAttribute("aria-pressed", String(on)); b.textContent = on ? "Tema escuro" : "Tema claro";
+          document.documentElement.setAttribute("data-theme", on ? "light" : "dark");
+          try { localStorage.setItem("acharnae:tema", on ? "light" : "dark"); } catch (er) {}
+        }
+        if (a === "zerar") { st = { fail: {}, miss: {}, read: {}, notes: {}, frases: null }; save(); location.reload(); }
+      });
+      return box;
+    }
+
+    // legenda das cores + botões do texto grego
+    var Gdia = function (sec) { return sec.querySelectorAll(".w[data-s]").length ? Number(sec.querySelector(".il").dataset.n) : 0; };
+    function marcasGreek(sec, upTo) {
+      var m = [];
+      for (var s = 0; s < upTo; s++) G.t[s].forEach(function (t, i) {
+        m.push({ t: t, el: sec.querySelector('.w[data-s="' + s + '"][data-w="' + i + '"]') });
+      });
+      return m;
+    }
+    [].forEach.call(document.querySelectorAll("p.il"), function (il) {
+      var sec = il.closest("section.day");
+      var leg = document.createElement("p");
+      leg.className = "legenda";
+      leg.innerHTML = 'Cores: <span class="e-obj">-ν</span> = objeto (depois de τὸν/τὴν) · <span class="e-pl">-ουσιν</span> = “eles/elas”';
+      il.parentNode.insertBefore(leg, il.nextSibling);
+      var box = document.createElement("div"); box.className = "sup";
+      var b1 = document.createElement("button"); b1.type = "button"; b1.setAttribute("data-k", "ouvir"); b1.setAttribute("aria-label", "Ouvir o texto do dia"); b1.innerHTML = IC.play + "<span>Ouvir o texto</span>";
+      b1.addEventListener("click", function () {
+        var n = Gdia(sec);
+        toca("g", G.uri, 0, G.sent[n - 1][1] + 0.2, marcasGreek(sec, n), "Texto do dia");
+      });
+      var b2 = document.createElement("button"); b2.type = "button"; b2.setAttribute("data-k", "apoio");
+      b2.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>Apoio</span>';
+      function rot() {
+        var tr = il.classList.contains("step-tr"), no = il.classList.contains("step-none");
+        b2.title = no ? "Mostrar o apoio" : (tr ? "Esconder também a glosa" : "Esconder a transliteração"); b2.setAttribute("aria-label", b2.title);
+        b2.setAttribute("aria-pressed", String(no || tr));
+      }
+      b2.addEventListener("click", function () { fechaPop(); il._step && il._step(); rot(); });
+      rot();
+      if (G) box.appendChild(b1);
+      box.appendChild(b2);
+      il.parentNode.insertBefore(box, il.nextSibling);
+    });
+
+    // =================================================== card ao toque
+    var pop = document.createElement("div");
+    pop.className = "pop"; pop.hidden = true; document.body.appendChild(pop);
+    var atual = null;
+    function fechaPop() { pop.hidden = true; atual = null; }
+    function abrePop(w) {
+      if (atual === w) { fechaPop(); return; }
+      var s = Number(w.dataset.s), i = Number(w.dataset.w);
+      var tk = week.full[s][i];
+      var g = tk[1].replace(/[.,·;:]/g, ""), n = norm(tk[1]);
+      var pic = null;
+      Object.keys(PICS).forEach(function (k) { if (PICS[k].keys.map(norm).indexOf(n) > -1) { pic = PICS[k]; } });
+      var nt = (week.notas || {})[n] || ["", ""];
+      var uriP = G && G.palavras[n];
+      var fk = (week.gph || {})[n], foto = fk && week.fotos[fk];
+      var fam = (week.familia || {})[n];
+      if (!tk[0] && !tk[2] && !foto && !pic && !nt[0] && !fam) return;
+      pop.innerHTML = (foto ? '<button type="button" class="fotoW" aria-label="Ampliar foto"><img class="foto" alt="' + esc(foto.alt) + '" src="' + foto.uri + '"><span>⤢ ampliar</span></button>' : "") + '<div class="top">' + (pic && !foto ? pic.s : "") + '<div><div class="gw">' + esc(g) + '</div><div class="tr">' + esc(tk[2] || "") + '</div></div></div>' +
+        '<div class="pt">' + esc(tk[0] || "") + '</div>' +
+        (nt[0] && !fam && nt[0] !== tk[0] ? '<div class="nota">' + esc(nt[0]) + '</div>' : "") +
+        (fam ? '<div class="fam"><b>' + esc(fam[0]) + '</b> ' + esc(fam[1]) + '</div>' : "") +
+        '<div class="row">' + (uriP ? '<button type="button" class="b-ouvir">▶ palavra</button>' : "") +
+        (G ? '<button type="button" class="b-daqui">▶ daqui</button>' : "") +
+        '<button type="button" class="b-esq" aria-pressed="' + (st.fail[g] ? "true" : "false") + '">⚑ esqueci</button></div>' +
+        (nt[1] ? '<details class="gram"><summary>ver mais</summary><div>' + esc(nt[1]) + '</div></details>' : "") +
+        (foto ? '<div class="exp">' + esc(foto.expl) + '</div>' : "");
+      pop.hidden = false; atual = w;
+      var r = w.getBoundingClientRect(), W = document.documentElement.clientWidth;
+      var left = Math.max(8, Math.min(r.left + window.scrollX + r.width / 2 - 105, W - 226));
+      pop.style.left = left + "px";
+      pop.style.top = (r.bottom + window.scrollY + 8) + "px";
+      pop.style.setProperty("--ax", Math.max(14, Math.min(190, r.left + window.scrollX + r.width / 2 - left - 5)) + "px");
+      var sec = w.closest("section.day");
+      var fw = pop.querySelector(".fotoW"); if (fw) fw.addEventListener("click", function (ev) { ev.stopPropagation(); abreFoto(foto); });
+      var bo = pop.querySelector(".b-ouvir");
+      if (bo) bo.addEventListener("click", function (ev) { ev.stopPropagation(); A.pause(); W1.src = uriP; var pr = W1.play(); if (pr && pr.catch) pr.catch(function () {}); });
+      var bd = pop.querySelector(".b-daqui");
+      if (bd) bd.addEventListener("click", function (ev) {
+        ev.stopPropagation(); var n2 = Gdia(sec);
+        toca("g", G.uri, G.t[s][i], G.sent[n2 - 1][1] + 0.2, marcasGreek(sec, n2), "A partir de “" + g + "”");
+      });
+      var bf = pop.querySelector(".b-esq");
+      bf.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+        var on = bf.getAttribute("aria-pressed") !== "true";
+        bf.setAttribute("aria-pressed", String(on)); if (on) st.fail[g] = 1; else delete st.fail[g];
+        save(); refreshSummary();
+      });
+    }
+    app.addEventListener("click", function (e) {
+      var sp = e.target.closest("button.sp");
+      if (sp && G) {
+        fechaPop(); var s = Number(sp.dataset.s), sec = sp.closest("section.day");
+        toca("g", G.uri, G.sent[s][0], G.sent[s][1] + 0.2, marcasGreek(sec, Gdia(sec)), "Frase " + (s + 1));
+        return;
+      }
+      var w = e.target.closest(".w");
+      if (w) abrePop(w);
+    });
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".pop") && !e.target.closest(".w") && !e.target.closest(".tk")) fechaPop();
+    });
+
+    // =================================================== italiano e inglês: texto com palavras tocáveis
+    function prepara(sel, tipo, rot) {
+      [].forEach.call(document.querySelectorAll(sel), function (box) {
+        var dia = box.closest("section.day").dataset.d, T = (D[tipo] || {})[dia];
+        if (!T) return;
+        if (tipo === "it") {
+          box.innerHTML = T.tok.map(function (tk, i) { return '<span class="tk" data-k="' + i + '">' + esc(tk) + '</span>'; }).join(" ");
+        } else {
+          var ps = box.querySelectorAll("p"), k = 0;
+          T.paras.forEach(function (par, pi) {
+            ps[pi].innerHTML = par.map(function (tk) { return '<span class="tk" data-k="' + (k++) + '">' + esc(tk) + '</span>'; }).join(" ");
+          });
+        }
+        var spans = [].slice.call(box.querySelectorAll(".tk"));
+        var marks = spans.map(function (el, i) { return { t: T.t ? T.t[i] : 0, el: el }; });
+        var id = tipo + dia;
+        var GL = (week.tokgl || {})[tipo] || {}, PH = (week.tokgl || {})[tipo === "en" ? "enph" : "itph"] || {};
+        var nk = function (w) { return w.toLowerCase().replace(/[’]/g, "'").replace(/[^\p{L}\p{N}'-]/gu, ""); };
+        var keys = spans.map(function (el) { return nk(el.textContent); });
+        var phr = {};
+        Object.keys(PH).sort(function (a, b) { return b.split(" ").length - a.split(" ").length; }).forEach(function (f) {
+          var ws = f.split(" ");
+          for (var i = 0; i + ws.length <= keys.length; i++) {
+            if (ws.every(function (w, j) { return keys[i + j] === w && !phr[i + j]; })) for (var j = 0; j < ws.length; j++) phr[i + j] = { f: f, i: i, n: ws.length };
+          }
+        });
+        // expressão ou nome = uma única unidade clicável
+        var vistos = {};
+        Object.keys(phr).forEach(function (k) {
+          var g = phr[k]; if (vistos[g.i]) return; vistos[g.i] = 1;
+          var a = spans[g.i], z = spans[g.i + g.n - 1], wrap = document.createElement("span");
+          wrap.className = "fr"; a.parentNode.insertBefore(wrap, a);
+          var nd = a; while (nd) { var nx = nd.nextSibling; wrap.appendChild(nd); if (nd === z) break; nd = nx; }
+        });
+        spans.forEach(function (el, i) {
+          var gl = GL[keys[i]], ph = phr[i];
+          if (ph || (gl && gl[1]) || ((week.tokfoto || {})[tipo] || {})[keys[i]]) el.classList.add("nota-w");
+        });
+        if (T.uri) {
+          var bt = document.createElement("button"); bt.type = "button"; bt.setAttribute("data-k", "ouvir"); bt.setAttribute("aria-label", "Ouvir o texto"); bt.innerHTML = IC.play + "<span>Ouvir o texto</span>";
+          bt.addEventListener("click", function () { fechaPop(); toca(id, T.uri, 0, null, marks, tipo === "it" ? "Il testo" : "The text"); });
+          var solo = document.createElement("div"); solo.className = "sup solo"; solo.appendChild(bt);
+          box.parentNode.insertBefore(solo, box);
+        }
+        if (T.tap) {
+          var cap = document.createElement("p"); cap.className = "dica"; cap.textContent = "Toque numa palavra ou expressão para ver o card.";
+          box.parentNode.insertBefore(cap, box);
+        }
+        box.addEventListener("click", function (e) {
+          var sp = e.target.closest(".tk"); if (!sp) return;
+          var i = Number(sp.dataset.k);
+          if (atual === sp) { fechaPop(); return; }
+          var ph = phr[i], gl = GL[keys[i]];
+          var tit = (ph ? spans.slice(ph.i, ph.i + ph.n).map(function (x) { return x.textContent; }).join(" ") : sp.textContent).replace(/[.,;:!?«»“”()]/g, "").replace(/\s+/g, " ").trim();
+          var anc = sp.closest(".fr") || sp;
+          if (!ph && !gl && !((week.tokfoto || {})[tipo] || {})[keys[i]]) return;
+          var pt = ph ? PH[ph.f][0] : (gl ? gl[0] : "");
+          var nt = ph ? PH[ph.f][1] : (gl ? gl[1] : "");
+          var ini = ph ? ph.i : i;
+          var fk = ph ? PH[ph.f][2] : ((week.tokfoto || {})[tipo] || {})[keys[i]], fo = fk && week.fotos[fk];
+          pop.innerHTML = (fo ? '<button type="button" class="fotoW" aria-label="Ampliar foto"><img class="foto" alt="' + esc(fo.alt) + '" src="' + fo.uri + '"><span>⤢ ampliar</span></button>' : "") +
+            '<div class="top"><div><div class="gw it' + (tit.length > 16 ? " longo" : "") + '">' + esc(tit) + '</div></div></div>' +
+            '<div class="pt">' + esc(pt) + '</div>' + (nt ? '<div class="nota">' + esc(nt) + '</div>' : "") +
+            (fo ? '<div class="exp">' + esc(fo.expl) + '</div>' : "") +
+            (T.uri ? '<div class="row"><button type="button" class="b-daqui">▶ daqui</button></div>' : "");
+          var fw2 = pop.querySelector(".fotoW"); if (fw2) fw2.addEventListener("click", function (ev) { ev.stopPropagation(); abreFoto(fo); });
+          pop.hidden = false; atual = sp;
+          var r = anc.getBoundingClientRect(), W = document.documentElement.clientWidth;
+          var left = Math.max(8, Math.min(r.left + window.scrollX + r.width / 2 - 120, W - pop.offsetWidth - 8));
+          pop.style.left = left + "px"; pop.style.top = (r.bottom + window.scrollY + 8) + "px";
+          pop.style.setProperty("--ax", Math.max(14, Math.min(190, r.left + window.scrollX + r.width / 2 - left - 5)) + "px");
+          var bd2 = pop.querySelector(".b-daqui");
+          if (bd2) bd2.addEventListener("click", function (ev) {
+            ev.stopPropagation(); fechaPop();
+            toca(id, T.uri, T.t[ini], null, marks, "A partir de “" + tit + "”");
+          });
+        });
+      });
+    }
+    prepara("p.ita", "it", "");
+    prepara("div.eng", "en", "");
+
+    // =================================================== “não lembrei”, “li hoje”
+    function marcaDias() {
+      [].forEach.call(document.querySelectorAll("nav.days button"), function (b) { b.classList.toggle("lido", !!st.read[b.dataset.d]); });
+    }
+    [].forEach.call(document.querySelectorAll("section.day"), function (sec) {
+      var d = sec.dataset.d;
+      var dayData = week.days.filter(function (x) { return String(x.d) === d; })[0];
+      [].forEach.call(sec.querySelectorAll("article.card"), function (art) {
+        var isGr = !!art.querySelector(".b.gr");
+        var card = (dayData.cards || []).filter(function (c) { return c.lang === (isGr ? "gr" : "it"); })[0];
+        var rec = art.querySelector(".rec"); if (!rec || !card || !card.recall) return;
+        [].forEach.call(rec.querySelectorAll("ol > li"), function (li, i) {
+          var k = d + ":" + (isGr ? "gr" : "it") + ":" + i;
+          var name = isGr ? card.recall.probed[i] : card.recall.key[i];
+          var resp = isGr ? card.recall.probed[i] : card.recall.key[i];
+          var h0 = li.innerHTML, rr = '<span class="resp">' + esc(resp) + '</span>';
+          if (/_{2,}/.test(h0)) h0 = h0.replace(/_{2,}/, '<span class="q">___</span>' + rr);
+          else if (h0.lastIndexOf("?") > -1) { var qi = h0.lastIndexOf("?"); h0 = h0.slice(0, qi) + '<span class="q">?</span>' + rr + h0.slice(qi + 1); }
+          else h0 += ' → ' + rr;
+          li.innerHTML = '<span class="t">' + h0 + '</span>';
+          var b = document.createElement("button");
+          b.className = "nl"; b.type = "button"; b.textContent = "não lembrei";
+          b.setAttribute("aria-pressed", st.miss[k] ? "true" : "false");
+          b.addEventListener("click", function () {
+            var on = b.getAttribute("aria-pressed") !== "true";
+            b.setAttribute("aria-pressed", String(on)); if (on) st.miss[k] = name; else delete st.miss[k];
+            save(); refreshSummary();
+          });
+          li.appendChild(b);
+        });
+      });
+      [].forEach.call(sec.querySelectorAll(".rec"), function (rec) {
+        var det = [].slice.call(rec.children).filter(function (n) { return n.tagName === "DETAILS"; })[0];
+        if (!det) return;
+        var bt = document.createElement("button"); bt.type = "button"; bt.className = "conf"; bt.textContent = "Conferir respostas";
+        bt.addEventListener("click", function () { var on = !rec.classList.contains("mostra"); rec.classList.toggle("mostra", on); bt.textContent = on ? "Esconder respostas" : "Conferir respostas"; });
+        det.replaceWith(bt);
+      });
+      var rbar = document.createElement("div");
+      rbar.className = "readbar";
+      var rb = document.createElement("button");
+      rb.type = "button"; rb.textContent = "✓ Li hoje";
+      rb.setAttribute("aria-pressed", st.read[d] ? "true" : "false");
+      rb.addEventListener("click", function () {
+        var on = rb.getAttribute("aria-pressed") !== "true";
+        rb.setAttribute("aria-pressed", String(on)); if (on) st.read[d] = 1; else delete st.read[d];
+        marcaDias(); save(); refreshSummary();
+      });
+      var span = document.createElement("span");
+      span.textContent = "Marca só neste aparelho.";
+      rbar.appendChild(rb); rbar.appendChild(span);
+      sec.appendChild(rbar);
+    });
+
+    // teste de sábado
+    var sat = document.querySelector('section.day[data-d="6"]');
+    if (sat && week.phase === 1) {
+      var box = document.createElement("article");
+      box.className = "card";
+      box.innerHTML = '<header><span class="b tag">Teste do portão</span><span class="min">~2 min</span></header>' +
+        '<p class="muted">Esconda a glosa e a transliteração (botão abaixo do texto de grego). Leia as 13 frases e conte quantas entendeu.</p>' +
+        '<div class="stepper"><button type="button" data-s="-1">−</button><output id="frases"></output><button type="button" data-s="1">+</button></div>' +
+        '<p class="small" id="frasesMsg"></p>';
+      sat.insertBefore(box, sat.children[1] || null);
+      var out = box.querySelector("#frases");
+      var pintaFrases = function () {
+        out.textContent = (st.frases == null ? "—" : st.frases) + " / 13";
+        box.querySelector("#frasesMsg").textContent = st.frases == null ? "Toque em + a cada frase que entendeu." : (st.frases >= 10 ? "10 ou mais: esta leitura passa." : "Menos de 10: ainda não passa. É só uma medição.");
+      };
+      pintaFrases();
+      box.addEventListener("click", function (e) {
+        var b = e.target.closest("button[data-s]"); if (!b) return;
+        st.frases = Math.max(0, Math.min(13, (st.frases == null ? 0 : st.frases) + Number(b.dataset.s))); save(); pintaFrases(); refreshSummary();
+      });
+    }
+
+    // resumo de domingo
+    var sun = document.querySelector('section.day[data-d="0"]');
+    var pintaResumo = function () {};
+    function refreshSummary() { pintaResumo(); }
+    if (sun) {
+      var sc = document.createElement("article");
+      sc.className = "card sum";
+      var seg = function (g) {
+        return '<span class="seg" data-g="' + g + '">' + [1, 2, 3, 4, 5].map(function (n) {
+          return '<button type="button" data-n="' + n + '" aria-pressed="' + (st.notes[g] === n) + '">' + n + '</button>';
+        }).join("") + '</span>';
+      };
+      sc.innerHTML = '<header><span class="b tag">Resumo para o domingo</span></header>' +
+        '<p class="muted">Aperte as notas; o resto vem do que você marcou na semana. Depois copie e cole na conversa.</p>' +
+        '<div class="rowx"><span>Grego</span>' + seg("gr") + '</div>' +
+        '<div class="rowx"><span>Italiano</span>' + seg("it") + '</div>' +
+        '<div class="rowx"><span>Inglês</span>' + seg("en") + '</div>' +
+        '<textarea readonly aria-label="Resumo"></textarea>' +
+        '<button type="button" class="copy">Copiar resumo</button> <span class="small" id="copiado"></span>';
+      sun.insertBefore(sc, sun.querySelector(".readbar"));
+      var ta = sc.querySelector("textarea");
+      sc.addEventListener("click", function (e) {
+        var b = e.target.closest(".seg button");
+        if (b) {
+          var g = b.parentNode.dataset.g; st.notes[g] = Number(b.dataset.n);
+          [].forEach.call(b.parentNode.children, function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+          save(); pintaResumo(); return;
+        }
+        if (e.target.classList.contains("copy")) {
+          ta.select();
+          if (navigator.clipboard) navigator.clipboard.writeText(ta.value).then(function () { sc.querySelector("#copiado").textContent = "Copiado."; }, function () {});
+          else { try { document.execCommand("copy"); sc.querySelector("#copiado").textContent = "Copiado."; } catch (er) {} }
+        }
+      });
+      pintaResumo = function () {
+        var lidos = week.days.filter(function (d) { return st.read[String(d.d)]; }).map(function (d) { return NOMES[d.d]; });
+        var misses = Object.keys(st.miss).map(function (k) { return st.miss[k]; }).filter(function (v, i, a) { return a.indexOf(v) === i; });
+        var n = function (g) { return st.notes[g] || "—"; };
+        var fm = function (x) { var q = x.split("-"); return q[2] + "/" + q[1]; };
+        var rg = week.range.split("/");
+        ta.value = "Check-in · semana " + week.week + " (" + fm(rg[0]) + " a " + fm(rg[1]) + ")\n" +
+          "Dias lidos: " + (lidos.length ? lidos.join(", ") : "nenhum") + " (" + lidos.length + "/7)\n" +
+          "Notas: GR " + n("gr") + " · IT " + n("it") + " · EN " + n("en") + "\n" +
+          "Frases do sábado, com o apoio escondido: " + (st.frases != null ? st.frases + "/13" : "—") + "\n" +
+          "Palavras que não vieram: " + (misses.length ? misses.join(", ") : "nenhuma") + "\n" +
+          "Palavras que marquei como esquecidas no card: " + (Object.keys(st.fail).length ? Object.keys(st.fail).join(", ") : "nenhuma");
+      };
+      pintaResumo();
+    }
+
+    // =================================================== organização da interface
+    var STEPS = {};
+    function reordenaIE(art) {
+      var kids = [].slice.call(art.children);
+      var porSect = function (re) { return kids.filter(function (n) { var s = n.querySelector && n.querySelector(":scope > .sect"); return s && re.test(s.textContent); })[0]; };
+      var dom = porSect(/Domande|Check/), prod = porSect(/Prova a dire|Say it/);
+      var conf = kids.filter(function (n) { return n.tagName === "DETAILS" && /Conferir/.test(n.textContent.slice(0, 20)); })[0];
+      var gl = art.querySelector("p.glosses"), ctx = porSect(/In context/);
+      var tipo = art.querySelector(".b.it") ? "it" : "en", dia = art.closest("section.day").dataset.d;
+      if (gl && D[tipo] && D[tipo][dia] && D[tipo][dia].tap) gl.remove();
+      if (ctx && D[tipo] && D[tipo][dia] && D[tipo][dia].tap) ctx.remove();
+      if (!conf) return;
+      // modelo e comparação vão para junto de "Prova a dire"
+      var ans = conf.querySelector(".ans"), modelo = [];
+      [].slice.call(ans.children).forEach(function (r) {
+        var i = r.querySelector && r.querySelector("i");
+        if ((i && i.textContent.trim() === "·") || r.classList.contains("small")) { modelo.push(r); r.remove(); }
+      });
+      if (dom) {
+        var lis = dom.querySelectorAll("ol > li");
+        [].slice.call(ans.children).forEach(function (r, i) {
+          if (lis[i]) { var dv = document.createElement("div"); dv.className = "resp-b"; dv.innerHTML = r.lastElementChild ? r.lastElementChild.innerHTML : r.innerHTML; lis[i].appendChild(dv); }
+        });
+        var bt2 = document.createElement("button"); bt2.type = "button"; bt2.className = "conf"; bt2.textContent = "Conferir respostas";
+        bt2.addEventListener("click", function () { var on = !dom.classList.contains("mostra"); dom.classList.toggle("mostra", on); bt2.textContent = on ? "Esconder respostas" : "Conferir respostas"; });
+        dom.appendChild(bt2); conf.remove();
+      }
+      if (prod && modelo.length) {
+        var dd = document.createElement("details"); dd.className = "ver-modelo";
+        dd.innerHTML = "<summary>Ver modelo</summary>"; var z = document.createElement("div"); z.className = "dz ans";
+        modelo.forEach(function (r) { z.appendChild(r); }); dd.appendChild(z); prod.appendChild(dd);
+      }
+      var nota = art.querySelector("p.note"), cur = art.querySelector("p.curio");
+      if (prod) { if (nota) prod.parentNode.insertBefore(nota, prod); if (cur) prod.parentNode.insertBefore(cur, prod); }
+    }
+    function elenco() {
+      var G = {};
+      week.greek.cast.forEach(function (p) { G[p[0]] = p[2] || "fora"; });
+      var T = { fam: "A família", casa: "Na casa", fora: "Fora de casa", mito: "Só no mito" };
+      var box = document.createElement("div"); box.className = "elenco";
+      ["fam", "casa", "fora", "mito"].forEach(function (g) {
+        var ps = week.greek.cast.filter(function (p) { return G[p[0]] === g; });
+        if (!ps.length) return;
+        var sec = document.createElement("div");
+        sec.innerHTML = "<h4>" + T[g] + '</h4><div class="grupo">' + ps.map(function (p) {
+          var m = /^([^—]+)—\s*(.*)$/.exec(p[1]); var nome = m ? m[1].trim() : "", papel = m ? m[2] : p[1];
+          var idade = /uns (\d+) anos/.exec(papel);
+          papel = papel.replace(/,?\s*uns \d+ anos( em \d+)?/, "");
+          var real = /real/.test(papel);
+          return '<div class="pers ' + g + '"><div class="av">' + esc(p[0].charAt(0)) + '</div><div><div class="nm">' + esc(p[0]) + '</div><div class="pt2">' + esc(nome) + " · " + rich(papel) + '</div>' +
+            (idade ? '<span class="tg">~' + idade[1] + ' anos</span>' : "") + (real ? '<span class="tg">pessoa real</span>' : "") + '</div></div>';
+        }).join("") + "</div>";
+        box.appendChild(sec);
+      });
+      return box;
+    }
+    function fonteSep(el) {
+      [].forEach.call(el.querySelectorAll("p.curio"), function (p) {
+        var m = /\s*\(((?:[^()]|<i>[^<]*<\/i>)*)\)\s*$/.exec(p.innerHTML);
+        if (m && m[1].length > 6) p.innerHTML = p.innerHTML.slice(0, m.index) + '<span class="fonte">' + m[1] + '</span>';
+      });
+    }
+    function reorganiza() {
+      marcaDias();
+      // cabeçalho enxuto
+      var ph = document.querySelector(".ph"), stats = document.querySelector("dl.stats");
+      if (ph && stats) {
+        var dd = document.createElement("details"); dd.className = "sobre";
+        dd.innerHTML = '<summary>Sobre esta semana</summary>';
+        var inner = document.createElement("div"); inner.className = "dz";
+        var sub = ph.querySelector(".sub"); if (sub) inner.appendChild(sub);
+        inner.appendChild(stats); inner.appendChild(opcoes()); dd.appendChild(inner); ph.appendChild(dd);
+      }
+      [].forEach.call(document.querySelectorAll("article.card"), function (art) {
+        var head = art.querySelector("header");
+        if (art.querySelector(".b.gr")) {
+          var painel = [];
+          var add = function (rot, nodes) { if (nodes.length) painel.push({ rot: rot, nodes: nodes }); };
+          var pick = function (sel) { return [].slice.call(art.querySelectorAll(sel)); };
+          add("Forma", pick("p.form"));
+          add("Som", pick("p.sound"));
+          add("Curiosidade", pick("p.curio"));
+          var vizAll = pick("details.viz").map(function (d) {
+            var bx = document.createElement("div"); bx.className = "vz viz";
+            var tt = d.querySelector("summary").textContent;
+            bx.innerHTML = '<p class="sect">' + esc(tt) + '</p>' + d.querySelector(".dz").innerHTML;
+            d.remove(); bx._m = d.classList.contains("k-map"); return bx;
+          });
+          add("Lugar", vizAll.filter(function (b) { return b._m; }));
+          add("Época", vizAll.filter(function (b) { return !b._m; }));
+          add("Quem é quem", pick("details").filter(function (d) { return /Quem é quem/.test(d.querySelector("summary").textContent); }).map(function (d) {
+            var bx = elenco(); d.remove(); return bx;
+          }));
+          if (painel.length) {
+            var tabs = document.createElement("div"); tabs.className = "tabs2";
+            var row = document.createElement("div"); row.className = "chips";
+            var area = document.createElement("div"); area.className = "tpanel"; area.hidden = true;
+            painel.forEach(function (pn) { pn.nodes.forEach(function (n) { if (n.parentNode) n.parentNode.removeChild(n); }); });
+            painel.forEach(function (pn) {
+              var c = document.createElement("button"); c.type = "button"; c.textContent = pn.rot; c.setAttribute("aria-pressed", "false");
+              c.addEventListener("click", function () {
+                var on = c.getAttribute("aria-pressed") !== "true";
+                [].forEach.call(row.children, function (x) { x.setAttribute("aria-pressed", "false"); });
+                if (!on) { area.hidden = true; return; }
+                c.setAttribute("aria-pressed", "true"); area.hidden = false; area.innerHTML = "";
+                pn.nodes.forEach(function (n) { area.appendChild(n); });
+                fonteSep(area);
+              });
+              row.appendChild(c);
+            });
+            tabs.appendChild(row); tabs.appendChild(area);
+            var alf = [].slice.call(art.querySelectorAll("details")).filter(function (d) { return /Alfabeto/.test(d.querySelector("summary").textContent); })[0];
+            if (alf) alf.parentNode.insertBefore(tabs, alf); else art.appendChild(tabs);
+          }
+        } else if (head && art.querySelector(".b.it, .b.en")) {
+          reordenaIE(art);
+          var corpo = document.createElement("div"); corpo.className = "cbody"; corpo.hidden = true;
+          [].slice.call(art.children).forEach(function (n) { if (n !== head) corpo.appendChild(n); });
+          var prev = corpo.querySelector("p.setting");
+          var pv = document.createElement("p"); pv.className = "preview"; pv.textContent = prev ? prev.textContent : "";
+          art.appendChild(pv); art.appendChild(corpo);
+          var ch = document.createElement("span"); ch.className = "chev"; ch.textContent = "▸"; head.insertBefore(ch, head.firstChild);
+          head.classList.add("acc");
+          art._abre = function (abre) { corpo.hidden = !abre; pv.hidden = abre; ch.textContent = abre ? "▾" : "▸"; };
+          art._abre(true); ch.remove(); head.classList.remove("acc"); pv.remove();
+        }
+      });
+    }
+    reorganiza();
+    var foot = document.querySelector(".foot");
+    if (foot) {
+      var fd = document.createElement("details"); fd.className = "footcard";
+      fd.innerHTML = "<summary>Notas desta semana</summary>"; var fz = document.createElement("div"); fz.className = "dz";
+      fz.appendChild(foot.cloneNode(true)); fd.appendChild(fz); foot.replaceWith(fd);
+    }
+    // abas por idioma dentro de cada dia
+    [].forEach.call(document.querySelectorAll("section.day"), function (sec) {
+      var arts = [].slice.call(sec.querySelectorAll(":scope > article.card"));
+      if (arts.length < 2) return;
+      var nome = function (a) {
+        if (a.querySelector(".b.gr")) return "Grego";
+        if (a.querySelector(".b.it")) return "Italiano";
+        if (a.querySelector(".b.en")) return "Inglês";
+        return a.classList.contains("sum") ? "Resumo" : "Teste";
+      };
+      var tabs = document.createElement("div"); tabs.className = "langtabs"; tabs.setAttribute("role", "tablist");
+      var sel = function (i, sobe) {
+        if (sobe) window.scrollTo({ top: 0, behavior: "smooth" });
+        arts.forEach(function (a, k) { a.hidden = k !== i; });
+        [].forEach.call(tabs.children, function (b, k) { b.setAttribute("aria-selected", String(k === i)); });
+        fechaPop();
+      };
+      arts.forEach(function (a, i) {
+        var b = document.createElement("button"); b.type = "button"; b.setAttribute("role", "tab");
+        var mn = a.querySelector("header .min");
+        b.innerHTML = '<span class="ld ' + (a.querySelector(".b.gr") ? "gr" : a.querySelector(".b.it") ? "it" : a.querySelector(".b.en") ? "en" : "tag") + '"></span>' + nome(a) + (mn ? '<small>' + esc(mn.textContent) + '</small>' : "");
+        b.addEventListener("click", function () { sel(i, true); });
+        tabs.appendChild(b);
+      });
+      sec.insertBefore(tabs, arts[0]); sel(0);
+    });
+    // Fonte: a última parte entre parênteses de Curiosidade/Curiosità vira linha própria
+    [].forEach.call(document.querySelectorAll(".curio, .tpanel"), function (el) { fonteSep(el); });
+
+    var navDays = document.querySelector("nav.days");
+    navDays.addEventListener("click", function () { setTimeout(function () { fechaPop(); dockCheck(); }, 0); });
+
+    // =================================================== botões flutuantes do texto grego
+    var dock = document.createElement("div");
+    dock.className = "dock"; dock.hidden = true;
+    dock.innerHTML = '<button type="button" data-k="ouvir" aria-label="Ouvir o texto do dia">' + IC.play + '<span>Ouvir o texto</span></button>' +
+      '<button type="button" data-k="apoio" aria-label="Esconder ou mostrar o apoio de leitura"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>Apoio</span></button>';
+    document.body.appendChild(dock);
+    var secAtiva = null;
+    function visivel(el) { if (!el) return false; var r = el.getBoundingClientRect(); return r.bottom > 0 && r.top < window.innerHeight; }
+    function dockCheck() {
+      var sec = document.querySelector("section.day:not([hidden])"), art = sec && sec.querySelector("article:not([hidden])");
+      var il = art && art.querySelector(".il, p.ita, div.eng"), sup = art && art.querySelector(".sup");
+      var mostra = false;
+      if (il && sup && pl.hidden) {
+        var r = il.getBoundingClientRect();
+        mostra = r.bottom > 90 && r.top < window.innerHeight - 90 && !visivel(sup);
+      }
+      secAtiva = mostra ? sup : null; dock.hidden = !mostra;
+      if (mostra) {
+        var temApoio = !!art.querySelector(".il"), ap = dock.querySelector('[data-k="apoio"]'), b2 = sup.querySelector('[data-k="apoio"]');
+        ap.hidden = !temApoio;
+        dock.querySelector('[data-k="ouvir"]').hidden = !sup.querySelector('[data-k="ouvir"]');
+        if (b2) { ap.setAttribute("aria-pressed", String(b2.getAttribute("aria-pressed") === "true")); ap.title = b2.title; }
+      }
+    }
+    var tick = 0;
+    function agenda() { if (!tick) tick = requestAnimationFrame(function () { tick = 0; dockCheck(); }); }
+    window.addEventListener("scroll", agenda, { passive: true }); window.addEventListener("resize", agenda);
+    A.addEventListener("play", agenda); A.addEventListener("pause", agenda);
+    pl.addEventListener("click", function () { setTimeout(dockCheck, 0); });
+    dock.addEventListener("click", function (e) {
+      var b = e.target.closest("button"); if (!b || !secAtiva) return;
+      var alvo = secAtiva.querySelector('[data-k="' + b.dataset.k + '"]'); if (alvo) alvo.click();
+      setTimeout(dockCheck, 0);
+    });
+    document.addEventListener("click", function (e) { if (e.target.closest(".langtabs")) setTimeout(dockCheck, 400); });
+    dockCheck();
+  }
+
   try {
     var week = JSON.parse(document.getElementById("week").textContent);
+    adaptaSemana(week);
     render(week);
     wire();
+    wireExtras(week);
   } catch (e) {
     document.getElementById("app").innerHTML =
       '<div class="err">O pacote da semana não pôde ser lido.\n' + esc(e.message) +

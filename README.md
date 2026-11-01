@@ -91,6 +91,8 @@ coisa e pode ser apagado sem perda.
 | `state/checkin_log.md` | histórico das notas semanais | fonte | sim |
 | `page/template.html` | o renderizador | fonte | sim |
 | `build.py` | gera a página a partir dos dados | fonte | sim |
+| `viz.py` | desenha mapas e linhas do tempo (SVG) a partir dos dados | fonte | sim |
+| `page/geo.json` | contornos da Ática e da Itália (Natural Earth, domínio público) | fonte | sim |
 | `validate.py` | confere as invariantes verificáveis | fonte | sim |
 | `daily.py` | a entrega diária | fonte | sim |
 | `docs/index.html` | a página publicada | **derivado** de `state/week.json` | não · regerar |

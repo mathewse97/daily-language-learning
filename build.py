@@ -10,6 +10,8 @@ import json
 import pathlib
 import sys
 
+import viz
+
 ROOT = pathlib.Path(__file__).resolve().parent
 WEEK = ROOT / "state" / "week.json"
 TEMPLATE = ROOT / "page" / "template.html"
@@ -38,8 +40,9 @@ def main() -> int:
         return 1
 
     # json.dumps normaliza o bloco e garante que o que vai para a página é
-    # exatamente o que o validador aprovou.
-    payload = json.dumps(data, ensure_ascii=False, indent=2)
+    # exatamente o que o validador aprovou. Só os mapas e as linhas do tempo
+    # ganham algo a mais — o SVG, desenhado por viz.py a partir dos dados.
+    payload = json.dumps(viz.expandir(data), ensure_ascii=False, indent=2)
     html = template.replace(MARKER, payload)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
