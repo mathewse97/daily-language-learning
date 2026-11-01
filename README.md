@@ -91,6 +91,8 @@ coisa e pode ser apagado sem perda.
 | `state/checkin_log.md` | histórico das notas semanais | fonte | sim |
 | `page/template.html` | o renderizador | fonte | sim |
 | `build.py` | gera a página a partir dos dados | fonte | sim |
+| `tools/audio.py` | gera o áudio da semana (Kokoro) e grava os tempos no pacote — roda no domingo, fora do GitHub | fonte | sim |
+| `tools/foto.py` | baixa foto livre (Met, Wikimedia) com crédito para `docs/media/` | fonte | sim |
 | `viz.py` | desenha mapas e linhas do tempo (SVG) a partir dos dados | fonte | sim |
 | `page/geo.json` | contornos da Ática e da Itália (Natural Earth, domínio público) | fonte | sim |
 | `validate.py` | confere as invariantes verificáveis | fonte | sim |

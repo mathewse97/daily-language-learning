@@ -31,6 +31,17 @@ notas do check-in e deixar ele compor a semana seguinte. O procedimento está em
 `TASK_PROMPTS.md`. Sem esse ritual, a semana seguinte não existe — e na segunda o
 `daily.py` falha em vez de inventar um dia, o que é o comportamento certo.
 
+## O que a página tem, e o que ela guarda
+
+Toque numa palavra, expressão ou nome para ver o card; botões para ouvir o texto, as frases e
+cada palavra; fotos; mapas. Tudo isso vem do pacote da semana e dos arquivos em `docs/audio/` e
+`docs/media/` (o planejador os gera aos domingos, e o `daily.py` não mexe neles).
+
+O que você marca na página — "não lembrei", "esqueci", "li hoje", as notas de domingo e as
+frases do teste — **fica só no seu aparelho** (`localStorage`). Nada disso chega ao
+repositório sozinho: no domingo, o botão "Copiar resumo" gera o texto para você colar na
+conversa, e é o agente quem grava `state/checkin_log.md`.
+
 ## O check-in
 
 Três notas de 1 a 5, uma por trilha, mais as palavras que não vieram e, enquanto a fase 1

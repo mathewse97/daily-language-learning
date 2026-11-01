@@ -47,7 +47,8 @@ fazem, relate e não conserte.
 1. Leia RULES.md, state/logbook.md, state/lexicon.md, state/week.json (ainda a
    semana que acabou) e state/checkin_log.md.
 
-2. Pergunte a Mathews as três notas da semana, de 1 a 5, uma por trilha, e quais
+2. Pergunte a Mathews as três notas da semana (a página de domingo, ao fim da semana, monta um resumo
+   com notas, dias lidos, frases do sábado e palavras marcadas que ele pode colar na conversa), de 1 a 5, uma por trilha, e quais
    palavras não vieram — as respostas do Ἀνάμνησις (e do Ripasso) que ele não conseguiu
    lembrar antes de abrir "Conferir". Se ele não anotou, não adivinhe: trate como
    check-in sem misses utilizáveis (regra conservadora do passo 4). Pergunte também,
@@ -121,6 +122,19 @@ fazem, relate e não conserte.
    fato e de cada curiosidade (busca na web) e cite só o que consultou — o que ficou
    de memória não entra (invariante 23). Nada posterior a 432 a.C. no enredo.
    Onde a bibliografia diverge, diga em uma linha ou omita.
+
+6a. Mídia e card ao toque (campos opcionais, WEEK_PACKET_SCHEMA.md). Com o texto final:
+   · glossário: `greek.glossary` com TODA forma do texto; `greek.notes` (dica de uma linha,
+     "ver mais" curto, nunca repetir a glosa) e, quando houver fonte consultada,
+     `greek.family`; `tap` nos cartões de italiano e inglês, com expressões e nomes inteiros
+     em `tap.p`; `viz` com mapas e linhas do tempo (dados, não SVG);
+   · fotos: `python3 tools/foto.py met <id> <chave>` ou `commons "<arquivo>" <chave>`, e
+     escreva `alt` e `expl` — o que é o objeto e por que está ali, dizendo quando é de outra
+     época ou lugar. Só objetos com domínio público e licenças CC0/CC BY/CC BY-SA, e o
+     crédito vem da própria ferramenta;
+   · áudio: `python3 tools/audio.py --modelos <pasta>` (precisa do Kokoro; pedir
+     autorização a Mathews se for a primeira vez na sessão). Ele grava `audio` no pacote.
+   Rode o áudio por último: ele reescreve `state/week.json`.
 
 7. Atualize state/logbook.md: avance de fase só se o portão do currículo tiver sido
    cumprido — diga qual portão e por quê. Na fase 1, olhe a coluna `frases` do
