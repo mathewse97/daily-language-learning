@@ -17,11 +17,15 @@ FORMAT: data | gr | it | en | misses | frases
 2026-10-04 | 3 | 2 | 3 | —
 2026-10-11 | 3 | 3 | 2 | —
 2026-10-18 | 3 | 3 | 3 | πονεῖ, παίζει, ὁ ἄρτος, πρός (+ac), τὸ δῶρον, ὁ βωμός
+2026-11-01 | 4 | 3 | 4 | — | 13
 ```
 
 A linha de 04/10 tem `—` em misses porque eles não foram anotados, não porque não houve:
 Mathews não sabia o que eram. Por isso as promoções seguiram a regra conservadora.
 A de 11/10 tem `—` porque ele disse explicitamente que nada falhou.
+
+A linha de 01/11 é da semana 7 reemitida (26/10–01/11): sem misses, ditos explicitamente, e 13 das
+13 frases do sábado 31/10 — a primeira medição do portão da fase 1.
 
 Semanas sem linha são semanas sem check-in. O planejador aplica a regra conservadora
 nesses casos e nunca preenche o que não recebeu.
