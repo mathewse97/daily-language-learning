@@ -107,11 +107,19 @@ nenhum deles exercício:
 - **as correções da auditoria mensal**, no topo do cartão de segunda (passo 11 do
   planejador).
 
-O elenco ("Quem é quem") e a tabela do alfabeto ficam recolhidos em todo cartão; depois
-vem a linha do check-in e o cartão termina. **Nenhum exercício depois do texto** — sem
-Ἐρωτήσεις, sem Σκόπει, sem etimologia, sem Θησαυρός. A leitura é a lição. A forma de
-quatro partes foi decidida em 17/09, depois de duas semanas de uso; os três acréscimos,
-em 04/10 (ver a reconciliação no fim deste arquivo).
+**Apresentação.** A página pode agrupar as notas de apoio (forma, som, curiosidade), o
+mapa, a linha do tempo e o elenco ("Quem é quem") em painéis que abrem dentro do cartão, e
+pode oferecer sobre o próprio texto o card ao toque em cada palavra, o áudio (do texto, de
+cada frase e de cada palavra) e os botões de ocultar o apoio. Isso muda a apresentação,
+nunca o conteúdo nem a ordem: **o texto continua sendo a lição**, e nada disso é exercício.
+Mapas e linhas do tempo só trazem fatos que o planejador conferiu (invariante 23). A voz é
+sintética, e a página avisa.
+
+A tabela do alfabeto fica recolhida em todo cartão; depois vem a linha do check-in e o
+cartão termina. **Nenhum exercício depois do texto** — sem Ἐρωτήσεις, sem Σκόπει, sem
+etimologia, sem Θησαυρός. A leitura é a lição. A forma de quatro partes foi decidida em
+17/09, depois de duas semanas de uso; os três acréscimos, em 04/10; a apresentação em
+painéis, o toque e o áudio, em 01/11 (ver as reconciliações no fim deste arquivo).
 
 **15 · Recuperação, não reconhecimento.** O Ἀνάμνησις são 2 a 5 prompts respondíveis de
 memória sem olhar para trás, metade deles português → grego, no máximo um de múltipla
@@ -218,6 +226,23 @@ Prefira a construção atestada mais simples à mais engenhosa de que você não
 No grego em especial: se não souber acentuar uma forma com segurança, escolha outra
 palavra já no Léxico. **Um texto mais curto e certo vence um texto mais rico e duvidoso.**
 O mesmo vale para fatos: cena mais pobre e correta vence cena mais rica e duvidosa.
+
+---
+
+## Reconciliação — 01/11/2026
+
+**A invariante 14 passou a descrever a apresentação do cartão de grego.** Decisão de Mathews,
+em conversa, depois de ver o que a página nova faz e de eu relatar a divergência em vez de
+consertá-la (invariante 6).
+
+| Antes | Agora | Por quê |
+|---|---|---|
+| 14 · quatro partes, três acréscimos, elenco e alfabeto recolhidos; nada sobre como aparecem | as mesmas partes, mais um parágrafo **Apresentação**: painéis dentro do cartão, card ao toque, áudio e botões de apoio | a página ganhou esses recursos; a regra não os mencionava, e uma regra que não descreve o que existe deixa de proteger o que importa |
+
+O que **não** mudou: as quatro partes, a ordem, os três acréscimos opcionais e a proibição de
+exercício depois do texto. O que a nova redação protege: o texto continua sendo a lição,
+mapas e linhas do tempo só entram com fato conferido, e a voz sintética é avisada. O
+renderizador e os dados foram mudados antes, em commits próprios (invariante 5).
 
 ---
 

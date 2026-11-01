@@ -84,7 +84,8 @@ saem do `tools/audio.py` e do `tools/foto.py`, rodados pelo planejador no doming
 relatada, não corrigida (invariante 6):** `RULES.md` 14 fala em "quatro partes" e na invariante 19
 em "nada abaixo do texto além de…"; a página nova junta Forma, Som, Curiosidade, mapa e elenco em
 abas dentro do mesmo cartão e acrescenta botões de áudio — a forma continua a mesma, mas a
-redação da invariante 14 não menciona os botões. Reconciliar é decisão de Mathews.
+redação da invariante 14 não mencionava os botões. **Resolvida em 01/11:** Mathews aprovou a nova
+redação, aplicada em `RULES.md` (reconciliação de 01/11/2026).
 
 **25/10 · FEITO:** a semana 7 foi reemitida para 26/10–01/11, sem consumir nada (ver
 `state/lexicon.md`). A pendência abaixo fica como registro.
