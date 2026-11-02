@@ -906,8 +906,7 @@ __WEEK_JSON__
     if (has(c.note)) h.push('<p class="note"><b>Nota.</b> ' + rich(c.note) + '</p>');
     if (has(c.curio)) h.push('<p class="curio"><b>Curiosità.</b> ' + rich(c.curio) + '</p>');
     if (has(c.produce)) h.push('<div><p class="sect">Prova a dire</p><p>' + rich(c.produce) + '</p></div>');
-    if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) +
-      (has(c.compare) ? '<span class="small">' + rich(c.compare) + '</span>' : "") + '</div>'));
+    if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) + '</div>'));
     return h.join("");
   }
 
@@ -923,8 +922,7 @@ __WEEK_JSON__
       list("ul", c.inContext, function (i) { return '<b>' + esc(i[0]) + '</b> — ' + rich(i[1]); }) + '</div>');
     if (has(c.check)) h.push('<div><p class="sect">Check</p>' + list("ol", c.check) + '</div>');
     if (has(c.sayit)) h.push('<div><p class="sect">Say it</p><p>' + rich(c.sayit) + '</p></div>');
-    if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) +
-      (has(c.compare) ? '<span class="small">' + rich(c.compare) + '</span>' : "") + '</div>'));
+    if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) + '</div>'));
     if (has(c.expression)) h.push('<p class="small">' + rich(c.expression) + '</p>');
     return h.join("");
   }
