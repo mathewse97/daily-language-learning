@@ -92,12 +92,12 @@ invertido; consoantes duplas na escrita (`anno` vs `ano` — vale corrigir sempr
    ajuda, ao contrário do grego, porque a interferência é o problema real.
 5. **Prova a dire** — produção mental. Uma situação e 2–3 frases a formar de cabeça, com
    alvo nomeado ("use `c'è` e `ci sono`"). Nada é escrito.
-6. **Gabarito** — respostas, mais uma versão modelo do `Prova a dire` e três pontos
-   concretos a comparar com a própria versão mental: não "confira a gramática", mas
-   "o artigo apareceu antes de cada substantivo?".
+6. **Gabarito** — respostas, mais uma versão modelo do `Prova a dire`. (Havia três pontos de
+   comparação com a versão mental; saíram em 02/11/2026, porque Mathews abre o modelo
+   direto e não compõe antes.)
 
 > Sem escrita, a correção real desaparece deste percurso — e produção é justamente o
-> gargalo dele. O modelo com pontos de comparação é o substituto possível. Se ele
+> gargalo dele. O modelo é o substituto possível. Se ele
 > responder a um pacote numa sessão ao vivo, aí sim corrija com precisão: colocação e
 > registro primeiro, gramática depois, e nunca reescreva tudo quando duas palavras
 > resolvem.

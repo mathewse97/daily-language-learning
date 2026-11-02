@@ -71,9 +71,9 @@ conversations.
 5. **One expression** — a single high-value professional phrase per packet, with the
    situation it belongs to and one situation where it would be wrong.
 
-6. **Key** — answers, plus a model version of the writing task and three specific things
-   to compare against in his own draft (not "check your grammar" — "did you hedge the
-   recommendation, or state it as fact?").
+6. **Key** — answers, plus a model version of the writing task. (Three points to compare
+   against his own draft were dropped on 2026-11-02: he opens the model directly and does
+   not compose first.)
 
 The matching data fields are in `WEEK_PACKET_SCHEMA.md`, card `lang: "en"`.
 

@@ -75,13 +75,13 @@ em todo cartão de grego sem que ninguém as escreva.
 
 `min`, `setting`, `recall` (`{prompts, key}`), `text`, `glosses` (pares
 `[termo, glosa]`), `questions`, `note`, `produce`, `answers` (pares `[rótulo, texto]`),
-`compare`, `curio` (a curiosidade, em português, com fonte). Todos opcionais menos `min`;
+`curio` (a curiosidade, em português, com fonte). Todos opcionais menos `min`;
 o domingo usa só `min` e `text`.
 
 ### Cartão de inglês — `lang: "en"`
 
 `tag` (o registro), `min`, `title`, `body` (um item por parágrafo), `inContext` (pares),
-`check`, `sayit`, `answers`, `compare`, `expression`.
+`check`, `sayit`, `answers`, `expression`.
 
 ### Cartão neutro — `lang: "tag"`
 
