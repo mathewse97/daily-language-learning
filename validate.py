@@ -314,6 +314,17 @@ def validar_midia(d: dict) -> None:
                     exige_foto(v[2], f"{rot} · tap.p[{p!r}]")
             for p, ch in (tap.get("f") or {}).items():
                 exige_foto(ch, f"{rot} · tap.f[{p!r}]")
+            if tap:
+                # toda palavra do texto abre um card: glosa em `w` ou dentro de uma `p`
+                nk = lambda x: re.sub(r"[^\w'-]", "", x.lower().replace("\u2019", "'"))
+                cobertas = {nk(k) for k in (tap.get("w") or {})}
+                for k in (tap.get("p") or {}):
+                    cobertas |= {nk(x) for x in k.split()}
+                falta = sorted({nk(t) for tx in textos for t in str(tx).split()
+                                if nk(t)} - cobertas)
+                if falta:
+                    erro(f"week.json · {rot}: palavras sem glosa em tap ({c['lang']}): "
+                         f"{', '.join(falta)}")
 
 
 # ---------------------------------------------------------------- manifesto

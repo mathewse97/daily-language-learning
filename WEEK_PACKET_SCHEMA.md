@@ -117,7 +117,8 @@ tempos `[início, fim]` de cada frase, `t` o início de cada palavra (uma lista 
 espaços, na ordem). Com áudio ou `tap`, o texto é **puro, sem HTML**.
 `tap` — o que abre ao tocar: `w` `{palavra: [português, nota]}` (a nota pode ser `""`),
 `p` `{"expressão ou nome inteiro": [português, nota, chave de foto?]}` — tocar em qualquer
-palavra dela abre o mesmo card — e `f` `{palavra: chave de foto}`. Com `tap`, a lista de
+palavra dela abre o mesmo card — e `f` `{palavra: chave de foto}`. **Toda palavra do texto precisa de glosa** (em `w`, ou dentro de uma `p`): o aluno toca
+em qualquer uma e o validador reprova a que faltar. Palavras comuns levam nota `""`. Com `tap`, a lista de
 glosas do cartão (italiano) e o "In context" (inglês) saem da página: o card os substitui.
 Como no resto do pacote, número em algarismos vem seguido do extenso.
 

@@ -1715,6 +1715,398 @@
               "tap": [
                 "tocar",
                 ""
+              ],
+              "a": [
+                "um, uma",
+                ""
+              ],
+              "client": [
+                "cliente",
+                ""
+              ],
+              "opens": [
+                "abre",
+                ""
+              ],
+              "the": [
+                "o, a, os, as",
+                ""
+              ],
+              "new": [
+                "novo",
+                ""
+              ],
+              "on": [
+                "em, sobre",
+                ""
+              ],
+              "phone": [
+                "celular",
+                ""
+              ],
+              "then": [
+                "depois, então",
+                ""
+              ],
+              "laptop": [
+                "notebook",
+                ""
+              ],
+              "and": [
+                "e",
+                ""
+              ],
+              "asks": [
+                "pede; pergunta",
+                ""
+              ],
+              "why": [
+                "por que",
+                ""
+              ],
+              "does": [
+                "faz (auxiliar de pergunta e negação)",
+                ""
+              ],
+              "it": [
+                "ele, ela, isso (coisa)",
+                ""
+              ],
+              "look": [
+                "parecer; olhar",
+                ""
+              ],
+              "different": [
+                "diferente",
+                ""
+              ],
+              "is": [
+                "é, está",
+                ""
+              ],
+              "question": [
+                "pergunta",
+                ""
+              ],
+              "responsive": [
+                "responsivo (que se adapta à tela)",
+                ""
+              ],
+              "not": [
+                "não",
+                ""
+              ],
+              "of": [
+                "de",
+                ""
+              ],
+              "fixed": [
+                "fixo",
+                ""
+              ],
+              "pages": [
+                "páginas",
+                ""
+              ],
+              "one": [
+                "um, uma",
+                ""
+              ],
+              "that": [
+                "que; aquele, isso",
+                ""
+              ],
+              "to": [
+                "para; a",
+                ""
+              ],
+              "fit": [
+                "caber; encaixar",
+                ""
+              ],
+              "space": [
+                "espaço",
+                ""
+              ],
+              "has": [
+                "tem",
+                ""
+              ],
+              "accident": [
+                "acidente, acaso",
+                ""
+              ],
+              "start": [
+                "começar",
+                ""
+              ],
+              "showing": [
+                "mostrando",
+                ""
+              ],
+              "logic": [
+                "lógica",
+                ""
+              ],
+              "code": [
+                "código",
+                ""
+              ],
+              "explain": [
+                "explicar",
+                ""
+              ],
+              "content": [
+                "conteúdo",
+                ""
+              ],
+              "stays": [
+                "permanece, fica",
+                ""
+              ],
+              "same": [
+                "mesmo, igual",
+                ""
+              ],
+              "while": [
+                "enquanto",
+                ""
+              ],
+              "sometimes": [
+                "às vezes",
+                ""
+              ],
+              "order": [
+                "ordem",
+                ""
+              ],
+              "change": [
+                "mudar",
+                ""
+              ],
+              "point": [
+                "apontar; ponto",
+                ""
+              ],
+              "few": [
+                "poucos",
+                ""
+              ],
+              "widths": [
+                "larguras",
+                ""
+              ],
+              "where": [
+                "onde",
+                ""
+              ],
+              "shifts": [
+                "muda, desloca",
+                ""
+              ],
+              "say": [
+                "dizer",
+                ""
+              ],
+              "what": [
+                "o que",
+                ""
+              ],
+              "each": [
+                "cada",
+                ""
+              ],
+              "line": [
+                "linha",
+                ""
+              ],
+              "text": [
+                "texto",
+                ""
+              ],
+              "button": [
+                "botão",
+                ""
+              ],
+              "easy": [
+                "fácil",
+                ""
+              ],
+              "show": [
+                "mostrar",
+                ""
+              ],
+              "page": [
+                "página",
+                ""
+              ],
+              "at": [
+                "em, a",
+                ""
+              ],
+              "several": [
+                "vários",
+                ""
+              ],
+              "so": [
+                "então; para que",
+                ""
+              ],
+              "sees": [
+                "vê",
+                ""
+              ],
+              "system": [
+                "sistema",
+                ""
+              ],
+              "instead": [
+                "em vez disso",
+                ""
+              ],
+              "four": [
+                "quatro",
+                ""
+              ],
+              "separate": [
+                "separado; separar",
+                ""
+              ],
+              "screens": [
+                "telas",
+                ""
+              ],
+              "finally": [
+                "por fim",
+                ""
+              ],
+              "tell": [
+                "dizer a alguém, avisar",
+                ""
+              ],
+              "which": [
+                "qual, que, quais",
+                ""
+              ],
+              "devices": [
+                "dispositivos",
+                ""
+              ],
+              "you": [
+                "você, vocês",
+                ""
+              ],
+              "will": [
+                "vai (futuro)",
+                ""
+              ],
+              "chase": [
+                "correr atrás de",
+                ""
+              ],
+              "such": [
+                "tal; (such as: como, por exemplo)",
+                ""
+              ],
+              "as": [
+                "como; (as … as: tão … quanto)",
+                ""
+              ],
+              "very": [
+                "muito",
+                ""
+              ],
+              "old": [
+                "velho, antigo",
+                ""
+              ],
+              "phones": [
+                "celulares",
+                ""
+              ],
+              "agree": [
+                "concordar; combinar",
+                ""
+              ],
+              "done": [
+                "concluído, pronto",
+                ""
+              ],
+              "means": [
+                "significa",
+                ""
+              ],
+              "before": [
+                "antes de",
+                ""
+              ],
+              "review": [
+                "revisão",
+                ""
+              ],
+              "ask": [
+                "pedir; perguntar",
+                ""
+              ],
+              "them": [
+                "eles, elas (objeto)",
+                ""
+              ],
+              "send": [
+                "enviar",
+                ""
+              ],
+              "feedback": [
+                "retorno, comentários sobre o trabalho",
+                ""
+              ],
+              "with": [
+                "com",
+                ""
+              ],
+              "device": [
+                "dispositivo",
+                ""
+              ],
+              "browser": [
+                "navegador",
+                ""
+              ],
+              "way": [
+                "jeito, modo",
+                ""
+              ],
+              "comment": [
+                "comentário",
+                ""
+              ],
+              "like": [
+                "como; gostar",
+                ""
+              ],
+              "looks": [
+                "parece; olha",
+                ""
+              ],
+              "off": [
+                "fora do lugar, errado",
+                ""
+              ],
+              "becomes": [
+                "torna-se, vira",
+                ""
+              ],
+              "something": [
+                "algo",
+                ""
+              ],
+              "can": [
+                "pode, consegue",
+                ""
+              ],
+              "act": [
+                "agir; (act on: tomar providência sobre)",
+                ""
               ]
             },
             "p": {
@@ -2744,6 +3136,362 @@
               "criticism": [
                 "crítica",
                 ""
+              ],
+              "in": [
+                "em",
+                ""
+              ],
+              "design": [
+                "design, projeto",
+                ""
+              ],
+              "review": [
+                "revisão",
+                ""
+              ],
+              "it": [
+                "ele, ela, isso (coisa)",
+                ""
+              ],
+              "breaks": [
+                "quebra",
+                ""
+              ],
+              "on": [
+                "em, sobre",
+                ""
+              ],
+              "mobile": [
+                "celular, dispositivo móvel",
+                ""
+              ],
+              "not": [
+                "não",
+                ""
+              ],
+              "useful": [
+                "útil",
+                ""
+              ],
+              "comment": [
+                "comentário",
+                ""
+              ],
+              "good": [
+                "bom",
+                ""
+              ],
+              "names": [
+                "nomeia, cita",
+                ""
+              ],
+              "element": [
+                "elemento",
+                ""
+              ],
+              "and": [
+                "e",
+                ""
+              ],
+              "effect": [
+                "efeito",
+                ""
+              ],
+              "at": [
+                "em, a",
+                ""
+              ],
+              "360": [
+                "trezentos e sessenta",
+                ""
+              ],
+              "px": [
+                "pixels (abreviação)",
+                ""
+              ],
+              "card": [
+                "cartão, bloco de conteúdo",
+                ""
+              ],
+              "title": [
+                "título",
+                ""
+              ],
+              "three": [
+                "três",
+                ""
+              ],
+              "lines": [
+                "linhas",
+                ""
+              ],
+              "button": [
+                "botão",
+                ""
+              ],
+              "with": [
+                "com",
+                ""
+              ],
+              "that": [
+                "que; aquele, isso",
+                ""
+              ],
+              "sentence": [
+                "frase",
+                ""
+              ],
+              "designer": [
+                "designer",
+                ""
+              ],
+              "can": [
+                "pode, consegue",
+                ""
+              ],
+              "minute": [
+                "minuto",
+                ""
+              ],
+              "check": [
+                "conferir, verificar",
+                ""
+              ],
+              "narrow": [
+                "estreito",
+                ""
+              ],
+              "end": [
+                "ponta, extremo",
+                ""
+              ],
+              "first": [
+                "primeiro, antes de tudo",
+                ""
+              ],
+              "look": [
+                "parecer; olhar",
+                ""
+              ],
+              "for": [
+                "para; por",
+                ""
+              ],
+              "content": [
+                "conteúdo",
+                ""
+              ],
+              "cannot": [
+                "não pode, não consegue",
+                ""
+              ],
+              "fixed-width": [
+                "de largura fixa",
+                ""
+              ],
+              "image": [
+                "imagem",
+                ""
+              ],
+              "long": [
+                "longo",
+                ""
+              ],
+              "word": [
+                "palavra",
+                ""
+              ],
+              "table": [
+                "tabela",
+                ""
+              ],
+              "if": [
+                "se",
+                ""
+              ],
+              "something": [
+                "algo",
+                ""
+              ],
+              "say": [
+                "dizer",
+                ""
+              ],
+              "which": [
+                "qual, que, quais",
+                ""
+              ],
+              "then": [
+                "depois, então",
+                ""
+              ],
+              "wide": [
+                "largo",
+                ""
+              ],
+              "does": [
+                "faz (auxiliar de pergunta e negação)",
+                ""
+              ],
+              "layout": [
+                "disposição, estrutura da página",
+                ""
+              ],
+              "until": [
+                "até que",
+                ""
+              ],
+              "of": [
+                "de",
+                ""
+              ],
+              "text": [
+                "texto",
+                ""
+              ],
+              "become": [
+                "tornar-se, virar",
+                ""
+              ],
+              "hard": [
+                "difícil",
+                ""
+              ],
+              "read": [
+                "ler",
+                ""
+              ],
+              "maximum": [
+                "máximo",
+                ""
+              ],
+              "often": [
+                "muitas vezes",
+                ""
+              ],
+              "fixes": [
+                "corrige",
+                ""
+              ],
+              "finally": [
+                "por fim",
+                ""
+              ],
+              "separate": [
+                "separado; separar",
+                ""
+              ],
+              "what": [
+                "o que",
+                ""
+              ],
+              "from": [
+                "de, a partir de",
+                ""
+              ],
+              "you": [
+                "você, vocês",
+                ""
+              ],
+              "would": [
+                "(condicional) faria; gostaria de",
+                ""
+              ],
+              "like": [
+                "como; gostar",
+                ""
+              ],
+              "stops": [
+                "impede, para",
+                ""
+              ],
+              "release": [
+                "lançamento, publicação",
+                ""
+              ],
+              "small": [
+                "pequeno",
+                ""
+              ],
+              "preference": [
+                "preferência",
+                ""
+              ],
+              "each": [
+                "cada",
+                ""
+              ],
+              "one": [
+                "um, uma",
+                ""
+              ],
+              "suggest": [
+                "sugerir",
+                ""
+              ],
+              "fix": [
+                "correção; corrigir",
+                ""
+              ],
+              "when": [
+                "quando",
+                ""
+              ],
+              "have": [
+                "ter",
+                ""
+              ],
+              "are": [
+                "são, estão",
+                ""
+              ],
+              "ask": [
+                "pedir; perguntar",
+                ""
+              ],
+              "question": [
+                "pergunta",
+                ""
+              ],
+              "keeps": [
+                "mantém",
+                ""
+              ],
+              "sound": [
+                "soar, parecer",
+                ""
+              ],
+              "costs": [
+                "custa",
+                ""
+              ],
+              "nothing": [
+                "nada",
+                ""
+              ],
+              "short": [
+                "curto",
+                ""
+              ],
+              "comments": [
+                "comentários",
+                ""
+              ],
+              "easy": [
+                "fácil",
+                ""
+              ],
+              "answer": [
+                "responder; resposta",
+                ""
+              ],
+              "point": [
+                "apontar; ponto",
+                ""
+              ],
+              "async": [
+                "assíncrono (sem precisar responder na hora)",
+                ""
               ]
             },
             "p": {
@@ -3731,6 +4479,398 @@
               ],
               "rebuilt": [
                 "reconstruímos",
+                ""
+              ],
+              "many": [
+                "muitos",
+                ""
+              ],
+              "designers": [
+                "designers",
+                ""
+              ],
+              "test": [
+                "testar; teste",
+                ""
+              ],
+              "their": [
+                "deles, delas, seu",
+                ""
+              ],
+              "layouts": [
+                "disposições",
+                ""
+              ],
+              "at": [
+                "em, a",
+                ""
+              ],
+              "laptop": [
+                "notebook",
+                ""
+              ],
+              "width": [
+                "largura",
+                ""
+              ],
+              "and": [
+                "e",
+                ""
+              ],
+              "call": [
+                "chamar, considerar",
+                ""
+              ],
+              "the": [
+                "o, a, os, as",
+                ""
+              ],
+              "job": [
+                "trabalho, tarefa",
+                ""
+              ],
+              "done": [
+                "concluído, pronto",
+                ""
+              ],
+              "but": [
+                "mas",
+                ""
+              ],
+              "accessibility": [
+                "acessibilidade",
+                ""
+              ],
+              "asks": [
+                "pede; pergunta",
+                ""
+              ],
+              "more": [
+                "mais",
+                ""
+              ],
+              "wcag": [
+                "WCAG (diretrizes internacionais de acessibilidade na web)",
+                ""
+              ],
+              "21": [
+                "2.1 (versão da diretriz)",
+                ""
+              ],
+              "success": [
+                "sucesso",
+                ""
+              ],
+              "criterion": [
+                "critério",
+                ""
+              ],
+              "1410": [
+                "1.4.10 (número do critério)",
+                ""
+              ],
+              "that": [
+                "que; aquele, isso",
+                ""
+              ],
+              "content": [
+                "conteúdo",
+                ""
+              ],
+              "work": [
+                "funcionar; trabalho",
+                ""
+              ],
+              "of": [
+                "de",
+                ""
+              ],
+              "320": [
+                "trezentos e vinte",
+                ""
+              ],
+              "css": [
+                "CSS (linguagem de estilo das páginas)",
+                ""
+              ],
+              "pixels": [
+                "pixels",
+                ""
+              ],
+              "without": [
+                "sem",
+                ""
+              ],
+              "in": [
+                "em",
+                ""
+              ],
+              "two": [
+                "dois",
+                ""
+              ],
+              "directions": [
+                "direções",
+                ""
+              ],
+              "is": [
+                "é, está",
+                ""
+              ],
+              "roughly": [
+                "aproximadamente",
+                ""
+              ],
+              "narrow": [
+                "estreito",
+                ""
+              ],
+              "phone": [
+                "celular",
+                ""
+              ],
+              "1280-pixel": [
+                "de 1280 pixels",
+                ""
+              ],
+              "desktop": [
+                "computador de mesa",
+                ""
+              ],
+              "window": [
+                "janela",
+                ""
+              ],
+              "zoomed": [
+                "ampliado",
+                ""
+              ],
+              "to": [
+                "para; a",
+                ""
+              ],
+              "400": [
+                "quatrocentos",
+                ""
+              ],
+              "percent": [
+                "por cento",
+                ""
+              ],
+              "makes": [
+                "faz, torna",
+                ""
+              ],
+              "than": [
+                "do que",
+                ""
+              ],
+              "mobile": [
+                "celular, dispositivo móvel",
+                ""
+              ],
+              "feature": [
+                "recurso, funcionalidade",
+                ""
+              ],
+              "person": [
+                "pessoa",
+                ""
+              ],
+              "with": [
+                "com",
+                ""
+              ],
+              "who": [
+                "que, quem",
+                ""
+              ],
+              "zooms": [
+                "amplia (dá zoom)",
+                ""
+              ],
+              "on": [
+                "em, sobre",
+                ""
+              ],
+              "gets": [
+                "recebe, fica com",
+                ""
+              ],
+              "same": [
+                "mesmo, igual",
+                ""
+              ],
+              "layout": [
+                "disposição, estrutura da página",
+                ""
+              ],
+              "if": [
+                "se",
+                ""
+              ],
+              "table": [
+                "tabela",
+                ""
+              ],
+              "or": [
+                "ou",
+                ""
+              ],
+              "fixed-width": [
+                "de largura fixa",
+                ""
+              ],
+              "block": [
+                "bloco",
+                ""
+              ],
+              "they": [
+                "eles, elas",
+                ""
+              ],
+              "must": [
+                "precisa, tem de",
+                ""
+              ],
+              "move": [
+                "mover",
+                ""
+              ],
+              "page": [
+                "página",
+                ""
+              ],
+              "back": [
+                "de volta",
+                ""
+              ],
+              "forth": [
+                "para a frente (back and forth: de um lado para o outro)",
+                ""
+              ],
+              "read": [
+                "ler",
+                ""
+              ],
+              "each": [
+                "cada",
+                ""
+              ],
+              "line": [
+                "linha",
+                ""
+              ],
+              "truly": [
+                "de verdade",
+                ""
+              ],
+              "needs": [
+                "precisa de",
+                ""
+              ],
+              "dimensions": [
+                "dimensões",
+                ""
+              ],
+              "such": [
+                "tal; (such as: como, por exemplo)",
+                ""
+              ],
+              "as": [
+                "como; (as … as: tão … quanto)",
+                ""
+              ],
+              "maps": [
+                "mapas",
+                ""
+              ],
+              "data": [
+                "dados",
+                ""
+              ],
+              "tables": [
+                "tabelas",
+                ""
+              ],
+              "when": [
+                "quando",
+                ""
+              ],
+              "you": [
+                "você, vocês",
+                ""
+              ],
+              "write": [
+                "escrever",
+                ""
+              ],
+              "this": [
+                "este, esta, isto",
+                ""
+              ],
+              "case": [
+                "caso",
+                ""
+              ],
+              "study": [
+                "estudo",
+                ""
+              ],
+              "it": [
+                "ele, ela, isso (coisa)",
+                ""
+              ],
+              "say": [
+                "dizer",
+                ""
+              ],
+              "which": [
+                "qual, que, quais",
+                ""
+              ],
+              "tested": [
+                "testou, testado",
+                ""
+              ],
+              "what": [
+                "o que",
+                ""
+              ],
+              "changed": [
+                "mudou",
+                ""
+              ],
+              "learned": [
+                "aprendeu, aprendemos",
+                ""
+              ],
+              "we": [
+                "nós",
+                ""
+              ],
+              "made": [
+                "fez, fizemos",
+                ""
+              ],
+              "site": [
+                "site",
+                ""
+              ],
+              "responsive": [
+                "responsivo (que se adapta à tela)",
+                ""
+              ],
+              "easy": [
+                "fácil",
+                ""
+              ],
+              "cards": [
+                "cartões, blocos de conteúdo",
+                ""
+              ],
+              "so": [
+                "então; para que",
                 ""
               ]
             },
