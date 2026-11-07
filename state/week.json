@@ -1302,7 +1302,6 @@
             "Perché la gente può entrare e uscire in fretta?"
           ],
           "note": "<em>dovere</em>: devo, devi, deve, dobbiamo, dovete, devono. É irregular como <em>potere</em> e <em>volere</em>, e depois dele o outro verbo fica no infinitivo: <em>deve entrare</em>.",
-          "produce": "Descreva mentalmente o que você <b>deve</b> fazer numa manhã de trabalho, em três frases, com <b>devo</b>, <b>deve</b> ou <b>devono</b>.",
           "answers": [
             [
               "1",
@@ -1315,10 +1314,6 @@
             [
               "3",
               "Perché ci sono tante porte."
-            ],
-            [
-              "·",
-              "<em>Modelo:</em> Ogni mattina devo prendere l'autobus. Mia sorella deve portare i bambini a scuola. I miei colleghi devono arrivare prima delle nove."
             ]
           ],
           "curio": "Vespasiano começa o Colosseo por volta de 70–72 d.C. (algumas fontes dizem 73–75); Tito termina o último nível, e os jogos inaugurais são datados de 80 ou 81. As fontes antigas dizem que duram mais de cem dias. O número de espectadores varia muito: as estimativas vão de uns 45.000 a mais de 70.000. (Wikipedia, “Colosseum” e “Inaugural games of the Colosseum”; World History Encyclopedia, “Colosseum”)",
@@ -1642,7 +1637,6 @@
             "Why should you show the page at several widths side by side?",
             "What should a client send with a comment like \"it looks off\"?"
           ],
-          "sayit": "A client says the homepage \"looks broken\" on their tablet. Compose two or three sentences in your head: acknowledge it, explain the change, and ask for the device. Use <b>fluid by design</b> and <b>set expectations</b>.",
           "answers": [
             [
               "1",
@@ -1651,10 +1645,6 @@
             [
               "2",
               "The device and the browser."
-            ],
-            [
-              "·",
-              "<em>Model:</em> That's a fair catch — the layout is fluid by design, so the columns reflow on a tablet. Could you tell me which tablet and browser you're using? I'd like to set expectations on which widths we will fine-tune."
             ]
           ],
           "expression": "<b>One expression.</b> <em>Fair catch.</em> — accepts a valid observation in two words; works with clients and in team chats. Wrong when the issue is serious: then it sounds too casual.",
@@ -2744,7 +2734,6 @@
             "Quando i turisti possono salire di nuovo?"
           ],
           "note": "<em>nel 1173</em>: <em>in</em> + <em>il</em> = <em>nel</em>. Com <em>la</em> é <em>nella</em> (<em>nella città</em>), com <em>i</em> é <em>nei</em> (<em>nei giorni</em>). Em português também juntamos: “em + o = no”.",
-          "produce": "Descreva mentalmente o que fica <b>nel</b> centro da sua cidade, em três frases, com <b>nel</b>, <b>nella</b> ou <b>nei</b>.",
           "answers": [
             [
               "1",
@@ -2757,10 +2746,6 @@
             [
               "3",
               "Nel 2001 (duemilauno)."
-            ],
-            [
-              "·",
-              "<em>Modelo:</em> Nel centro della mia città c'è una grande piazza. Nella piazza ci sono molti negozi. Nei giorni di festa ci sono anche i musicisti."
             ]
           ],
           "curio": "Os historiadores divergem sobre por que as obras pararam: uma versão fala nas guerras de Pisa contra Gênova, Lucca e Florença, e no solo que assentou durante a pausa; outra, publicada na revista Ingenia, diz que o motivo não se conhece. A torre foi fechada em 1990 e reaberta em 2001; as fontes divergem entre junho e dezembro. (Wikipedia, “Leaning Tower of Pisa”; Ingenia, “The stabilisation of the Leaning Tower of Pisa”; NBC News)",
@@ -3075,7 +3060,6 @@
             "What three things should a good comment name?",
             "What does a question like \"Is this intended at this width?\" do?"
           ],
-          "sayit": "You find that a pricing table runs off a 360 px screen. Compose a two- or three-sentence comment in your head. Use <b>pinned to a width</b> and <b>reproduce the problem</b>.",
           "answers": [
             [
               "1",
@@ -3084,10 +3068,6 @@
             [
               "2",
               "It keeps the thread open and does not sound like criticism."
-            ],
-            [
-              "·",
-              "<em>Model:</em> At 360 px the pricing table is pinned to a width and runs off the screen, so the last column is cut. You can reproduce the problem by opening the page in a narrow window. Is this intended, or should the table scroll?"
             ]
           ],
           "expression": "<b>One expression.</b> <em>Is this intended?</em> — asks about a decision without accusing anyone. Wrong when you are sure it is a bug: then say so and give the steps.",
@@ -4126,7 +4106,6 @@
             "Che cosa fanno molti turisti oggi?"
           ],
           "note": "<em>alla fontana</em>: <em>a</em> + <em>la</em> = <em>alla</em>. Com <em>di</em> é igual: <em>della fontana</em>, <em>del progetto</em>. Quando o artigo é <em>il</em>, <em>a + il</em> vira <em>al</em>.",
-          "produce": "Descreva mentalmente um lugar que você visita, em três frases, com <b>alla</b>, <b>della</b> ou <b>al</b>.",
           "answers": [
             [
               "1",
@@ -4139,10 +4118,6 @@
             [
               "3",
               "Lanciano una moneta nella fontana."
-            ],
-            [
-              "·",
-              "<em>Modelo:</em> Vado spesso alla biblioteca della mia città. Il bar vicino è al centro della piazza. Mi piace il silenzio della sala di lettura."
             ]
           ],
           "curio": "A tradição da moeda: de costas para a fonte, com a mão direita, por cima do ombro esquerdo; quem faz isso, diz-se, volta a Roma. O projeto é de Nicola Salvi, mas as fontes divergem sobre quem concluiu a obra em 1762: Giuseppe Pannini, para a Britannica; Pietro Bracci, para outras. (Britannica, “Trevi Fountain”; Wikipedia, “Trevi Fountain”)",
@@ -4435,7 +4410,6 @@
             "At what width does WCAG 1.4.10 ask content to work?",
             "Which kinds of content are exceptions?"
           ],
-          "sayit": "Write two sentences in your head for a case study about a layout you rebuilt: the width you tested and what changed. Use <b>be specific about</b> and <b>a claim a reader can check</b>.",
           "answers": [
             [
               "1",
@@ -4444,10 +4418,6 @@
             [
               "2",
               "Maps, diagrams and data tables."
-            ],
-            [
-              "·",
-              "<em>Model:</em> We tested every template at 320 pixels and rebuilt the pricing cards so they reflow without sideways scrolling. It is a claim a reader can check: apart from the data table, no page needs two-direction scrolling at that width."
             ]
           ],
           "expression": "<b>One expression.</b> <em>In practice,</em> — turns a rule or an idea into what it means for real work: <em>In practice, that means testing at 320 pixels.</em> Wrong when you have no concrete example to follow it with.",

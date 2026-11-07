@@ -176,7 +176,7 @@ def validar_semana(exp: dict[str, int]) -> None:
         for cc in cartoes:
             if cc.get("lang") != "it":
                 continue
-            textos = [cc.get("text"), cc.get("setting"), cc.get("produce")]
+            textos = [cc.get("text"), cc.get("setting")]
             textos += cc.get("questions") or []
             textos += [p[1] for p in cc.get("answers") or []]
             textos += (cc.get("recall") or {}).get("prompts", [])

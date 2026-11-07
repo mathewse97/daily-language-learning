@@ -64,16 +64,11 @@ conversations.
 
 3. **Check** — 2 questions on the substance of the text, not on the vocabulary.
 
-4. **Say it** — the core of the track, done in his head. One situation, a named register,
-   2–3 required target items, and an instruction to compose two or three sentences
-   mentally before opening the model. Nothing is written or typed.
-
-5. **One expression** — a single high-value professional phrase per packet, with the
+4. **One expression** — a single high-value professional phrase per packet, with the
    situation it belongs to and one situation where it would be wrong.
 
-6. **Key** — answers, plus a model version of the writing task. (Three points to compare
-   against his own draft were dropped on 2026-11-02: he opens the model directly and does
-   not compose first.)
+5. **Key** — answers to the *Check* questions. (*Say it* — mental composition — and the
+   model version were dropped on 2026-11-02: he does not compose first, he opens and reads.)
 
 The matching data fields are in `WEEK_PACKET_SCHEMA.md`, card `lang: "en"`.
 

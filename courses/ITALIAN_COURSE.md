@@ -90,11 +90,8 @@ invertido; consoantes duplas na escrita (`anno` vs `ano` — vale corrigir sempr
 4. **Nota** — uma observação, no máximo 3 linhas. Quando for interferência do português,
    pode ser explícita e contrastiva: *em português X, em italiano Y*. Aqui o contraste
    ajuda, ao contrário do grego, porque a interferência é o problema real.
-5. **Prova a dire** — produção mental. Uma situação e 2–3 frases a formar de cabeça, com
-   alvo nomeado ("use `c'è` e `ci sono`"). Nada é escrito.
-6. **Gabarito** — respostas, mais uma versão modelo do `Prova a dire`. (Havia três pontos de
-   comparação com a versão mental; saíram em 02/11/2026, porque Mathews abre o modelo
-   direto e não compõe antes.)
+5. **Gabarito** — respostas das *Domande*. (Saíram em 02/11/2026 o `Prova a dire` — produção
+   mental — e a versão modelo, porque Mathews não compõe de cabeça: abre e lê.)
 
 > Sem escrita, a correção real desaparece deste percurso — e produção é justamente o
 > gargalo dele. O modelo é o substituto possível. Se ele
