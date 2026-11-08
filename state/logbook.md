@@ -86,12 +86,9 @@ feita.** O logbook de 01/11 não a menciona e o cartão de segunda da semana 8 n
 registrada como não feita; a próxima é domingo 06/12. Se Mathews quiser, a releitura do grego de
 novembro pode ser feita antes, a partir das versões de `state/week.json` no histórico do Git.
 
-**08/11 · divergência relatada, não corrigida (invariante 6):** a invariante 18 de `RULES.md` ainda
-fala em "toda produção é mental, seguida imediatamente de um modelo para comparação". As seções
-"Prova a dire" e "Say it" (e o modelo do gabarito) saíram em 02/11 e 08/11, a pedido de Mathews;
-a regra é cumprida por vacuidade, mas a redação ficou desatualizada. O mesmo vale para a linha de
-`ENGLISH_COURSE.md` ("Correction policy") que fala em nomear as decisões da resposta modelo.
-Reconciliar é decisão dele, em conversa.
+**08/11 · divergência resolvida:** a invariante 18 de `RULES.md` e a política de correção de
+`ENGLISH_COURSE.md` foram alinhadas à retirada de "Prova a dire" e "Say it", com autorização de
+Mathews em conversa (reconciliação de 08/11/2026 em `RULES.md`).
 
 **01/11 · check-in da semana 7 (repetida) consumido; semana 8 composta e página nova.** Notas GR 4
 · IT 3 · EN 4, **sem misses** (ditos explicitamente) e **13 das 13 frases** no teste de sábado

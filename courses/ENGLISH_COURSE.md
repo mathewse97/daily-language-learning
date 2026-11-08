@@ -74,10 +74,8 @@ The matching data fields are in `WEEK_PACKET_SCHEMA.md`, card `lang: "en"`.
 
 ## Correction policy
 
-He composes mentally and self-checks against the model. Since there is no draft to mark,
-the key is doing all the work: name the two or three decisions the model answer made —
-hedging, sentence length, where the recommendation sits — so he can hold his own version
-against them. A model answer with no stated decisions teaches nothing.
+There is no production exercise and no model answer (dropped on 2026-11-02 and 2026-11-08: he opens
+the packet and reads, he does not compose first). The packet teaches by the text itself.
 
 If he replies to a packet in a live session with his own writing, correct it precisely:
 collocation and register first, grammar second, and never rewrite the whole thing when a
