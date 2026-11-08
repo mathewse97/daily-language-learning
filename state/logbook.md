@@ -15,56 +15,55 @@ Campos e contrato em `STATE_SCHEMA.md`.
 UPDATED: 2026-11-07
 DAY: 62
 STREAK: 0
-LAST_REPORT: 2026-11-01 GR4 IT3 EN4
+LAST_REPORT: 2026-11-08 GR3 IT3 EN3
 probed: —
 
 [GREEK]
 phase: 1
-lesson: 20 — semana 8, dia 6/7 (texto novo, cresce 3 → 13 frases)
+lesson: 21 — semana 9, dia 1/7 (texto novo, cresce 3 → 13 frases)
 apoio: por FORMA desde 04/10 — forma nova de palavra conhecida volta a ter glosa
   ([GR-FORMA] no léxico); exp do lema governa só o teste. Nota de forma, curiosidade
   e "Quem é quem" no cartão (RULES 14)
 setting: Ἀχαρναί, primavera de 432 a.C.
-words: 80 — 2 palavras novas na semana 8 (ὁ δεσπότης e παλαιός) e o nome Ὀδυσσεύς
+words: 81 — 1 palavra nova na semana 9 (ὁ σῖτος) e o nome Δημήτηρ
 unlocked: presente ativo 3sg/3pl (-ουσι(ν) explicado na semana 5 e retomado na 6);
   artigo; 1ª/2ª decl. nom./ac.; plural nom. masc. (οἱ θεοί) e neutro em -α (τὰ ὀστᾶ),
   explicados em nota de forma; ἐν+dat. como bloco; πατήρ/μήτηρ só nom., como bloco;
-  εἰς+ac (εἰς τὴν οἰκίαν); masc. em -ης da 1ª decl. (ὁ δεσπότης → τὸν δεσπότην)
+  εἰς+ac; masc. em -ης da 1ª decl. (ὁ δεσπότης → τὸν δεσπότην); τίς como sujeito
 cast: Κλεισθένης, Μέλιττα, Νικίας, Χλόη, Δᾶος, Σῖμος, Ἄργος; reais ou míticos, só em cena
-  pontual: Ὀδυσσεύς (semana 8), Σωκράτης (semana 7), Προμηθεύς e Ζεύς (semana 6)
-recent: Melita conta o mito de Prometeu em Mecone (semana 6); Simo encontra Sócrates na
-  ágora e não sabe dizer o que é o bem (semana 7); Melita conta o mito de Odisseu e do cão
-  Argos, o único que o reconhece (semana 8)
-weak: — (os seis misses de 18/10 voltaram a `recalled`, caixa 2, due 04/11; sem misses em 01/11)
+  pontual: Δημήτηρ (semana 9), Ὀδυσσεύς (8), Σωκράτης (7), Προμηθεύς e Ζεύς (6)
+recent: Prometeu em Mecone (semana 6); Simo e Sócrates na ágora (7); Odisseu e o cão Argos
+  (8); o grão no campo, o pão no altar e a deusa Deméter, que o traz (9)
+weak: ὁ ἄρτος, ὁ βωμός e ἔχει, `missed` em 08/11 (caixa 1, due 09/11): voltam no texto e na segunda
 gate: 3 sábados seguidos com ≥10 das 13 frases entendidas, com o apoio escondido (coluna
-  `frases` do checkin_log). 1 de 3 cumprido: 13/13 em 31/10; próxima medição, sábado 07/11
-next: semana 9 com ritmo normal (nota 4); a fase 1 só fecha com os 3 sábados; pedir o número
-  de frases do sábado 07/11 e as palavras que não vieram
+  `frases` do checkin_log). 2 de 3 cumpridos: 13/13 em 31/10 e 10/13 em 07/11; próxima
+  medição, sábado 14/11
+next: semana 9 com ritmo normal (nota 3); se o sábado 14/11 tiver ≥10, o portão fecha;
+  pedir o número de frases e as palavras que não vieram
 
 [ITALIAN]
 phase: 1
-lesson: 12 — semana 8: Colosseo (seg) / Torre di Pisa (qua) / Fontana di Trevi (sex)
+lesson: 13 — semana 9: Pantheon (seg) / Paestum (qua) / Ponte di Rialto (sex)
 unlocked: artigos; preposições articuladas (nel/dal/sul/del/al); essere e avere completos;
   presente regular (-are, -ere, -ire); andare, venire, fare, potere, volere, dovere; in/a/di + artigo
-  (nel, nella, nei, alla, della, al)
-recent: Via Ápia, Ponte Vecchio e a cúpula de Brunelleschi (semana 7); Colosseo, Torre di
-  Pisa e Fontana di Trevi (semana 8)
-weak: vocabulário e interesse (nota 2 na semana 4, recuperada para 3 na 5) — textos
-  de ~90 palavras, glosa generosa, monumentos com história
+  (nel, nella, nei, alla, della, al); di + artigo no plural (dei, delle); il ponte masculino
+recent: Colosseo, Pisa e Trevi (semana 8); Pantheon, Paestum e Rialto (9)
+weak: palavras que não vieram em 07/11: può, la pietra, il poeta, il concorso, vincere, la
+  folla, molle, devono — tecidas nos textos e no Ripasso da semana 9; textos de ~90 palavras
 gate: artigos + preposições articuladas sem erro em 2 produções
 next: fechar a fase 1 com o gate (artigos + preposições articuladas sem erro em 2
   produções); passato prossimo é fase 2
 
 [ENGLISH]
 register_last: public writing
-lesson: 13 — semana 8, ritmo normal (nota 4): layout fluido para o cliente (ter) / comentário
-  útil sobre um layout responsivo (qui) / 320 pixels e acessibilidade (sáb)
+lesson: 14 — semana 9, ritmo normal (nota 3): quando o cliente quer tudo animado (ter) /
+  comentário sobre o tempo de uma transição (qui) / movimento e acessibilidade (sáb)
 topics_done: hierarquia visual; API de componente; acessibilidade; escaneabilidade;
   handoff; estudo de caso; pricing e scoping; design tokens; teste de usabilidade;
   rationale ao cliente; crítica assíncrona; problema no estudo de caso; rodada de revisões;
   pedir feedback; bio de portfólio; dizer não ao cliente; propor componente; resultados;
-  layout fluido (cliente, time, texto público)
-collocations: 85
+  layout fluido; movimento e animação (cliente, time, texto público)
+collocations: 100
 weak: —
 next: novo tópico; seguir rotação client/async/public; 5 colocações por texto
 
@@ -74,6 +73,25 @@ agendada anterior e não se aplicam mais; ver "Pendências registradas")
 ```
 
 ## Pendências registradas
+
+**08/11 · check-in da semana 8 consumido; semana 9 composta.** Notas GR 3 · IT 3 · EN 3; sete dias
+lidos; **10 das 13 frases** no teste de sábado 07/11 (passa: 2 de 3 medições). Palavras que não
+vieram: ὁ ἄρτος, ὁ βωμός e ἔχει (gregas: `missed`, caixa 1, `due` 09/11) e può, la pietra, il poeta,
+il concorso, vincere, la folla, molle, devono (italianas, sem caixa: voltam no texto e no Ripasso
+da semana 9). Nenhuma palavra marcada como esquecida no card. Promoções e `exp` em
+`state/lexicon.md`. Ritmo normal (nota 3). O Ἀνάμνησις de segunda testa os três gregos `missed`.
+
+**08/11 · auditoria mensal (passo 11) do primeiro domingo de novembro: sem registro de que foi
+feita.** O logbook de 01/11 não a menciona e o cartão de segunda da semana 8 não traz `fix`. Fica
+registrada como não feita; a próxima é domingo 06/12. Se Mathews quiser, a releitura do grego de
+novembro pode ser feita antes, a partir das versões de `state/week.json` no histórico do Git.
+
+**08/11 · divergência relatada, não corrigida (invariante 6):** a invariante 18 de `RULES.md` ainda
+fala em "toda produção é mental, seguida imediatamente de um modelo para comparação". As seções
+"Prova a dire" e "Say it" (e o modelo do gabarito) saíram em 02/11 e 08/11, a pedido de Mathews;
+a regra é cumprida por vacuidade, mas a redação ficou desatualizada. O mesmo vale para a linha de
+`ENGLISH_COURSE.md` ("Correction policy") que fala em nomear as decisões da resposta modelo.
+Reconciliar é decisão dele, em conversa.
 
 **01/11 · check-in da semana 7 (repetida) consumido; semana 8 composta e página nova.** Notas GR 4
 · IT 3 · EN 4, **sem misses** (ditos explicitamente) e **13 das 13 frases** no teste de sábado

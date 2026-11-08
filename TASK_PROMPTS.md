@@ -126,8 +126,8 @@ fazem, relate e não conserte.
 6a. Mídia e card ao toque (campos opcionais, WEEK_PACKET_SCHEMA.md). Com o texto final:
    · glossário: `greek.glossary` com TODA forma do texto; `greek.notes` (dica de uma linha,
      "ver mais" curto, nunca repetir a glosa) e, quando houver fonte consultada,
-     `greek.family`; `tap` nos cartões de italiano e inglês, com expressões e nomes inteiros
-     em `tap.p`; `viz` com mapas e linhas do tempo (dados, não SVG);
+     `greek.family`; `tap` nos cartões de italiano e inglês, com **glosa de toda palavra do
+     texto** (o validador reprova a que faltar) e expressões e nomes inteiros em `tap.p`; `viz` com mapas e linhas do tempo (dados, não SVG);
    · fotos: `python3 tools/foto.py met <id> <chave>` ou `commons "<arquivo>" <chave>`, e
      escreva `alt` e `expl` — o que é o objeto e por que está ali, dizendo quando é de outra
      época ou lugar. Só objetos com domínio público e licenças CC0/CC BY/CC BY-SA, e o
