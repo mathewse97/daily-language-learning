@@ -155,8 +155,9 @@ começou na semana 2 (17/09/2026); a por forma, na semana 4 (reconstruída em 04
 semana 1 não tem registro e não é reconstruída.
 
 **18 · Nada é escrito.** Ele lê no telefone. Nenhum exercício pode exigir escrever,
-digitar, copiar ou transcrever. Toda produção é mental, seguida imediatamente de um
-modelo para comparação.
+digitar, copiar ou transcrever. Se um dia houver produção, ela é mental e vem
+seguida imediatamente de um modelo para comparação; hoje as trilhas não têm exercício de produção
+("Prova a dire" e "Say it" saíram em 02/11/2026 e 08/11/2026, a pedido de Mathews).
 
 ## Escrita
 
@@ -377,3 +378,10 @@ a única entrega garantida a uma execução agendada, e um ponteiro transformari
 das regras num passo que pode ser pulado silenciosamente. A duplicação aqui é o preço da
 confiabilidade, e o que a torna administrável é a fonte declarada mais a regra de
 sincronia — o mesmo arranjo de `TASK_PROMPTS.md`.
+
+## Reconciliação — 08/11/2026
+
+A invariante 18 dizia que toda produção é mental e seguida de um modelo para comparação.
+As seções "Prova a dire" e "Say it" (e o modelo do gabarito) saíram, porque Mathews não
+compõe de cabeça: abre e lê. A regra passou a dizer isso. Mathews autorizou o ajuste em
+conversa, a 08/11/2026; a política de correção de `courses/ENGLISH_COURSE.md` foi alinhada.

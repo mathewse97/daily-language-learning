@@ -413,7 +413,6 @@ nav.days{top:34px}
 .cbody .note,.cbody .curio,.cbody .form{padding:14px 16px;line-height:1.6}
 .cbody details.ans-d > .dz,.cbody details > .dz{padding:12px 4px 4px}
 .cbody .ans{gap:10px}
-.cbody .produce p,.cbody .produce{line-height:1.6}
 .ver-modelo{margin-top:12px}
 .audio{margin:0}
 .card{gap:20px}
@@ -905,7 +904,6 @@ __WEEK_JSON__
     if (has(c.questions)) h.push('<div><p class="sect">Domande</p>' + list("ol", c.questions) + '</div>');
     if (has(c.note)) h.push('<p class="note"><b>Nota.</b> ' + rich(c.note) + '</p>');
     if (has(c.curio)) h.push('<p class="curio"><b>Curiosità.</b> ' + rich(c.curio) + '</p>');
-    if (has(c.produce)) h.push('<div><p class="sect">Prova a dire</p><p>' + rich(c.produce) + '</p></div>');
     if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) + '</div>'));
     return h.join("");
   }
@@ -921,7 +919,6 @@ __WEEK_JSON__
     if (has(c.inContext)) h.push('<div><p class="sect">In context</p>' +
       list("ul", c.inContext, function (i) { return '<b>' + esc(i[0]) + '</b> — ' + rich(i[1]); }) + '</div>');
     if (has(c.check)) h.push('<div><p class="sect">Check</p>' + list("ol", c.check) + '</div>');
-    if (has(c.sayit)) h.push('<div><p class="sect">Say it</p><p>' + rich(c.sayit) + '</p></div>');
     if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) + '</div>'));
     if (has(c.expression)) h.push('<p class="small">' + rich(c.expression) + '</p>');
     return h.join("");
@@ -1320,7 +1317,7 @@ __WEEK_JSON__
           box.parentNode.insertBefore(solo, box);
         }
         if (T.tap) {
-          var cap = document.createElement("p"); cap.className = "dica"; cap.textContent = "Toque numa palavra ou expressão para ver o card.";
+          var cap = document.createElement("p"); cap.className = "dica"; cap.textContent = "Toque em qualquer palavra ou expressão para ver o significado.";
           box.parentNode.insertBefore(cap, box);
         }
         box.addEventListener("click", function (e) {

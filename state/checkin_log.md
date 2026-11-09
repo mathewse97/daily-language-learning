@@ -18,6 +18,7 @@ FORMAT: data | gr | it | en | misses | frases
 2026-10-11 | 3 | 3 | 2 | —
 2026-10-18 | 3 | 3 | 3 | πονεῖ, παίζει, ὁ ἄρτος, πρός (+ac), τὸ δῶρον, ὁ βωμός
 2026-11-01 | 4 | 3 | 4 | — | 13
+2026-11-08 | 3 | 3 | 3 | ὁ ἄρτος, ὁ βωμός, ἔχει, può, la pietra, il poeta, il concorso, vincere, la folla, molle, devono | 10
 ```
 
 A linha de 04/10 tem `—` em misses porque eles não foram anotados, não porque não houve:
@@ -26,6 +27,10 @@ A de 11/10 tem `—` porque ele disse explicitamente que nada falhou.
 
 A linha de 01/11 é da semana 7 reemitida (26/10–01/11): sem misses, ditos explicitamente, e 13 das
 13 frases do sábado 31/10 — a primeira medição do portão da fase 1.
+
+A linha de 08/11 é da semana 8 (02/11–08/11), com os sete dias lidos e 10 das 13 frases no sábado 07/11:
+a segunda medição do portão da fase 1, que passa (≥10). As palavras italianas não têm caixa; entram aqui
+para voltar nos textos e no Ripasso. Nenhuma foi marcada como esquecida no card.
 
 Semanas sem linha são semanas sem check-in. O planejador aplica a regra conservadora
 nesses casos e nunca preenche o que não recebeu.
