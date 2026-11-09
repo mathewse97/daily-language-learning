@@ -12,11 +12,11 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-11-08
-DAY: 63
+UPDATED: 2026-11-09
+DAY: 64
 STREAK: 0
 LAST_REPORT: 2026-11-08 GR3 IT3 EN3
-probed: —
+probed: ὁ ἄρτος, ὁ βωμός, ἔχει, ὁ οἶνος
 
 [GREEK]
 phase: 1
