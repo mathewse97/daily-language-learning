@@ -12,8 +12,8 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-11-07
-DAY: 62
+UPDATED: 2026-11-08
+DAY: 63
 STREAK: 0
 LAST_REPORT: 2026-11-08 GR3 IT3 EN3
 probed: —
