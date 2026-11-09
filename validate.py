@@ -159,6 +159,11 @@ def validar_semana(exp: dict[str, int]) -> None:
             erro(f"week.json · {rotulo}: falta a nota de som — invariante 14")
         if not c.get("pt"):
             erro(f"week.json · {rotulo}: falta o português corrido — invariante 14")
+        else:
+            n_pt = len(re.findall(r"[.?!](?=\s|$)", c["pt"]))
+            if n_pt != up:
+                erro(f"week.json · {rotulo}: o português corrido tem {n_pt} frases e o "
+                     f"dia lê {up} — deve cobrir só as frases até o upTo")
 
         forma = c.get("form")
         if forma is not None and (not isinstance(forma, str) or "\n" in forma
