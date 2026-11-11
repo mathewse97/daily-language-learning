@@ -12,15 +12,15 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-11-10
-DAY: 65
+UPDATED: 2026-11-11
+DAY: 66
 STREAK: 0
 LAST_REPORT: 2026-11-08 GR3 IT3 EN3
-probed: ὁ οἶνος, ὁ καρπός, μικρός, -ά, -όν, ἐσθίει
+probed: ὁ οἶνος, ὁ καρπός, ἐν Ἀχαρναῖς, πονεῖ
 
 [GREEK]
 phase: 1
-lesson: 21 — semana 9, dia 2/7 (texto novo, cresce 3 → 13 frases)
+lesson: 21 — semana 9, dia 3/7 (texto novo, cresce 3 → 13 frases)
 apoio: por FORMA desde 04/10 — forma nova de palavra conhecida volta a ter glosa
   ([GR-FORMA] no léxico); exp do lema governa só o teste. Nota de forma, curiosidade
   e "Quem é quem" no cartão (RULES 14)
