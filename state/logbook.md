@@ -15,55 +15,56 @@ Campos e contrato em `STATE_SCHEMA.md`.
 UPDATED: 2026-11-14
 DAY: 69
 STREAK: 0
-LAST_REPORT: 2026-11-08 GR3 IT3 EN3
+LAST_REPORT: 2026-11-15 GR2 IT3 EN3
 probed: —
 
 [GREEK]
 phase: 1
-lesson: 21 — semana 9, dia 6/7 (texto novo, cresce 3 → 13 frases)
+lesson: 22 — semana 10, dia 6/7 (texto novo, cresce 3 → 13 frases)
 apoio: por FORMA desde 04/10 — forma nova de palavra conhecida volta a ter glosa
   ([GR-FORMA] no léxico); exp do lema governa só o teste. Nota de forma, curiosidade
   e "Quem é quem" no cartão (RULES 14)
 setting: Ἀχαρναί, primavera de 432 a.C.
-words: 81 — 1 palavra nova na semana 9 (ὁ σῖτος) e o nome Δημήτηρ
+words: 81 — nenhuma palavra nova na semana 10 (nota 2); ὁ σῖτος e Δημήτηρ entraram na 9
 unlocked: presente ativo 3sg/3pl (-ουσι(ν) explicado na semana 5 e retomado na 6);
   artigo; 1ª/2ª decl. nom./ac.; plural nom. masc. (οἱ θεοί) e neutro em -α (τὰ ὀστᾶ),
   explicados em nota de forma; ἐν+dat. como bloco; πατήρ/μήτηρ só nom., como bloco;
   εἰς+ac; masc. em -ης da 1ª decl. (ὁ δεσπότης → τὸν δεσπότην); τίς como sujeito
 cast: Κλεισθένης, Μέλιττα, Νικίας, Χλόη, Δᾶος, Σῖμος, Ἄργος; reais ou míticos, só em cena
   pontual: Δημήτηρ (semana 9), Ὀδυσσεύς (8), Σωκράτης (7), Προμηθεύς e Ζεύς (6)
-recent: Prometeu em Mecone (semana 6); Simo e Sócrates na ágora (7); Odisseu e o cão Argos
-  (8); o grão no campo, o pão no altar e a deusa Deméter, que o traz (9)
-weak: ὁ ἄρτος, ὁ βωμός e ἔχει, `missed` em 08/11 (caixa 1, due 09/11): voltam no texto e na segunda
+recent: Prometeu (semana 6); Simo e Sócrates (7); Odisseu e o cão Argos (8); o grão e a deusa Deméter (9); a colheita e a oferenda no altar (10)
+weak: `missed` em 15/11 (caixa 1): ἔχει, ὁ ἄρτος, ὁ καρπός, ἐσθίει, πονεῖ, παίζει, χαίρει, εἰς
+  (esta marcada no card); ὁ βωμός segue `missed`. Voltam no texto e no Ἀνάμνησις
 gate: 3 sábados seguidos com ≥10 das 13 frases entendidas, com o apoio escondido (coluna
-  `frases` do checkin_log). 2 de 3 cumpridos: 13/13 em 31/10 e 10/13 em 07/11; próxima
-  medição, sábado 14/11
-next: semana 9 com ritmo normal (nota 3); se o sábado 14/11 tiver ≥10, o portão fecha;
-  pedir o número de frases e as palavras que não vieram
+  `frases` do checkin_log). 3 de 3 cumpridos: 13/13 (31/10), 10/13 (07/11) e 10/13 (14/11);
+  o avanço de fase fica retido pela nota 2 de grego
+next: semana 10 desacelera (nota 2): sem palavra nova, mesmas estruturas; fase 2 quando a
+  nota voltar a 3 ou mais, ou se Mathews decidir antes
 
 [ITALIAN]
 phase: 1
-lesson: 13 — semana 9: Pantheon (seg) / Paestum (qua) / Ponte di Rialto (sex)
+lesson: 14 — semana 10: Pompei (seg) / Duomo di Milano (qua) / Siracusa (sex)
 unlocked: artigos; preposições articuladas (nel/dal/sul/del/al); essere e avere completos;
   presente regular (-are, -ere, -ire); andare, venire, fare, potere, volere, dovere; in/a/di + artigo
-  (nel, nella, nei, alla, della, al); di + artigo no plural (dei, delle); il ponte masculino
-recent: Colosseo, Pisa e Trevi (semana 8); Pantheon, Paestum e Rialto (9)
-weak: palavras que não vieram em 07/11: può, la pietra, il poeta, il concorso, vincere, la
-  folla, molle, devono — tecidas nos textos e no Ripasso da semana 9; textos de ~90 palavras
+  (nel, nella, nei, alla, della, al); di + artigo no plural (dei, delle); il ponte masculino;
+  nessuno antes do verbo sem non; gli/i; da + cidade sem artigo
+recent: Pantheon, Paestum e Rialto (semana 9); Pompei, Duomo e Siracusa (10)
+weak: palavras que não vieram em 14/11: la folla, devono, può — de volta nos textos e no Ripasso
+  da semana 10; textos de ~90 palavras
 gate: artigos + preposições articuladas sem erro em 2 produções
 next: fechar a fase 1 com o gate (artigos + preposições articuladas sem erro em 2
   produções); passato prossimo é fase 2
 
 [ENGLISH]
 register_last: public writing
-lesson: 14 — semana 9, ritmo normal (nota 3): quando o cliente quer tudo animado (ter) /
-  comentário sobre o tempo de uma transição (qui) / movimento e acessibilidade (sáb)
+lesson: 15 — semana 10, ritmo normal (nota 3): por que a mensagem de erro merece cuidado
+  (ter) / comentário sobre o texto de um erro (qui) / erros e acessibilidade (sáb)
 topics_done: hierarquia visual; API de componente; acessibilidade; escaneabilidade;
   handoff; estudo de caso; pricing e scoping; design tokens; teste de usabilidade;
   rationale ao cliente; crítica assíncrona; problema no estudo de caso; rodada de revisões;
   pedir feedback; bio de portfólio; dizer não ao cliente; propor componente; resultados;
-  layout fluido; movimento e animação (cliente, time, texto público)
-collocations: 100
+  layout fluido; movimento e animação; mensagens de erro
+collocations: 115
 weak: —
 next: novo tópico; seguir rotação client/async/public; 5 colocações por texto
 
@@ -73,6 +74,18 @@ agendada anterior e não se aplicam mais; ver "Pendências registradas")
 ```
 
 ## Pendências registradas
+
+**15/11 · check-in da semana 9 consumido; semana 10 composta.** Notas GR 2 · IT 3 · EN 3; sete dias
+lidos; **10 das 13 frases** no teste de sábado 14/11. Palavras que não vieram: ἔχει, ὁ ἄρτος, ὁ καρπός,
+ἐσθίει, πονεῖ, παίζει, χαίρει (gregas, `missed`, caixa 1) e la folla, devono, può (italianas, sem caixa);
+marcada no card: εἰς (tratada como miss, caixa 1). **Nota 2 em grego:** nada promove; o quarto mais
+recente caiu para a caixa 1 (ἐστί(ν), τὸ δῶρον, πρός, ἐν τῷ ἀγρῷ: os quatro promovidos por último, empate
+em 08/11 desfeito pela caixa mais baixa — leitura minha da regra, ver `state/lexicon.md`); semana 10 sem
+palavra nova e com as mesmas estruturas.
+
+**15/11 · portão da fase 1 cumprido, avanço retido.** 13, 10 e 10 das 13 frases em três sábados
+seguidos cumprem o portão do currículo; a regra de nota 1–2 (`TASK_PROMPTS.md`, passo 2) proíbe avançar
+de fase na mesma semana. A fase 2 não foi aberta; decisão de Mathews, em conversa.
 
 **08/11 · check-in da semana 8 consumido; semana 9 composta.** Notas GR 3 · IT 3 · EN 3; sete dias
 lidos; **10 das 13 frases** no teste de sábado 07/11 (passa: 2 de 3 medições). Palavras que não
