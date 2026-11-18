@@ -12,15 +12,15 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-11-17
-DAY: 72
+UPDATED: 2026-11-18
+DAY: 73
 STREAK: 0
 LAST_REPORT: 2026-11-15 GR2 IT3 EN3
-probed: ὁ ἄρτος, ὁ βωμός, ἐσθίει, παίζει
+probed: ὁ βωμός, τὸ δῶρον, πρός (+ac), ἐν Ἀχαρναῖς
 
 [GREEK]
 phase: 1
-lesson: 22 — semana 10, dia 2/7 (texto novo, cresce 3 → 13 frases)
+lesson: 22 — semana 10, dia 3/7 (texto novo, cresce 3 → 13 frases)
 apoio: por FORMA desde 04/10 — forma nova de palavra conhecida volta a ter glosa
   ([GR-FORMA] no léxico); exp do lema governa só o teste. Nota de forma, curiosidade
   e "Quem é quem" no cartão (RULES 14)
