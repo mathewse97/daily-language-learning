@@ -12,15 +12,15 @@
 Campos e contrato em `STATE_SCHEMA.md`.
 
 ```
-UPDATED: 2026-11-20
-DAY: 75
+UPDATED: 2026-11-21
+DAY: 76
 STREAK: 0
 LAST_REPORT: 2026-11-15 GR2 IT3 EN3
-probed: ἐν Ἀχαρναῖς, λέγει, ἀγαθός, -ή, -όν
+probed: —
 
 [GREEK]
 phase: 1
-lesson: 22 — semana 10, dia 5/7 (texto novo, cresce 3 → 13 frases)
+lesson: 22 — semana 10, dia 6/7 (texto novo, cresce 3 → 13 frases)
 apoio: por FORMA desde 04/10 — forma nova de palavra conhecida volta a ter glosa
   ([GR-FORMA] no léxico); exp do lema governa só o teste. Nota de forma, curiosidade
   e "Quem é quem" no cartão (RULES 14)
