@@ -186,7 +186,7 @@ def main() -> int:
     def dialogo(toks, vozes):
         """Divide os tokens em um parágrafo por fala (rótulo `Nome:` abre a fala). O rótulo aparece e não é
         falado; cada falante, na ordem em que surge, ganha uma voz de `vozes`. Sem rótulo: uma voz só."""
-        if not any(ROTULO.match(tk) for tk, _ in toks):
+        if not toks or not ROTULO.match(toks[0][0]):      # só é diálogo se o texto abre com um rótulo
             return [toks], vozes[0]
         pars, vz, falantes = [], [], []
         for tk, sp in toks:
