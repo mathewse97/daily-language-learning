@@ -15,56 +15,55 @@ Campos e contrato em `STATE_SCHEMA.md`.
 UPDATED: 2026-11-22
 DAY: 77
 STREAK: 0
-LAST_REPORT: 2026-11-15 GR2 IT3 EN3
+LAST_REPORT: 2026-11-22 GR4 IT4 EN4
 probed: —
 
 [GREEK]
-phase: 1
-lesson: 22 — semana 10, dia 7/7 (texto novo, cresce 3 → 13 frases)
+phase: 2
+lesson: 23 — semana 11, dia 1/7 (texto novo, cresce 3 → 13 frases)
 apoio: por FORMA desde 04/10 — forma nova de palavra conhecida volta a ter glosa
   ([GR-FORMA] no léxico); exp do lema governa só o teste. Nota de forma, curiosidade
   e "Quem é quem" no cartão (RULES 14)
 setting: Ἀχαρναί, primavera de 432 a.C.
-words: 81 — nenhuma palavra nova na semana 10 (nota 2); ὁ σῖτος e Δημήτηρ entraram na 9
+words: 83 — 2 palavras novas na semana 11 (ὁ ὄνος e ἡ ὁδός); nenhum nome novo
 unlocked: presente ativo 3sg/3pl (-ουσι(ν) explicado na semana 5 e retomado na 6);
   artigo; 1ª/2ª decl. nom./ac.; plural nom. masc. (οἱ θεοί) e neutro em -α (τὰ ὀστᾶ),
   explicados em nota de forma; ἐν+dat. como bloco; πατήρ/μήτηρ só nom., como bloco;
-  εἰς+ac; masc. em -ης da 1ª decl. (ὁ δεσπότης → τὸν δεσπότην); τίς como sujeito
+  εἰς+ac; masc. em -ης (ὁ δεσπότης); τίς como sujeito; fase 2: genitivo sing. de posse (τοῦ Σίμου,
+  τοῦ Κλεισθένους); ἡ ὁδός feminina em -ος, com adjetivo feminino (μακρά, καλή)
 cast: Κλεισθένης, Μέλιττα, Νικίας, Χλόη, Δᾶος, Σῖμος, Ἄργος; reais ou míticos, só em cena
   pontual: Δημήτηρ (semana 9), Ὀδυσσεύς (8), Σωκράτης (7), Προμηθεύς e Ζεύς (6)
-recent: Prometeu (semana 6); Simo e Sócrates (7); Odisseu e o cão Argos (8); o grão e a deusa Deméter (9); a colheita e a oferenda no altar (10)
-weak: `missed` em 15/11 (caixa 1): ἔχει, ὁ ἄρτος, ὁ καρπός, ἐσθίει, πονεῖ, παίζει, χαίρει, εἰς
-  (esta marcada no card); ὁ βωμός segue `missed`. Voltam no texto e no Ἀνάμνησις
+recent: Odisseu e Argos (semana 8); o grão e Deméter (9); a colheita e a oferenda (10); Simo e o
+  burro a caminho da ágora (11)
+weak: εἰς e παίζει, `missed` em 22/11 (caixa 1); voltam no texto e no Ἀνάμνησις
 gate: 3 sábados seguidos com ≥10 das 13 frases entendidas, com o apoio escondido (coluna
-  `frases` do checkin_log). 3 de 3 cumpridos: 13/13 (31/10), 10/13 (07/11) e 10/13 (14/11);
-  o avanço de fase fica retido pela nota 2 de grego
-next: semana 10 desacelera (nota 2): sem palavra nova, mesmas estruturas; fase 2 quando a
-  nota voltar a 3 ou mais, ou se Mathews decidir antes
+  `frases` do checkin_log). Fase 1 cumprida: 13, 10, 10 e 12 das 13; fase 2 aberta em 22/11
+  (nota 4). Portão da fase 2: particípio presente sem glosa em 2 textos seguidos
+next: semana 12: genitivo de novo (τῆς, τοῦ) e mais voz da aldeia; ὅτι só depois; nota 4, ritmo normal
 
 [ITALIAN]
 phase: 1
-lesson: 14 — semana 10: Pompei (seg) / Duomo di Milano (qua) / Siracusa (sex)
+lesson: 15 — semana 11: Ravenna (seg) / bar, diálogo (qua) / Arena di Verona (sex)
 unlocked: artigos; preposições articuladas (nel/dal/sul/del/al); essere e avere completos;
   presente regular (-are, -ere, -ire); andare, venire, fare, potere, volere, dovere; in/a/di + artigo
   (nel, nella, nei, alla, della, al); di + artigo no plural (dei, delle); il ponte masculino;
-  nessuno antes do verbo sem non; gli/i; da + cidade sem artigo
-recent: Pantheon, Paestum e Rialto (semana 9); Pompei, Duomo e Siracusa (10)
-weak: palavras que não vieram em 14/11: la folla, devono, può — de volta nos textos e no Ripasso
-  da semana 10; textos de ~90 palavras
+  nessuno sem non; gli/i; da + cidade; chi = quem; clítico mi; ogni + singular
+recent: Pompei, Duomo e Siracusa (semana 10); Ravenna, bar e Verona (11)
+weak: la folla, devono, può: terceira semana sem lembrar; agora também num diálogo (bar)
 gate: artigos + preposições articuladas sem erro em 2 produções
 next: fechar a fase 1 com o gate (artigos + preposições articuladas sem erro em 2
   produções); passato prossimo é fase 2
 
 [ENGLISH]
 register_last: public writing
-lesson: 15 — semana 10, ritmo normal (nota 3): por que a mensagem de erro merece cuidado
-  (ter) / comentário sobre o texto de um erro (qui) / erros e acessibilidade (sáb)
+lesson: 16 — semana 11, ritmo normal (nota 4): diálogo numa loja de outdoor (ter) / check-in
+  num camping em Montana (qui) / alt text e acessibilidade (sáb)
 topics_done: hierarquia visual; API de componente; acessibilidade; escaneabilidade;
   handoff; estudo de caso; pricing e scoping; design tokens; teste de usabilidade;
   rationale ao cliente; crítica assíncrona; problema no estudo de caso; rodada de revisões;
   pedir feedback; bio de portfólio; dizer não ao cliente; propor componente; resultados;
-  layout fluido; movimento e animação; mensagens de erro
-collocations: 115
+  layout fluido; movimento; mensagens de erro; vida nos EUA (loja de outdoor, camping)
+collocations: 130
 weak: —
 next: novo tópico; seguir rotação client/async/public; 5 colocações por texto
 
@@ -74,6 +73,22 @@ agendada anterior e não se aplicam mais; ver "Pendências registradas")
 ```
 
 ## Pendências registradas
+
+**22/11 · check-in da semana 10 consumido; semana 11 composta, com a fase 2 do grego.** Notas GR 4 ·
+IT 4 · EN 4; seis dias lidos; **12 das 13 frases**. Não vieram: εἰς, παίζει, la folla, può, devono;
+nenhuma marcada no card. Nota 4: rodada normal, sem o freio da nota 2.
+
+**22/11 · fase 2 do grego aberta.** O portão da fase 1 (3 sábados seguidos com ≥10 das 13 frases) foi
+cumprido em 14/11 (13, 10, 10) e confirmado em 21/11 (12). O freio da nota 2 saiu com a nota 4. A semana 11 é a
+primeira da fase 2: genitivo singular de posse, 2 palavras novas, texto de 84 palavras (faixa da fase: 70–110).
+
+**22/11 · inglês e italiano, decisão de Mathews em conversa:** (1) textos de inglês e italiano podem ser
+diálogos, "de vez em quando, quando fizer sentido"; (2) o inglês passa a incluir vida cotidiana e
+hobbies nos EUA (loja de outdoor, camping, caça e pesca dentro da lei, estrada, restaurante, farmácia,
+banco), em 2 de cada 3 semanas, com design em 1; (3) cada cartão de inglês pode ter a nota "How it
+works" (em inglês, com fonte consultada). Fatos reais só com fonte consultada (invariante 23); nada de
+política de loja, preço ou regra de licença inventados. Mudanças de renderizador e de `tools/audio.py`
+(duas vozes, rótulo de falante, campo `curio` no inglês) estão em commit próprio.
 
 **15/11 · check-in da semana 9 consumido; semana 10 composta.** Notas GR 2 · IT 3 · EN 3; sete dias
 lidos; **10 das 13 frases** no teste de sábado 14/11. Palavras que não vieram: ἔχει, ὁ ἄρτος, ὁ καρπός,

@@ -20,6 +20,7 @@ FORMAT: data | gr | it | en | misses | frases
 2026-11-01 | 4 | 3 | 4 | — | 13
 2026-11-08 | 3 | 3 | 3 | ὁ ἄρτος, ὁ βωμός, ἔχει, può, la pietra, il poeta, il concorso, vincere, la folla, molle, devono | 10
 2026-11-15 | 2 | 3 | 3 | ἔχει, ὁ ἄρτος, ὁ καρπός, ἐσθίει, πονεῖ, παίζει, χαίρει, la folla, devono, può; εἰς (marcada no card) | 10
+2026-11-22 | 4 | 4 | 4 | εἰς (+ac), la folla, παίζει, può, devono | 12
 ```
 
 A linha de 04/10 tem `—` em misses porque eles não foram anotados, não porque não houve:
@@ -36,6 +37,10 @@ para voltar nos textos e no Ripasso. Nenhuma foi marcada como esquecida no card.
 A linha de 15/11 é da semana 9 (09/11–15/11), com os sete dias lidos e 10 das 13 frases no sábado 14/11:
 a terceira medição do portão da fase 1 (13, 10 e 10), que passa. Nota de grego 2: a regra é desacelerar e
 não avançar de fase. εἰς foi marcada como esquecida no card, sem estar no Ἀνάμνησις; foi tratada como miss.
+
+A linha de 22/11 é da semana 10 (16/11–22/11), com seis dias lidos (seg a sáb) e 12 das 13 frases no sábado
+21/11. Nenhuma palavra foi marcada como esquecida no card. Notas 4·4·4: progressão normal, e o avanço de fase
+de grego deixa de estar retido.
 
 Semanas sem linha são semanas sem check-in. O planejador aplica a regra conservadora
 nesses casos e nunca preenche o que não recebeu.

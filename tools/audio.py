@@ -11,7 +11,8 @@ O que gera, em docs/audio/ (os arquivos de semanas antigas são apagados):
     que tem texto (formas em WEEK_PACKET_SCHEMA.md).
 
 Vozes: grego — a voz `em_alex` lendo fonemas do ático restaurado; italiano — `im_nicola`;
-inglês — `am_michael`. O grego é a reconstrução acadêmica aproximada que o espeak-ng
+inglês — `am_michael`. Em diálogo (cada fala abre com `Nome:`), o 1º falante usa essa voz e o 2º,
+`if_sara` (italiano) ou `af_heart` (inglês); o rótulo aparece na página e não é falado. O grego é a reconstrução acadêmica aproximada que o espeak-ng
 oferece (voz `grc`) com as correções do curso (aspiradas, ζ = zd, ditongos longos com iota):
 voz sintética de uma língua que ninguém ouviu, não áudio atestado. A página diz isso.
 
@@ -127,11 +128,13 @@ def main() -> int:
         return out
 
     def faixa(model, voz, vel, lang, paragrafos, nome):
+        """`voz` é uma voz só ou uma lista com uma voz por parágrafo (diálogos)."""
         amostras, tempos, t = [], [], 0.0
-        for par in paragrafos:
+        for pi, par in enumerate(paragrafos):
             ps = partes(par)
+            vz = voz[pi] if isinstance(voz, list) else voz
             for si, s in enumerate(ps):
-                x, ini = frase(model, voz, vel, lang, s)
+                x, ini = frase(model, vz, vel, lang, s)
                 amostras.append(x)
                 tempos += [round(t + v, 2) for v in ini]
                 t += len(x) / SR
@@ -178,17 +181,47 @@ def main() -> int:
             out.append((tk, re.sub(r"[()«»“”\"]", "", tk) or None))
         return out
 
+    ROTULO = re.compile(r"^[A-ZÀ-Ý][\w'À-ÿ]*:$")
+
+    def dialogo(toks, vozes):
+        """Divide os tokens em um parágrafo por fala (rótulo `Nome:` abre a fala). O rótulo aparece e não é
+        falado; cada falante, na ordem em que surge, ganha uma voz de `vozes`. Sem rótulo: uma voz só."""
+        if not toks or not ROTULO.match(toks[0][0]):      # só é diálogo se o texto abre com um rótulo
+            return [toks], vozes[0]
+        pars, vz, falantes = [], [], []
+        for tk, sp in toks:
+            if ROTULO.match(tk):
+                if tk not in falantes:
+                    falantes.append(tk)
+                pars.append([(tk, None)]); vz.append(vozes[(falantes.index(tk)) % len(vozes)])
+            else:
+                pars[-1].append((tk, sp))
+        return pars, vz
+
     for d in week["days"]:
         for c in d["cards"]:
             if c["lang"] == "it" and c.get("text") and d["d"] != 0:
                 arq = f"{pre}it{d['d']}.mp3"
-                tempos = faixa(leve, "im_nicola", 0.95, "it", [tok_it(c["text"])], arq)
+                pars, vz = dialogo(tok_it(c["text"]), ["im_nicola", "if_sara"])
+                tempos = faixa(leve, vz, 0.95, "it", pars, arq)
                 c["audio"] = {"file": arq, "t": tempos}
                 print("italiano", d["d"], len(tempos), "palavras", flush=True)
             if c["lang"] == "en" and c.get("body") and c.get("title"):
                 arq = f"{pre}en{d['d']}.mp3"
-                pars = [[(tk, re.sub(r"[“”\"]", "", tk) or None) for tk in p.split()] for p in c["body"]]
-                tempos = faixa(leve, "am_michael", 0.97, "en-us", pars, arq)
+                toks = [(tk, re.sub(r"[“”\"]", "", tk) or None) for p in c["body"] for tk in p.split()]
+                if any(p.split() and ROTULO.match(p.split()[0]) for p in c["body"]):
+                    pars, vz = [], []
+                    falantes = []
+                    for p in c["body"]:
+                        tk0 = p.split()[0]
+                        if tk0 not in falantes:
+                            falantes.append(tk0)
+                        pars.append([(tk, None if i == 0 else re.sub(r"[“”\"]", "", tk) or None) for i, tk in enumerate(p.split())])
+                        vz.append(["am_michael", "af_heart"][falantes.index(tk0) % 2])
+                else:
+                    pars = [[(tk, re.sub(r"[“”\"]", "", tk) or None) for tk in p.split()] for p in c["body"]]
+                    vz = "am_michael"
+                tempos = faixa(leve, vz, 0.97, "en-us", pars, arq)
                 c["audio"] = {"file": arq, "t": tempos}
                 print("inglês", d["d"], len(tempos), "palavras", flush=True)
 

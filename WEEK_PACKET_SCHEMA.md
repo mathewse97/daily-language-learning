@@ -81,7 +81,13 @@ o domingo usa só `min` e `text`.
 ### Cartão de inglês — `lang: "en"`
 
 `tag` (o registro), `min`, `title`, `body` (um item por parágrafo), `inContext` (pares),
-`check`, `answers`, `expression`.
+`check`, `answers`, `expression`, `curio` (opcional, **em inglês**, "How it works": como a coisa
+funciona nos EUA, com fonte consultada entre parênteses, como a curiosidade do italiano).
+
+**Diálogo (italiano e inglês, desde 22/11/2026).** Um texto pode ser diálogo: cada fala abre com um
+rótulo `Nome:` (no inglês, um item de `body` por fala; no italiano, tudo em `text`, e a página quebra
+a linha em cada rótulo). O rótulo recebe glosa em `tap` como qualquer palavra, mas não é falado: o
+áudio usa duas vozes, uma por falante.
 
 ### Cartão neutro — `lang: "tag"`
 

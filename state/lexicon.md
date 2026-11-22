@@ -9,9 +9,9 @@
 > O significado dos campos está em `LEXICON_SCHEMA.md`. Sem ele estas linhas não
 > são interpretáveis.
 
-**Atualizado em:** 2026-11-01 · **Conteúdo:** semente + semanas 1–8 · 106 termos gregos ·
-22 formas em `[GR-FORMA]` · 13 itens de falsos amigos e interferência italiana · 70 colocações
-inglesas entregues e 15 da semana 8 a entregar · 12 itens testados nesta rodada (ver nota abaixo)
+**Atualizado em:** 2026-11-22 · **Conteúdo:** semente + semanas 1–11 · 110 termos gregos ·
+25 formas em `[GR-FORMA]` · 19 itens de falsos amigos e interferência italiana · 115 colocações
+inglesas entregues e 15 da semana 11 a entregar · 11 itens testados nesta rodada (ver nota abaixo)
 
 ```
 FORMAT: term | gloss | phase | status | box | due | exp
@@ -27,22 +27,22 @@ EXPOS:  exp = quantas vezes a palavra apareceu num texto publicado.
         Forma de citação: exp do lema menos a soma das suas linhas em [GR-FORMA].
 
 [GR] semente + semana 1 — 60 itens, todos seen/box 1
-ἐστί(ν) / εἰσί(ν) | ser | 1 | recalled | 1 | 2026-11-16 | 117
-λέγει | dizer, contar | 1 | recalled | 4 | 2026-11-22 | 41
+ἐστί(ν) / εἰσί(ν) | ser | 1 | recalled | 1 | 2026-11-16 | 133
+λέγει | dizer, contar | 1 | recalled | 5 | 2027-01-21 | 41
 ἀκούει | ouvir | 1 | seen | 1 | — | 7
-ἔχει | ter | 1 | missed | 1 | 2026-11-16 | 52
-ὁρᾷ | ver | 1 | recalled | 4 | 2026-11-08 | 56
-φέρει | levar | 1 | recalled | 4 | 2026-11-08 | 69
+ἔχει | ter | 1 | recalled | 2 | 2026-11-25 | 59
+ὁρᾷ | ver | 1 | recalled | 4 | 2026-11-08 | 64
+φέρει | levar | 1 | recalled | 4 | 2026-11-08 | 77
 οἰκεῖ | morar | 1 | seen | 1 | — | 14
 βαδίζει | caminhar | 1 | seen | 1 | — | 20
 διώκει | perseguir | 1 | seen | 1 | — | 0
 ἀποκτείνει | matar | 1 | seen | 1 | — | 0
-χαίρει | alegrar-se | 1 | missed | 1 | 2026-11-16 | 36
+χαίρει | alegrar-se | 1 | missed | 1 | 2026-11-16 | 43
 καθεύδει | dormir | 1 | seen | 1 | — | 0
 τελευτᾷ | terminar | 1 | seen | 1 | — | 6
 φιλεῖ | amar | 1 | seen | 1 | — | 12
 θαυμάζει | admirar | 1 | seen | 1 | — | 5
-πονεῖ | trabalhar | 1 | missed | 1 | 2026-11-16 | 21
+πονεῖ | trabalhar | 1 | missed | 1 | 2026-11-16 | 28
 καλεῖ | chamar | 1 | seen | 1 | — | 0
 μένει | permanecer | 1 | seen | 1 | — | 2
 ὁ θεός | deus | 1 | seen | 1 | — | 4
@@ -53,7 +53,7 @@ EXPOS:  exp = quantas vezes a palavra apareceu num texto publicado.
 ὁ ναός | templo | 1 | seen | 1 | — | 0
 ὁ πόλεμος | guerra | 1 | seen | 1 | — | 0
 ὁ οἶκος | casa | 1 | seen | 1 | — | 0
-ὁ ἀγρός | campo | 1 | recalled | 4 | 2026-11-08 | 20
+ὁ ἀγρός | campo | 1 | recalled | 4 | 2026-11-08 | 26
 ὁ ἥλιος | sol | 1 | seen | 1 | — | 0
 ὁ δοῦλος | escravo | 1 | seen | 1 | — | 5
 ὁ υἱός | filho | 1 | seen | 1 | — | 6
@@ -62,43 +62,43 @@ EXPOS:  exp = quantas vezes a palavra apareceu num texto publicado.
 τὸ ζῷον | animal | 1 | seen | 1 | — | 9
 τὸ ἔργον | obra | 1 | seen | 1 | — | 0
 τὸ δένδρον | árvore | 1 | seen | 1 | — | 0
-ἡ θεά | deusa | 1 | seen | 1 | — | 9
+ἡ θεά | deusa | 1 | seen | 1 | — | 11
 ἡ ἀγορά | ágora | 1 | seen | 1 | — | 1
 ἡ μάχη | batalha | 1 | seen | 1 | — | 0
 ἡ χώρα | terra, região | 1 | seen | 1 | — | 0
-ἡ οἰκία | casa | 1 | seen | 1 | — | 24
+ἡ οἰκία | casa | 1 | seen | 1 | — | 29
 ἡ κόρη | moça | 1 | seen | 1 | — | 6
 ἡ ἡμέρα | dia | 1 | seen | 1 | — | 0
 ἡ γῆ | terra | 1 | seen | 1 | — | 0
-καλός, -ή, -όν | belo, bom | 1 | recalled | 3 | 2026-11-08 | 42
-ἀγαθός, -ή, -όν | bom | 1 | recalled | 5 | 2027-01-07 | 29
-μικρός, -ά, -όν | pequeno | 1 | recalled | 4 | 2026-11-08 | 14
+καλός, -ή, -όν | belo, bom | 1 | recalled | 3 | 2026-11-08 | 49
+ἀγαθός, -ή, -όν | bom | 1 | recalled | 5 | 2027-01-21 | 29
+μικρός, -ά, -όν | pequeno | 1 | recalled | 4 | 2026-11-08 | 20
 μακρός, -ά, -όν | longo | 1 | seen | 1 | — | 0
 ἰσχυρός, -ά, -όν | forte | 1 | seen | 1 | — | 0
 δεινός, -ή, -όν | terrível | 1 | seen | 1 | — | 0
 σοφός, -ή, -όν | sábio | 1 | seen | 1 | — | 0
-καί | e | 1 | recalled | 2 | 2026-09-30 | 65
+καί | e | 1 | recalled | 2 | 2026-09-30 | 74
 δέ | e, mas (pospositivo) | 1 | seen | 1 | — | 3
 γάρ | pois (pospositivo) | 1 | seen | 1 | — | 0
-ἀλλά | mas | 1 | seen | 1 | — | 13
+ἀλλά | mas | 1 | seen | 1 | — | 19
 οὐ / οὐκ / οὐχ / οὔ | não / não (resposta) | 1 | seen | 1 | — | 16
-εἰς (+ac) | para dentro de | 1 | missed | 1 | 2026-11-16 | 14
-πρός (+ac) | em direção a | 1 | recalled | 1 | 2026-11-16 | 26
+εἰς (+ac) | para dentro de | 1 | missed | 1 | 2026-11-23 | 19
+πρός (+ac) | em direção a | 1 | recalled | 2 | 2026-11-25 | 29
 νῦν | agora | 1 | seen | 1 | — | 0
 ἀεί | sempre | 1 | seen | 1 | — | 0
 ὦ | ó (vocativo) | 1 | seen | 1 | — | 0
 
 [GR] semana 2 — 5 itens novos, seen/box 1
-ὁ βωμός | altar | 1 | missed | 1 | 2026-11-09 | 25
-τὸ δῶρον | presente, oferenda | 1 | recalled | 1 | 2026-11-16 | 31
+ὁ βωμός | altar | 1 | recalled | 2 | 2026-11-25 | 28
+τὸ δῶρον | presente, oferenda | 1 | recalled | 2 | 2026-11-25 | 39
 ναί | sim | 1 | seen | 1 | — | 2
-ὁ καρπός | fruto, colheita | 1 | missed | 1 | 2026-11-16 | 42
-ὁ οἶνος | vinho | 1 | recalled | 4 | 2026-11-08 | 28
+ὁ καρπός | fruto, colheita | 1 | missed | 1 | 2026-11-16 | 54
+ὁ οἶνος | vinho | 1 | recalled | 4 | 2026-11-08 | 35
 
 [GR] semana 4 — 3 itens novos, seen/box 1
-παίζει | brincar | 1 | missed | 1 | 2026-11-16 | 15
-ὁ ἄρτος | pão | 1 | missed | 1 | 2026-11-16 | 53
-ἐσθίει | comer | 1 | missed | 1 | 2026-11-16 | 20
+παίζει | brincar | 1 | missed | 1 | 2026-11-23 | 19
+ὁ ἄρτος | pão | 1 | recalled | 2 | 2026-11-25 | 62
+ἐσθίει | comer | 1 | recalled | 2 | 2026-11-25 | 24
 
 [GR] semana 5 — 4 itens novos, seen/box 1
 ὁ πατήρ | pai — 3ª decl., só nom. até a fase 2 | 1 | seen | 1 | — | 10
@@ -122,16 +122,20 @@ EXPOS:  exp = quantas vezes a palavra apareceu num texto publicado.
 [GR] semana 9 — 1 item novo, seen/box 1
 ὁ σῖτος | grão, trigo (no texto: τὸν σῖτον e ὁ σῖτος) | 1 | seen | 1 | — | 24
 
+[GR] semana 11 — 2 itens novos, seen/box 1 (fase 2)
+ὁ ὄνος | burro (τὸν ὄνον, τοῦ ὄνου) | 2 | seen | 1 | — | 0
+ἡ ὁδός | estrada, caminho (feminino, 2ª decl.: τὴν ὁδόν) | 2 | seen | 1 | — | 0
+
 [GR-INTERROG] semeadas; uso a partir da semana 3
 τίς; | quem? | 1 | seen | 1 | — | 4
 τί; | o quê? | 1 | seen | 1 | — | 10
 ποῦ; | onde? | 1 | seen | 1 | — | 0
 
 [GR-BLOCO] memorizados inteiros, não analisados na fase 1
-ἐν τῷ ἀγρῷ | no campo | 1 | recalled | 1 | 2026-11-16 | 30
+ἐν τῷ ἀγρῷ | no campo | 1 | recalled | 1 | 2026-11-16 | 36
 ἐν τῇ οἰκίᾳ | em casa | 1 | seen | 1 | — | 3
 ἐν ταῖς Ἀθήναις | em Atenas | 1 | seen | 1 | — | 1
-ἐν Ἀχαρναῖς | em Acarnas | 1 | recalled | 3 | 2026-11-08 | 26
+ἐν Ἀχαρναῖς | em Acarnas | 1 | recalled | 4 | 2026-12-13 | 27
 ἐν τῇ Νεμέᾳ | na Nemeia | 1 | seen | 1 | — | 0
 ταῖς χερσίν | com as mãos | 1 | seen | 1 | — | 0
 ὁ λέων / τὸν λέοντα | o leão | 1 | seen | 1 | — | 0
@@ -144,13 +148,13 @@ EXPOS:  exp = quantas vezes a palavra apareceu num texto publicado.
 Νεμέα | a Nemeia, no norte do Peloponeso | 1 | seen | 1 | — | 0
 Ἀθῆναι | Atenas | 1 | seen | 1 | — | 1
 Ἀχαρναί | o demo, ao norte de Atenas | 1 | seen | 1 | — | 0
-Κλεισθένης | o pai — só nom./voc. até a fase 2 | 1 | seen | 1 | — | 46
-Μέλιττα | a mãe | 1 | seen | 1 | — | 91
-Νικίας | o filho | 1 | seen | 1 | — | 51
-Χλόη | a filha | 1 | seen | 1 | — | 48
+Κλεισθένης | o pai — só nom./voc. até a fase 2 | 1 | seen | 1 | — | 55
+Μέλιττα | a mãe | 1 | seen | 1 | — | 99
+Νικίας | o filho | 1 | seen | 1 | — | 63
+Χλόη | a filha | 1 | seen | 1 | — | 56
 Δᾶος | o escravo da casa | 1 | seen | 1 | — | 47
 Σῖμος | o vizinho mercador | 1 | seen | 1 | — | 43
-Ἄργος | o cão | 1 | seen | 1 | — | 72
+Ἄργος | o cão | 1 | seen | 1 | — | 76
 Προμηθεύς | Prometeu, titã — só nom./voc. até a fase 2 | 1 | seen | 1 | — | 13
 Σωκράτης | Sócrates, ateniense real, ~37 anos em 432 — só nom./voc. até a fase 2 | 1 | seen | 1 | — | 24
 Ὀδυσσεύς | Odisseu (Ulisses), herói da Odisseia — só nom./voc. até a fase 2 | 1 | seen | 1 | — | 7
@@ -158,16 +162,16 @@ EXPOS:  exp = quantas vezes a palavra apareceu num texto publicado.
 
 [GR-FORMA] forma | lema | exp — formas que não são a de citação (desde a semana 4)
 τὸν Ἄργον | Ἄργος | 23
-τὸν ἄρτον | ὁ ἄρτος | 43
+τὸν ἄρτον | ὁ ἄρτος | 49
 χαίρουσιν | χαίρει | 3
-τὸν οἶνον | ὁ οἶνος | 10
+τὸν οἶνον | ὁ οἶνος | 17
 καλή | καλός, -ή, -όν | 4
 ἔχουσιν | ἔχει | 9
 φιλοῦσιν | φιλεῖ | 4
 πονοῦσιν | πονεῖ | 3
-τὸν καρπόν | ὁ καρπός | 6
-τὴν οἰκίαν | ἡ οἰκία | 17
-τὸν βωμόν | ὁ βωμός | 17
+τὸν καρπόν | ὁ καρπός | 17
+τὴν οἰκίαν | ἡ οἰκία | 22
+τὸν βωμόν | ὁ βωμός | 20
 μικρά | μικρός, -ά, -όν | 2
 τέκνα | τὸ τέκνον | 9
 ἀκούουσιν | ἀκούει | 7
@@ -205,6 +209,9 @@ avere fame/sete/calor/frio (não "estar com") | — | 1 | seen | 1 | —
 il ponte é masculino (em português, "a ponte") | — | 1 | seen | 1 | —
 nessuno antes do verbo não leva non (nessuno può; non può nessuno) | — | 1 | seen | 1 | —
 da + nome de cidade sem artigo (da Corinto; em português, "de Corinto") | — | 1 | seen | 1 | —
+chi sem pessoa antes = "quem" (chi entra può vedere) | — | 2 | seen | 1 | —
+clítico mi antes do verbo (mi può fare un caffè) | — | 2 | seen | 1 | —
+ogni sempre com singular (ogni estate) | — | 2 | seen | 1 | —
 
 [EN-COLLOC] frase | registro | entrega
 eye-tracking studies | client-facing | 2026-09-15
@@ -322,6 +329,21 @@ suggest a correction | public writing | 2026-11-21
 color alone | public writing | 2026-11-21
 passes both | public writing | 2026-11-21
 before and after | public writing | 2026-11-21
+sure thing | everyday | 2026-11-24
+car camping | everyday | 2026-11-24
+go ultralight | everyday | 2026-11-24
+doesn't include | everyday | 2026-11-24
+at the register | everyday | 2026-11-24
+under my name | everyday | 2026-11-26
+bear country | everyday | 2026-11-26
+anything with a scent | everyday | 2026-11-26
+bear box | everyday | 2026-11-26
+buy it where you burn it | everyday | 2026-11-26
+text alternative | public writing | 2026-11-28
+screen reader | public writing | 2026-11-28
+a decorative image | public writing | 2026-11-28
+an empty alt | public writing | 2026-11-28
+fails the criterion | public writing | 2026-11-28
 ```
 
 As duas ambiguidades de formato que este arquivo carregava desde 14/09 foram resolvidas
@@ -376,3 +398,15 @@ lidos** (Mathews deu o check-in da semana inteira; ele não disse quais dias ler
 `[GR-FORMA]` τὸν Σῖμον e τὸ ἀγαθόν. Novos na semana 8: ὁ δεσπότης, παλαιός e o nome Ὀδυσσεύς.
 Vencidos até o sábado 07/11 e tecidos no texto da semana 8: ἐστί(ν), καί, ἐν τῷ ἀγρῷ, πονεῖ,
 πρός, ὁ βωμός, τὸ δῶρον, παίζει, ὁ ἄρτος.
+
+**22/11 · rodada da semana 10.** Notas GR 4 · IT 4 · EN 4; seis dias lidos (seg a sáb; o domingo é só
+revisão) e **12 das 13 frases** no sábado 21/11. Misses: εἰς (+ac) e παίζει; também não vieram, em
+italiano, la folla, può e devono (sem caixa). Testados na semana, lidos de `state/week.json`: ὁ ἄρτος,
+ὁ βωμός, ἔχει, εἰς, ἐσθίει, παίζει, τὸ δῶρον, πρός, ἐν Ἀχαρναῖς, λέγει, ἀγαθός. Sem nota 1–2, a rodada
+é normal: os `missed` não repetidos (ὁ ἄρτος, ὁ βωμός, ἔχει, ἐσθίει) e os dois de caixa 1 (τὸ δῶρον,
+πρός) subiram uma caixa; ἐν Ἀχαρναῖς foi à caixa 4, λέγει à 5 e ἀγαθός ficou na 5; εἰς e παίζει
+seguem `missed`, caixa 1. `due` contado de 2026-11-22. `exp` somado da semana 10 por lema e por forma,
+**para os seis dias lidos** (seg a sáb; o domingo não conta): por isso a frase 1 vale 6 e a 13 vale 1.
+Novos na semana 11 (fase 2): ὁ ὄνος e ἡ ὁδός. Vencidos até o sábado 28/11 e tecidos no texto: εἰς,
+παίζει, ὁ ἄρτος, ὁ βωμός, ἔχει, ἐσθίει, τὸ δῶρον, πρός, ἐστί(ν), ἐν τῷ ἀγρῷ, ὁ καρπός, πονεῖ, χαίρει,
+ὁρᾷ, ὁ ἀγρός, καλός, μικρός, φέρει, ὁ οἶνος e καί.

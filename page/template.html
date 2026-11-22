@@ -344,6 +344,7 @@ header.acc{cursor:pointer;align-items:center}
 .pl-row .main{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink);min-width:48px}
 body.com-player{padding-bottom:120px}
 .tk{cursor:pointer;border-radius:4px}
+.tk.spk{font-weight:600}
 .tpanel[hidden]{display:none}
 .viz{width:100%}
 .sobre{margin-top:6px;font-size:12.5px}
@@ -921,6 +922,7 @@ __WEEK_JSON__
     if (has(c.check)) h.push('<div><p class="sect">Check</p>' + list("ol", c.check) + '</div>');
     if (has(c.answers)) h.push(details("Conferir", '<div class="ans">' + answers(c.answers) + '</div>'));
     if (has(c.expression)) h.push('<p class="small">' + rich(c.expression) + '</p>');
+    if (has(c.curio)) h.push('<p class="curio"><b>How it works.</b> ' + rich(c.curio) + '</p>');
     return h.join("");
   }
 
@@ -1278,11 +1280,11 @@ __WEEK_JSON__
         var dia = box.closest("section.day").dataset.d, T = (D[tipo] || {})[dia];
         if (!T) return;
         if (tipo === "it") {
-          box.innerHTML = T.tok.map(function (tk, i) { return '<span class="tk" data-k="' + i + '">' + esc(tk) + '</span>'; }).join(" ");
+          box.innerHTML = T.tok.map(function (tk, i) { var lb = /^[A-ZÀ-Ý][\p{L}']*:$/u.test(tk); return (lb && i ? "<br>" : "") + '<span class="tk' + (lb ? " spk" : "") + '" data-k="' + i + '">' + esc(tk) + '</span>'; }).join(" ");
         } else {
           var ps = box.querySelectorAll("p"), k = 0;
           T.paras.forEach(function (par, pi) {
-            ps[pi].innerHTML = par.map(function (tk) { return '<span class="tk" data-k="' + (k++) + '">' + esc(tk) + '</span>'; }).join(" ");
+            ps[pi].innerHTML = par.map(function (tk, ti) { var lb = ti === 0 && /^[A-ZÀ-Ý][\p{L}']*:$/u.test(tk); return '<span class="tk' + (lb ? " spk" : "") + '" data-k="' + (k++) + '">' + esc(tk) + '</span>'; }).join(" ");
           });
         }
         var spans = [].slice.call(box.querySelectorAll(".tk"));
