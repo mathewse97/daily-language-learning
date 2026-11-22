@@ -1,4 +1,4 @@
-# ENGLISH_COURSE — professional English for design work
+# ENGLISH_COURSE — professional and everyday English
 
 > Metalanguage for this track is English (invariant 6). The course document itself stays
 > in English for the same reason.
@@ -32,6 +32,30 @@ No phases — a rotation, weighted toward client work.
 Rotate so the *same* topic recurs across registers over time. Explaining type hierarchy
 to a client, to a developer, and in a case study is the exercise that makes the
 vocabulary transferable rather than inert.
+
+## Everyday English and the US (from 2026-11-22)
+
+Decided with Mathews: besides design, the track teaches the English of daily life and of his
+interests, and how things work in the US (he wants to travel and to understand the country).
+
+- **Share:** about two weeks in three are *everyday* (shopping, camping, travel, food, health,
+  banking, phone and customer service, small talk, hunting and fishing within the law); one in
+  three stays on design. The three days of a week may mix both.
+- **Settings he likes:** an outdoor store (Bass Pro style), a campground, a road trip through
+  Montana, Wyoming or Tennessee, a diner or a BBQ place, a hunting or fishing license counter, a
+  gas station, a motel. Keep it natural: the topic comes up because the situation calls for it.
+- **Dialogue, now and then:** some texts are dialogues (8–12 short turns, two people, each turn
+  opens with `Name:`). Use real spoken English: fillers and reactions ("Sure thing", "No
+  worries", "Hang on a sec", "Got it"), contractions, interruptions. Mark regional speech (the South,
+  the Mountain West) as regional. The page plays two voices.
+- **Register tags** for these texts are `everyday · shopping`, `everyday · travel`, and so on.
+- **How it works:** a short `curio` note in English ("How it works"), only when the text states a
+  real fact about the US (sales tax at checkout, bear rules, license rules, tipping). The source
+  is one the planner consulted this session (invariant 23). Rules differ by state and by place: say so.
+- **Never invent** a store policy, a price that is presented as real, a law, or a license rule. The
+  characters and their talk are invented; the places, rules and customs are real and checked.
+- **Hunting and fishing:** lawful and safety-oriented topics (licenses, seasons, hunter education,
+  game wardens, bear and gun safety). State rules come from the state agency's own pages.
 
 ## Topic pool
 

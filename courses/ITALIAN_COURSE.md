@@ -124,6 +124,17 @@ lenda e o que a desmente.
   generosa para tudo que não for transparente, e nenhuma estrutura além da fase — nem no
   modelo do gabarito.
 
+## Diálogos (desde 22/11/2026)
+
+Decidido com Mathews: de vez em quando, e só quando fizer sentido, o texto do dia é um diálogo
+curto (6 a 10 falas, duas pessoas, cada fala abre com `Nome:`), em cenas de cotidiano — o bar,
+o mercado, a pensão, a estação. A pesquisa sobre diálogos de livro mostra que eles saem mais
+arrumados do que a conversa real; por isso a fala deve ter reação, hesitação leve e fórmulas
+de cortesia verdadeiras (`scusi`, `va bene`, `grazie mille`). Os costumes reais (pagar na `cassa`
+e levar o `scontrino` ao balcão) vêm com fonte consultada na curiosidade e com a ressalva de que
+variam de lugar para lugar. A gramática continua a da fase: nada de passato prossimo antes da
+fase 2 do italiano. A página toca duas vozes.
+
 ## Reservatório temático
 
 Monumentos e o que aconteceu neles (Coliseu, Torre de Pisa, aquedutos, Fontana di

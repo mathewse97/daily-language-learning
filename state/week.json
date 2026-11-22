@@ -1,29 +1,29 @@
 {
   "schema": "acharnae-week/1",
-  "week": 10,
-  "phase": 1,
-  "range": "2026-11-16/2026-11-22",
-  "composed": "2026-11-15, em conversa",
+  "week": 11,
+  "phase": 2,
+  "range": "2026-11-23/2026-11-29",
+  "composed": "2026-11-22, em conversa",
   "header": {
-    "eyebrow": "Semana 10 · A colheita e a oferenda",
+    "eyebrow": "Semana 11 · A estrada para a ágora",
     "title": "Morning Packet",
-    "sub": "Um texto novo, com as mesmas estruturas da semana passada: a colheita no campo, o pão e o vinho em casa e a oferenda que Melita leva ao altar. Segunda tem três frases; cada dia repete tudo o que veio antes e acrescenta duas. Domingo relê as treze sem acrescentar nada."
+    "sub": "Começa a fase 2: Simo leva o burro e o grão de Clístenes pela estrada até a ágora, e o texto aprende a dizer “de quem é” (o genitivo). Segunda tem três frases; cada dia repete tudo o que veio antes e acrescenta duas. Domingo relê as treze sem acrescentar nada."
   },
   "stats": [
     {
       "dt": "Semana",
-      "dd": "10",
+      "dd": "11",
       "small": "texto novo, 3 → 13 frases"
     },
     {
       "dt": "Fase",
-      "dd": "1",
-      "small": "a casa e os deuses"
+      "dd": "2",
+      "small": "a aldeia e a cidade"
     },
     {
       "dt": "Léxico",
-      "dd": "81",
-      "small": "nenhuma palavra nova"
+      "dd": "83",
+      "small": "2 palavras novas"
     },
     {
       "dt": "Apoio",
@@ -42,39 +42,7 @@
         ],
         [
           null,
-          "Κλεισθένης",
-          null
-        ],
-        [
-          null,
-          "ἐν",
-          null
-        ],
-        [
-          null,
-          "τῷ",
-          null
-        ],
-        [
-          null,
-          "ἀγρῷ",
-          null
-        ],
-        [
-          null,
-          "πονεῖ.",
-          null
-        ]
-      ],
-      [
-        [
-          "o",
-          "Ὁ",
-          "ho"
-        ],
-        [
-          null,
-          "Νικίας",
+          "Σῖμος",
           null
         ],
         [
@@ -83,13 +51,13 @@
           "tòn"
         ],
         [
-          null,
-          "καρπὸν",
-          null
+          "burro",
+          "ὄνον",
+          "ónon"
         ],
         [
           null,
-          "ὁρᾷ.",
+          "ἔχει.",
           null
         ]
       ],
@@ -100,28 +68,23 @@
           "ho"
         ],
         [
-          null,
-          "ἀγρὸς",
-          null
+          "burro",
+          "ὄνος",
+          "ónos"
+        ],
+        [
+          "do, de",
+          "τοῦ",
+          "toû"
+        ],
+        [
+          "de Simo",
+          "Σίμου",
+          "Símou"
         ],
         [
           null,
           "μικρός",
-          null
-        ],
-        [
-          null,
-          "ἐστιν,",
-          null
-        ],
-        [
-          null,
-          "ἀλλὰ",
-          null
-        ],
-        [
-          null,
-          "καλός",
           null
         ],
         [
@@ -137,9 +100,9 @@
           "ho"
         ],
         [
-          null,
-          "Νικίας",
-          null
+          "burro",
+          "ὄνος",
+          "ónos"
         ],
         [
           "o",
@@ -148,118 +111,22 @@
         ],
         [
           null,
-          "καρπὸν",
+          "σῖτον",
           null
         ],
         [
-          null,
-          "εἰς",
-          null
+          "do, de",
+          "τοῦ",
+          "toû"
         ],
         [
-          "a",
-          "τὴν",
-          "tèn"
-        ],
-        [
-          null,
-          "οἰκίαν",
-          null
+          "de Clístenes",
+          "Κλεισθένους",
+          "Kleisthénous"
         ],
         [
           null,
           "φέρει.",
-          null
-        ]
-      ],
-      [
-        [
-          "a",
-          "Ἡ",
-          "hē"
-        ],
-        [
-          null,
-          "Μέλιττα",
-          null
-        ],
-        [
-          "o",
-          "τὸν",
-          "tòn"
-        ],
-        [
-          null,
-          "οἶνον",
-          null
-        ],
-        [
-          null,
-          "ἔχει.",
-          null
-        ]
-      ],
-      [
-        [
-          "a",
-          "Ἡ",
-          "hē"
-        ],
-        [
-          null,
-          "Χλόη",
-          null
-        ],
-        [
-          "o",
-          "τὸν",
-          "tòn"
-        ],
-        [
-          null,
-          "ἄρτον",
-          null
-        ],
-        [
-          null,
-          "ἐσθίει.",
-          null
-        ]
-      ],
-      [
-        [
-          "o",
-          "Ὁ",
-          "ho"
-        ],
-        [
-          null,
-          "Ἄργος",
-          null
-        ],
-        [
-          null,
-          "παίζει,",
-          null
-        ],
-        [
-          null,
-          "καὶ",
-          null
-        ],
-        [
-          "a",
-          "ἡ",
-          "hē"
-        ],
-        [
-          null,
-          "Χλόη",
-          null
-        ],
-        [
-          null,
-          "χαίρει.",
           null
         ]
       ],
@@ -308,22 +175,27 @@
       [
         [
           "o",
-          "Τὸ",
-          "tò"
+          "Ὁ",
+          "ho"
         ],
         [
           null,
-          "δῶρον",
+          "Σῖμος",
           null
         ],
         [
-          null,
-          "ἄρτος",
-          null
+          "a",
+          "τὴν",
+          "tèn"
+        ],
+        [
+          "estrada",
+          "ὁδὸν",
+          "hodón"
         ],
         [
           null,
-          "ἐστιν.",
+          "ὁρᾷ.",
           null
         ]
       ],
@@ -334,18 +206,161 @@
           "hē"
         ],
         [
+          "estrada",
+          "ὁδὸς",
+          "hodós"
+        ],
+        [
+          "longa",
+          "μακρά",
+          "makrá"
+        ],
+        [
           null,
-          "θεὰ",
+          "ἐστιν,",
+          null
+        ],
+        [
+          null,
+          "ἀλλὰ",
+          null
+        ],
+        [
+          "boa, bela",
+          "καλή",
+          "kalḗ"
+        ],
+        [
+          null,
+          "ἐστιν.",
+          null
+        ]
+      ],
+      [
+        [
+          "o",
+          "Ὁ",
+          "ho"
+        ],
+        [
+          null,
+          "Σῖμος",
+          null
+        ],
+        [
+          null,
+          "εἰς",
+          null
+        ],
+        [
+          "a",
+          "τὴν",
+          "tèn"
+        ],
+        [
+          "ágora",
+          "ἀγορὰν",
+          "agorán"
+        ],
+        [
+          null,
+          "βαδίζει.",
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          "Ἐν",
+          null
+        ],
+        [
+          "a",
+          "τῇ",
+          "têi"
+        ],
+        [
+          null,
+          "ἀγορᾷ",
           null
         ],
         [
           "o",
-          "τὸ",
-          "tò"
+          "ὁ",
+          "ho"
         ],
         [
           null,
-          "δῶρον",
+          "Σῖμος",
+          null
+        ],
+        [
+          "o",
+          "τὸν",
+          "tòn"
+        ],
+        [
+          null,
+          "ἄρτον",
+          null
+        ],
+        [
+          null,
+          "ἐσθίει.",
+          null
+        ]
+      ],
+      [
+        [
+          "o",
+          "Ὁ",
+          "ho"
+        ],
+        [
+          null,
+          "οἶνος",
+          null
+        ],
+        [
+          "do, de",
+          "τοῦ",
+          "toû"
+        ],
+        [
+          "de Clístenes",
+          "Κλεισθένους",
+          "Kleisthénous"
+        ],
+        [
+          null,
+          "καλός",
+          null
+        ],
+        [
+          null,
+          "ἐστιν.",
+          null
+        ]
+      ],
+      [
+        [
+          "o",
+          "Ὁ",
+          "ho"
+        ],
+        [
+          null,
+          "Σῖμος",
+          null
+        ],
+        [
+          "o",
+          "τὸν",
+          "tòn"
+        ],
+        [
+          null,
+          "καρπὸν",
           null
         ],
         [
@@ -361,48 +376,6 @@
         [
           null,
           "χαίρει.",
-          null
-        ]
-      ],
-      [
-        [
-          "o",
-          "Ὁ",
-          "ho"
-        ],
-        [
-          null,
-          "Κλεισθένης",
-          null
-        ],
-        [
-          "o",
-          "τὸν",
-          "tòn"
-        ],
-        [
-          null,
-          "ἄρτον",
-          null
-        ],
-        [
-          null,
-          "καὶ",
-          null
-        ],
-        [
-          "o",
-          "τὸν",
-          "tòn"
-        ],
-        [
-          null,
-          "οἶνον",
-          null
-        ],
-        [
-          null,
-          "ἔχει.",
           null
         ]
       ],
@@ -424,8 +397,35 @@
         ],
         [
           null,
-          "καρπὸς",
+          "Ἄργος",
           null
+        ],
+        [
+          null,
+          "παίζει.",
+          null
+        ]
+      ],
+      [
+        [
+          "o",
+          "Ὁ",
+          "ho"
+        ],
+        [
+          null,
+          "ἀγρὸς",
+          null
+        ],
+        [
+          "do, de",
+          "τοῦ",
+          "toû"
+        ],
+        [
+          "de Clístenes",
+          "Κλεισθένους",
+          "Kleisthénous"
         ],
         [
           null,
@@ -446,7 +446,22 @@
         ],
         [
           null,
-          "Νικίας",
+          "Κλεισθένης",
+          null
+        ],
+        [
+          null,
+          "ἐν",
+          null
+        ],
+        [
+          "o",
+          "τῷ",
+          "tôi"
+        ],
+        [
+          null,
+          "ἀγρῷ",
           null
         ],
         [
@@ -460,13 +475,13 @@
           null
         ],
         [
-          "o",
-          "ὁ",
-          "ho"
+          "a",
+          "ἡ",
+          "hē"
         ],
         [
           null,
-          "Κλεισθένης",
+          "Μέλιττα",
           null
         ],
         [
@@ -481,45 +496,33 @@
         "o",
         "ho"
       ],
-      "Κλεισθένης": [
-        "Clístenes, o pai",
-        "Kleisthénēs"
-      ],
-      "ἐν": [
-        "em",
-        "en"
-      ],
-      "τῷ": [
-        "o",
-        "tôi"
-      ],
-      "ἀγρῷ": [
-        "campo",
-        "agrôi"
-      ],
-      "πονεῖ": [
-        "trabalha",
-        "ponêi"
-      ],
-      "Νικίας": [
-        "Nícias, o filho",
-        "Nikías"
+      "Σῖμος": [
+        "Simo, o vizinho",
+        "Sîmos"
       ],
       "τὸν": [
         "o",
         "tòn"
       ],
-      "καρπὸν": [
-        "fruto, colheita",
-        "karpón"
+      "ὄνον": [
+        "burro",
+        "ónon"
       ],
-      "ὁρᾷ": [
-        "vê",
-        "horâi"
+      "ἔχει": [
+        "tem",
+        "ékhei"
       ],
-      "ἀγρὸς": [
-        "campo",
-        "agrós"
+      "ὄνος": [
+        "burro",
+        "ónos"
+      ],
+      "τοῦ": [
+        "do, de",
+        "toû"
+      ],
+      "Σίμου": [
+        "de Simo",
+        "Símou"
       ],
       "μικρός": [
         "pequeno",
@@ -529,25 +532,13 @@
         "é, está",
         "éstin"
       ],
-      "ἀλλὰ": [
-        "mas",
-        "allá"
+      "σῖτον": [
+        "grão",
+        "sîton"
       ],
-      "καλός": [
-        "bom, belo",
-        "kalós"
-      ],
-      "εἰς": [
-        "para dentro de",
-        "eis"
-      ],
-      "τὴν": [
-        "a",
-        "tèn"
-      ],
-      "οἰκίαν": [
-        "casa",
-        "oikían"
+      "Κλεισθένους": [
+        "de Clístenes",
+        "Kleisthénous"
       ],
       "φέρει": [
         "leva, traz",
@@ -560,42 +551,6 @@
       "Μέλιττα": [
         "Melita, a mãe",
         "Mélitta"
-      ],
-      "οἶνον": [
-        "vinho",
-        "oînon"
-      ],
-      "ἔχει": [
-        "tem",
-        "ékhei"
-      ],
-      "Χλόη": [
-        "Cloé, a filha",
-        "Khlóē"
-      ],
-      "ἄρτον": [
-        "pão",
-        "árton"
-      ],
-      "ἐσθίει": [
-        "come",
-        "esthíei"
-      ],
-      "Ἄργος": [
-        "Argos, o cão",
-        "Árgos"
-      ],
-      "παίζει": [
-        "brinca",
-        "paízei"
-      ],
-      "καὶ": [
-        "e",
-        "kaí"
-      ],
-      "χαίρει": [
-        "se alegra",
-        "khaírei"
       ],
       "τὸ": [
         "o",
@@ -613,21 +568,117 @@
         "altar",
         "bōmón"
       ],
-      "ἄρτος": [
-        "pão",
-        "ártos"
+      "τὴν": [
+        "a",
+        "tèn"
       ],
-      "θεὰ": [
-        "deusa",
-        "theá"
+      "ὁδὸν": [
+        "estrada",
+        "hodón"
+      ],
+      "ὁρᾷ": [
+        "vê",
+        "horâi"
+      ],
+      "ὁδὸς": [
+        "estrada",
+        "hodós"
+      ],
+      "μακρά": [
+        "longa",
+        "makrá"
+      ],
+      "ἀλλὰ": [
+        "mas",
+        "allá"
+      ],
+      "καλή": [
+        "boa, bela",
+        "kalḗ"
+      ],
+      "εἰς": [
+        "para dentro de",
+        "eis"
+      ],
+      "ἀγορὰν": [
+        "ágora",
+        "agorán"
+      ],
+      "βαδίζει": [
+        "anda, caminha",
+        "badízei"
+      ],
+      "Ἐν": [
+        "em",
+        "en"
+      ],
+      "τῇ": [
+        "a",
+        "têi"
+      ],
+      "ἀγορᾷ": [
+        "ágora",
+        "agorâi"
+      ],
+      "ἄρτον": [
+        "pão",
+        "árton"
+      ],
+      "ἐσθίει": [
+        "come",
+        "esthíei"
+      ],
+      "οἶνος": [
+        "vinho",
+        "oînos"
+      ],
+      "καλός": [
+        "bom, belo",
+        "kalós"
+      ],
+      "καρπὸν": [
+        "fruto, colheita",
+        "karpón"
+      ],
+      "καὶ": [
+        "e",
+        "kaí"
+      ],
+      "χαίρει": [
+        "se alegra",
+        "khaírei"
       ],
       "Ἀχαρναῖς": [
         "Acarnas",
         "Akharnaîs"
       ],
-      "καρπὸς": [
-        "fruto, colheita",
-        "karpós"
+      "Ἄργος": [
+        "Argos, o cão",
+        "Árgos"
+      ],
+      "παίζει": [
+        "brinca",
+        "paízei"
+      ],
+      "ἀγρὸς": [
+        "campo",
+        "agrós"
+      ],
+      "Κλεισθένης": [
+        "Clístenes, o pai",
+        "Kleisthénēs"
+      ],
+      "τῷ": [
+        "o",
+        "tôi"
+      ],
+      "ἀγρῷ": [
+        "campo",
+        "agrôi"
+      ],
+      "πονεῖ": [
+        "trabalha",
+        "ponêi"
       ]
     },
     "notes": {
@@ -635,13 +686,37 @@
         "entra em um lugar",
         "Depois de εἰς, o nome vem com -ν: εἰς τὴν οἰκίαν."
       ],
-      "παίζει": [
-        "brinca",
-        "Brincar, jogar: o que Argos e as crianças fazem."
+      "τοῦ": [
+        "de, do",
+        "τοῦ + nome = “de …”: τοῦ Σίμου, “de Simo”."
       ],
-      "ἄρτος": [
-        "pão",
-        "Nesta semana o pão é a oferenda que vai ao altar."
+      "Σίμου": [
+        "de Simo",
+        "O genitivo diz de quem é algo: ὁ ὄνος τοῦ Σίμου = “o burro de Simo”."
+      ],
+      "Κλεισθένους": [
+        "de Clístenes",
+        "O genitivo de Κλεισθένης: τοῦ Κλεισθένους."
+      ],
+      "ὄνος": [
+        "o burro",
+        "Animal de carga: carrega o grão, o vinho e o pão."
+      ],
+      "ὁδός": [
+        "a estrada",
+        "Feminina, apesar do -ος: o artigo ἡ mostra o gênero."
+      ],
+      "ὁδόν": [
+        "a estrada",
+        "Feminina, apesar do -ος: o artigo ἡ mostra o gênero."
+      ],
+      "μακρά": [
+        "longa",
+        "A forma feminina de μακρός, porque ἡ ὁδός é feminina."
+      ],
+      "καλή": [
+        "boa, bela",
+        "A forma feminina de καλός."
       ]
     },
     "family": {
@@ -652,13 +727,19 @@
       "δῶρον": [
         "Teodoro, Dorotéia",
         "= θεός “deus” + δῶρον “presente”: “presente de deus”. Fontes: Wikipedia, “Theodore (given name)”; Etymonline."
+      ],
+      "ὁδός": [
+        "método",
+        "= meta- “em busca de” + hodos “caminho, estrada”: o método é o caminho para chegar a algo. Fonte: Etymonline, “method”."
+      ],
+      "ὁδόν": [
+        "método",
+        "= meta- “em busca de” + hodos “caminho, estrada”: o método é o caminho para chegar a algo. Fonte: Etymonline, “method”."
       ]
     },
     "photos": {
       "ἄρτον": "pao",
-      "ἄρτος": "pao",
       "βωμόν": "altar",
-      "οἰκίαν": "casa",
       "δῶρον": "dom"
     },
     "cast": [
@@ -694,7 +775,7 @@
       ],
       [
         "Σῖμος",
-        "Simo — o vizinho, mercador; vai a Atenas e ao Pireu",
+        "Simo — o vizinho, mercador; nesta semana vai à ágora com o burro",
         "fora"
       ],
       [
@@ -704,12 +785,12 @@
       ],
       [
         "Δημήτηρ",
-        "Deméter — deusa dos grãos; na semana 10 aparece só como “a deusa” (ἡ θεά)",
+        "Deméter — deusa dos grãos; só apareceu nas semanas 9 e 10",
         "mito"
       ],
       [
         "Δημήτηρ",
-        "Deméter — deusa dos grãos; na semana 10 aparece só como “a deusa” (ἡ θεά)",
+        "Deméter — deusa dos grãos; só apareceu nas semanas 9 e 10",
         "mito"
       ],
       [
@@ -751,34 +832,6 @@
         "expl": "Estatueta cipriota de terracota, c. 600–480 a.C. O Met a descreve como “mulher assando pão”.",
         "cred": "Terracotta woman baking bread, ca. 600–480 BCE. The Metropolitan Museum of Art, domínio público.",
         "page": "https://www.metmuseum.org/art/collection/search/241310"
-      },
-      "casa": {
-        "file": "casa.jpg",
-        "alt": "Quarto pintado de uma casa romana",
-        "expl": "Quarto (cubiculum) de uma villa romana em Boscoreale, perto de Pompeia, c. 50–40 a.C., remontado no Met. É uma casa romana rica, não grega; serve para ver como uma casa antiga era decorada por dentro.",
-        "cred": "Cubiculum (bedroom) from the Villa of P. Fannius Synistor at Boscoreale, ca. 50–40 BCE. The Metropolitan Museum of Art, domínio público.",
-        "page": "https://www.metmuseum.org/art/collection/search/247017"
-      },
-      "pompeia": {
-        "file": "pompeia.jpg",
-        "alt": "Vista aérea das ruínas de Pompeia, com o Vesúvio ao fundo",
-        "expl": "Vista aérea das ruínas de Pompeia, com o Vesúvio ao fundo e a cidade moderna ao redor. A foto é atual; a cidade romana foi coberta pela erupção do ano 79.",
-        "cred": "Foto: Carsten Steger, CC BY-SA 4.0, via Wikimedia Commons.",
-        "page": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Pompeii_and_Mount_Vesuvius_(view_from_the_southeast).jpg"
-      },
-      "duomo": {
-        "file": "duomo.jpg",
-        "alt": "O Duomo de Milão visto da praça, com muitos pináculos de mármore branco",
-        "expl": "O Duomo de Milão, de mármore, visto da Piazza del Duomo, com gente na praça. As obras começam em 1386 e as fontes divergem sobre o fim; a foto é atual.",
-        "cred": "Foto: Jiuguang Wang, CC BY-SA 3.0, via Wikimedia Commons.",
-        "page": "https://commons.wikimedia.org/wiki/File:Milan_Cathedral_from_Piazza_del_Duomo.jpg"
-      },
-      "siracusa": {
-        "file": "siracusa.jpg",
-        "alt": "Vista aérea do teatro grego de Siracusa, com os degraus de pedra em semicírculo",
-        "expl": "Vista aérea do teatro grego de Siracusa, na Sicília, com os degraus escavados na pedra. A foto é atual; a cidade é fundada em 734 ou 733 a.C.",
-        "cred": "Foto: fotovideomike from Italia (Michele Ponzio, @michele_ponzio), CC BY-SA 2.0, via Wikimedia Commons.",
-        "page": "https://commons.wikimedia.org/wiki/File:Teatro_greco_di_Siracusa_-_aerea.jpg"
       }
     }
   },
@@ -786,35 +839,36 @@
     {
       "d": 1,
       "label": "Segunda",
-      "n": "16",
+      "n": "23",
       "cards": [
         {
           "lang": "gr",
           "min": "~9 min",
-          "setting": "Primavera de 432 a.C., em Acarnas: a colheita e a oferenda à deusa Deméter.",
+          "setting": "Primavera de 432 a.C., em Acarnas: Simo, o vizinho mercador, prepara a ida à ágora.",
           "recall": {
             "prompts": [
               "“o pão” → ?",
               "“o altar” → ?",
-              "“tem” → ?",
-              "“para dentro de” → ?"
+              "“para dentro de” → ?",
+              "“brinca” → ?"
             ],
             "key": [
               "ὁ ἄρτος",
               "ὁ βωμός",
-              "ἔχει",
-              "εἰς (+ac)"
+              "εἰς (+ac)",
+              "παίζει"
             ],
             "probed": [
               "ὁ ἄρτος",
               "ὁ βωμός",
-              "ἔχει",
-              "εἰς (+ac)"
+              "εἰς (+ac)",
+              "παίζει"
             ]
           },
           "upTo": 3,
-          "pt": "Clístenes trabalha no campo. Nícias vê o fruto. O campo é pequeno, mas é bom.",
-          "sound": "O <span class=\"gi\">ῳ</span> de <span class=\"gi\">ἀγρῷ</span> é um o longo e aberto, como o “ó” de “avó” esticado; o i pequeno embaixo ainda se pronunciava no século V.",
+          "pt": "Simo tem o burro. O burro de Simo é pequeno. O burro leva o grão de Clístenes.",
+          "form": "<span class=\"gi\">τοῦ Σίμου</span> = “de Simo”: o genitivo diz de quem é algo, e o masculino em -ος passa a -ου (<span class=\"gi\">ὁ ὄνος → τοῦ ὄνου</span>). Em <span class=\"gi\">Κλεισθένης</span>, o genitivo é <span class=\"gi\">τοῦ Κλεισθένους</span>.",
+          "sound": "O <span class=\"gi\">ου</span> de <span class=\"gi\">τοῦ</span> e de <span class=\"gi\">Σίμου</span> soa como o u de “tu”.",
           "viz": [
             {
               "kind": "map",
@@ -956,2149 +1010,85 @@
         {
           "lang": "it",
           "min": "~12 min",
-          "setting": "Pompei: l'eruzione del Vesuvio e una data che gli studiosi discutono.",
+          "setting": "Ravenna: una capitale antica, famosa per i mosaici.",
           "recall": {
             "prompts": [
               "“a multidão” → ?",
-              "“o concurso, a competição” → ?",
-              "“mole, macio, encharcado” → ?"
+              "“a cinza” → ?",
+              "“o mármore” → ?"
             ],
             "key": [
               "la folla",
-              "il concorso",
-              "molle"
+              "la cenere",
+              "il marmo"
             ]
           },
-          "text": "Nel 79 (settantanove) il Vesuvio erutta e la cenere copre Pompei. Plinio il Giovane è un testimone: scrive a Tacito e racconta l'eruzione. Le sue lettere arrivano a noi solo in copie medievali, e per questo gli studiosi devono leggerle con attenzione. La data tradizionale è il 24 (ventiquattro) agosto. Ma nel 2018 (duemiladiciotto) gli archeologi trovano un'iscrizione di carbone: dice 17 (diciassette) ottobre. Oggi la discussione continua, e nessuno può dire con certezza il giorno.",
+          "text": "A Ravenna, nel 402 (quattrocentodue), l'imperatore Onorio porta la corte da Roma, e la città diventa la capitale dell'impero d'Occidente. Più tardi, al tempo di Giustiniano, i mosaici della chiesa di San Vitale mostrano l'imperatore e sua moglie Teodora. Chi entra può vedere le figure sulle pareti. Per guardarle bene, i visitatori devono alzare gli occhi. Oggi Ravenna è un sito UNESCO con otto monumenti paleocristiani.",
           "tap": {
             "w": {
+              "a": [
+                "em, a",
+                ""
+              ],
+              "ravenna": [
+                "Ravenna, cidade do norte da Itália",
+                ""
+              ],
               "nel": [
                 "em o, no",
                 "nel = in + il."
               ],
-              "il": [
-                "o",
+              "l'imperatore": [
+                "o imperador",
                 ""
               ],
-              "vesuvio": [
-                "Vesúvio, o vulcão perto de Nápoles",
+              "onorio": [
+                "Honório, imperador romano",
                 ""
               ],
-              "erutta": [
-                "entra em erupção",
-                ""
-              ],
-              "e": [
-                "e",
-                ""
+              "porta": [
+                "leva",
+                "Aqui porta é verbo: leva. Também quer dizer “porta”."
               ],
               "la": [
                 "a",
                 ""
               ],
-              "cenere": [
-                "cinza",
-                ""
-              ],
-              "copre": [
-                "cobre",
-                ""
-              ],
-              "pompei": [
-                "Pompeia, a cidade romana",
-                "Pompei é o nome da cidade em italiano."
-              ],
-              "plinio": [
-                "Plínio",
-                ""
-              ],
-              "è": [
-                "é",
-                ""
-              ],
-              "un": [
-                "um",
-                ""
-              ],
-              "testimone": [
-                "testemunha",
-                ""
-              ],
-              "scrive": [
-                "escreve",
-                ""
-              ],
-              "a": [
-                "a, para",
-                ""
-              ],
-              "tacito": [
-                "Tácito, historiador romano",
-                ""
-              ],
-              "racconta": [
-                "conta",
-                ""
-              ],
-              "l'eruzione": [
-                "a erupção",
-                ""
-              ],
-              "le": [
-                "as",
-                ""
-              ],
-              "sue": [
-                "suas",
-                ""
-              ],
-              "lettere": [
-                "cartas",
-                "lettera = carta (escrita), e também letra."
-              ],
-              "arrivano": [
-                "chegam",
-                ""
-              ],
-              "noi": [
-                "nós",
-                ""
-              ],
-              "solo": [
-                "só, apenas",
-                ""
-              ],
-              "in": [
-                "em",
-                ""
-              ],
-              "copie": [
-                "cópias",
-                ""
-              ],
-              "medievali": [
-                "medievais",
-                ""
-              ],
-              "per": [
-                "por, para",
-                ""
-              ],
-              "questo": [
-                "isto",
-                ""
-              ],
-              "gli": [
-                "os",
-                ""
-              ],
-              "studiosi": [
-                "estudiosos",
-                ""
-              ],
-              "devono": [
-                "precisam, devem",
-                "devono é de dovere: eles precisam. Depois dele vem o infinitivo."
-              ],
-              "leggerle": [
-                "lê-las",
-                "leggere + le: ler as cartas."
-              ],
-              "con": [
-                "com",
-                ""
-              ],
-              "attenzione": [
-                "atenção",
-                ""
-              ],
-              "data": [
-                "data",
-                ""
-              ],
-              "tradizionale": [
-                "tradicional",
-                ""
-              ],
-              "agosto": [
-                "agosto",
-                ""
-              ],
-              "ma": [
-                "mas",
-                ""
-              ],
-              "archeologi": [
-                "arqueólogos",
-                ""
-              ],
-              "trovano": [
-                "encontram",
-                ""
-              ],
-              "un'iscrizione": [
-                "uma inscrição",
-                ""
-              ],
-              "di": [
-                "de",
-                ""
-              ],
-              "carbone": [
-                "carvão",
-                ""
-              ],
-              "dice": [
-                "diz",
-                ""
-              ],
-              "ottobre": [
-                "outubro",
-                ""
-              ],
-              "oggi": [
-                "hoje",
-                ""
-              ],
-              "discussione": [
-                "discussão",
-                ""
-              ],
-              "continua": [
-                "continua",
-                ""
-              ],
-              "nessuno": [
-                "ninguém",
-                "Antes do verbo, nessuno não leva non: nessuno può."
-              ],
-              "può": [
-                "pode",
-                "può é de potere: ele pode. Depois dele vem o infinitivo."
-              ],
-              "dire": [
-                "dizer",
-                ""
-              ],
-              "certezza": [
-                "certeza",
-                ""
-              ],
-              "giorno": [
-                "dia",
-                ""
-              ],
-              "il giovane": [
-                "o Jovem",
-                ""
-              ],
-              "giovane": [
-                "jovem",
-                ""
-              ]
-            },
-            "p": {
-              "nel 79 settantanove": [
-                "no ano 79",
-                "settantanove é 79 por extenso."
-              ],
-              "plinio il giovane": [
-                "Plínio, o Jovem",
-                "Escritor romano que viu a erupção e a descreveu em cartas."
-              ],
-              "per questo": [
-                "por isso",
-                ""
-              ],
-              "devono leggerle": [
-                "precisam lê-las",
-                "devono é de dovere; depois dele o outro verbo fica no infinitivo."
-              ],
-              "il 24 ventiquattro agosto": [
-                "em 24 de agosto",
-                "ventiquattro é 24 por extenso."
-              ],
-              "nel 2018 duemiladiciotto": [
-                "em 2018",
-                "duemiladiciotto é 2018 por extenso."
-              ],
-              "un'iscrizione di carbone": [
-                "uma inscrição de carvão",
-                "Escrita na parede com carvão."
-              ],
-              "17 diciassette ottobre": [
-                "17 de outubro",
-                "diciassette é 17 por extenso."
-              ],
-              "con certezza": [
-                "com certeza",
-                ""
-              ],
-              "nessuno può dire": [
-                "ninguém pode dizer",
-                "Antes do verbo, nessuno não leva non."
-              ],
-              "e per questo": [
-                "e por isso",
-                ""
-              ],
-              "con attenzione": [
-                "com atenção",
-                ""
-              ]
-            },
-            "f": {
-              "pompei": "pompeia",
-              "vesuvio": "pompeia"
-            }
-          },
-          "questions": [
-            "Chi scrive a Tacito?",
-            "Perché gli studiosi devono leggere le lettere con attenzione?",
-            "Che cosa dice l'iscrizione di carbone?"
-          ],
-          "note": "<em>nessuno</em> antes do verbo não leva <em>non</em>: <em>nessuno può dire</em>. Depois do verbo, leva: <em>non può dire nessuno</em>.",
-          "answers": [
-            [
-              "1",
-              "Plinio il Giovane."
-            ],
-            [
-              "2",
-              "Perché arrivano solo in copie medievali."
-            ],
-            [
-              "3",
-              "17 (diciassette) ottobre."
-            ]
-          ],
-          "curio": "A data tradicional, 24 de agosto de 79, vem das cartas de Plínio, o Jovem, a Tácito, que só chegaram em cópias medievais. Em 2018 achou-se na Casa do Jardim um grafito de carvão com “17 de outubro”, e a data de outono tem defensores; o Parque Arqueológico de Pompeia voltou depois à data de agosto. O debate segue sem solução. (Getty, “When Did Vesuvius Erupt?”; History.com, “Pompeii destruction date”; DePauw University, “The Bo(u)lder Question”)",
-          "viz": [
-            {
-              "kind": "map",
-              "base": "italia",
-              "title": "Mapa: Pompeia",
-              "cap": "Esquema, sem escala. Pompeia fica ao pé do Vesúvio, perto de Nápoles.",
-              "points": [
-                {
-                  "n": "Pompeia",
-                  "lat": 40.75,
-                  "lon": 14.49,
-                  "hl": true,
-                  "dx": 8,
-                  "dy": 9
-                },
-                {
-                  "n": "Nápoles",
-                  "lat": 40.85,
-                  "lon": 14.27,
-                  "dx": -8,
-                  "dy": -3,
-                  "a": "end"
-                },
-                {
-                  "n": "Roma",
-                  "lat": 41.9,
-                  "lon": 12.5,
-                  "dx": 8,
-                  "dy": 3
-                }
-              ]
-            }
-          ],
-          "audio": {
-            "file": "w10_it1.mp3",
-            "t": [
-              0.0,
-              0.64,
-              0.64,
-              1.59,
-              2.02,
-              2.36,
-              2.77,
-              2.96,
-              3.09,
-              3.44,
-              3.86,
-              4.9,
-              5.69,
-              5.94,
-              6.56,
-              6.84,
-              7.14,
-              7.76,
-              7.94,
-              8.21,
-              8.64,
-              8.81,
-              9.49,
-              10.65,
-              11.29,
-              11.52,
-              12.09,
-              12.67,
-              13.04,
-              13.12,
-              13.21,
-              13.24,
-              13.62,
-              14.49,
-              14.49,
-              14.79,
-              15.19,
-              15.29,
-              15.94,
-              16.46,
-              17.14,
-              17.39,
-              18.8,
-              19.44,
-              19.74,
-              20.84,
-              21.24,
-              20.94,
-              20.94,
-              21.77,
-              22.75,
-              23.41,
-              23.54,
-              23.54,
-              24.74,
-              25.39,
-              25.69,
-              26.04,
-              26.89,
-              26.99,
-              27.74,
-              28.19,
-              28.19,
-              28.91,
-              30.0,
-              30.79,
-              31.14,
-              31.99,
-              32.69,
-              32.74,
-              33.09,
-              33.41,
-              33.66,
-              33.97,
-              34.62,
-              34.19
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "d": 2,
-      "label": "Terça",
-      "n": "17",
-      "cards": [
-        {
-          "lang": "gr",
-          "min": "~9 min",
-          "recall": {
-            "prompts": [
-              "“o pão” → ?",
-              "“o altar” → ?",
-              "“come” → ?",
-              "“brinca” → ?"
-            ],
-            "key": [
-              "ὁ ἄρτος",
-              "ὁ βωμός",
-              "ἐσθίει",
-              "παίζει"
-            ],
-            "probed": [
-              "ὁ ἄρτος",
-              "ὁ βωμός",
-              "ἐσθίει",
-              "παίζει"
-            ]
-          },
-          "upTo": 5,
-          "pt": "Clístenes trabalha no campo. Nícias vê o fruto. O campo é pequeno, mas é bom. Nícias leva o fruto para dentro de casa. Melita tem o vinho.",
-          "sound": "O <span class=\"gi\">οι</span> de <span class=\"gi\">οἶνον</span> soa como o “oi” de “boi”."
-        },
-        {
-          "lang": "en",
-          "tag": "client-facing",
-          "min": "~13 min",
-          "title": "Why an error message deserves care",
-          "body": [
-            "A client reviews the sign-up form and says: \"For errors, just write “Invalid input.” Nobody reads them.\" It is a common view, but an error message appears at the moment when the user is stuck, so it deserves care. A good message uses plain language and says what went wrong, where, and the next step.",
-            "Show the difference with one example. \"Invalid input\" is a dead end: the person does not know which field or which rule. \"Enter an email like name@example.com\" points to the fix and lets them recover from the mistake in one step. Ask the client to compare how many people would finish the form with each version.",
-            "Finally, link the point to something the client cares about. A clear message can save them a call to support and a lost sign-up. Offer to write all the messages in one pass and send them for approval, so the tone stays consistent."
-          ],
-          "inContext": [
-            [
-              "plain language",
-              "simple words a visitor understands at first read; the safe choice in client talk."
-            ],
-            [
-              "a dead end",
-              "a point with no way forward; vivid but polite when you point at a message."
-            ],
-            [
-              "the next step",
-              "what the person should do now; every error message should name one."
-            ],
-            [
-              "recover from",
-              "get back on track after a mistake; common in product and UX writing."
-            ],
-            [
-              "save them a call",
-              "spare the client a support request; ties design to something they pay for."
-            ]
-          ],
-          "check": [
-            "What three things should a good message say?",
-            "What can a clear message save the client?"
-          ],
-          "answers": [
-            [
-              "1",
-              "What went wrong, where, and the next step."
-            ],
-            [
-              "2",
-              "A call to support and a lost sign-up."
-            ]
-          ],
-          "expression": "<b>One expression.</b> <em>Can we try both?</em> — proposes a test instead of an argument; works with clients and in reviews. Wrong when time is short and the decision is already made.",
-          "tap": {
-            "w": {
-              "about": [
-                "sobre",
-                ""
-              ],
-              "all": [
-                "todos",
-                ""
-              ],
-              "and": [
-                "e",
-                ""
-              ],
-              "appears": [
-                "aparece",
-                ""
-              ],
-              "approval": [
-                "aprovação",
-                ""
-              ],
-              "ask": [
-                "pedir",
-                ""
-              ],
-              "at": [
-                "em, a",
-                ""
-              ],
-              "but": [
-                "mas",
-                ""
-              ],
-              "can": [
-                "pode",
-                ""
-              ],
-              "care": [
-                "cuidado",
-                ""
-              ],
-              "cares": [
-                "se importa",
-                ""
-              ],
-              "clear": [
-                "claro",
-                ""
-              ],
-              "client": [
-                "cliente",
-                ""
-              ],
-              "common": [
-                "comum",
-                ""
-              ],
-              "compare": [
-                "comparar",
-                ""
-              ],
-              "consistent": [
-                "consistente",
-                ""
-              ],
-              "deserves": [
-                "merece",
-                ""
-              ],
-              "difference": [
-                "diferença",
-                ""
-              ],
-              "does": [
-                "faz",
-                ""
-              ],
-              "each": [
-                "cada",
-                ""
-              ],
-              "errors": [
-                "erros",
-                ""
-              ],
-              "example": [
-                "exemplo",
-                ""
-              ],
-              "field": [
-                "campo",
-                ""
-              ],
-              "finally": [
-                "por fim",
-                ""
-              ],
-              "finish": [
-                "terminar",
-                ""
-              ],
-              "fix": [
-                "correção",
-                ""
-              ],
-              "for": [
-                "para; por",
-                ""
-              ],
-              "good": [
-                "bom",
-                ""
-              ],
-              "how": [
-                "como",
-                ""
-              ],
-              "is": [
-                "é, está",
-                ""
-              ],
-              "it": [
-                "ele, ela, isso (coisa)",
-                ""
-              ],
-              "just": [
-                "apenas",
-                ""
-              ],
-              "know": [
-                "saber",
-                ""
-              ],
-              "lets": [
-                "deixa, permite",
-                ""
-              ],
-              "link": [
-                "ligar, relacionar",
-                ""
-              ],
-              "many": [
-                "muitos",
-                ""
-              ],
-              "messages": [
-                "mensagens",
-                ""
-              ],
-              "mistake": [
-                "erro, engano",
-                ""
-              ],
-              "moment": [
-                "momento",
-                ""
-              ],
-              "nameexamplecom": [
-                "name@example.com (exemplo de e-mail)",
-                ""
-              ],
-              "nobody": [
-                "ninguém",
-                ""
-              ],
-              "not": [
-                "não",
-                ""
-              ],
-              "offer": [
-                "oferecer",
-                ""
-              ],
-              "or": [
-                "ou",
-                ""
-              ],
-              "people": [
-                "pessoas",
-                ""
-              ],
-              "person": [
-                "pessoa",
-                ""
-              ],
-              "point": [
-                "apontar; ponto",
-                ""
-              ],
-              "points": [
-                "aponta",
-                ""
-              ],
-              "reads": [
-                "lê; soa como",
-                ""
-              ],
-              "reviews": [
-                "revisa",
-                ""
-              ],
-              "rule": [
-                "regra",
-                ""
-              ],
-              "says": [
-                "diz",
-                ""
-              ],
-              "send": [
-                "enviar",
-                ""
-              ],
-              "show": [
-                "mostrar",
-                ""
-              ],
-              "so": [
-                "então",
-                ""
-              ],
-              "something": [
-                "algo",
-                ""
-              ],
-              "stays": [
-                "permanece",
-                ""
-              ],
-              "stuck": [
-                "travado, sem saída",
-                ""
-              ],
-              "tone": [
-                "tom",
-                ""
-              ],
-              "user": [
-                "usuário",
-                ""
-              ],
-              "uses": [
-                "usa",
-                ""
-              ],
-              "version": [
-                "versão",
-                ""
-              ],
-              "view": [
-                "opinião",
-                ""
-              ],
-              "when": [
-                "quando",
-                ""
-              ],
-              "where": [
-                "onde",
-                ""
-              ],
-              "which": [
-                "qual, que",
-                ""
-              ],
-              "with": [
-                "com",
-                ""
-              ],
-              "would": [
-                "faria",
-                ""
-              ],
-              "write": [
-                "escrever",
-                ""
-              ]
-            },
-            "p": {
-              "plain language": [
-                "linguagem simples",
-                "Palavras que o visitante entende na primeira leitura."
-              ],
-              "a dead end": [
-                "um beco sem saída",
-                "Um ponto sem caminho para seguir."
-              ],
-              "the next step": [
-                "o próximo passo",
-                "O que a pessoa deve fazer agora."
-              ],
-              "recover from": [
-                "se recuperar de",
-                "Voltar ao caminho depois de um erro."
-              ],
-              "save them a call": [
-                "poupar a eles uma ligação",
-                "Evitar um pedido ao suporte."
-              ],
-              "sign-up form": [
-                "formulário de cadastro",
-                ""
-              ],
-              "error message": [
-                "mensagem de erro",
-                ""
-              ],
-              "invalid input": [
-                "entrada inválida",
-                "A mensagem genérica que o cliente quer usar."
-              ],
-              "what went wrong": [
-                "o que deu errado",
-                ""
-              ],
-              "a call to support": [
-                "uma ligação para o suporte",
-                ""
-              ],
-              "a lost sign-up": [
-                "um cadastro perdido",
-                ""
-              ],
-              "in one pass": [
-                "de uma vez só",
-                ""
-              ],
-              "enter an email like": [
-                "digite um e-mail como",
-                ""
-              ]
-            }
-          },
-          "audio": {
-            "file": "w10_en2.mp3",
-            "t": [
-              0.0,
-              1.14,
-              1.54,
-              2.02,
-              2.24,
-              2.49,
-              2.89,
-              3.14,
-              3.56,
-              3.86,
-              4.52,
-              4.72,
-              5.12,
-              6.14,
-              6.9,
-              8.46,
-              8.79,
-              9.38,
-              10.04,
-              10.91,
-              10.99,
-              11.16,
-              11.54,
-              11.59,
-              11.77,
-              12.09,
-              12.49,
-              13.12,
-              13.44,
-              13.64,
-              14.14,
-              14.46,
-              14.59,
-              14.99,
-              15.32,
-              15.54,
-              15.84,
-              16.07,
-              16.69,
-              17.55,
-              18.69,
-              18.91,
-              19.41,
-              19.91,
-              20.19,
-              20.69,
-              21.02,
-              21.29,
-              21.62,
-              21.87,
-              22.37,
-              22.84,
-              22.87,
-              22.91,
-              23.21,
-              24.55,
-              25.84,
-              26.07,
-              26.37,
-              26.52,
-              26.77,
-              27.83,
-              29.37,
-              29.72,
-              30.04,
-              30.19,
-              30.37,
-              30.69,
-              31.22,
-              31.57,
-              31.94,
-              32.22,
-              32.54,
-              32.69,
-              33.22,
-              33.44,
-              33.84,
-              34.53,
-              35.92,
-              36.19,
-              36.52,
-              36.67,
-              37.67,
-              38.67,
-              38.92,
-              39.04,
-              39.27,
-              39.62,
-              39.87,
-              40.04,
-              40.72,
-              41.02,
-              40.84,
-              41.97,
-              42.12,
-              42.42,
-              43.33,
-              44.47,
-              44.89,
-              45.17,
-              45.27,
-              45.64,
-              45.89,
-              46.14,
-              46.47,
-              46.74,
-              47.24,
-              47.44,
-              47.79,
-              47.99,
-              48.29,
-              49.45,
-              50.92,
-              51.27,
-              51.52,
-              51.64,
-              51.92,
-              52.27,
-              52.52,
-              52.92,
-              53.22,
-              54.08,
-              55.22,
-              55.47,
-              55.94,
-              56.19,
-              56.54,
-              56.69,
-              56.89,
-              57.07,
-              57.22,
-              57.64,
-              58.02,
-              58.22,
-              58.49,
-              59.52,
-              60.94,
-              61.11,
-              61.27,
-              60.94,
-              61.66,
-              62.27,
-              62.39,
-              62.64,
-              63.09,
-              63.31,
-              63.62,
-              63.94,
-              64.22,
-              64.91,
-              65.06,
-              65.41,
-              64.94,
-              66.16
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "d": 3,
-      "label": "Quarta",
-      "n": "18",
-      "cards": [
-        {
-          "lang": "gr",
-          "min": "~9 min",
-          "recall": {
-            "prompts": [
-              "“o altar” → ?",
-              "“a oferenda, o presente” → ?",
-              "“em direção a” → ?",
-              "“em Acarnas” → ?"
-            ],
-            "key": [
-              "ὁ βωμός",
-              "τὸ δῶρον",
-              "πρός (+ac)",
-              "ἐν Ἀχαρναῖς"
-            ],
-            "probed": [
-              "ὁ βωμός",
-              "τὸ δῶρον",
-              "πρός (+ac)",
-              "ἐν Ἀχαρναῖς"
-            ]
-          },
-          "upTo": 7,
-          "pt": "Clístenes trabalha no campo. Nícias vê o fruto. O campo é pequeno, mas é bom. Nícias leva o fruto para dentro de casa. Melita tem o vinho. Cloé come o pão. Argos brinca, e Cloé se alegra.",
-          "sound": "O <span class=\"gi\">ζ</span> de <span class=\"gi\">παίζει</span> é um z seguido de um d bem curto, dito num só movimento da língua."
-        },
-        {
-          "lang": "it",
-          "min": "~12 min",
-          "setting": "Milano: il Duomo, una grande chiesa gotica di marmo.",
-          "recall": {
-            "prompts": [
-              "“pode (ele)” → ?",
-              "“vencer” → ?",
-              "“a pedra” → ?"
-            ],
-            "key": [
-              "può",
-              "vincere",
-              "la pietra"
-            ]
-          },
-          "text": "A Milano, nel 1386 (milletrecentoottantasei) iniziano i lavori del Duomo. Visconti, il signore della città, vuole una grande chiesa gotica. Il marmo viene da una cava a Candoglia, vicino al lago Maggiore, e gli operai devono portarlo a Milano sull'acqua, per i canali. I lavori durano secoli: alla morte di Visconti, nel 1402 (millequattrocentodue), la chiesa è finita quasi a metà. Le fonti non sono d'accordo sulla fine: dicono 1900 (millenovecento) oppure 1965 (millenovecentosessantacinque). Oggi la folla entra nel Duomo tutti i giorni.",
-          "tap": {
-            "w": {
-              "a": [
-                "em, a",
-                ""
-              ],
-              "è": [
-                "é",
-                ""
-              ],
-              "milano": [
-                "Milão",
-                ""
-              ],
-              "nel": [
-                "em o, no",
-                "nel = in + il."
-              ],
-              "iniziano": [
-                "começam",
-                ""
-              ],
-              "i": [
-                "os",
-                ""
-              ],
-              "lavori": [
-                "obras",
-                ""
-              ],
-              "del": [
-                "do",
-                "del = di + il."
-              ],
-              "duomo": [
-                "catedral",
-                "Duomo é o nome da catedral de Milão; em geral, a igreja principal de uma cidade."
-              ],
-              "visconti": [
-                "Visconti, o senhor de Milão",
-                ""
-              ],
-              "il": [
-                "o",
-                ""
-              ],
-              "signore": [
-                "senhor",
-                ""
-              ],
-              "della": [
-                "da",
-                "della = di + la."
-              ],
-              "città": [
-                "cidade",
-                ""
-              ],
-              "vuole": [
-                "quer",
-                ""
-              ],
-              "una": [
-                "uma",
-                ""
-              ],
-              "grande": [
-                "grande",
-                ""
-              ],
-              "chiesa": [
-                "igreja",
-                ""
-              ],
-              "gotica": [
-                "gótica",
-                ""
-              ],
-              "marmo": [
-                "mármore",
-                ""
-              ],
-              "viene": [
-                "vem",
+              "corte": [
+                "corte",
                 ""
               ],
               "da": [
                 "de, desde",
                 ""
               ],
-              "cava": [
-                "pedreira",
-                ""
-              ],
-              "candoglia": [
-                "Candoglia, lugar da pedreira",
-                ""
-              ],
-              "vicino": [
-                "perto",
-                ""
-              ],
-              "al": [
-                "ao, no",
-                "al = a + il."
-              ],
-              "lago": [
-                "lago",
-                ""
-              ],
-              "maggiore": [
-                "Maggiore, o lago",
+              "roma": [
+                "Roma",
                 ""
               ],
               "e": [
                 "e",
-                ""
-              ],
-              "gli": [
-                "os",
-                "gli é o plural de lo e de l'."
-              ],
-              "operai": [
-                "operários",
-                ""
-              ],
-              "devono": [
-                "precisam, devem",
-                "devono é de dovere: eles precisam. Depois dele vem o infinitivo."
-              ],
-              "portarlo": [
-                "levá-lo",
-                "portare + lo: levar o mármore."
-              ],
-              "sull'acqua": [
-                "sobre a água",
-                "sull' = su + l'."
-              ],
-              "per": [
-                "por, para",
-                ""
-              ],
-              "canali": [
-                "canais",
-                ""
-              ],
-              "durano": [
-                "duram",
-                ""
-              ],
-              "secoli": [
-                "séculos",
-                ""
-              ],
-              "alla": [
-                "à",
-                "alla = a + la."
-              ],
-              "morte": [
-                "morte",
-                ""
-              ],
-              "di": [
-                "de",
-                ""
-              ],
-              "finita": [
-                "terminada, pronta",
-                ""
-              ],
-              "quasi": [
-                "quase",
-                ""
-              ],
-              "metà": [
-                "metade",
-                ""
-              ],
-              "fonti": [
-                "fontes",
-                ""
-              ],
-              "non": [
-                "não",
-                ""
-              ],
-              "sono": [
-                "são, estão",
-                ""
-              ],
-              "d'accordo": [
-                "de acordo",
-                ""
-              ],
-              "sulla": [
-                "sobre a",
-                "sulla = su + la."
-              ],
-              "fine": [
-                "fim",
-                ""
-              ],
-              "dicono": [
-                "dizem",
-                ""
-              ],
-              "oppure": [
-                "ou",
-                ""
-              ],
-              "oggi": [
-                "hoje",
-                ""
-              ],
-              "folla": [
-                "multidão",
-                ""
-              ],
-              "entra": [
-                "entra",
-                ""
-              ],
-              "tutti": [
-                "todos",
-                ""
-              ],
-              "giorni": [
-                "dias",
-                ""
-              ],
-              "le": [
-                "as",
-                ""
-              ]
-            },
-            "p": {
-              "nel 1386 milletrecentoottantasei": [
-                "no ano 1386",
-                "milletrecentoottantasei é 1386 por extenso."
-              ],
-              "nel 1402 millequattrocentodue": [
-                "no ano 1402",
-                "millequattrocentodue é 1402 por extenso."
-              ],
-              "1900 millenovecento": [
-                "1900",
-                "millenovecento é 1900 por extenso."
-              ],
-              "1965 millenovecentosessantacinque": [
-                "1965",
-                "millenovecentosessantacinque é 1965 por extenso."
-              ],
-              "il signore della città": [
-                "o senhor da cidade",
-                "della = di + la."
-              ],
-              "vicino al lago maggiore": [
-                "perto do lago Maggiore",
-                "vicino a = perto de."
-              ],
-              "devono portarlo": [
-                "precisam levá-lo",
-                "devono é de dovere; depois dele o outro verbo fica no infinitivo."
-              ],
-              "per i canali": [
-                "pelos canais",
-                ""
-              ],
-              "non sono d'accordo": [
-                "não estão de acordo",
-                ""
-              ],
-              "tutti i giorni": [
-                "todos os dias",
-                ""
-              ],
-              "la folla": [
-                "a multidão",
-                ""
-              ],
-              "alla morte di": [
-                "na morte de",
-                "alla = a + la."
-              ],
-              "quasi a metà": [
-                "quase pela metade",
-                ""
-              ]
-            },
-            "f": {
-              "duomo": "duomo"
-            }
-          },
-          "questions": [
-            "Quando iniziano i lavori del Duomo?",
-            "Da dove viene il marmo?",
-            "Su che cosa le fonti non sono d'accordo?"
-          ],
-          "note": "<em>gli</em> é o plural masculino de <em>lo</em> e de <em>l'</em>: <em>gli operai</em>. Antes de consoante comum, o plural é <em>i</em>: <em>i lavori</em>, <em>i canali</em>.",
-          "answers": [
-            [
-              "1",
-              "Nel 1386 (milletrecentoottantasei)."
-            ],
-            [
-              "2",
-              "Da una cava a Candoglia."
-            ],
-            [
-              "3",
-              "Sulla fine dei lavori."
-            ]
-          ],
-          "curio": "O Duomo começa em 1386; o mármore vem das pedreiras de Candoglia, acima do lago Maggiore, e canais abertos na cidade o levam ao canteiro. Quase metade da catedral estava pronta quando Visconti morreu, em 1402. As fontes divergem sobre o fim das obras (1900 ou 1965). (Wikipedia, “Milan Cathedral”; Culture Trip, “Milan’s Duomo: A Timeline of Culture”)",
-          "viz": [
-            {
-              "kind": "map",
-              "base": "italia",
-              "title": "Mapa: Milão",
-              "cap": "Esquema, sem escala. O mármore vem de Candoglia, perto do lago Maggiore, e chega a Milão pelos canais.",
-              "points": [
-                {
-                  "n": "Milão",
-                  "lat": 45.46,
-                  "lon": 9.19,
-                  "hl": true,
-                  "dx": 8,
-                  "dy": 3
-                },
-                {
-                  "n": "Candoglia",
-                  "lat": 45.97,
-                  "lon": 8.43,
-                  "dx": -8,
-                  "dy": -3,
-                  "a": "end"
-                },
-                {
-                  "n": "Roma",
-                  "lat": 41.9,
-                  "lon": 12.5,
-                  "dx": 8,
-                  "dy": 3
-                }
-              ]
-            }
-          ],
-          "audio": {
-            "file": "w10_it3.mp3",
-            "t": [
-              0.0,
-              0.51,
-              1.01,
-              1.51,
-              1.51,
-              3.14,
-              3.56,
-              3.64,
-              3.74,
-              3.74,
-              5.2,
-              6.42,
-              6.54,
-              7.19,
-              7.54,
-              8.06,
-              8.21,
-              8.44,
-              8.79,
-              9.14,
-              10.28,
-              10.89,
-              11.24,
-              11.79,
-              12.09,
-              12.34,
-              12.49,
-              12.74,
-              13.27,
-              13.67,
-              13.77,
-              14.12,
-              14.92,
-              14.99,
-              15.07,
-              15.42,
-              16.02,
-              16.82,
-              16.87,
-              17.34,
-              18.29,
-              18.17,
-              17.97,
-              19.33,
-              19.84,
-              20.37,
-              20.92,
-              21.62,
-              21.72,
-              22.14,
-              22.27,
-              22.94,
-              22.57,
-              22.57,
-              24.74,
-              24.37,
-              25.04,
-              25.32,
-              25.69,
-              26.04,
-              26.37,
-              27.1,
-              27.74,
-              28.12,
-              28.62,
-              28.87,
-              29.49,
-              29.77,
-              30.27,
-              30.57,
-              30.57,
-              31.54,
-              32.02,
-              32.02,
-              34.6,
-              35.39,
-              35.74,
-              35.99,
-              36.49,
-              36.79,
-              37.09,
-              37.41,
-              37.47
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "d": 4,
-      "label": "Quinta",
-      "n": "19",
-      "cards": [
-        {
-          "lang": "gr",
-          "min": "~10 min",
-          "recall": {
-            "prompts": [
-              "“em Acarnas” → ?",
-              "“diz, conta” → ?",
-              "“bom” → ?"
-            ],
-            "key": [
-              "ἐν Ἀχαρναῖς",
-              "λέγει",
-              "ἀγαθός, -ή, -όν"
-            ],
-            "probed": [
-              "ἐν Ἀχαρναῖς",
-              "λέγει",
-              "ἀγαθός, -ή, -όν"
-            ]
-          },
-          "upTo": 9,
-          "pt": "Clístenes trabalha no campo. Nícias vê o fruto. O campo é pequeno, mas é bom. Nícias leva o fruto para dentro de casa. Melita tem o vinho. Cloé come o pão. Argos brinca, e Cloé se alegra. Melita leva a oferenda ao altar. A oferenda é pão.",
-          "sound": "O <span class=\"gi\">ρ</span> de <span class=\"gi\">ἄρτος</span> é um r de uma batida só da língua, como o “r” de “arara”."
-        },
-        {
-          "lang": "en",
-          "tag": "async team",
-          "min": "~13 min",
-          "title": "A comment on the wording of an error",
-          "body": [
-            "In a design review, \"the error copy is bad\" is not a useful comment. Say what the text does to the reader: \"This message blames the user: “You entered a wrong date.” It reads as an accusation.\" Name the screen, the message and the effect, and the writer will see what to change.",
-            "Then offer a rewording, not only a complaint: \"Try “That date is in the past. Pick a date from today.” It points to the field and gives the next step.\" Keep the tone calm and the message short. If you are unsure, ask: \"Is this text final?\"",
-            "Add a note on placement: \"Please show the message next to the field, not only at the top of the page.\" A comment like this is easy to act on, and it is worth a second look from the whole team."
-          ],
-          "inContext": [
-            [
-              "blames the user",
-              "words that make the person feel at fault; a precise way to name a tone problem."
-            ],
-            [
-              "it reads as",
-              "how the text sounds to a reader; softens a judgment into an impression."
-            ],
-            [
-              "a rewording",
-              "the same idea in new words; offering one turns a complaint into help."
-            ],
-            [
-              "next to the field",
-              "right beside the input; the place where an error is easiest to fix."
-            ],
-            [
-              "worth a second look",
-              "deserves more attention; polite when you ask the team to check."
-            ]
-          ],
-          "check": [
-            "What does the first message do to the reader?",
-            "Where should the message appear?"
-          ],
-          "answers": [
-            [
-              "1",
-              "It blames the user."
-            ],
-            [
-              "2",
-              "Next to the field."
-            ]
-          ],
-          "expression": "<b>One expression.</b> <em>Would it help if…?</em> — offers a change as a question, not an order; common in async reviews. Wrong when something is clearly broken: then say it is broken.",
-          "tap": {
-            "w": {
-              "accusation": [
-                "acusação",
-                ""
-              ],
-              "add": [
-                "acrescentar",
-                ""
-              ],
-              "an": [
-                "um, uma",
-                ""
-              ],
-              "and": [
-                "e",
-                ""
-              ],
-              "are": [
-                "são, estão",
-                ""
-              ],
-              "ask": [
-                "pedir",
-                ""
-              ],
-              "bad": [
-                "ruim",
-                ""
-              ],
-              "calm": [
-                "calmo",
-                ""
-              ],
-              "change": [
-                "mudar",
-                ""
-              ],
-              "comment": [
-                "comentário",
-                ""
-              ],
-              "complaint": [
-                "reclamação",
-                ""
-              ],
-              "does": [
-                "faz",
-                ""
-              ],
-              "effect": [
-                "efeito",
-                ""
-              ],
-              "entered": [
-                "digitou",
-                ""
-              ],
-              "from": [
-                "de, a partir de",
-                ""
-              ],
-              "gives": [
-                "dá",
-                ""
-              ],
-              "if": [
-                "se",
-                ""
-              ],
-              "keep": [
-                "manter",
-                ""
-              ],
-              "like": [
-                "como",
-                ""
-              ],
-              "message": [
-                "mensagem",
-                ""
-              ],
-              "name": [
-                "nomear; nome",
-                ""
-              ],
-              "not": [
-                "não",
-                ""
-              ],
-              "note": [
-                "nota",
-                ""
-              ],
-              "offer": [
-                "oferecer",
-                ""
-              ],
-              "only": [
-                "apenas",
-                ""
-              ],
-              "placement": [
-                "posição",
-                ""
-              ],
-              "please": [
-                "por favor",
-                ""
-              ],
-              "points": [
-                "aponta",
-                ""
-              ],
-              "reader": [
-                "leitor",
-                ""
-              ],
-              "say": [
-                "dizer",
-                ""
-              ],
-              "screen": [
-                "tela",
-                ""
-              ],
-              "see": [
-                "ver",
-                ""
-              ],
-              "short": [
-                "curto",
-                ""
-              ],
-              "show": [
-                "mostrar",
-                ""
-              ],
-              "step": [
-                "passo",
-                ""
-              ],
-              "that": [
-                "que",
-                ""
-              ],
-              "then": [
-                "depois",
-                ""
-              ],
-              "today": [
-                "hoje",
-                ""
-              ],
-              "tone": [
-                "tom",
-                ""
-              ],
-              "try": [
-                "tentar, experimentar",
-                ""
-              ],
-              "unsure": [
-                "em dúvida",
-                ""
-              ],
-              "useful": [
-                "útil",
-                ""
-              ],
-              "what": [
-                "o que",
-                ""
-              ],
-              "will": [
-                "vai (futuro)",
-                ""
-              ],
-              "writer": [
-                "redator",
-                ""
-              ],
-              "you": [
-                "você, vocês",
-                ""
-              ]
-            },
-            "p": {
-              "blames the user": [
-                "culpa o usuário",
-                "Faz a pessoa sentir que errou."
-              ],
-              "it reads as": [
-                "soa como",
-                "Como o texto soa para quem lê."
-              ],
-              "a rewording": [
-                "uma reescrita",
-                "A mesma ideia com outras palavras."
-              ],
-              "next to the field": [
-                "ao lado do campo",
-                "Junto do campo, onde é mais fácil corrigir."
-              ],
-              "worth a second look": [
-                "vale uma segunda olhada",
-                ""
-              ],
-              "design review": [
-                "revisão de design",
-                ""
-              ],
-              "error copy": [
-                "texto do erro",
-                "Copy é o texto de uma interface."
-              ],
-              "a wrong date": [
-                "uma data errada",
-                ""
-              ],
-              "easy to act on": [
-                "fácil de executar",
-                "Dá para agir sem perguntar mais nada."
-              ],
-              "the whole team": [
-                "o time todo",
-                ""
-              ],
-              "pick a date": [
-                "escolha uma data",
-                ""
-              ],
-              "in the past": [
-                "no passado",
-                ""
-              ],
-              "is this text final": [
-                "este texto é o definitivo?",
-                "Pergunta sem acusar ninguém."
-              ],
-              "at the top of the page": [
-                "no topo da página",
-                ""
-              ]
-            }
-          },
-          "audio": {
-            "file": "w10_en4.mp3",
-            "t": [
-              0.0,
-              1.19,
-              1.24,
-              1.74,
-              2.17,
-              2.44,
-              2.69,
-              2.99,
-              3.19,
-              3.59,
-              3.79,
-              4.24,
-              4.37,
-              4.79,
-              5.75,
-              6.96,
-              7.17,
-              7.42,
-              7.71,
-              7.94,
-              8.09,
-              8.19,
-              8.56,
-              9.19,
-              9.62,
-              10.19,
-              10.34,
-              10.79,
-              11.12,
-              11.59,
-              11.84,
-              11.24,
-              12.9,
-              13.57,
-              14.49,
-              14.67,
-              14.82,
-              15.98,
-              17.34,
-              17.52,
-              17.87,
-              18.04,
-              18.34,
-              18.59,
-              18.87,
-              19.29,
-              19.54,
-              19.77,
-              19.94,
-              20.24,
-              20.59,
-              21.14,
-              21.34,
-              22.78,
-              24.14,
-              24.52,
-              24.72,
-              25.04,
-              25.32,
-              25.77,
-              26.04,
-              26.62,
-              26.47,
-              27.04,
-              27.34,
-              27.74,
-              27.87,
-              28.17,
-              28.93,
-              29.84,
-              30.27,
-              30.49,
-              30.64,
-              31.5,
-              32.16,
-              33.02,
-              33.24,
-              33.37,
-              33.59,
-              33.81,
-              34.04,
-              34.27,
-              34.39,
-              35.27,
-              36.24,
-              36.79,
-              36.99,
-              37.29,
-              37.52,
-              37.64,
-              38.04,
-              38.82,
-              39.56,
-              40.19,
-              40.36,
-              40.79,
-              41.16,
-              41.61,
-              41.84,
-              42.06,
-              43.32,
-              44.44,
-              44.84,
-              44.91,
-              45.06,
-              45.66,
-              46.16,
-              46.34,
-              46.59,
-              47.01,
-              47.34,
-              47.56,
-              47.76,
-              48.29,
-              48.54,
-              48.91,
-              49.01,
-              49.49,
-              49.79,
-              50.01,
-              50.29,
-              51.07,
-              52.21,
-              52.64,
-              52.86,
-              53.09,
-              53.29,
-              53.51,
-              53.79,
-              53.89,
-              54.39,
-              54.59,
-              54.66,
-              55.06,
-              55.34,
-              55.64,
-              55.96,
-              56.26,
-              56.51,
-              56.74,
-              56.89
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "d": 5,
-      "label": "Sexta",
-      "n": "20",
-      "cards": [
-        {
-          "lang": "gr",
-          "min": "~10 min",
-          "recall": {
-            "prompts": [
-              "“em Acarnas” → ?",
-              "“diz, conta” → ?",
-              "“bom” → ?"
-            ],
-            "key": [
-              "ἐν Ἀχαρναῖς",
-              "λέγει",
-              "ἀγαθός, -ή, -όν"
-            ],
-            "probed": [
-              "ἐν Ἀχαρναῖς",
-              "λέγει",
-              "ἀγαθός, -ή, -όν"
-            ]
-          },
-          "upTo": 11,
-          "pt": "Clístenes trabalha no campo. Nícias vê o fruto. O campo é pequeno, mas é bom. Nícias leva o fruto para dentro de casa. Melita tem o vinho. Cloé come o pão. Argos brinca, e Cloé se alegra. Melita leva a oferenda ao altar. A oferenda é pão. A deusa vê a oferenda e se alegra. Clístenes tem o pão e o vinho.",
-          "sound": "O sinal sobre o <span class=\"gi\">ὁ</span> de <span class=\"gi\">ὁρᾷ</span> é o espírito áspero: um h, como o “h” do inglês em “hat”.",
-          "curio": "Os gregos ofereciam aos deuses os primeiros frutos da estação, a aparkhḗ (ἀπαρχή): Deméter recebia o primeiro grão, Dioniso as primeiras uvas e Atena as primeiras azeitonas. Os atenienses mandavam parte da colheita aos templos de Deméter e Core em Elêusis; os detalhes e as datas dos decretos variam entre os estudiosos. (Theoi, “Cult of Demeter”; Wikipedia, “First Fruits”)"
-        },
-        {
-          "lang": "it",
-          "min": "~12 min",
-          "setting": "Siracusa: una città greca in Sicilia.",
-          "recall": {
-            "prompts": [
-              "“eles precisam” → ?",
-              "“o poeta” → ?",
-              "“o concurso, a competição” → ?"
-            ],
-            "key": [
-              "devono",
-              "il poeta",
-              "il concorso"
-            ]
-          },
-          "text": "In Sicilia, Siracusa oggi è una città italiana, ma all'inizio è greca. Nel 734 (settecentotrentaquattro) a.C. i coloni, che vengono da Corinto e da Tenea, arrivano con Archia e si fermano sull'isola di Ortigia. Alcune fonti dicono 733 (settecentotrentatré). Più tardi la città cresce e ha un grande teatro greco. Oggi la folla dei visitatori può camminare tra le pietre del teatro e vedere i gradini antichi.",
-          "tap": {
-            "w": {
-              "in": [
-                "em",
-                ""
-              ],
-              "sicilia": [
-                "Sicília",
-                ""
-              ],
-              "siracusa": [
-                "Siracusa, cidade da Sicília",
-                ""
-              ],
-              "oggi": [
-                "hoje",
-                ""
-              ],
-              "è": [
-                "é",
-                ""
-              ],
-              "una": [
-                "uma",
                 ""
               ],
               "città": [
                 "cidade",
                 ""
               ],
-              "italiana": [
-                "italiana",
+              "diventa": [
+                "torna-se",
                 ""
               ],
-              "ma": [
-                "mas",
+              "capitale": [
+                "capital",
                 ""
               ],
-              "all'inizio": [
-                "no início",
-                "all' = a + l'."
+              "dell'impero": [
+                "do império",
+                "dell' = di + l'."
               ],
-              "greca": [
-                "grega",
-                ""
-              ],
-              "nel": [
-                "em o, no",
-                "nel = in + il."
-              ],
-              "ac": [
-                "antes de Cristo",
-                "a.C. = avanti Cristo."
-              ],
-              "i": [
-                "os",
-                ""
-              ],
-              "coloni": [
-                "colonos",
-                ""
-              ],
-              "che": [
-                "que",
-                ""
-              ],
-              "vengono": [
-                "vêm",
-                "venire: vengono = eles vêm."
-              ],
-              "da": [
-                "de, desde",
-                ""
-              ],
-              "corinto": [
-                "Corinto, cidade grega",
-                ""
-              ],
-              "e": [
-                "e",
-                ""
-              ],
-              "tenea": [
-                "Tenea, cidade perto de Corinto",
-                ""
-              ],
-              "arrivano": [
-                "chegam",
-                ""
-              ],
-              "con": [
-                "com",
-                ""
-              ],
-              "archia": [
-                "Árquias, o líder dos colonos",
-                ""
-              ],
-              "si": [
-                "se",
-                ""
-              ],
-              "fermano": [
-                "param",
-                "fermarsi = parar, ficar."
-              ],
-              "sull'isola": [
-                "na ilha",
-                "sull' = su + l'."
-              ],
-              "di": [
-                "de",
-                ""
-              ],
-              "ortigia": [
-                "Ortígia, a ilha onde fica o centro antigo",
-                ""
-              ],
-              "alcune": [
-                "algumas",
-                ""
-              ],
-              "fonti": [
-                "fontes",
-                ""
-              ],
-              "dicono": [
-                "dizem",
-                ""
+              "d'occidente": [
+                "do Ocidente",
+                "d' = di antes de vogal."
               ],
               "più": [
                 "mais",
@@ -3108,166 +1098,247 @@
                 "tarde",
                 ""
               ],
-              "la": [
-                "a",
+              "al": [
+                "a o, no",
+                "al = a + il."
+              ],
+              "tempo": [
+                "tempo",
                 ""
               ],
-              "cresce": [
-                "cresce",
+              "di": [
+                "de",
                 ""
               ],
-              "ha": [
-                "tem",
+              "giustiniano": [
+                "Justiniano, imperador do Oriente",
                 ""
               ],
-              "un": [
-                "um",
+              "i": [
+                "os",
                 ""
               ],
-              "grande": [
-                "grande",
+              "mosaici": [
+                "mosaicos",
                 ""
               ],
-              "teatro": [
-                "teatro",
+              "della": [
+                "da",
+                "della = di + la."
+              ],
+              "chiesa": [
+                "igreja",
                 ""
               ],
-              "greco": [
-                "grego",
+              "san": [
+                "São",
                 ""
               ],
-              "folla": [
-                "multidão",
+              "vitale": [
+                "Vital, o santo da igreja",
                 ""
               ],
-              "dei": [
-                "dos",
-                "dei = di + i."
+              "mostrano": [
+                "mostram",
+                ""
               ],
-              "visitatori": [
-                "visitantes",
+              "sua": [
+                "sua",
+                ""
+              ],
+              "moglie": [
+                "esposa",
+                ""
+              ],
+              "teodora": [
+                "Teodora, esposa de Justiniano",
+                ""
+              ],
+              "chi": [
+                "quem",
+                "chi sem pessoa antes = quem."
+              ],
+              "entra": [
+                "entra",
                 ""
               ],
               "può": [
                 "pode",
                 "può é de potere: ele pode. Depois dele vem o infinitivo."
               ],
-              "camminare": [
-                "caminhar",
-                ""
-              ],
-              "tra": [
-                "entre",
+              "vedere": [
+                "ver",
                 ""
               ],
               "le": [
                 "as",
                 ""
               ],
-              "pietre": [
-                "pedras",
-                "la pietra, le pietre."
-              ],
-              "del": [
-                "do",
-                "del = di + il."
-              ],
-              "vedere": [
-                "ver",
+              "figure": [
+                "figuras",
                 ""
               ],
-              "gradini": [
-                "degraus",
+              "sulle": [
+                "sobre as, nas",
+                "sulle = su + le."
+              ],
+              "pareti": [
+                "paredes",
                 ""
               ],
-              "antichi": [
-                "antigos",
+              "per": [
+                "para",
+                ""
+              ],
+              "guardarle": [
+                "olhá-las",
+                "guardare + le: olhar as figuras."
+              ],
+              "bene": [
+                "bem",
+                ""
+              ],
+              "visitatori": [
+                "visitantes",
+                ""
+              ],
+              "devono": [
+                "precisam, devem",
+                "devono é de dovere: eles precisam. Depois dele vem o infinitivo."
+              ],
+              "alzare": [
+                "levantar",
+                ""
+              ],
+              "gli": [
+                "os",
+                ""
+              ],
+              "occhi": [
+                "olhos",
+                ""
+              ],
+              "oggi": [
+                "hoje",
+                ""
+              ],
+              "è": [
+                "é",
+                ""
+              ],
+              "un": [
+                "um",
+                ""
+              ],
+              "sito": [
+                "sítio, lugar",
+                ""
+              ],
+              "unesco": [
+                "UNESCO",
+                ""
+              ],
+              "con": [
+                "com",
+                ""
+              ],
+              "otto": [
+                "oito",
+                ""
+              ],
+              "monumenti": [
+                "monumentos",
+                ""
+              ],
+              "paleocristiani": [
+                "paleocristãos, dos primeiros cristãos",
                 ""
               ]
             },
             "p": {
-              "nel 734 settecentotrentaquattro": [
-                "no ano 734",
-                "settecentotrentaquattro é 734 por extenso."
+              "nel 402 quattrocentodue": [
+                "no ano 402",
+                "quattrocentodue é 402 por extenso."
               ],
-              "733 settecentotrentatré": [
-                "733",
-                "settecentotrentatré é 733 por extenso."
+              "porta la corte": [
+                "leva a corte",
+                "A corte é o governo e os conselheiros do imperador."
               ],
-              "da corinto": [
-                "de Corinto",
-                "Antes de nome de cidade, da não leva artigo."
+              "al tempo di": [
+                "no tempo de",
+                "al = a + il."
               ],
-              "da tenea": [
-                "de Tenea",
-                "Antes de nome de cidade, da não leva artigo."
+              "chi entra": [
+                "quem entra",
+                "chi sem pessoa antes = quem."
               ],
-              "si fermano": [
-                "param, ficam",
-                "fermarsi = parar, ficar."
+              "può vedere": [
+                "pode ver",
+                "Depois de può o outro verbo fica no infinitivo."
+              ],
+              "devono alzare": [
+                "precisam levantar",
+                "devono é de dovere; depois dele o outro verbo fica no infinitivo."
+              ],
+              "alzare gli occhi": [
+                "levantar os olhos",
+                ""
+              ],
+              "per guardarle bene": [
+                "para olhá-las bem",
+                "per + infinitivo = para + infinitivo."
+              ],
+              "sua moglie teodora": [
+                "sua esposa Teodora",
+                ""
               ],
               "più tardi": [
                 "mais tarde",
                 ""
               ],
-              "la folla dei visitatori": [
-                "a multidão de visitantes",
-                "dei = di + i."
+              "dell'impero d'occidente": [
+                "do Império do Ocidente",
+                "A parte ocidental do Império Romano."
               ],
-              "può camminare": [
-                "pode caminhar",
-                "Depois de può o outro verbo fica no infinitivo."
-              ],
-              "tra le pietre": [
-                "entre as pedras",
-                ""
-              ],
-              "dei visitatori": [
-                "dos visitantes",
-                "dei = di + i."
-              ],
-              "sull'isola di ortigia": [
-                "na ilha de Ortígia",
-                "sull' = su + l'."
+              "san vitale": [
+                "San Vitale, a igreja",
+                "Igreja de Ravenna, famosa pelos mosaicos."
               ]
             },
-            "f": {
-              "siracusa": "siracusa",
-              "teatro": "siracusa"
-            }
+            "f": {}
           },
           "questions": [
-            "Siracusa è sempre una città italiana?",
-            "Da dove vengono i coloni?",
-            "Che cosa può fare oggi la folla dei visitatori?"
+            "Chi porta la corte a Ravenna?",
+            "Che cosa mostrano i mosaici di San Vitale?",
+            "Che cosa devono fare i visitatori per guardare bene le figure?"
           ],
-          "note": "<em>da</em> + cidade não leva artigo: <em>da Corinto</em>, <em>da Tenea</em>. Com artigo, <em>da</em> se funde: <em>dal teatro</em>, <em>dalla città</em>.",
+          "note": "<em>chi entra</em> = “quem entra”: <em>chi</em>, sem uma pessoa antes, é “quem”. <em>Chi entra può vedere</em> = “quem entra pode ver”.",
           "answers": [
             [
               "1",
-              "No, all'inizio è greca."
+              "L'imperatore Onorio."
             ],
             [
               "2",
-              "Da Corinto e da Tenea."
+              "L'imperatore e sua moglie Teodora."
             ],
             [
               "3",
-              "Camminare tra le pietre del teatro."
+              "Alzare gli occhi."
             ]
           ],
-          "curio": "Siracusa é fundada em 734 ou 733 a.C. por colonos de Corinto e de Tenea, liderados por Arquias; os primeiros ocupam a ilha de Ortígia. A data varia entre as fontes. (Wikipedia, “Syracuse, Sicily”; Perseus, Dictionary of Greek and Roman Biography, “Archias”)",
+          "curio": "Em 402 o imperador Honório muda a corte de Roma para Ravenna, por causa do perigo de invasões, e a cidade é a capital do Império do Ocidente até 476. San Vitale é do tempo de Justiniano; as fontes divergem sobre a data (547 ou 548), e os painéis mostram Justiniano e Teodora. (Britannica, “Ravenna”; UNESCO, “Early Christian Monuments of Ravenna”; Lonely Planet, “Ravenna's Marvellous Mosaics”)",
           "viz": [
             {
               "kind": "map",
               "base": "italia",
-              "title": "Mapa: Siracusa",
-              "cap": "Esquema, sem escala. Siracusa fica no leste da Sicília.",
+              "title": "Mapa: Ravenna",
+              "cap": "Esquema, sem escala. Ravenna fica no nordeste da Itália, perto do mar Adriático.",
               "points": [
                 {
-                  "n": "Siracusa",
-                  "lat": 37.07,
-                  "lon": 15.29,
+                  "n": "Ravenna",
+                  "lat": 44.42,
+                  "lon": 12.2,
                   "hl": true,
                   "dx": 8,
                   "dy": 3
@@ -3281,314 +1352,1697 @@
                 }
               ]
             }
-          ],
-          "audio": {
-            "file": "w10_it5.mp3",
-            "t": [
-              0.0,
-              0.67,
-              1.31,
-              2.27,
-              2.54,
-              2.67,
-              2.92,
-              3.17,
-              3.89,
-              3.97,
-              4.57,
-              4.69,
-              5.58,
-              6.21,
-              6.21,
-              8.12,
-              8.95,
-              9.47,
-              10.07,
-              10.24,
-              10.89,
-              11.19,
-              11.52,
-              11.74,
-              11.79,
-              12.19,
-              12.57,
-              12.54,
-              13.24,
-              13.37,
-              13.49,
-              13.99,
-              14.92,
-              15.02,
-              16.05,
-              17.09,
-              17.41,
-              17.99,
-              17.99,
-              19.93,
-              20.49,
-              20.91,
-              21.29,
-              21.66,
-              22.16,
-              22.34,
-              22.52,
-              22.71,
-              22.99,
-              23.41,
-              24.4,
-              25.19,
-              25.54,
-              25.79,
-              26.24,
-              26.92,
-              27.12,
-              27.77,
-              27.99,
-              28.04,
-              28.32,
-              28.47,
-              29.14,
-              29.37,
-              29.72,
-              29.84,
-              30.32
-            ]
-          }
+          ]
         }
       ]
     },
     {
-      "d": 6,
-      "label": "Sábado",
-      "n": "21",
+      "d": 2,
+      "label": "Terça",
+      "n": "24",
       "cards": [
         {
           "lang": "gr",
-          "min": "~10 min",
-          "setting": "Teste das 13 frases, de novo: toque no texto até sumirem a glosa e a transliteração, leia as 13 frases e conte quantas você entendeu.",
-          "upTo": 13,
-          "pt": "Clístenes trabalha no campo. Nícias vê o fruto. O campo é pequeno, mas é bom. Nícias leva o fruto para dentro de casa. Melita tem o vinho. Cloé come o pão. Argos brinca, e Cloé se alegra. Melita leva a oferenda ao altar. A oferenda é pão. A deusa vê a oferenda e se alegra. Clístenes tem o pão e o vinho. Em Acarnas o fruto é bom. Nícias trabalha, e Clístenes se alegra.",
-          "sound": "O <span class=\"gi\">ει</span> de <span class=\"gi\">Κλεισθένης</span> é um e longo e fechado, como um “ê” esticado."
+          "min": "~9 min",
+          "recall": {
+            "prompts": [
+              "“o pão” → ?",
+              "“come” → ?",
+              "“para dentro de” → ?",
+              "“brinca” → ?"
+            ],
+            "key": [
+              "ὁ ἄρτος",
+              "ἐσθίει",
+              "εἰς (+ac)",
+              "παίζει"
+            ],
+            "probed": [
+              "ὁ ἄρτος",
+              "ἐσθίει",
+              "εἰς (+ac)",
+              "παίζει"
+            ]
+          },
+          "upTo": 5,
+          "pt": "Simo tem o burro. O burro de Simo é pequeno. O burro leva o grão de Clístenes. Melita leva a oferenda ao altar. Simo vê a estrada.",
+          "form": "<span class=\"gi\">ἡ ὁδός</span> termina em -ος como um masculino, mas é feminina: o artigo <span class=\"gi\">ἡ</span> mostra o gênero, e o acusativo é <span class=\"gi\">τὴν ὁδόν</span>.",
+          "sound": "O <span class=\"gi\">π</span> de <span class=\"gi\">πρός</span> é um p seco, sem sopro, como o p de “pato”."
         },
         {
           "lang": "en",
-          "tag": "public writing",
+          "tag": "everyday · shopping",
           "min": "~13 min",
-          "title": "Error messages and accessibility, in a case study",
+          "title": "At an outdoor store",
           "body": [
-            "Teams often write error messages last and test them never. But an accessibility guideline asks for more. WCAG success criterion 3.3.1 (Error Identification), level A, the basic level, asks that an error found by the system is identified and described to the user in text. Criterion 3.3.3 (Error Suggestion), level AA, asks that the message also suggest a correction, unless that would hurt security.",
-            "A message like \"Email is not valid\" passes the first criterion. A message that also shows the expected format passes both. Color alone is not enough: a red border helps, but the text must say what is wrong. Default browser messages are often generic, so a designer can improve them with specific wording.",
-            "When you write about this in a case study, be specific. Show a message before and after, say which criterion it now meets and explain how you tested it. \"We improved the errors\" is easy to say. \"We replaced “Invalid input” with a message that names the field and the format\" is something a reader can check."
+            "Clerk: Hey there. Can I help you find anything?",
+            "You: Yeah, I'm looking for a camp stove. Something small, for two people.",
+            "Clerk: Sure thing. Are you car camping, or hiking in?",
+            "You: Car camping, mostly. We're headed to Montana in September.",
+            "Clerk: Nice. Then you don't need to go ultralight. This one is solid, and it's easy to clean.",
+            "You: How much is it?",
+            "Clerk: Sixty dollars. Keep in mind the price on the tag doesn't include tax. That gets added at the register.",
+            "You: Right. Does Montana have sales tax?",
+            "Clerk: Not at the state level, so you wouldn't pay any there. In most states you do pay it at checkout.",
+            "You: Good to know. I'll take it. Do you carry fuel for it?",
+            "Clerk: Aisle four. Grab a can, and I'll meet you at the register."
           ],
           "inContext": [
             [
-              "described in text",
-              "written in words, not only shown by color or icon; the wording of criterion 3.3.1."
+              "Sure thing",
+              "yes, of course; the everyday way a clerk or a friend says yes."
             ],
             [
-              "suggest a correction",
-              "tell the person how to fix the error; the core of criterion 3.3.3."
+              "car camping",
+              "camping where you drive up to the site and carry the gear in the car, not on your back."
             ],
             [
-              "color alone",
-              "color as the only signal; the usual accessibility failure to name."
+              "go ultralight",
+              "carry the lightest gear possible, usually for long hikes."
             ],
             [
-              "passes both",
-              "meets two criteria at once; a clear way to report a result."
+              "doesn't include",
+              "is not part of the price; useful for tax, tips and fees."
             ],
             [
-              "before and after",
-              "the comparison a case study needs; show the two messages side by side."
+              "at the register",
+              "at the checkout counter, where you pay."
             ]
           ],
           "check": [
-            "Which criterion asks for a suggested correction?",
-            "What is not enough to show an error?"
+            "What kind of camping is the customer planning?",
+            "Why will the final price be higher than the tag?"
           ],
           "answers": [
             [
               "1",
-              "Criterion 3.3.3, level AA."
+              "Car camping, in Montana."
             ],
             [
               "2",
-              "Color alone."
+              "Because sales tax is added at the register."
             ]
           ],
-          "expression": "<b>One expression.</b> <em>Before and after:</em> — opens a comparison the reader can scan; common in case studies and reports. Wrong when the change is too small to show: then describe it in a sentence.",
+          "expression": "<b>One expression.</b> <em>Good to know.</em> — thanks for a useful piece of information; fits shops, offices and trips. Wrong when you must answer with a decision: then say what you will do.",
+          "curio": "In the US, the price on the tag usually does not include sales tax: it is added at checkout, and the rate depends on the state. Montana has no general state sales tax, although some resort communities charge their own. (Wikipedia, “Sales taxes in the United States”; Stripe, “Montana sales tax rate”)",
           "tap": {
             "w": {
-              "333": [
-                "3.3.3 (número do critério)",
+              "added": [
+                "acrescentamos",
                 ""
               ],
-              "about": [
-                "sobre",
+              "aisle": [
+                "corredor (de loja)",
                 ""
               ],
-              "accessibility": [
-                "acessibilidade",
+              "and": [
+                "e",
                 ""
               ],
-              "also": [
-                "também",
+              "any": [
+                "qualquer, nenhum",
                 ""
               ],
-              "an": [
-                "um, uma",
+              "anything": [
+                "qualquer coisa, algo",
                 ""
               ],
               "are": [
                 "são, estão",
                 ""
               ],
-              "asks": [
-                "pede",
+              "carry": [
+                "carregar, trazer consigo",
                 ""
               ],
-              "but": [
-                "mas",
+              "checkout": [
+                "caixa, pagamento",
                 ""
               ],
-              "by": [
-                "por",
+              "clerk": [
+                "atendente, vendedor",
                 ""
               ],
-              "case": [
-                "caso",
+              "do": [
+                "fazer (auxiliar)",
                 ""
               ],
-              "designer": [
-                "designer",
+              "does": [
+                "faz (auxiliar)",
                 ""
               ],
-              "easy": [
-                "fácil",
+              "dollars": [
+                "dólares",
                 ""
               ],
-              "enough": [
-                "suficiente",
+              "don't": [
+                "não (auxiliar)",
                 ""
               ],
-              "errors": [
-                "erros",
-                ""
-              ],
-              "explain": [
-                "explicar",
-                ""
-              ],
-              "field": [
-                "campo",
-                ""
-              ],
-              "first": [
-                "primeiro",
+              "find": [
+                "achar",
                 ""
               ],
               "for": [
-                "para; por",
+                "para",
                 ""
               ],
-              "found": [
-                "encontrado",
+              "four": [
+                "quatro",
                 ""
               ],
-              "generic": [
-                "genérico",
+              "fuel": [
+                "combustível",
                 ""
               ],
-              "guideline": [
-                "diretriz",
+              "gets": [
+                "fica",
                 ""
               ],
-              "helps": [
-                "ajuda",
+              "have": [
+                "tenham",
+                ""
+              ],
+              "help": [
+                "ajudar",
+                ""
+              ],
+              "i": [
+                "eu",
+                ""
+              ],
+              "i'm": [
+                "eu estou",
+                ""
+              ],
+              "it's": [
+                "é (ele é)",
+                ""
+              ],
+              "looking": [
+                "procurando",
+                ""
+              ],
+              "montana": [
+                "Montana (estado dos EUA)",
+                ""
+              ],
+              "mostly": [
+                "na maior parte",
+                ""
+              ],
+              "need": [
+                "precisar",
+                ""
+              ],
+              "nice": [
+                "legal",
+                ""
+              ],
+              "not": [
+                "não",
+                ""
+              ],
+              "on": [
+                "em, sobre",
+                ""
+              ],
+              "one": [
+                "um; este aqui",
+                ""
+              ],
+              "or": [
+                "ou",
+                ""
+              ],
+              "pay": [
+                "pagar",
+                ""
+              ],
+              "people": [
+                "pessoas",
+                ""
+              ],
+              "price": [
+                "preço",
+                ""
+              ],
+              "right": [
+                "certo; é verdade",
+                ""
+              ],
+              "september": [
+                "setembro",
+                ""
+              ],
+              "sixty": [
+                "sessenta",
+                ""
+              ],
+              "small": [
+                "pequeno",
+                ""
+              ],
+              "so": [
+                "então",
+                ""
+              ],
+              "solid": [
+                "robusto, sólido",
+                ""
+              ],
+              "something": [
+                "algo",
+                ""
+              ],
+              "tag": [
+                "etiqueta",
+                ""
+              ],
+              "that": [
+                "que",
+                ""
+              ],
+              "then": [
+                "então",
+                ""
+              ],
+              "this": [
+                "este, esta",
+                ""
+              ],
+              "two": [
+                "dois",
+                ""
+              ],
+              "we're": [
+                "nós estamos",
+                ""
+              ],
+              "wouldn't": [
+                "não (condicional)",
+                ""
+              ],
+              "yeah": [
+                "sim, é",
+                ""
+              ]
+            },
+            "p": {
+              "sure thing": [
+                "claro, pode deixar",
+                "Jeito comum de dizer sim em lojas e entre amigos."
+              ],
+              "car camping": [
+                "camping de carro",
+                "Acampar levando o equipamento no carro, sem carregar nas costas."
+              ],
+              "go ultralight": [
+                "ir superleve",
+                "Levar o mínimo de peso, em geral em trilhas longas."
+              ],
+              "doesn't include": [
+                "não inclui",
+                "Serve para imposto, gorjeta e taxas."
+              ],
+              "at the register": [
+                "no caixa",
+                "Onde se paga."
+              ],
+              "good to know": [
+                "bom saber",
+                "Agradece uma informação útil."
+              ],
+              "keep in mind": [
+                "tenha em mente",
+                "Lembrete educado antes de uma informação importante."
+              ],
+              "hey there": [
+                "oi, olá",
+                "Cumprimento informal de quem atende."
+              ],
+              "camp stove": [
+                "fogareiro de camping",
+                ""
+              ],
+              "hiking in": [
+                "chegar a pé",
+                "Ir caminhando até o local, carregando tudo."
+              ],
+              "headed to": [
+                "indo para",
+                ""
+              ],
+              "sales tax": [
+                "imposto sobre vendas",
+                "Nos EUA, soma-se ao preço no caixa."
+              ],
+              "state level": [
+                "nível estadual",
+                ""
+              ],
+              "in most states": [
+                "na maioria dos estados",
+                ""
+              ],
+              "i'll take it": [
+                "vou levar",
+                "Jeito de fechar a compra."
+              ],
+              "grab a can": [
+                "pegue uma lata",
+                ""
+              ],
+              "meet you at": [
+                "encontro você no",
+                ""
+              ],
+              "how much is it": [
+                "quanto custa",
+                ""
+              ],
+              "easy to clean": [
+                "fácil de limpar",
+                ""
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "label": "Quarta",
+      "n": "25",
+      "cards": [
+        {
+          "lang": "gr",
+          "min": "~9 min",
+          "recall": {
+            "prompts": [
+              "“o pão” → ?",
+              "“come” → ?",
+              "“brinca” → ?",
+              "“o vinho” → ?"
+            ],
+            "key": [
+              "ὁ ἄρτος",
+              "ἐσθίει",
+              "παίζει",
+              "ὁ οἶνος"
+            ],
+            "probed": [
+              "ὁ ἄρτος",
+              "ἐσθίει",
+              "παίζει",
+              "ὁ οἶνος"
+            ]
+          },
+          "upTo": 7,
+          "pt": "Simo tem o burro. O burro de Simo é pequeno. O burro leva o grão de Clístenes. Melita leva a oferenda ao altar. Simo vê a estrada. A estrada é longa, mas é boa. Simo vai para a ágora.",
+          "form": "Com <span class=\"gi\">ἡ ὁδός</span>, o adjetivo também fica no feminino: <span class=\"gi\">μακρός → μακρά</span> e <span class=\"gi\">καλός → καλή</span>.",
+          "sound": "O <span class=\"gi\">λλ</span> de <span class=\"gi\">ἀλλά</span> é um l prolongado: a língua fica um instante a mais no céu da boca."
+        },
+        {
+          "lang": "it",
+          "min": "~12 min",
+          "setting": "Roma, de manhã: um bar com o banco e a cassa.",
+          "recall": {
+            "prompts": [
+              "“eles precisam” → ?",
+              "“a cinza” → ?",
+              "“o mármore” → ?"
+            ],
+            "key": [
+              "devono",
+              "la cenere",
+              "il marmo"
+            ]
+          },
+          "text": "Cliente: Buongiorno! Mi può fare un caffè, per favore? Barista: Certo. Prima deve pagare alla cassa. Cliente: Ah, scusi. Quanto costa? Barista: Al banco costa poco. Al tavolo di solito costa di più. Cliente: Allora lo prendo al banco. Che folla, oggi! Barista: Sì, a quest'ora il bar è sempre pieno. Poi porta lo scontrino qui. Cliente: Va bene. Grazie mille!",
+          "tap": {
+            "w": {
+              "cliente": [
+                "cliente (quem fala)",
+                ""
+              ],
+              "buongiorno": [
+                "bom dia",
+                ""
+              ],
+              "mi": [
+                "me, para mim",
+                "mi vem antes do verbo: mi può fare = pode me fazer."
+              ],
+              "può": [
+                "pode",
+                "può é de potere: ele pode. Depois dele vem o infinitivo."
+              ],
+              "fare": [
+                "fazer",
+                ""
+              ],
+              "un": [
+                "um",
+                ""
+              ],
+              "caffè": [
+                "café, o espresso",
+                "No bar, caffè é o espresso: pequeno e forte."
+              ],
+              "per": [
+                "por, para",
+                ""
+              ],
+              "favore": [
+                "favor",
+                ""
+              ],
+              "barista": [
+                "barista (quem fala)",
+                ""
+              ],
+              "certo": [
+                "claro",
+                ""
+              ],
+              "prima": [
+                "primeiro, antes",
+                ""
+              ],
+              "deve": [
+                "precisa, deve",
+                "deve é de dovere: ele precisa. Depois dele vem o infinitivo."
+              ],
+              "pagare": [
+                "pagar",
+                ""
+              ],
+              "alla": [
+                "à, na",
+                "alla = a + la."
+              ],
+              "cassa": [
+                "caixa (onde se paga)",
+                ""
+              ],
+              "ah": [
+                "ah",
+                ""
+              ],
+              "scusi": [
+                "desculpe",
+                "Forma educada: scusi = com licença, desculpe."
+              ],
+              "quanto": [
+                "quanto",
+                ""
+              ],
+              "costa": [
+                "custa",
+                ""
+              ],
+              "al": [
+                "a o, no",
+                "al = a + il."
+              ],
+              "banco": [
+                "balcão",
+                "Aqui, o balcão do bar."
+              ],
+              "poco": [
+                "pouco",
+                ""
+              ],
+              "tavolo": [
+                "mesa",
+                ""
+              ],
+              "di": [
+                "de",
+                ""
+              ],
+              "solito": [
+                "costume",
+                "di solito = geralmente."
+              ],
+              "più": [
+                "mais",
+                ""
+              ],
+              "allora": [
+                "então",
+                ""
+              ],
+              "lo": [
+                "o (o café)",
+                "lo é o objeto: o que eu prendo."
+              ],
+              "prendo": [
+                "pego, tomo",
+                "prendere = pegar; no bar, também tomar."
+              ],
+              "che": [
+                "que, como",
+                "Che folla! = Que multidão!"
+              ],
+              "folla": [
+                "multidão",
+                ""
+              ],
+              "oggi": [
+                "hoje",
+                ""
+              ],
+              "sì": [
+                "sim",
+                ""
+              ],
+              "a": [
+                "a, em",
+                ""
+              ],
+              "quest'ora": [
+                "esta hora",
+                ""
+              ],
+              "il": [
+                "o",
+                ""
+              ],
+              "bar": [
+                "bar",
+                "Em italiano, bar é a cafeteria onde se toma café em pé."
+              ],
+              "è": [
+                "é",
+                ""
+              ],
+              "sempre": [
+                "sempre",
+                ""
+              ],
+              "pieno": [
+                "cheio",
+                ""
+              ],
+              "poi": [
+                "depois",
+                ""
+              ],
+              "porta": [
+                "leva",
+                ""
+              ],
+              "scontrino": [
+                "recibo, cupom",
+                ""
+              ],
+              "qui": [
+                "aqui",
+                ""
+              ],
+              "va": [
+                "vai",
+                ""
+              ],
+              "bene": [
+                "bem",
+                ""
+              ],
+              "grazie": [
+                "obrigado",
+                ""
+              ],
+              "mille": [
+                "mil",
+                ""
+              ]
+            },
+            "p": {
+              "mi può fare": [
+                "pode me fazer",
+                "mi vem antes do verbo."
+              ],
+              "per favore": [
+                "por favor",
+                ""
+              ],
+              "alla cassa": [
+                "no caixa",
+                "alla = a + la."
+              ],
+              "al banco": [
+                "no balcão",
+                "al = a + il."
+              ],
+              "al tavolo": [
+                "à mesa",
+                "al = a + il."
+              ],
+              "di solito": [
+                "geralmente",
+                ""
+              ],
+              "di più": [
+                "mais",
+                "costa di più = custa mais."
+              ],
+              "a quest'ora": [
+                "a esta hora",
+                ""
+              ],
+              "che folla": [
+                "que multidão",
+                ""
+              ],
+              "va bene": [
+                "tudo bem, combinado",
+                ""
+              ],
+              "grazie mille": [
+                "muito obrigado",
+                "Literalmente: mil graças."
+              ],
+              "prima deve pagare": [
+                "primeiro precisa pagar",
+                "deve é de dovere; depois dele vem o infinitivo."
+              ],
+              "porta lo scontrino": [
+                "traga o recibo",
+                "Aqui porta é ordem: traga."
+              ],
+              "è sempre pieno": [
+                "está sempre cheio",
+                ""
+              ],
+              "lo prendo": [
+                "eu o pego",
+                "lo = o café; vem antes do verbo."
+              ]
+            },
+            "f": {}
+          },
+          "questions": [
+            "Dove deve pagare il cliente prima?",
+            "Dove costa meno il caffè?",
+            "Che cosa porta il cliente al banco?"
+          ],
+          "note": "<em>Mi può fare un caffè?</em> = “pode me fazer um café?”: o <em>mi</em> vem antes do verbo. <em>Può</em> e <em>deve</em> são seguidos do infinitivo: <em>può fare</em>, <em>deve pagare</em>.",
+          "answers": [
+            [
+              "1",
+              "Alla cassa."
+            ],
+            [
+              "2",
+              "Al banco."
+            ],
+            [
+              "3",
+              "Lo scontrino."
+            ]
+          ],
+          "curio": "Em muitos bares italianos paga-se primeiro na caixa (cassa) e leva-se o recibo (scontrino) ao balcão, mas o costume varia de bar para bar. Em pé, no balcão, costuma custar menos; na mesa pode haver uma cobrança extra (coperto). (Remitly, “How to Order Coffee in Italy”; Italy Handbook, “How to Order Coffee in Italy Like a Local”)"
+        }
+      ]
+    },
+    {
+      "d": 4,
+      "label": "Quinta",
+      "n": "26",
+      "cards": [
+        {
+          "lang": "gr",
+          "min": "~10 min",
+          "recall": {
+            "prompts": [
+              "“brinca” → ?",
+              "“o fruto, a colheita” → ?",
+              "“trabalha” → ?",
+              "“o campo” → ?"
+            ],
+            "key": [
+              "παίζει",
+              "ὁ καρπός",
+              "πονεῖ",
+              "ὁ ἀγρός"
+            ],
+            "probed": [
+              "παίζει",
+              "ὁ καρπός",
+              "πονεῖ",
+              "ὁ ἀγρός"
+            ]
+          },
+          "upTo": 9,
+          "pt": "Simo tem o burro. O burro de Simo é pequeno. O burro leva o grão de Clístenes. Melita leva a oferenda ao altar. Simo vê a estrada. A estrada é longa, mas é boa. Simo vai para a ágora. Na ágora, Simo come o pão. O vinho de Clístenes é bom.",
+          "sound": "O <span class=\"gi\">ῇ</span> de <span class=\"gi\">τῇ</span> e o <span class=\"gi\">ᾷ</span> de <span class=\"gi\">ἀγορᾷ</span> levam um i embaixo, que ainda se pronunciava no século V."
+        },
+        {
+          "lang": "en",
+          "tag": "everyday · travel",
+          "min": "~13 min",
+          "title": "Checking in at a campground",
+          "body": [
+            "Host: Welcome. Do you have a reservation?",
+            "You: Yes, under my name. Two nights, site twelve.",
+            "Host: Got it. Site twelve is by the creek. Quiet hours start at ten here.",
+            "You: Good. Is there anything we should know?",
+            "Host: Yes. This is bear country, so keep all food and anything with a scent in your car or in the bear box. Never in your tent.",
+            "You: Understood. Should we carry bear spray?",
+            "Host: I'd say yes, and learn how to use it. If you see a bear, don't run. Stand your ground, and use the spray if it gets close.",
+            "You: Got it. What about firewood?",
+            "Host: Buy it where you burn it: here, or close by. Don't bring wood from home, because it can carry pests. If you have extra, leave it with me.",
+            "You: Perfect. Thanks for the tips.",
+            "Host: Enjoy your stay."
+          ],
+          "inContext": [
+            [
+              "under my name",
+              "the booking is registered with my name; how you give a reservation at check-in."
+            ],
+            [
+              "bear country",
+              "an area where bears live; a warning to be careful with food."
+            ],
+            [
+              "anything with a scent",
+              "toothpaste, soap, pet food and the like; things a bear can smell."
+            ],
+            [
+              "bear box",
+              "a metal locker at a campsite where you store food so bears cannot open it."
+            ],
+            [
+              "buy it where you burn it",
+              "a camping rule: buy firewood near the campground, so you do not carry pests."
+            ]
+          ],
+          "check": [
+            "Where must the campers keep food?",
+            "What should they do if they see a bear?"
+          ],
+          "answers": [
+            [
+              "1",
+              "In the car or in the bear box, never in the tent."
+            ],
+            [
+              "2",
+              "Not run: stand their ground and use the bear spray if it gets close."
+            ]
+          ],
+          "expression": "<b>One expression.</b> <em>Got it.</em> — I understand and will do it; short and friendly, common in shops, camps and offices. Wrong when you do not really understand: then ask a question.",
+          "curio": "In bear country, keep food and scented items (toothpaste, pet food) in a bear box or a hard-sided vehicle, never in the tent; carry bear spray and learn to use it; if you meet a bear, do not run. Food-storage rules vary by area, so check the campground. For firewood, buy it where you burn it and leave leftovers at the site or with the camp host. (Montana Fish, Wildlife & Parks, “Be Bear Aware”; U.S. Forest Service, “Be bear aware”; National Park Service, “Don't Move Firewood”)",
+          "tap": {
+            "w": {
+              "about": [
+                "sobre",
+                ""
+              ],
+              "all": [
+                "todo",
+                ""
+              ],
+              "and": [
+                "e",
+                ""
+              ],
+              "at": [
+                "em",
+                ""
+              ],
+              "because": [
+                "porque",
+                ""
+              ],
+              "bring": [
+                "trazer",
+                ""
+              ],
+              "can": [
+                "pode",
+                ""
+              ],
+              "car": [
+                "carro",
+                ""
+              ],
+              "carry": [
+                "carregar, trazer consigo",
+                ""
+              ],
+              "don't": [
+                "não (auxiliar)",
+                ""
+              ],
+              "extra": [
+                "sobra, a mais",
+                ""
+              ],
+              "firewood": [
+                "lenha",
+                ""
+              ],
+              "food": [
+                "comida",
+                ""
+              ],
+              "from": [
+                "de",
+                ""
+              ],
+              "good": [
+                "bom",
+                ""
+              ],
+              "here": [
+                "aqui",
+                ""
+              ],
+              "home": [
+                "casa",
+                ""
+              ],
+              "host": [
+                "anfitrião, responsável pelo camping",
                 ""
               ],
               "how": [
                 "como",
                 ""
               ],
-              "identified": [
-                "identificado",
+              "i'd": [
+                "eu diria (condicional)",
                 ""
               ],
-              "improve": [
-                "melhorar",
+              "if": [
+                "se",
                 ""
               ],
-              "improved": [
-                "melhoramos",
+              "in": [
+                "em",
                 ""
               ],
-              "input": [
-                "entrada",
+              "keep": [
+                "manter",
                 ""
               ],
-              "invalid": [
-                "inválido",
+              "know": [
+                "saber",
                 ""
               ],
-              "it": [
-                "ele, ela, isso (coisa)",
-                ""
-              ],
-              "last": [
-                "por último",
-                ""
-              ],
-              "like": [
-                "como",
-                ""
-              ],
-              "meets": [
-                "atende",
-                ""
-              ],
-              "message": [
-                "mensagem",
-                ""
-              ],
-              "more": [
-                "mais",
-                ""
-              ],
-              "must": [
-                "precisa",
-                ""
-              ],
-              "names": [
-                "nomeia",
+              "learn": [
+                "aprender",
                 ""
               ],
               "never": [
                 "nunca",
                 ""
               ],
-              "now": [
-                "agora",
+              "nights": [
+                "noites",
                 ""
               ],
-              "often": [
-                "muitas vezes",
+              "or": [
+                "ou",
                 ""
               ],
-              "replaced": [
-                "substituímos",
+              "perfect": [
+                "perfeito",
+                ""
+              ],
+              "pests": [
+                "pragas",
+                ""
+              ],
+              "run": [
+                "correr",
                 ""
               ],
               "say": [
                 "dizer",
                 ""
               ],
+              "see": [
+                "ver",
+                ""
+              ],
+              "should": [
+                "devemos, deveria",
+                ""
+              ],
+              "site": [
+                "vaga, lote (de camping)",
+                ""
+              ],
+              "so": [
+                "então",
+                ""
+              ],
+              "start": [
+                "começam",
+                ""
+              ],
+              "ten": [
+                "dez",
+                ""
+              ],
+              "tent": [
+                "barraca",
+                ""
+              ],
+              "there": [
+                "lá",
+                ""
+              ],
+              "this": [
+                "este, esta",
+                ""
+              ],
+              "to": [
+                "para",
+                ""
+              ],
+              "twelve": [
+                "doze",
+                ""
+              ],
+              "two": [
+                "dois",
+                ""
+              ],
+              "understood": [
+                "entendido",
+                ""
+              ],
+              "use": [
+                "usar",
+                ""
+              ],
+              "we": [
+                "nós",
+                ""
+              ],
+              "welcome": [
+                "bem-vindo",
+                ""
+              ],
+              "what": [
+                "o que",
+                ""
+              ],
+              "wood": [
+                "madeira, lenha",
+                ""
+              ],
+              "yes": [
+                "sim",
+                ""
+              ]
+            },
+            "p": {
+              "under my name": [
+                "no meu nome",
+                "Como se informa uma reserva no check-in."
+              ],
+              "bear country": [
+                "território de ursos",
+                "Região onde há ursos: pede cuidado com comida."
+              ],
+              "anything with a scent": [
+                "qualquer coisa com cheiro",
+                "Pasta de dente, sabonete, ração: o que um urso sente de longe."
+              ],
+              "bear box": [
+                "caixa à prova de urso",
+                "Armário de metal no camping para guardar comida."
+              ],
+              "buy it where you burn it": [
+                "compre onde vai queimar",
+                "Regra de camping: lenha comprada perto, para não levar pragas."
+              ],
+              "got it": [
+                "entendi, combinado",
+                "Resposta curta e simpática."
+              ],
+              "quiet hours": [
+                "horário de silêncio",
+                "Em geral à noite, no camping."
+              ],
+              "is by the creek": [
+                "fica perto do riacho",
+                ""
+              ],
+              "bear spray": [
+                "spray de urso",
+                "Spray de pimenta próprio para ursos."
+              ],
+              "stand your ground": [
+                "mantenha a posição",
+                "Não fugir nem correr."
+              ],
+              "gets close": [
+                "chega perto",
+                ""
+              ],
+              "close by": [
+                "por perto",
+                ""
+              ],
+              "leave it with me": [
+                "deixe comigo",
+                ""
+              ],
+              "thanks for the tips": [
+                "obrigado pelas dicas",
+                ""
+              ],
+              "do you have a reservation": [
+                "você tem reserva?",
+                ""
+              ],
+              "enjoy your stay": [
+                "boa estadia",
+                "Fecho educado de quem recebe."
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "d": 5,
+      "label": "Sexta",
+      "n": "27",
+      "cards": [
+        {
+          "lang": "gr",
+          "min": "~10 min",
+          "recall": {
+            "prompts": [
+              "“o campo” → ?",
+              "“trabalha” → ?",
+              "“no campo” → ?"
+            ],
+            "key": [
+              "ὁ ἀγρός",
+              "πονεῖ",
+              "ἐν τῷ ἀγρῷ"
+            ],
+            "probed": [
+              "ὁ ἀγρός",
+              "πονεῖ",
+              "ἐν τῷ ἀγρῷ"
+            ]
+          },
+          "upTo": 11,
+          "pt": "Simo tem o burro. O burro de Simo é pequeno. O burro leva o grão de Clístenes. Melita leva a oferenda ao altar. Simo vê a estrada. A estrada é longa, mas é boa. Simo vai para a ágora. Na ágora, Simo come o pão. O vinho de Clístenes é bom. Simo vê o fruto e se alegra. Em Acarnas, Argos brinca.",
+          "sound": "O <span class=\"gi\">κ</span> de <span class=\"gi\">καρπόν</span> é um k seco, sem sopro, como o k de “casa”.",
+          "curio": "Em Atenas, no canto noroeste da ágora, ficava o Altar dos Doze Deuses; desde pelo menos o século V a.C. ele serviu de ponto zero para medir as distâncias até Atenas, e Heródoto o usa como referência. As fontes divergem sobre a data de sua fundação, e o santuário foi destruído pelos persas em 480/79 a.C. e reconstruído mais tarde. (Wikipedia, “Altar of the Twelve Gods”; Hesperia, American School of Classical Studies at Athens)"
+        },
+        {
+          "lang": "it",
+          "min": "~12 min",
+          "setting": "Verona: un anfiteatro romano e un festival d'opera.",
+          "recall": {
+            "prompts": [
+              "“pode (ele)” → ?",
+              "“os colonos” → ?",
+              "“o senhor (de uma cidade)” → ?"
+            ],
+            "key": [
+              "può",
+              "i coloni",
+              "il signore"
+            ]
+          },
+          "text": "A Verona, i romani costruiscono un grande anfiteatro nel primo secolo dopo Cristo. Oggi si chiama Arena. Nel 1913 (millenovecentotredici) la città festeggia i cento anni dalla nascita di Verdi e porta sul palco l'opera Aida: nasce il festival. Ogni estate la folla riempie i gradini di pietra, e i musicisti devono suonare per migliaia di persone.",
+          "tap": {
+            "w": {
+              "a": [
+                "em, a",
+                ""
+              ],
+              "verona": [
+                "Verona, cidade do norte da Itália",
+                ""
+              ],
+              "i": [
+                "os",
+                ""
+              ],
+              "romani": [
+                "romanos",
+                ""
+              ],
+              "costruiscono": [
+                "constroem",
+                ""
+              ],
+              "un": [
+                "um",
+                ""
+              ],
+              "grande": [
+                "grande",
+                ""
+              ],
+              "anfiteatro": [
+                "anfiteatro",
+                ""
+              ],
+              "nel": [
+                "em o, no",
+                "nel = in + il."
+              ],
+              "primo": [
+                "primeiro",
+                ""
+              ],
+              "secolo": [
+                "século",
+                ""
+              ],
+              "dopo": [
+                "depois",
+                ""
+              ],
+              "cristo": [
+                "Cristo",
+                ""
+              ],
+              "oggi": [
+                "hoje",
+                ""
+              ],
+              "si": [
+                "se",
+                ""
+              ],
+              "chiama": [
+                "chama",
+                "si chiama = chama-se."
+              ],
+              "arena": [
+                "Arena, o nome do anfiteatro",
+                ""
+              ],
+              "la": [
+                "a",
+                ""
+              ],
+              "città": [
+                "cidade",
+                ""
+              ],
+              "festeggia": [
+                "comemora",
+                ""
+              ],
+              "cento": [
+                "cem",
+                ""
+              ],
+              "anni": [
+                "anos",
+                ""
+              ],
+              "dalla": [
+                "desde a, da",
+                "dalla = da + la."
+              ],
+              "nascita": [
+                "nascimento",
+                ""
+              ],
+              "di": [
+                "de",
+                ""
+              ],
+              "verdi": [
+                "Verdi, compositor italiano",
+                ""
+              ],
+              "e": [
+                "e",
+                ""
+              ],
+              "porta": [
+                "leva",
+                ""
+              ],
+              "sul": [
+                "sobre o, no",
+                "sul = su + il."
+              ],
+              "palco": [
+                "palco",
+                ""
+              ],
+              "l'opera": [
+                "a ópera",
+                ""
+              ],
+              "aida": [
+                "Aida, ópera de Verdi",
+                ""
+              ],
+              "nasce": [
+                "nasce",
+                ""
+              ],
+              "il": [
+                "o",
+                ""
+              ],
+              "festival": [
+                "festival",
+                ""
+              ],
+              "ogni": [
+                "cada, todo",
+                "ogni + singular."
+              ],
+              "estate": [
+                "verão",
+                ""
+              ],
+              "folla": [
+                "multidão",
+                ""
+              ],
+              "riempie": [
+                "enche",
+                ""
+              ],
+              "gradini": [
+                "degraus",
+                ""
+              ],
+              "pietra": [
+                "pedra",
+                ""
+              ],
+              "musicisti": [
+                "músicos",
+                ""
+              ],
+              "devono": [
+                "precisam, devem",
+                "devono é de dovere: eles precisam. Depois dele vem o infinitivo."
+              ],
+              "suonare": [
+                "tocar (um instrumento)",
+                ""
+              ],
+              "per": [
+                "para",
+                ""
+              ],
+              "migliaia": [
+                "milhares",
+                ""
+              ],
+              "persone": [
+                "pessoas",
+                ""
+              ]
+            },
+            "p": {
+              "nel primo secolo dopo cristo": [
+                "no primeiro século depois de Cristo",
+                "Os romanos dizem “d.C.” assim."
+              ],
+              "nel 1913 millenovecentotredici": [
+                "no ano 1913",
+                "millenovecentotredici é 1913 por extenso."
+              ],
+              "si chiama": [
+                "chama-se",
+                ""
+              ],
+              "dalla nascita di verdi": [
+                "do nascimento de Verdi",
+                "dalla = da + la."
+              ],
+              "sul palco": [
+                "no palco",
+                "sul = su + il."
+              ],
+              "ogni estate": [
+                "todo verão",
+                "ogni + singular."
+              ],
+              "la folla riempie": [
+                "a multidão enche",
+                ""
+              ],
+              "i gradini di pietra": [
+                "os degraus de pedra",
+                ""
+              ],
+              "devono suonare": [
+                "precisam tocar",
+                "devono é de dovere; depois dele o outro verbo fica no infinitivo."
+              ],
+              "migliaia di persone": [
+                "milhares de pessoas",
+                "migliaia = milhares."
+              ],
+              "i cento anni": [
+                "os cem anos",
+                ""
+              ],
+              "l'opera aida": [
+                "a ópera Aida",
+                ""
+              ]
+            },
+            "f": {}
+          },
+          "questions": [
+            "Chi costruisce l'anfiteatro?",
+            "Quale opera apre il festival nel 1913 (millenovecentotredici)?",
+            "Chi deve suonare per migliaia di persone?"
+          ],
+          "note": "<em>ogni</em> não muda e vai com o singular: <em>ogni estate</em>, <em>ogni giorno</em>. Em português se diz “todo verão”, mas “todos os verões” já seria plural; em italiano, sempre <em>ogni</em> + singular.",
+          "answers": [
+            [
+              "1",
+              "I romani."
+            ],
+            [
+              "2",
+              "Aida."
+            ],
+            [
+              "3",
+              "I musicisti."
+            ]
+          ],
+          "curio": "O anfiteatro romano de Verona é datado de cerca do ano 30 d.C. (as fontes dizem início do século I). O festival de ópera começa em 10 de agosto de 1913, com Aida, nos cem anos do nascimento de Verdi. A capacidade varia muito conforme a fonte e o palco, de uns 13 mil a uns 22 mil lugares. (Britannica, “Verona Arena”; Wikipedia, “Verona Arena” e “Arena di Verona Festival”)",
+          "viz": [
+            {
+              "kind": "map",
+              "base": "italia",
+              "title": "Mapa: Verona",
+              "cap": "Esquema, sem escala. Verona fica no norte da Itália.",
+              "points": [
+                {
+                  "n": "Verona",
+                  "lat": 45.44,
+                  "lon": 10.99,
+                  "hl": true,
+                  "dx": 8,
+                  "dy": 3
+                },
+                {
+                  "n": "Roma",
+                  "lat": 41.9,
+                  "lon": 12.5,
+                  "dx": 8,
+                  "dy": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "d": 6,
+      "label": "Sábado",
+      "n": "28",
+      "cards": [
+        {
+          "lang": "gr",
+          "min": "~10 min",
+          "setting": "Teste das 13 frases: toque no texto até sumirem a glosa e a transliteração, leia as 13 frases e conte quantas você entendeu.",
+          "upTo": 13,
+          "pt": "Simo tem o burro. O burro de Simo é pequeno. O burro leva o grão de Clístenes. Melita leva a oferenda ao altar. Simo vê a estrada. A estrada é longa, mas é boa. Simo vai para a ágora. Na ágora, Simo come o pão. O vinho de Clístenes é bom. Simo vê o fruto e se alegra. Em Acarnas, Argos brinca. O campo de Clístenes é bom. Clístenes trabalha no campo, e Melita se alegra.",
+          "sound": "O <span class=\"gi\">θ</span> de <span class=\"gi\">Κλεισθένους</span> é um t solto com um sopro de ar, como o t de “tapa” dito com a mão diante da boca."
+        },
+        {
+          "lang": "en",
+          "tag": "public writing",
+          "min": "~13 min",
+          "title": "Alt text that says something",
+          "body": [
+            "Designers add images to every page, but few think about the people who cannot see them. WCAG success criterion 1.1.1 (Non-text Content), level A, asks that images have a text alternative, so a screen reader can say what the image does. The exception is a decorative image, which should be marked so that assistive technology skips it.",
+            "Good alt text answers one question: why is this image here? For a chart, describe the main finding, not the colors. For a photo with a caption that already says everything, an empty alt can be the right choice. But an essential image with an empty alt fails the criterion.",
+            "When you write about this in a case study, show a real example: the image, the alt text you wrote and why. \"We added alt text\" is easy to say. \"We described the main trend of each chart and marked the decorative icons as empty\" is something a reader can check."
+          ],
+          "inContext": [
+            [
+              "text alternative",
+              "words that replace an image for people who cannot see it; the wording of criterion 1.1.1."
+            ],
+            [
+              "screen reader",
+              "software that reads a page aloud; the main tool for blind users."
+            ],
+            [
+              "a decorative image",
+              "an image that adds no information; it should be hidden from assistive technology."
+            ],
+            [
+              "an empty alt",
+              "an alt attribute with no text, so the image is skipped; right for decoration, wrong for essential images."
+            ],
+            [
+              "fails the criterion",
+              "does not meet the guideline; the standard way to report an accessibility problem."
+            ]
+          ],
+          "check": [
+            "What question should good alt text answer?",
+            "When can an empty alt be the right choice?"
+          ],
+          "answers": [
+            [
+              "1",
+              "Why is this image here?"
+            ],
+            [
+              "2",
+              "For a decorative image, or one whose caption already says everything."
+            ]
+          ],
+          "expression": "<b>One expression.</b> <em>Short version:</em> — gives the main point first, before the details; useful in reports and case studies. Wrong when the details change the conclusion: then include them.",
+          "tap": {
+            "w": {
+              "about": [
+                "sobre",
+                ""
+              ],
+              "add": [
+                "acrescentar",
+                ""
+              ],
+              "added": [
+                "acrescentamos",
+                ""
+              ],
+              "already": [
+                "já",
+                ""
+              ],
+              "and": [
+                "e",
+                ""
+              ],
+              "answers": [
+                "responde",
+                ""
+              ],
+              "as": [
+                "como",
+                ""
+              ],
+              "asks": [
+                "pede",
+                ""
+              ],
+              "be": [
+                "ser",
+                ""
+              ],
+              "but": [
+                "mas",
+                ""
+              ],
+              "cannot": [
+                "não podem",
+                ""
+              ],
+              "caption": [
+                "legenda",
+                ""
+              ],
+              "case": [
+                "caso",
+                ""
+              ],
+              "chart": [
+                "gráfico",
+                ""
+              ],
+              "choice": [
+                "escolha",
+                ""
+              ],
+              "colors": [
+                "cores",
+                ""
+              ],
+              "describe": [
+                "descrever",
+                ""
+              ],
+              "described": [
+                "descrevemos",
+                ""
+              ],
+              "designers": [
+                "designers",
+                ""
+              ],
+              "does": [
+                "faz (auxiliar)",
+                ""
+              ],
+              "each": [
+                "cada",
+                ""
+              ],
+              "easy": [
+                "fácil",
+                ""
+              ],
+              "every": [
+                "cada",
+                ""
+              ],
+              "everything": [
+                "tudo",
+                ""
+              ],
+              "example": [
+                "exemplo",
+                ""
+              ],
+              "exception": [
+                "exceção",
+                ""
+              ],
+              "few": [
+                "poucos",
+                ""
+              ],
+              "for": [
+                "para",
+                ""
+              ],
+              "good": [
+                "bom",
+                ""
+              ],
+              "have": [
+                "tenham",
+                ""
+              ],
+              "here": [
+                "aqui",
+                ""
+              ],
+              "icons": [
+                "ícones",
+                ""
+              ],
+              "images": [
+                "imagens",
+                ""
+              ],
+              "in": [
+                "em",
+                ""
+              ],
+              "is": [
+                "é, está",
+                ""
+              ],
+              "it": [
+                "ele, ela, isso",
+                ""
+              ],
+              "level": [
+                "nível",
+                ""
+              ],
+              "marked": [
+                "marcada",
+                ""
+              ],
+              "not": [
+                "não",
+                ""
+              ],
+              "of": [
+                "de",
+                ""
+              ],
+              "one": [
+                "um; este aqui",
+                ""
+              ],
+              "page": [
+                "página",
+                ""
+              ],
+              "people": [
+                "pessoas",
+                ""
+              ],
+              "photo": [
+                "foto",
+                ""
+              ],
+              "question": [
+                "pergunta",
+                ""
+              ],
+              "real": [
+                "real",
+                ""
+              ],
+              "right": [
+                "certo; é verdade",
+                ""
+              ],
+              "say": [
+                "dizer",
+                ""
+              ],
+              "says": [
+                "diz",
+                ""
+              ],
+              "see": [
+                "ver",
+                ""
+              ],
+              "should": [
+                "devemos, deveria",
+                ""
+              ],
               "show": [
                 "mostrar",
                 ""
               ],
-              "shows": [
-                "mostra",
+              "skips": [
+                "pula",
                 ""
               ],
               "so": [
@@ -3599,44 +3053,24 @@
                 "estudo",
                 ""
               ],
-              "system": [
-                "sistema",
-                ""
-              ],
-              "teams": [
-                "times",
-                ""
-              ],
-              "test": [
-                "testar; teste",
-                ""
-              ],
-              "tested": [
-                "testou",
-                ""
-              ],
               "that": [
                 "que",
                 ""
               ],
               "them": [
-                "eles, elas (objeto)",
+                "elas, eles",
+                ""
+              ],
+              "think": [
+                "pensar",
                 ""
               ],
               "this": [
-                "este, isto",
+                "este, esta",
                 ""
               ],
               "to": [
-                "para; a",
-                ""
-              ],
-              "unless": [
-                "a menos que",
-                ""
-              ],
-              "user": [
-                "usuário",
+                "para",
                 ""
               ],
               "we": [
@@ -3652,283 +3086,96 @@
                 ""
               ],
               "which": [
-                "qual, que",
+                "que, o qual",
+                ""
+              ],
+              "who": [
+                "quem",
+                ""
+              ],
+              "why": [
+                "por que",
                 ""
               ],
               "with": [
                 "com",
                 ""
               ],
-              "wording": [
-                "redação, escolha de palavras",
-                ""
-              ],
-              "would": [
-                "faria",
-                ""
-              ],
               "write": [
                 "escrever",
                 ""
               ],
-              "wrong": [
-                "errado",
+              "wrote": [
+                "escreveu",
                 ""
               ],
               "you": [
-                "você, vocês",
+                "você",
                 ""
               ]
             },
             "p": {
-              "described in text": [
-                "descrito em texto",
-                "Escrito em palavras, não só por cor ou ícone."
+              "text alternative": [
+                "alternativa em texto",
+                "Palavras que substituem a imagem para quem não a vê."
               ],
-              "suggest a correction": [
-                "sugerir uma correção",
-                "Dizer à pessoa como corrigir o erro."
+              "screen reader": [
+                "leitor de tela",
+                "Programa que lê a página em voz alta."
               ],
-              "color alone": [
-                "só a cor",
-                "Cor como único sinal: uma falha comum de acessibilidade."
+              "a decorative image": [
+                "uma imagem decorativa",
+                "Não traz informação: deve ficar fora da leitura."
               ],
-              "passes both": [
-                "atende aos dois",
-                "Cumpre os dois critérios ao mesmo tempo."
+              "an empty alt": [
+                "um alt vazio",
+                "O atributo sem texto: a imagem é ignorada. Certo para decoração, errado para imagem essencial."
               ],
-              "before and after": [
-                "antes e depois",
-                "A comparação que um estudo de caso precisa."
+              "fails the criterion": [
+                "não atende ao critério",
+                "Jeito padrão de relatar um problema de acessibilidade."
               ],
-              "wcag success criterion 331": [
-                "critério de sucesso WCAG 3.3.1",
-                "O critério sobre identificar o erro."
+              "assistive technology": [
+                "tecnologia assistiva",
+                "Leitores de tela e outros recursos de apoio."
               ],
-              "error identification": [
-                "identificação de erro",
-                "O nome do critério 3.3.1."
+              "success criterion": [
+                "critério de sucesso",
+                "Cada item da diretriz WCAG se chama assim."
               ],
-              "error suggestion": [
-                "sugestão de erro",
-                "O nome do critério 3.3.3."
+              "non-text content": [
+                "conteúdo não textual",
+                "O nome do critério 1.1.1."
               ],
-              "level aa": [
-                "nível AA",
-                "O nível acima do A, na escala A, AA e AAA."
+              "wcag success criterion 111": [
+                "critério de sucesso WCAG 1.1.1",
+                "O critério sobre alternativas em texto."
               ],
-              "the basic level": [
-                "o nível básico",
+              "alt text": [
+                "texto alternativo",
                 ""
               ],
-              "hurt security": [
-                "prejudicar a segurança",
+              "the main finding": [
+                "a principal conclusão",
                 ""
               ],
-              "email is not valid": [
-                "o e-mail não é válido",
-                "A mensagem curta que passa só no primeiro critério."
-              ],
-              "the expected format": [
-                "o formato esperado",
-                ""
-              ],
-              "a red border": [
-                "uma borda vermelha",
-                ""
-              ],
-              "default browser messages": [
-                "mensagens padrão do navegador",
+              "essential image": [
+                "imagem essencial",
                 ""
               ],
               "something a reader can check": [
                 "algo que o leitor pode verificar",
                 "Específico o bastante para ser testado."
               ],
-              "be specific": [
-                "seja específico",
+              "main trend": [
+                "tendência principal",
+                ""
+              ],
+              "short version": [
+                "resumindo",
                 ""
               ]
             }
-          },
-          "audio": {
-            "file": "w10_en6.mp3",
-            "t": [
-              0.0,
-              1.36,
-              1.71,
-              1.96,
-              2.34,
-              2.89,
-              3.27,
-              3.49,
-              3.84,
-              3.99,
-              5.08,
-              6.04,
-              6.42,
-              7.19,
-              7.69,
-              8.04,
-              8.29,
-              8.95,
-              10.54,
-              11.17,
-              11.84,
-              13.57,
-              14.04,
-              15.37,
-              15.89,
-              16.27,
-              16.49,
-              17.02,
-              17.64,
-              18.04,
-              18.29,
-              18.49,
-              18.87,
-              19.46,
-              19.79,
-              19.77,
-              20.54,
-              20.91,
-              21.89,
-              22.16,
-              22.84,
-              23.09,
-              23.16,
-              23.69,
-              23.66,
-              24.57,
-              26.21,
-              27.74,
-              28.06,
-              28.96,
-              29.24,
-              29.94,
-              30.34,
-              30.52,
-              30.74,
-              31.54,
-              31.94,
-              32.59,
-              32.96,
-              33.52,
-              34.29,
-              34.46,
-              34.84,
-              35.02,
-              36.77,
-              37.91,
-              38.39,
-              38.56,
-              38.96,
-              39.27,
-              39.44,
-              40.04,
-              40.49,
-              40.77,
-              41.24,
-              42.52,
-              43.66,
-              44.14,
-              44.31,
-              44.69,
-              45.14,
-              45.29,
-              45.79,
-              46.24,
-              46.84,
-              47.67,
-              48.91,
-              49.39,
-              49.64,
-              49.81,
-              50.24,
-              50.64,
-              50.89,
-              51.34,
-              51.61,
-              51.79,
-              52.04,
-              52.39,
-              52.66,
-              53.14,
-              53.39,
-              53.59,
-              54.4,
-              55.79,
-              56.34,
-              56.94,
-              57.11,
-              57.49,
-              58.24,
-              58.41,
-              58.84,
-              59.24,
-              59.59,
-              60.06,
-              60.29,
-              60.41,
-              61.06,
-              62.37,
-              63.61,
-              63.76,
-              63.89,
-              64.11,
-              64.39,
-              64.51,
-              64.74,
-              64.86,
-              65.29,
-              65.61,
-              66.7,
-              67.99,
-              68.11,
-              68.46,
-              68.81,
-              69.11,
-              69.41,
-              69.69,
-              69.99,
-              70.96,
-              71.16,
-              71.61,
-              71.79,
-              72.19,
-              72.71,
-              72.91,
-              73.16,
-              73.74,
-              74.27,
-              75.41,
-              75.99,
-              76.24,
-              76.54,
-              76.66,
-              76.99,
-              77.14,
-              77.77,
-              78.91,
-              79.34,
-              79.99,
-              80.34,
-              80.61,
-              80.69,
-              81.26,
-              81.54,
-              82.14,
-              82.39,
-              82.69,
-              83.01,
-              83.19,
-              83.61,
-              83.99,
-              84.36,
-              84.51,
-              84.91,
-              84.96
-            ]
           }
         }
       ]
@@ -3936,25 +3183,25 @@
     {
       "d": 0,
       "label": "Domingo",
-      "n": "22",
+      "n": "29",
       "cards": [
         {
           "lang": "gr",
           "min": "~10 min",
           "upTo": 13,
-          "pt": "Clístenes trabalha no campo. Nícias vê o fruto. O campo é pequeno, mas é bom. Nícias leva o fruto para dentro de casa. Melita tem o vinho. Cloé come o pão. Argos brinca, e Cloé se alegra. Melita leva a oferenda ao altar. A oferenda é pão. A deusa vê a oferenda e se alegra. Clístenes tem o pão e o vinho. Em Acarnas o fruto é bom. Nícias trabalha, e Clístenes se alegra.",
-          "sound": "O <span class=\"gi\">η</span> de <span class=\"gi\">Χλόη</span> é um e longo e aberto, como o “é” de “café” esticado."
+          "pt": "Simo tem o burro. O burro de Simo é pequeno. O burro leva o grão de Clístenes. Melita leva a oferenda ao altar. Simo vê a estrada. A estrada é longa, mas é boa. Simo vai para a ágora. Na ágora, Simo come o pão. O vinho de Clístenes é bom. Simo vê o fruto e se alegra. Em Acarnas, Argos brinca. O campo de Clístenes é bom. Clístenes trabalha no campo, e Melita se alegra.",
+          "sound": "O <span class=\"gi\">ω</span> de <span class=\"gi\">βωμόν</span> é um o longo e aberto, como o “ó” de “avó” esticado."
         },
         {
           "lang": "it",
           "min": "~3 min",
-          "text": "Il Vesuvio erutta nel 79 (settantanove). Il Duomo di Milano inizia nel 1386 (milletrecentoottantasei). Siracusa è una città greca in Sicilia."
+          "text": "A Ravenna i mosaici mostrano l'imperatore Giustiniano. Al bar si paga alla cassa e si porta lo scontrino al banco. L'Arena di Verona è un anfiteatro romano."
         },
         {
           "lang": "en",
           "min": "~3 min",
           "body": [
-            "In one sentence: of this week's three moves — explaining why an error message deserves care, commenting on the wording of an error, or showing a message before and after in a case study — which one are you least used to doing?"
+            "In one sentence: of this week's three moves — buying gear at an outdoor store, checking in at a campground, or writing alt text that says something — which one would you find hardest to do in English?"
           ]
         },
         {
@@ -3968,224 +3215,9 @@
     }
   ],
   "foot": [
-    "Esta semana não traz palavra nova: a nota de grego foi 2, e a regra é desacelerar e repetir estruturas. O texto reúne as palavras que não vieram ou que venceram — ὁ ἄρτος, ὁ βωμός, ἔχει, ἐσθίει, ὁ καρπός, πονεῖ, παίζει, χαίρει, εἰς e outras — em frases como as da semana 9.",
-    "A cena é inventada; a oferenda dos primeiros frutos aos deuses, não: os gregos a faziam, e Deméter recebia o primeiro grão.",
-    "O Ἀνάμνησις aparece de segunda a sexta e testa só palavras que não estão no texto daquele dia.",
-    "O portão da fase 1 foi cumprido (13, 10 e 10 das 13 frases), mas a nota 2 segura o avanço; o teste de sábado continua.",
-    "Italiano: Pompei, Duomo di Milano e Siracusa, com devono, può e a folla de volta nos textos. Inglês: mensagens de erro, do cliente à escrita pública."
-  ],
-  "audio": {
-    "greek": {
-      "file": "w10_grc.mp3",
-      "sent": [
-        [
-          0.0,
-          2.85
-        ],
-        [
-          3.55,
-          5.92
-        ],
-        [
-          6.62,
-          10.03
-        ],
-        [
-          10.72,
-          14.05
-        ],
-        [
-          14.75,
-          17.2
-        ],
-        [
-          17.9,
-          20.25
-        ],
-        [
-          20.95,
-          23.97
-        ],
-        [
-          24.67,
-          28.02
-        ],
-        [
-          28.72,
-          30.97
-        ],
-        [
-          31.67,
-          34.75
-        ],
-        [
-          35.45,
-          38.92
-        ],
-        [
-          39.62,
-          42.55
-        ],
-        [
-          43.25,
-          46.45
-        ]
-      ],
-      "t": [
-        [
-          0.0,
-          0.44,
-          1.56,
-          1.71,
-          2.02,
-          2.39
-        ],
-        [
-          3.55,
-          3.99,
-          4.79,
-          5.04,
-          5.54
-        ],
-        [
-          6.62,
-          7.07,
-          7.76,
-          8.34,
-          8.91,
-          9.09,
-          9.54
-        ],
-        [
-          10.72,
-          11.16,
-          11.96,
-          12.21,
-          12.71,
-          12.91,
-          13.09,
-          13.62
-        ],
-        [
-          14.75,
-          15.27,
-          16.02,
-          16.34,
-          16.77
-        ],
-        [
-          17.9,
-          18.41,
-          18.89,
-          19.16,
-          19.69
-        ],
-        [
-          20.95,
-          21.39,
-          22.11,
-          22.77,
-          22.99,
-          23.24,
-          23.46
-        ],
-        [
-          24.67,
-          25.19,
-          25.94,
-          26.14,
-          26.54,
-          26.91,
-          27.19,
-          27.61
-        ],
-        [
-          28.72,
-          29.26,
-          29.86,
-          30.44
-        ],
-        [
-          31.67,
-          32.19,
-          32.71,
-          32.96,
-          33.39,
-          33.94,
-          34.09
-        ],
-        [
-          35.45,
-          35.89,
-          37.01,
-          37.11,
-          37.51,
-          37.89,
-          38.16,
-          38.54
-        ],
-        [
-          39.62,
-          40.21,
-          41.01,
-          41.29,
-          41.81,
-          42.14
-        ],
-        [
-          43.25,
-          43.69,
-          44.49,
-          44.81,
-          45.04,
-          45.31,
-          45.96
-        ]
-      ],
-      "words": {
-        "Ὁ": "w10_grc_00.mp3",
-        "Κλεισθένης": "w10_grc_01.mp3",
-        "ἐν": "w10_grc_02.mp3",
-        "τῷ": "w10_grc_03.mp3",
-        "ἀγρῷ": "w10_grc_04.mp3",
-        "πονεῖ": "w10_grc_05.mp3",
-        "Νικίας": "w10_grc_06.mp3",
-        "τὸν": "w10_grc_07.mp3",
-        "καρπὸν": "w10_grc_08.mp3",
-        "ὁρᾷ": "w10_grc_09.mp3",
-        "ἀγρὸς": "w10_grc_10.mp3",
-        "μικρός": "w10_grc_11.mp3",
-        "ἐστιν": "w10_grc_12.mp3",
-        "ἀλλὰ": "w10_grc_13.mp3",
-        "καλός": "w10_grc_14.mp3",
-        "εἰς": "w10_grc_15.mp3",
-        "τὴν": "w10_grc_16.mp3",
-        "οἰκίαν": "w10_grc_17.mp3",
-        "φέρει": "w10_grc_18.mp3",
-        "Ἡ": "w10_grc_19.mp3",
-        "Μέλιττα": "w10_grc_20.mp3",
-        "οἶνον": "w10_grc_21.mp3",
-        "ἔχει": "w10_grc_22.mp3",
-        "Χλόη": "w10_grc_23.mp3",
-        "ἄρτον": "w10_grc_24.mp3",
-        "ἐσθίει": "w10_grc_25.mp3",
-        "Ἄργος": "w10_grc_26.mp3",
-        "παίζει": "w10_grc_27.mp3",
-        "καὶ": "w10_grc_28.mp3",
-        "ἡ": "w10_grc_29.mp3",
-        "χαίρει": "w10_grc_30.mp3",
-        "τὸ": "w10_grc_31.mp3",
-        "δῶρον": "w10_grc_32.mp3",
-        "πρὸς": "w10_grc_33.mp3",
-        "βωμὸν": "w10_grc_34.mp3",
-        "Τὸ": "w10_grc_35.mp3",
-        "ἄρτος": "w10_grc_36.mp3",
-        "θεὰ": "w10_grc_37.mp3",
-        "Ἐν": "w10_grc_38.mp3",
-        "Ἀχαρναῖς": "w10_grc_39.mp3",
-        "ὁ": "w10_grc_40.mp3",
-        "καρπὸς": "w10_grc_41.mp3"
-      }
-    }
-  }
+    "Começa a fase 2 do grego: o portão da fase 1 foi cumprido (13, 10, 10 e 12 das 13 frases) e a nota desta semana foi 4. A novidade é o genitivo, que diz de quem é algo: τοῦ Σίμου, τοῦ Κλεισθένους. Duas palavras novas: ὁ ὄνος e ἡ ὁδός.",
+    "As palavras que venceram ou que não vieram continuam tecidas no texto: εἰς, παίζει, ὁ ἄρτος, ὁ βωμός, ἔχει, ἐσθίει, ὁ καρπός, πονεῖ, χαίρει e outras. O Ἀνάμνησις aparece de segunda a sexta e testa só palavras que não estão no texto do dia.",
+    "Inglês, agora com diálogos e temas do dia a dia nos EUA: uma loja de outdoor (ter), o check-in num camping em Montana (qui) e um texto de design sobre alt text (sáb). Italiano: Ravenna, um diálogo no bar e a Arena di Verona.",
+    "Cada diálogo tem duas vozes; o nome de quem fala aparece na página e não é lido. Nos cartões de inglês, a nota “How it works” explica como a coisa funciona nos EUA, com a fonte."
+  ]
 }
