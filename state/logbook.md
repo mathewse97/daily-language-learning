@@ -51,8 +51,8 @@ unlocked: artigos; preposições articuladas (nel/dal/sul/del/al); essere e aver
 recent: Pompei, Duomo e Siracusa (semana 10); Ravenna, bar e Verona (11)
 weak: la folla, devono, può: terceira semana sem lembrar; agora também num diálogo (bar)
 gate: artigos + preposições articuladas sem erro em 2 produções
-next: fechar a fase 1 com o gate (artigos + preposições articuladas sem erro em 2
-  produções); passato prossimo é fase 2
+next: 1 de 3 dias é diálogo do cotidiano (quarta): 12 Coliseu (direções), depois tempo e
+  cidade, trem, mercado, pensão, restaurante; passato prossimo é fase 2
 
 [ENGLISH]
 register_last: public writing
@@ -73,6 +73,14 @@ agendada anterior e não se aplicam mais; ver "Pendências registradas")
 ```
 
 ## Pendências registradas
+
+**22/11 · italiano: diálogo toda semana, decidido com Mathews.** Em cada semana, 1 dos 3 dias de
+italiano (em geral a quarta) é um diálogo do cotidiano; os outros 2 seguem com monumentos, história e
+cultura. Ordem acordada: 1 como chegar ao Coliseu (direções, metrô, a pé); 2 tempo e cidade, na rua; 3
+trem ou ônibus; 4 mercado ou padaria; 5 pensão ou hotel; 6 restaurante. A gramática é a da fase 1
+(presente; direções com a 3ª pessoa: *va dritto, poi gira a sinistra*). Registrado também em
+`courses/ITALIAN_COURSE.md`. **Foto de Verona:** a Wikimedia segue bloqueando (HTTP 429); a semana 11 saiu
+sem ela. Tentar de novo no planejamento da semana 12.
 
 **22/11 · check-in da semana 10 consumido; semana 11 composta, com a fase 2 do grego.** Notas GR 4 ·
 IT 4 · EN 4; seis dias lidos; **12 das 13 frases**. Não vieram: εἰς, παίζει, la folla, può, devono;

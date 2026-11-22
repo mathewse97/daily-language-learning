@@ -135,6 +135,11 @@ e levar o `scontrino` ao balcão) vêm com fonte consultada na curiosidade e com
 variam de lugar para lugar. A gramática continua a da fase: nada de passato prossimo antes da
 fase 2 do italiano. A página toca duas vozes.
 
+**Ritmo e ordem (22/11/2026).** Um dia por semana, em geral a quarta, é diálogo; os outros dois
+seguem com monumentos, história e cultura. Ordem dos temas: como chegar ao Coliseu (direções, com
+a 3ª pessoa do presente: *va dritto, poi gira a sinistra*); tempo e cidade, na rua; trem ou ônibus;
+mercado ou padaria; pensão ou hotel; restaurante. A cena pode ficar diante do monumento do dia anterior.
+
 ## Reservatório temático
 
 Monumentos e o que aconteceu neles (Coliseu, Torre de Pisa, aquedutos, Fontana di
