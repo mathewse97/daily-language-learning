@@ -11,8 +11,9 @@ O que gera, em docs/audio/ (os arquivos de semanas antigas são apagados):
     que tem texto (formas em WEEK_PACKET_SCHEMA.md).
 
 Vozes: grego — a voz `em_alex` lendo fonemas do ático restaurado; italiano — `im_nicola`;
-inglês — `am_michael`. Em diálogo (cada fala abre com `Nome:`), o 1º falante usa essa voz e o 2º,
-`if_sara` (italiano) ou `af_heart` (inglês); o rótulo aparece na página e não é falado. O grego é a reconstrução acadêmica aproximada que o espeak-ng
+inglês — `am_michael`. Em diálogo (cada fala abre com `Nome:`) só há vozes masculinas, diferentes entre
+si (decisão de Mathews, 24/11/2026): o 1º falante usa a voz acima e o 2º, `am_adam` (inglês) ou uma mistura
+de `im_nicola` e `em_santa` (italiano, que só tem uma voz masculina); o rótulo aparece na página e não é falado. O grego é a reconstrução acadêmica aproximada que o espeak-ng
 oferece (voz `grc`) com as correções do curso (aspiradas, ζ = zd, ditongos longos com iota):
 voz sintética de uma língua que ninguém ouviu, não áudio atestado. A página diz isso.
 
@@ -94,7 +95,11 @@ def main() -> int:
     sil = lambda s: np.zeros(int(SR * s), dtype=np.float32)
 
     def frase(model, voz, vel, lang, itens, fon=False):
-        """itens = [(exibido, falado|None)]; devolve (amostras, início de cada item em s)."""
+        """itens = [(exibido, falado|None)]; devolve (amostras, início de cada item em s).
+        `voz` é o nome de uma voz ou ('mistura', a, b, peso): estilo = peso·a + (1−peso)·b."""
+        if isinstance(voz, tuple):
+            _, va, vb, w_ = voz
+            voz = w_ * model.get_voice_style(va) + (1 - w_) * model.get_voice_style(vb)
         sp = [s for _, s in itens if s]
         D, last = [0.0], None
         for k in range(1, len(sp) + 1):
@@ -202,7 +207,7 @@ def main() -> int:
         for c in d["cards"]:
             if c["lang"] == "it" and c.get("text") and d["d"] != 0:
                 arq = f"{pre}it{d['d']}.mp3"
-                pars, vz = dialogo(tok_it(c["text"]), ["im_nicola", "if_sara"])
+                pars, vz = dialogo(tok_it(c["text"]), ["im_nicola", ("mistura", "im_nicola", "em_santa", 0.6)])
                 tempos = faixa(leve, vz, 0.95, "it", pars, arq)
                 c["audio"] = {"file": arq, "t": tempos}
                 print("italiano", d["d"], len(tempos), "palavras", flush=True)
@@ -217,7 +222,7 @@ def main() -> int:
                         if tk0 not in falantes:
                             falantes.append(tk0)
                         pars.append([(tk, None if i == 0 else re.sub(r"[“”\"]", "", tk) or None) for i, tk in enumerate(p.split())])
-                        vz.append(["am_michael", "af_heart"][falantes.index(tk0) % 2])
+                        vz.append(["am_michael", "am_adam"][falantes.index(tk0) % 2])
                 else:
                     pars = [[(tk, re.sub(r"[“”\"]", "", tk) or None) for tk in p.split()] for p in c["body"]]
                     vz = "am_michael"

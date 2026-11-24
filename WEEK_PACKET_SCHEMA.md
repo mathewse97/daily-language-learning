@@ -87,7 +87,7 @@ funciona nos EUA, com fonte consultada entre parênteses, como a curiosidade do 
 **Diálogo (italiano e inglês, desde 22/11/2026).** Um texto pode ser diálogo: cada fala abre com um
 rótulo `Nome:` (no inglês, um item de `body` por fala; no italiano, tudo em `text`, e a página quebra
 a linha em cada rótulo). O rótulo recebe glosa em `tap` como qualquer palavra, mas não é falado: o
-áudio usa duas vozes, uma por falante.
+áudio usa duas vozes masculinas diferentes, uma por falante.
 
 ### Cartão neutro — `lang: "tag"`
 

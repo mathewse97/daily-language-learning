@@ -133,7 +133,7 @@ arrumados do que a conversa real; por isso a fala deve ter reação, hesitação
 de cortesia verdadeiras (`scusi`, `va bene`, `grazie mille`). Os costumes reais (pagar na `cassa`
 e levar o `scontrino` ao balcão) vêm com fonte consultada na curiosidade e com a ressalva de que
 variam de lugar para lugar. A gramática continua a da fase: nada de passato prossimo antes da
-fase 2 do italiano. A página toca duas vozes.
+fase 2 do italiano. A página toca duas vozes masculinas diferentes (nunca um par masculino e feminino; decisão de 24/11/2026).
 
 **Ritmo e ordem (22/11/2026).** Um dia por semana, em geral a quarta, é diálogo; os outros dois
 seguem com monumentos, história e cultura. Ordem dos temas: como chegar ao Coliseu (direções, com

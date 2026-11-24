@@ -74,6 +74,12 @@ agendada anterior e não se aplicam mais; ver "Pendências registradas")
 
 ## Pendências registradas
 
+**24/11 · vozes dos diálogos, decisão de Mathews:** nada de par masculino e feminino; só vozes masculinas,
+diferentes entre si. Inglês: `am_michael` e `am_adam`. Italiano: `im_nicola` (única voz masculina italiana do
+Kokoro) e uma mistura 60/40 de `im_nicola` com `em_santa`, ainda não ouvida por ninguém; se o sotaque ou o
+timbre ficarem ruins, trocar o peso ou a voz em `tools/audio.py`. Vale a partir da semana 12; a semana 11
+já foi ao ar com `if_sara` e `af_heart`.
+
 **22/11 · italiano: diálogo toda semana, decidido com Mathews.** Em cada semana, 1 dos 3 dias de
 italiano (em geral a quarta) é um diálogo do cotidiano; os outros 2 seguem com monumentos, história e
 cultura. Ordem acordada: 1 como chegar ao Coliseu (direções, metrô, a pé); 2 tempo e cidade, na rua; 3
