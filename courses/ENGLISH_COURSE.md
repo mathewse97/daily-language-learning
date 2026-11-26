@@ -47,7 +47,7 @@ interests, and how things work in the US (he wants to travel and to understand t
 - **Dialogue, now and then:** some texts are dialogues (8–12 short turns, two people, each turn
   opens with `Name:`). Use real spoken English: fillers and reactions ("Sure thing", "No
   worries", "Hang on a sec", "Got it"), contractions, interruptions. Mark regional speech (the South,
-  the Mountain West) as regional. The page plays two voices.
+  the Mountain West) as regional. The page plays two male voices (never a male/female pair: Mathews, 2026-11-24).
 - **Register tags** for these texts are `everyday · shopping`, `everyday · travel`, and so on.
 - **How it works:** a short `curio` note in English ("How it works"), only when the text states a
   real fact about the US (sales tax at checkout, bear rules, license rules, tipping). The source
